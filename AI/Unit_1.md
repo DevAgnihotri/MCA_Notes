@@ -2,20 +2,16 @@
 
 **Unit 1 Syllabus: Artificial Intelligence**
 
-- Introduction to Artificial Intelligence (AI):
-  - Definition, history, and evolution of AI
-  - Foundation areas and branches of AI
-  - Key tasks and application domains
-- Intelligent Agents:
-  - Types and structure of agents
-  - Elements and functions of agents
-  - PEAS (Performance measure, Environment, Actuators, Sensors) description
-  - Rationality and agent design
-- Natural Language Processing (NLP):
-  - Overview and approaches
-  - Steps involved in NLP
-- Computer Vision:
-  - Basic concepts and applications
+## Table of Contents
+
+- [Introduction to Artificial Intelligence (AI)](#detailed-explanation-introduction-to-artificial-intelligence-ai)
+- [Intelligent Agents](#intelligent-agents--types)
+- [Agent Functions & Rationality](#agent-functions--rationality)
+- [PEAS Description](#peas-description)
+- [AI Tasks & Applications](#ai-tasks--applications)
+- [Natural Language Processing (NLP)](#natural-language-processing-nlp)
+- [Model-Based Agents](#model-based-agents)
+- [Weak AI vs Strong AI](#weak-ai-vs-strong-ai)
 
 ---
 
@@ -95,13 +91,16 @@ The concept of AI dates back to ancient myths and stories of artificial beings. 
 **State any two foundation areas of artificial intelligence. (2022–23, A)**
 
 AI is built on several foundation areas:
-- **Mathematics:** This is about using numbers, logic, and probability to help computers solve problems and make decisions. For example, AI uses math to figure out the best move in a game or to predict what might happen next.  
-  - *Why important?* Math helps AI understand patterns, handle uncertainty, and make smart choices.
-  - *Examples:* Using statistics to find trends in data, using logic to solve puzzles.
 
-- **Computer Science:** This is about writing instructions (programs) for computers and organizing information. AI uses computer science to create algorithms (step-by-step solutions) and manage data.  
-  - *Why important?* Computer science gives AI the tools to process information quickly and solve complex problems.
-  - *Examples:* Sorting data, searching for answers, building smart apps.
+- **Mathematics:** This is about using numbers, logic, and probability to help computers solve problems and make decisions. For example, AI uses math to figure out the best move in a game or to predict what might happen next.
+
+  - _Why important?_ Math helps AI understand patterns, handle uncertainty, and make smart choices.
+  - _Examples:_ Using statistics to find trends in data, using logic to solve puzzles.
+
+- **Computer Science:** This is about writing instructions (programs) for computers and organizing information. AI uses computer science to create algorithms (step-by-step solutions) and manage data.
+
+  - _Why important?_ Computer science gives AI the tools to process information quickly and solve complex problems.
+  - _Examples:_ Sorting data, searching for answers, building smart apps.
 
 - **Psychology:** This helps AI understand how people think and learn, so computers can act more like humans.
 
@@ -109,20 +108,24 @@ AI is built on several foundation areas:
 
 - **Philosophy:** This helps AI think about what is right or wrong, and how to make fair decisions.
 
-- **Machine Learning:** Systems that learn from data and improve their performance over time without being explicitly programmed. They use algorithms to find patterns and make predictions or decisions.  
-  - *Examples:* Email spam filters, recommendation engines (Netflix, Amazon), handwriting recognition.
+- **Machine Learning:** Systems that learn from data and improve their performance over time without being explicitly programmed. They use algorithms to find patterns and make predictions or decisions.
 
-- **Natural Language Processing (NLP):** Enables computers to understand, interpret, and generate human language. It is used in applications like chatbots, translation, and speech recognition.  
-  - *Examples:* Chatbots (ChatGPT), Google Translate, voice assistants (Siri, Alexa).
+  - _Examples:_ Email spam filters, recommendation engines (Netflix, Amazon), handwriting recognition.
 
-- **Computer Vision:** Allows machines to interpret and analyze visual information from the world, such as images and videos. It is used in facial recognition, medical imaging, and autonomous vehicles.  
-  - *Examples:* Face detection in photos, self-driving car cameras, X-ray image analysis.
+- **Natural Language Processing (NLP):** Enables computers to understand, interpret, and generate human language. It is used in applications like chatbots, translation, and speech recognition.
 
-- **Robotics:** Involves designing and building intelligent machines that can perform tasks autonomously or with minimal human intervention. Robots use sensors and AI to interact with their environment.  
-  - *Examples:* Industrial robots, robotic vacuum cleaners, surgical robots.
+  - _Examples:_ Chatbots (ChatGPT), Google Translate, voice assistants (Siri, Alexa).
 
-- **Expert Systems:** Computer programs that mimic the decision-making abilities of human experts. They use rules and knowledge bases to solve complex problems in specific domains.  
-  - *Examples:* Medical diagnosis systems, financial advisory tools, troubleshooting guides.
+- **Computer Vision:** Allows machines to interpret and analyze visual information from the world, such as images and videos. It is used in facial recognition, medical imaging, and autonomous vehicles.
+
+  - _Examples:_ Face detection in photos, self-driving car cameras, X-ray image analysis.
+
+- **Robotics:** Involves designing and building intelligent machines that can perform tasks autonomously or with minimal human intervention. Robots use sensors and AI to interact with their environment.
+
+  - _Examples:_ Industrial robots, robotic vacuum cleaners, surgical robots.
+
+- **Expert Systems:** Computer programs that mimic the decision-making abilities of human experts. They use rules and knowledge bases to solve complex problems in specific domains.
+  - _Examples:_ Medical diagnosis systems, financial advisory tools, troubleshooting guides.
 
 AI is used in many tasks and domains:
 
@@ -133,36 +136,43 @@ AI is used in many tasks and domains:
 **Discuss various categories of AI tasks. (2022–23, B)**
 
 #### 1. Speech Recognition
+
 **Definition:** AI systems that can understand and process spoken language. Speech recognition enables computers to convert spoken words into text and respond to voice commands.
 **Technical Tech Used:** Deep learning models (e.g., recurrent neural networks, transformers), natural language processing (NLP).
 **Examples:** Virtual assistants like Siri, Alexa, and Google Assistant use speech recognition to answer questions and perform tasks.
 
 #### 2. Image Recognition
+
 **Definition:** AI systems that can identify and classify objects within images or videos. Image recognition helps computers "see" and interpret visual information, such as detecting faces or diagnosing medical images.
 **Technical Tech Used:** Convolutional neural networks (CNNs), computer vision algorithms.
 **Examples:** Medical imaging for disease detection, security systems for facial recognition, photo tagging in social media.
 
 #### 3. Language Translation
+
 **Definition:** AI systems that automatically translate text or speech from one language to another. Language translation allows people to communicate across different languages using computers.
 **Technical Tech Used:** Neural machine translation (NMT), transformer models (e.g., Google’s BERT, OpenAI’s GPT).
 **Examples:** Google Translate, Microsoft Translator, real-time translation in messaging apps.
 
 #### 4. Autonomous Vehicles
+
 **Definition:** AI-powered vehicles that can navigate and operate without human intervention. Autonomous vehicles use sensors, cameras, and AI to perceive their environment and make driving decisions.
 **Technical Tech Used:** Computer vision, sensor fusion, reinforcement learning, deep neural networks.
 **Examples:** Self-driving cars (Tesla Autopilot, Waymo), delivery robots, drones.
 
 #### 5. Recommendation Systems
+
 **Definition:** AI systems that suggest products, content, or services based on user preferences. Recommendation systems analyze user behavior and data to provide personalized suggestions.
 **Technical Tech Used:** Collaborative filtering, content-based filtering, deep learning, matrix factorization.
 **Examples:** Netflix movie recommendations, Amazon product suggestions, Spotify playlists.
 
 #### 6. Healthcare
+
 **Definition:** AI applications that assist in medical diagnosis, treatment planning, and drug discovery. AI helps doctors analyze medical data, predict diseases, and discover new medicines faster.
 **Technical Tech Used:** Machine learning, deep learning, computer vision, natural language processing.
 **Examples:** AI-based diagnostic tools (IBM Watson Health), drug discovery platforms, automated analysis of X-rays and MRIs.
 
 #### 7. Finance
+
 **Definition:** AI systems used for financial analysis, fraud detection, and automated trading. AI improves accuracy and speed in financial decision-making, detects suspicious activities, and optimizes trading strategies.
 **Technical Tech Used:** Machine learning algorithms, anomaly detection, predictive analytics.
 **Examples:** Fraud detection in banking, algorithmic trading platforms, credit scoring systems.
