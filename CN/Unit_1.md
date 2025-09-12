@@ -41,6 +41,8 @@ A data communication system has five main components:
 
 ### Characteristics of Data Communication
 
+**List out three fundamental characteristics that determines the effectiveness of the data communication system? (2021, Section A)**
+
 - **Accuracy:** Data should reach without errors
 - **Timeliness:** Data should arrive on time
 - **Delivery:** Data should reach the correct destination
