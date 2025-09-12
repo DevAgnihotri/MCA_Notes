@@ -1,4 +1,4 @@
 # .gitignore
 
 # Ignore prompts for conversion file
-prompts_for_conv
+prompts_for_conversion.md
