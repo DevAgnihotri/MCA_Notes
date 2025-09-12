@@ -1,0 +1,4 @@
+# .gitignore
+
+# Ignore prompts for conversion file
+prompts_for_conv
