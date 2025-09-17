@@ -1,44 +1,82 @@
-## **Topic-wise Question Organization**
+## 🗂️ Topic-wise Arrangement of Exam Questions
 
-### **Software Introduction & Characteristics**
-- **2020 SECTION B** - Q2(a) What is software? Explain characteristics of software.
-- **2021 SECTION A** - Q1(a) What are the characteristics of the software?
+### **Requirement Engineering**
 
-### **Introduction to Software Engineering**
-- **2023 SECTION A** - Q1(b) "Software is developed or engineered; it is not manufactured in classical sense". Explain.
-- **2024 SECTION B** - Q2(a) What is software engineering? Explain the layered approach to software engineering.
+- Define Function Requirement. *(2020, Sec A)*
+- What is Software Requirement Engineering? *(2021, Sec A)*
+- Describe 2 characteristics of SRS. *(2023, Sec A)*
+- Discuss the significance of requirement engineering. Also write the various steps with requirement engineering with proper explanation. *(2023, Sec C)*
+- What are the various steps in requirement engineering process? *(2024, Sec A)*
+- Differentiate between functional and non-functional requirements of software engineering. *(2024, Sec B)*
+- Explain the Software requirement Analysis and Specification. Discuss various methods for Requirement gathering.(2022, Sec C)
+- Explain the Requirement Elicitation and Analysis Process.(2022, Sec C)
+- Explain the process of 'Risk Analysis and Management.' *(2021, Sec B)*
 
-### **Software Crisis**
-- **2023 SECTION A** - Q1(a) List 2 reasons for software crisis.
+---
 
-### **Software Engineering vs Traditional/System Engineering**
-- **2020 SECTION C** - Q3(a) Differentiate between software engineering and traditional engineering.
-- **2022 SECTION C** - Q3(a) What are the major differences between System Engineering and Software Engineering?
+### **Information Modelling (DFD, ER Diagram, Structure Chart)**
 
-### **SDLC - Waterfall Model**
-- **2020 SECTION C** - Q3(b) Discuss the Waterfall Model with advantages and disadvantages.
-- **2021 SECTION B** - Q2(b) Write the advantages and disadvantages of classic waterfall life cycle model?
-- **2022 SECTION A** - Q1(a) Write two advantages of Waterfall model of Software life cycle.
-- **2022 SECTION C** - Q3(b) Explain Water fall Model. What are the problems that are sometimes encountered when the waterfall model is applied?
-- **2024 SECTION C** - Q3(a) What is waterfall model? Describe the activities of waterfall model and also mention its drawbacks.
+- What does data flow diagram level 0 represent? *(2020, Sec A)*
+- Draw Context level and Level-1 DFD for Attendance Monitoring System. *(2020, Sec B)*
+- Describe ER Diagram. *(2023, Sec A)*
+- Explain in detail about DFD and Structure Chart. (2022, sec B)
+- Describe structure chart. *(2023, Sec A)*
+- Draw a DFD for result preparation automation system of MCA Courses. *(2023, Sec B)*
+- What does Level 0 DFD represent? *(2024, Sec A)*
 
-### **SDLC - Prototype Model**
-- **2021 SECTION A** - Q1(b) What are the benefits of prototyping?
-- **2023 SECTION B** - Q2(a) Discuss the prototype model. What is the effect of designing a prototype on the overall cost of the software project?
+---
 
-### **SDLC - Spiral Model**
-- **2023 SECTION C** - Q3(a) What is Software development life cycle? Discuss the process for Spiral model.
+### **Feasibility Study**
 
-### **SDLC Models - General & Importance**
-- **2022 SECTION B** - Explain the need of Software life cycle models in Software Engineering.
-- **2024 SECTION C** - Q3(b) Explain the need of software life cycle models in Software Engineering.
+- Discuss the role of feasibility study in development of project. Explain any two types of feasibility study. *(2020, Sec C)*
+- What is feasibility study? What are the contents we should contain in the feasibility report? *(2023, Sec B)*
+- What are the important activities that are carried out during the feasibility study phase? *(2024, Sec C)*
 
-### **Evolutionary & Iterative Models**
-- **2023 SECTION C** - Q3(b) Current trends in Software Engineering are moving away from the waterfall model… Explain.
+---
 
-### **Software Reusability**
-- **2022 SECTION A** - What is reusability in Software Engineering?
+### **SQA, SEI-CMM, ISO**
 
-### **Software Quality & Testing**
-- **2024 SECTION A** - Q1(c) List the process maturity levels in SEIs CMM.
-- **2024 SECTION A** - Q1(e) What is Cyclomatic Complexity?
+- Explain the CMM with the help of diagram. Differentiate between ISO and CMM. *(2020, Sec C)*
+- Describe the levels of CMM. *(2021, Sec C)*
+- List the process maturity levels in SEI’s CMM. *(2024, Sec A)*
+- What is software quality assurance? What are the various quality concepts of SQA? Explain. *(2024, Sec C)*
+- Differentiate between Validation and Verification of a Software Product. *(2021, Sec C)*
+
+---
+
+# ✅ Final Year-Wise Coverage
+
+### **2020**
+
+* Function Requirement (SRS) – Sec A
+* DFD (Info Modelling) – Sec A, B
+* Feasibility Study – Sec C
+* CMM vs ISO – Sec C
+
+### **2021**
+
+* Requirement Engineering definition – Sec A
+* Verification & Validation – Sec C
+* SEI-CMM Levels – Sec C
+
+### **2023**
+
+* SRS Characteristics – Sec A
+* ER Diagram – Sec A
+* Feasibility Study – Sec B
+* DFD – Sec B
+* Requirement Engineering (steps) – Sec C
+* Requirement Elicitation (techniques) – Sec C
+
+### **2024**
+
+* Requirement Engineering Steps – Sec A
+* SEI-CMM Maturity Levels – Sec A
+* DFD Level 0 – Sec A
+* Functional vs Non-Functional Requirements – Sec B
+* Feasibility Study Phase – Sec C
+* Software Quality Assurance (concepts) – Sec C
+
+---
+
+Do you want me to **arrange these questions unit-wise under “Requirement Engineering” and “SQA” headings**, so your notes are directly structured into **Unit 1 & Unit 2 style** with exam questions mapped?
