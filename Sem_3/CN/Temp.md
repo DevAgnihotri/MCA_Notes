@@ -1,32 +1,43 @@
-### 🔹 **Grouped Questions by Topic**
+## 📚 Topic-wise Grouped Questions (Unit 2)
 
-#### **Applications & Components of Computer Networks**
-- What are the applications of computer network? (2019, Section A)
-- List out components of data communication system. (2023, Section A)
+### 🔸 Error Detection & Correction
 
-#### **Network Fundamentals & Classification**
-- What is Network? Explain different types of Networks. (2019, Section B)
-- Discuss network classification based on geographical scale. (2021, Section B)
+* What is cyclic code and explain Cyclic Redundancy Check (CRC) code? *(2019, Section B)*
+* A bit stream 10011101 is transmitted using the standard CRC method. The generator polynomial is x^3 + 1. Show the actual bit string transmitted. Suppose the third bit from the left is inverted during transmission. Show that this error is detected at the receiver’s end. *(2023, Section B)*
+* List out various error detection techniques? Discuss Hamming code with suitable example. *(2021, Section C)*
+* What do you mean error handling at data link layer? Discuss Hamming code with suitable example. *(2023, Section C)*
 
-#### **Network Topologies**
-- Explain various network topologies along with their relative advantages and disadvantages. (2021, Section C)
-- Discuss various computer network topologies with suitable diagrams. (2023, Section B)
+### 🔸 Flow & Error Control
 
-#### **Transmission Media**
-- What is transmission medium? What are the different types of transmission medium? (2019, Section C)
-- What are the criteria used to evaluate transmission medium? (2021, Section A)
-- Discuss various types of transmission media with their applications areas. (2023, Section C)
+* Discuss sliding window-based flow control techniques at data link layer. *(2021, Section C)*
+* Explain Selective Reject and Go-Back-N ARQ with reference to sliding window protocol. *(2023, Section C)*
+* What is the maximum window size for data transmission using the selective reject protocol with n-bit frame sequence numbers? *(2021, Section A)*
 
-#### **Layered Architecture & Reference Models**
-- What is need of layered architecture in ISO/OSI model. (2021, Section A)
-- Explain the TCP/IP reference model with neat diagram. (2019, Section B)
-- Discuss architecture and responsibilities of each layer in TCP/IP model. (2021, Section C)
-- Explain responsibilities each layer in ISO/OSI Model with suitable diagrams. (2023, Section C)
+### 🔸 Channel Allocation Protocols
 
-#### **Internetworking & Connecting Devices**
-- Describe internetworking connecting devices in reference to layers. (2019, Section C)
-- What is Gateway? (2019, Section A)
+* What do you mean by ALOHA? Consider a situation, where a large population of ALOHA users manages to generate 50 requests/sec, including both originals and retransmissions. Time is slotted in units of 40 msec.
+    - (a) What are the chances of success on the first attempt?
+    - (b) What is the probability of exactly k collisions and then a success?
+    - (c) What is the expected number of transmission attempts needed? *(2021, Section B)*
+* Discuss CSMA/CD. *(2023, Section A)*
+* Define controlled access and list three protocols in this category. *(2019, Section C)*
 
-#### **Data Communication System Characteristics**
-- List out three fundamental characteristics that determines the effectiveness of the data communication system? (2021, Section A)
+## ✅ Unit-2 Coverage Summary
 
+* **Error Detection & Correction**
+
+  * CRC → 2019-B(b)
+  * Hamming Code → 2021-C(4a), 2023-C(4b)
+  * General error detection techniques → 2021-C(4a)
+
+* **Flow & Error Control**
+
+  * Sliding Window → 2021-C(4b)
+  * Selective Reject & Go-Back-N ARQ → 2023-C(4a)
+  * Window size in Selective Reject ARQ → 2021-A(h)
+
+* **Channel Allocation Protocols**
+
+  * ALOHA → 2021-B(b)
+  * CSMA/CD → 2023-A(d)
+  * Controlled Access → 2019-C(5b)
