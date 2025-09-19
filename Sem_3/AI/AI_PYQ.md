@@ -1,62 +1,52 @@
-# Unit 1 
+## **Grouped Questions by Topic**
 
+### **Uninformed vs Informed Search**
+- Compare *uninformed and informed search methods* (2023, Section A)
+- Give the heuristic function for shortest path problem (2019, Section A)
+- Discuss *water jug problem with heuristic search techniques* (2024, Section C)
+- Explain the *A* Algorithm\* with steps till goal state (2022, Section C)
 
-### 2023–24 (KCA301) — **2024 paper**
+### **Local Search (Hill Climbing)**
+- What do you infer from *hill-climbing search algorithm*? (2019, Section A)
+- Differentiate between *simple hill climbing* and *steepest ascent hill climbing* (2022, Section A)
+- Explain Steepest-ascent climbing algo... and discuss problems with it (2018, Section B)
 
- **Section A**
-- What do you mean by AI?
-- What are the different branches of artificial intelligence?
-  **Section B**
-- Describe the applications of artificial intelligence.
-- Differentiate between human intelligence and machine intelligence.
-  **Section C**
-- Explain various approaches in NLP?
+### **Global Search**
+- Diff between Local Search and Global Search (2018, Section A)
 
----
+### **Adversarial Search (Min-Max, Alpha-Beta, Games)**
+- Apply the *minimax algorithm* to the search tree for nim game (2019, Section B)
+- Discuss *Min-Max search algorithm* with diagram (2023, Section C)
+- Describe *alpha-beta pruning* and other Min-Max improvements (2022, Section B)
+- Explain *Alpha-Beta pruning* with example (2024, Section C)
+- Explain the concept of the Alpha - bata testing pruning and write the alpha beta test algorith (2018, Section C)
+- Explain *Searching techniques used in games* (2024, Section B)
+- Briefly explain *adversarial search* (2023, Section A)
 
-### 2022–23 (KCA301) — **2023 paper**
+### **General Search Algorithms**
+- Implement the *Search Algorithms* in LISP/C. Comment suitability (2019, Section C)
+- Discuss use of *PROLOG* for search algorithms (2019, Section C)
+- Discuss branch bound search algo (2018, Section A)
+- Discuss constraint satisfaction search strategy via DFS, BFS, Best-first (2019, Section C)
+- Explain *Best-first search algorithm* with diagram (2023, Section B)
+- Discuss *searching process* (2024, Section A)
 
-  **Section A**
-- What is an intelligent agent?
-- State any two foundation areas of artificial intelligence.
-  **Section B**
-- Discuss various categories of AI tasks.
-  **Section C**
-- Discuss functioning of model-based intelligent agent with the help of a diagram.
-- Explain various steps involved in natural language processing.
+### **AND-OR Graphs**
+- Explain *AND-OR graph searching algorithm* (2023, Section C)
 
----
+### **Simulated Annealing**
+- Discuss Simulated Annealing seach algorthm with its advantages and disadvantages (2018, Section C)
 
-### 2021–22 (KCA301) — **2022 paper**
-
-  **Section A**
-- Define the terms – weak AI and strong AI.
-- What is natural language processing?
-  **Section B**
-- What is PEAS description of the task environment for ‘Internet shopping agent’.
-  **Section C**
-- Describe intelligent agents in terms of Percepts, Actions, Goals and Environment with suitable block diagram and example.
-- Differentiate between goal-based agent and utility-based intelligent agents with the help of block diagram.
-
----
-
-### 2018–19 (RCA403) — **2019 paper**
-
-  **Section A**
-- Name the elements of an agent.
-- Summarize the factors that make up rationality. _(rational agent)_
-  **Section C**
-- Describe a rational agent function for a modified performance measure … Does the corresponding agent program require internal state?
-- Discuss possible agent designs for the cases in which clean squares can become dirty and the geography of the environment is unknown. Does it make sense for the agent to learn?
+### **State Space Search**
+- Explain *forward and backward state space search* (2019, Section C)
 
 ---
 
-### 2017–18 — **2018 paper**
-
-  **Section A**
-- What do you mean by the term AI? How is it different from Natural intelligence?
-  **Section B**
-- What is an intelligent agent? Discuss its two types.
-  **Section C**
-- Discuss historical development of agent.
-- Discuss and give examples of agent related PEAS description of the task environment.
+✅ **Summary of Coverage:**
+- **Uninformed Search** → 2023 (Section A – compare uninformed vs informed).
+- **Informed Search (Heuristic, A*)*\* → 2019 (heuristic), 2022 (A\*), 2024 (heuristic search water jug).
+- **Local Search (Hill Climbing)** → 2019 (hill climbing), 2022 (simple vs steepest hill climbing).
+- **Adversarial Search (Min-Max, Alpha-Beta)** → 2019 (nim game minimax), 2022 (alpha-beta), 2023 (min-max), 2024 (alpha-beta).
+- **Search in Games** → 2019 (minimax nim), 2024 (games search).
+- **AND-OR Graphs** → 2023 (Section C).
+- **General Search Algorithms** → 2019 (implementations), 2023 (best-first), 2024 (search process).
