@@ -340,6 +340,58 @@ The Open Systems Interconnection (OSI) model has 7 layers. Each layer performs s
 - **Examples:** Cables, hubs, repeaters
 - **Simple meaning:** The actual wires and signals that carry data
 
+**7 LAYERS AGAIN**
+
+**Layer 7: Application Layer**  
+This layer is closest to the end user and provides network services directly to applications. It enables user interaction with the network, such as web browsing or email.
+
+- Provides user interfaces and network services  
+- Examples: HTTP, FTP, SMTP
+
+**Layer 6: Presentation Layer**  
+Responsible for data translation, encryption, and compression. It ensures that data sent from the application layer of one system can be read by the application layer of another.
+
+- Translates data formats  
+- Handles encryption and compression  
+- Examples: SSL, JPEG
+
+**Layer 5: Session Layer**  
+Manages sessions between applications. It establishes, maintains, and terminates connections, ensuring data exchange is organized.
+
+- Controls dialog between devices  
+- Manages session setup and teardown  
+- Examples: SQL, RPC
+
+**Layer 4: Transport Layer**  
+Ensures reliable data transfer between devices. It handles error correction, flow control, and segmentation of data.
+
+- Provides reliable or unreliable delivery  
+- Manages error detection and recovery  
+- Examples: TCP, UDP
+
+**Layer 3: Network Layer**  
+Handles routing of data across networks. It determines the best path for data to travel from source to destination.
+
+- Manages logical addressing and routing  
+- Handles packet forwarding  
+- Examples: IP
+
+**Layer 2: Data Link Layer**  
+Responsible for node-to-node data transfer. It packages data into frames and handles error detection and MAC addressing.
+
+- Provides local delivery between devices  
+- Handles framing and error detection  
+- Examples: Ethernet, Switch
+
+**Layer 1: Physical Layer**  
+Deals with the physical connection between devices. It transmits raw bits over cables, connectors, and other hardware.
+
+- Transmits electrical or optical signals  
+- Defines hardware specifications  
+- Examples: Cables, Hubs, Repeaters
+
+
+
 | Layer | Name         | Function              | Device                | Protocol        |
 | ----- | ------------ | --------------------- | --------------------- | --------------- |
 | 7     | Application  | User interface        | Computer applications | HTTP, FTP       |
