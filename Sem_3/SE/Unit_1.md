@@ -62,15 +62,33 @@ Unlike physical products (like cars or phones), software is not made by assembli
 **2024 SECTION B Q2(a): What is software engineering? Explain the layered approach to software engineering.**
 
 **Answer:**
-Software engineering is the systematic (organized) application of engineering approaches to the development, operation, and maintenance of software. It is a discipline that applies engineering principles to design, develop, test, and maintain software systems. The goal is to produce high-quality software that is reliable, efficient, and meets user requirements.
+
+Software engineering is the process of designing, building, and maintaining computer programs.
+It uses rules and methods to make sure software works well.
+The goal is to create reliable, easy-to-use programs.
+It combines coding, planning, and problem-solving.
 
 **Layered Approach to Software Engineering:**
 Software engineering uses a layered approach, which means it is organized into different levels or layers:
 
-1. **Quality Focus:** The foundation; all activities aim for high quality.
-2. **Process Layer:** Defines the steps and methods to develop software (like planning, designing, testing).
-3. **Methods Layer:** Provides technical methods for tasks (like coding, modeling, analysis).
-4. **Tools Layer:** Software tools that help automate and support the process and methods (like IDEs, testing tools).
+1. **Quality Focus:**
+
+- Every organization rest on its commitment to quality.
+- There are many Quality attributes of software(Correctness, Usability, Integrity, Maintainability
+  etc.)
+
+2. **Process Layer:**
+
+- It defines a framework that includes different activities and tasks.
+- In short, it covers all activities, actions and tasks required to be carried out for software development
+
+3. **Methods Layer:** Provides technical methods for tasks (like coding, modeling, analysis).  
+   Methods are like instructions or techniques for doing each task.  
+   They help developers solve problems and build software correctly.
+
+4. **Tools Layer:** Software tools that help automate and support the process and methods (like IDEs, testing tools).  
+   Tools make work faster and easier by handling repetitive tasks.  
+   Examples include code editors, testing programs, and project management software.
 
 ## Software Engineering Processes
 
@@ -134,7 +152,6 @@ Software quality attributes are the features or properties that determine how go
 
 ---
 
-
 ## Software Development Life Cycle (SDLC)
 
 **What is SDLC?**
@@ -156,12 +173,14 @@ SDLC stands for Software Development Life Cycle. It is a step-by-step process th
 **What it means:** Understanding what the customer wants and planning the project.
 
 **Activities:**
+
 - Talk to customers to understand their needs
 - Write down all requirements clearly
 - Study if the project is possible (feasibility study)
 - Plan budget, time, and resources needed
 
 **Example:** A school wants software to manage student records. In this step, we ask questions like:
+
 - What information about students do you want to store?
 - Who will use this software?
 - How many students will it handle?
@@ -172,12 +191,14 @@ SDLC stands for Software Development Life Cycle. It is a step-by-step process th
 **What it means:** Planning how the software will work and look.
 
 **Activities:**
+
 - Create the software architecture (overall structure)
 - Design user interfaces (screens that users will see)
 - Plan the database (where data will be stored)
 - Decide what technology to use
 
 **Example:** For the school software, we design:
+
 - Login screen for teachers and admin
 - Student registration form
 - Report generation screens
@@ -188,12 +209,14 @@ SDLC stands for Software Development Life Cycle. It is a step-by-step process th
 **What it means:** Actually writing the computer code to build the software.
 
 **Activities:**
+
 - Write code in programming languages (like Java, Python, etc.)
 - Create database structures
 - Build user interfaces
 - Connect different parts of the software
 
 **Example:** Programmers write code to:
+
 - Create login functionality
 - Build forms to add new students
 - Program report generation features
@@ -204,12 +227,14 @@ SDLC stands for Software Development Life Cycle. It is a step-by-step process th
 **What it means:** Checking if the software works correctly and finding errors (bugs).
 
 **Activities:**
+
 - Test individual parts (unit testing)
 - Test how parts work together (integration testing)
 - Test the complete system (system testing)
 - Let users test it (user acceptance testing)
 
 **Example:** For school software, test:
+
 - Can users login correctly?
 - Does student registration work?
 - Are reports generated properly?
@@ -220,12 +245,14 @@ SDLC stands for Software Development Life Cycle. It is a step-by-step process th
 **What it means:** Installing the software where it will be used.
 
 **Activities:**
+
 - Install software on user computers/servers
 - Set up databases
 - Train users how to use the software
 - Provide user manuals
 
-**Example:** 
+**Example:**
+
 - Install the school software on school computers
 - Train teachers and office staff
 - Provide help documentation
@@ -235,12 +262,14 @@ SDLC stands for Software Development Life Cycle. It is a step-by-step process th
 **What it means:** Keeping the software working and improving it over time.
 
 **Activities:**
+
 - Fix bugs found after deployment
 - Add new features as requested
 - Update software for security
 - Provide technical support
 
-**Example:** 
+**Example:**
+
 - Fix any problems teachers report
 - Add new features like parent login
 - Update for new academic year requirements
@@ -285,6 +314,7 @@ SDLC (Software Development Life Cycle) models are important because they provide
 ### Waterfall Model
 
 **PYQ**
+
 - **2020 SECTION C** - Discuss the Waterfall Model with advantages and disadvantages.
 - **2021 SECTION B** - Write the advantages and disadvantages of classic waterfall life cycle model?
 - **2022 SECTION A** - Write two advantages of Waterfall model of Software life cycle.
@@ -301,26 +331,31 @@ The Waterfall Model is easy to understand and manage, but it is not flexible if 
 
 **Steps in Waterfall Model:**
 
-1. **Requirement Analysis:**  
-    - Find out what the user wants.
-    - Write down all requirements.
+1. **Requirement Analysis:**
 
-2. **System Design:**  
-    - Plan how the software will work.
-    - Decide what parts are needed.
+   - Find out what the user wants.
+   - Write down all requirements.
 
-3. **Implementation (Coding):**  
-    - Write the code for the software.
+2. **System Design:**
 
-4. **Testing:**  
-    - Check for mistakes (bugs).
-    - Make sure everything works.
+   - Plan how the software will work.
+   - Decide what parts are needed.
 
-5. **Deployment:**  
-    - Give the software to users.
+3. **Implementation (Coding):**
 
-6. **Maintenance:**  
-    - Fix problems and update the software.
+   - Write the code for the software.
+
+4. **Testing:**
+
+   - Check for mistakes (bugs).
+   - Make sure everything works.
+
+5. **Deployment:**
+
+   - Give the software to users.
+
+6. **Maintenance:**
+   - Fix problems and update the software.
 
 **Advantages:**
 
@@ -336,7 +371,8 @@ The Waterfall Model is easy to understand and manage, but it is not flexible if 
 - Mistakes may be found late (during testing).
 - Users see the software only at the end.
 
-**Code space for image:**  
+**Code space for image:**
+
 ```
 ![Waterfall Model Diagram](https://media.geeksforgeeks.org/wp-content/uploads/20231030183557/waterfall.jpg)
 ```
@@ -346,6 +382,7 @@ The Waterfall Model is easy to understand and manage, but it is not flexible if 
 ### Prototype Model
 
 **PYQ**
+
 - **2021 SECTION A** - What are the benefits of prototyping?
 - **2023 SECTION B** - Discuss the prototype model. What is the effect of designing a prototype on the overall cost of the software project?
 
@@ -373,7 +410,8 @@ This model is helpful when it is hard to know exactly what users want at the beg
 - Making a prototype costs more at first.
 - But it saves money later by avoiding big changes and mistakes.
 
-**Code space for image:**  
+**Code space for image:**
+
 ```
 ![Prototype Model Diagram](https://i.ytimg.com/vi/fWEZFH8lwag/maxresdefault.jpg)
 ```
@@ -390,20 +428,24 @@ The Spiral Model mixes the Waterfall and Prototype models. It repeats steps in c
 
 **Steps in Spiral Model:**
 
-1. **Communication:**  
-    - Interact with users to gather requirements and understand their needs.
+1. **Communication:**
 
-2. **Planning:**  
-    - Define objectives, identify risks, and plan the next phase.
+   - Interact with users to gather requirements and understand their needs.
 
-3. **Modeling:**  
-    - Design and outline how the software will function.
+2. **Planning:**
 
-4. **Construction:**  
-    - Build and test the software incrementally.
+   - Define objectives, identify risks, and plan the next phase.
 
-5. **Deployment:**  
-    - Deliver the software to users, collect feedback, and prepare for the next cycle.
+3. **Modeling:**
+
+   - Design and outline how the software will function.
+
+4. **Construction:**
+
+   - Build and test the software incrementally.
+
+5. **Deployment:**
+   - Deliver the software to users, collect feedback, and prepare for the next cycle.
 
 - These steps repeat, making the software better each time.
 
@@ -413,7 +455,8 @@ The Spiral Model mixes the Waterfall and Prototype models. It repeats steps in c
 - Finds and fixes problems early.
 - Allows changes and feedback during development.
 
-**Code space for image:**  
+**Code space for image:**
+
 ```
 ![Spiral Model Diagram](https://www.gtu-paper-solution.com/upload/2160701/W2016/Q2B_OR.png)
 ```
@@ -432,11 +475,12 @@ Current trends in Software Engineering favor evolutionary and iterative models o
 **Definition:**  
 These models build software in small steps. Each step adds new features or improves the software. Users can give feedback after each step.
 
-- **Evolutionary Model:**  
+- **Evolutionary Model:**
+
   - Software grows in stages.
   - Each stage adds new parts.
 
-- **Iterative Enhancement Model:**  
+- **Iterative Enhancement Model:**
   - Software is improved again and again.
   - Each cycle adds changes based on feedback.
 
@@ -447,9 +491,17 @@ These models build software in small steps. Each step adds new features or impro
 - Mistakes and changes are fixed fast.
 - Examples: Agile and Scrum methods.
 
-**Code space for image:**  
+**Code space for image:**
+
 ```
 ![Evolutionary](https://d8it4huxumps7.cloudfront.net/uploads/images/652f8424328d0_4.jpg?d=2000x2000)
 ```
-[Iterative Model Diagram](https://codilime.com/img/sdlc-iterative-model-.png)
----
+
+## [Iterative Model Diagram](https://codilime.com/img/sdlc-iterative-model-.png)
+
+### V-Model
+
+- The major drawback of waterfall model is we move to the next stage only when the previous one is finished and there was no chance to go back if something is found wrong in later stages.
+- V-Model provides means of testing of software at each stage in reverse manner.
+- At every stage, test plans and test cases are created to verify and validate the product according to the requirement of that stage.
+- This makes both verification and validation go in parallel. This model is also known as verification and validation model.
