@@ -243,25 +243,31 @@
 
 1. **Initial (Level 1):**
      - Processes are unpredictable, poorly controlled, and reactive.
-     - Success depends on individual effort, not on established procedures.
-     - Projects often exceed budget and schedule.
+     - Very few or no processes are defined and followed.
+     - Since software production processes are not defined, different engineers follow their own process and as a result development efforts become chaotic
+     - The success of projects depends on individual efforts. 
 
 2. **Repeatable (Level 2):**
-     - Basic project management processes are established.
+     - At this level, the basic project management practices such as tracking cost and schedule are established.
      - Past successes can be repeated on similar projects.
      - Planning and tracking are introduced.
 
 3. **Defined (Level 3):**
+     - At this level the processes for both management and development activities are defined and documented.
      - Processes are documented, standardized, and integrated into a standard process for the organization.
      - All projects use approved, tailored versions of these processes.
 
 4. **Managed (Level 4):**
      - Processes are measured and controlled using quantitative metrics.
      - Detailed understanding of process performance is achieved.
+     - **Two types of metrics are collected:**
+      - **Product Metrics:** Measure characteristics of the product being developed, such as size, reliability, time complexity, and understandability.
+      - **Process Metrics:** Reflect the effectiveness of the process being used, such as average defect correction time, productivity, average number of defects found per hour of inspection, and average number of failures detected during testing per lines of code (LOC).
 
 5. **Optimizing (Level 5):**
      - Focus on continuous process improvement.
      - Innovative ideas and technologies are adopted to improve processes.
+     - Such an organization organization identifies identifies the bestsoftware engineering practices andinnovations which may be tools, methods, or processes
 
 ---
 
