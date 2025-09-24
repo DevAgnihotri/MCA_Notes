@@ -62,7 +62,7 @@
 
 ---
 
-## Feasibility Study
+## Feasibility Study (STOLE)
 
 **2020, Sec C: Role of Feasibility Study & Two Types**
 **2023, Sec B: What is feasibility study? Contents of feasibility report**
@@ -199,6 +199,7 @@
 ## SRS Document & IEEE Standards for SRS
 
 - **Software Requirements Specification (SRS):**
+  - SRS is a document that completely describeswhat the proposed s/w should do without describing how the software will do it.
   - An SRS is a detailed document that lists all the requirements for a software system. It helps developers know what to build and users know what to expect.
   - A good SRS is clear, complete, and easy to understand. It includes sections like Introduction, Overall Description, Specific Requirements, and Appendices.
 - **IEEE Standards for SRS:**
