@@ -128,7 +128,7 @@ Major differences:
 - Software can be distributed instantly (like downloads), but physical products need shipping.
 - Errors in software can be fixed quickly; physical errors may need expensive repairs.
 
-## Software Quality Attributes
+## Software Quality Attributes (PERMS)
 
 **Definition:**
 Software quality attributes are the features or properties that determine how good software is. These attributes help measure the performance, reliability, and usability of software.
@@ -379,7 +379,7 @@ The Waterfall Model is easy to understand and manage, but it is not flexible if 
 
 ---
 
-### Prototype Model
+### Prototype Model (CP M CD)
 
 **PYQ**
 
