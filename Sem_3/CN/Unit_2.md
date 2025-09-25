@@ -45,6 +45,9 @@
   - **Cyclic Code:** This means that if you move the bits of a code word in a circle (cyclic shift), you still get a valid code word. CRC uses this idea to make error checking stronger.
 
   - **Example (2023, Section B):**
+
+    - [https://www.youtube.com/watch?v=UhMqF0e6Ueg]
+
     - Suppose you want to send the bit stream: 10011101.
     - The generator polynomial is x^3 + 1, which is written as 1001 in binary.
     - Steps:
@@ -54,6 +57,8 @@
       4. If any bit changes during transmission, the receiver will divide the received bits by 1001. If the remainder is not zero, it means there was an error in the data.
 
 - **Hamming Code:**
+
+  - [https://www.youtube.com/watch?v=KoK6APJ7_LI]
 
   - Hamming code is a method used to find and fix errors in data. It does not just detect errors, it can also correct them.
   - It works by adding extra bits to the data. These extra bits are called parity bits. They help check if the data is correct.
