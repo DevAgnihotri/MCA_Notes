@@ -24,7 +24,7 @@
 
 ## Modules and Packages - Overview
 
-- Definition: A module is a single Python file (.py) that contains definitions (functions, classes, variables). A package is a collection of modules organized in folders and may include an `__init__.py` file.
+- Definition: A module is a single Python file (.py) that contains definitions (functions, classes, variables), and can be imported using the `import` keyword and reused. A package is a collection of modules organized in folders and may include an `__init__.py` file.
 - Why use them: Reuse code, organize large projects, avoid name collisions, and make testing easier.
 
 Key ideas:
@@ -36,7 +36,7 @@ Key ideas:
 
 # User-defined Modules
 
-Simple definition: A user-defined module is any `.py` file you create to hold functions, classes, or constants you want to reuse.
+Simple definition: A user-defined module is any `.py` file we create to hold functions, classes, or constants we want to reuse.
 
 ### Create a module
 
