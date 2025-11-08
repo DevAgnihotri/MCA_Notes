@@ -24,7 +24,7 @@
 
 ## Modules and Packages - Overview
 
-- Definition: A module is a single Python file (.py) that contains definitions (functions, classes, variables), and can be imported using the `import` keyword and reused. A package is a collection of modules organized in folders and may include an `__init__.py` file.
+- Definition: A module is a single Python file (.py) that contains definitions (functions, classes, variables), and can be imported using the `import` keyword to be reused. A package is a collection of modules organized in folders and may include an `__init__.py` file.
 - Why use them: Reuse code, organize large projects, avoid name collisions, and make testing easier.
 
 Key ideas:
@@ -177,21 +177,21 @@ Key points:
 
 ### Useful items in the string module — quick table
 
-| Item                                  | What it is                                       | Example / usage                                                                 |
-| ------------------------------------- | ------------------------------------------------ | ------------------------------------------------------------------------------- | --- |
-| string.ascii_letters                  | All ASCII letters (lower+upper)                  | `string.ascii_letters` → "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ" |
-| string.ascii_lowercase                | Lowercase ASCII letters                          | `string.ascii_lowercase` → "abcdefghijklmnopqrstuvwxyz"                         |
-| string.ascii_uppercase                | Uppercase ASCII letters                          | `string.ascii_uppercase` → "ABCDEFGHIJKLMNOPQRSTUVWXYZ"                         |
-| string.digits                         | Decimal digits                                   | `string.digits` → "0123456789"                                                  |
-| string.hexdigits                      | Hexadecimal digits                               | `string.hexdigits` → "0123456789abcdefABCDEF"                                   |
-| string.octdigits                      | Octal digits                                     | `string.octdigits` → "01234567"                                                 |
-| string.punctuation                    | Punctuation characters                           | `string.punctuation` → "!\"#$%&'()\*+,-./:;<=>?@[\\]^\_`{                       | }~" |
-| string.printable                      | All printable chars                              | `string.printable`                                                              |
-| string.whitespace                     | Whitespace chars                                 | `string.whitespace` → `'\t\n\x0b\x0c\r '`                                       |
-| string.Template                       | Simple $-based templates for substitution        | `Template('Hi, $name').substitute(name='Ravi')`                                 |
-| Template.substitute / safe_substitute | Substitute placeholders (safe avoids KeyError)   | `t.safe_substitute(name='Ravi')`                                                |
-| string.capwords(s[, sep])             | Split on whitespace, capitalize words, rejoin    | `string.capwords('hello world')` → "Hello World"                                |
-| string.Formatter                      | Advanced/custom formatting (parse/format fields) | `Formatter().format('{:.2f}', 3.14159)` → "3.14"                                |
+| Item                                  | What it is                                       | Example / usage                                             |
+| ------------------------------------- | ------------------------------------------------ | ----------------------------------------------------------- |
+| string.ascii_letters                  | All ASCII letters (lower+upper)                  | `string.ascii_letters` → "abcdefghijklmnopqrstuvwxyzA-to-Z" |
+| string.ascii_lowercase                | Lowercase ASCII letters                          | `string.ascii_lowercase` → "abcdefghijklmnopqrstuvwxyz"     |
+| string.ascii_uppercase                | Uppercase ASCII letters                          | `string.ascii_uppercase` → "ABCDEFGHIJKLMNOPQRSTUVWXYZ"     |
+| string.digits                         | Decimal digits                                   | `string.digits` → "0123456789"                              |
+| string.hexdigits                      | Hexadecimal digits                               | `string.hexdigits` → "0123456789abcdefABCDEF"               |
+| string.octdigits                      | Octal digits                                     | `string.octdigits` → "01234567"                             |
+| string.punctuation                    | Punctuation characters                           | `string.punctuation` → "!\"#$%&'()\*+,-./:;<=>?@[\\]^\_`{}  |
+| string.printable                      | All printable chars                              | `string.printable`                                          |
+| string.whitespace                     | Whitespace chars                                 | `string.whitespace` → `'\t\n\x0b\x0c\r '`                   |
+| string.Template                       | Simple $-based templates for substitution        | `Template('Hi, $name').substitute(name='Ravi')`             |
+| Template.substitute / safe_substitute | Substitute placeholders (safe avoids KeyError)   | `t.safe_substitute(name='Ravi')`                            |
+| string.capwords(s[, sep])             | Split on whitespace, capitalize words, rejoin    | `string.capwords('hello world')` → "Hello World"            |
+| string.Formatter                      | Advanced/custom formatting (parse/format fields) | `Formatter().format('{:.2f}', 3.14159)` → "3.14"            |
 
 Examples (copy-paste):
 
@@ -275,8 +275,8 @@ Key points:
 
 - Not in the standard library; a very common third-party package for numerical computing and arrays.
 - Core type: `numpy.ndarray` — fast, fixed-type arrays with vectorized operations.
-- Install via `pip install numpy`.
-
+ 
+ 
 ### Common NumPy functions — syntax and use
 
 | Function / Topic             |                                                         Syntax | Use / Example                                         |
