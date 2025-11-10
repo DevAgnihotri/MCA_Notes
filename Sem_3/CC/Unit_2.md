@@ -11,7 +11,9 @@
 - [Security as a Service (SECaaS)](#security-as-a-service-secaas)
 - [Quick comparison table](#quick-comparison-table)
 
-
+- [Service Providers](#service-providers)
+  - [Amazon Web services (AWS)](#amazon-web-services-aws)
+  - [Salesforce](#salesforce)
 
 ---
 
@@ -19,9 +21,9 @@
 
 # Types of Cloud Services
 
-* **2018 (NMCAE24) - Section C, Q5:** *Write short notes on the following – (i) IaaS (ii) SaaS (iii) PaaS (iv) DaaS (v) MaaS.*
+- **2018 (NMCAE24) - Section C, Q5:** _Write short notes on the following – (i) IaaS (ii) SaaS (iii) PaaS (iv) DaaS (v) MaaS._
 
-* **2023 (KCA014) - Section B, (b):** *Explain MaaS, DaaS, and CaaS in detail.*
+- **2023 (KCA014) - Section B, (b):** _Explain MaaS, DaaS, and CaaS in detail._
 
 ## IaaS (Infrastructure as a Service)
 
@@ -44,32 +46,32 @@ IaaS mainly includes the following components:
 
 1. **Compute (Virtual Machines)**
 
-   * These are virtual servers that provide the power to run applications.
-   * We can increase or decrease the number of virtual machines as needed.
+   - These are virtual servers that provide the power to run applications.
+   - We can increase or decrease the number of virtual machines as needed.
 
 2. **Storage**
 
-   * Data is stored in cloud-based storage systems.
-   * It can be block storage, file storage, or object storage.
-   * It ensures our data is available anytime and safely backed up.
+   - Data is stored in cloud-based storage systems.
+   - It can be block storage, file storage, or object storage.
+   - It ensures our data is available anytime and safely backed up.
 
 3. **Networking**
 
-   * Provides virtual networks, IP addresses, and load balancers.
-   * Helps connect our virtual machines and applications securely.
+   - Provides virtual networks, IP addresses, and load balancers.
+   - Helps connect our virtual machines and applications securely.
 
 4. **Operating Systems**
 
-   * We can install and manage our own operating systems like Windows or Linux on virtual machines.
+   - We can install and manage our own operating systems like Windows or Linux on virtual machines.
 
 5. **Security and Monitoring Tools**
 
-   * Protect data and systems from attacks.
-   * Provide tools to monitor performance, logs, and network traffic.
+   - Protect data and systems from attacks.
+   - Provide tools to monitor performance, logs, and network traffic.
 
 6. **Data Centers**
 
-   * The physical infrastructure (servers and storage) is hosted in the provider’s secure data centers.
+   - The physical infrastructure (servers and storage) is hosted in the provider’s secure data centers.
 
 ---
 
@@ -77,60 +79,59 @@ IaaS mainly includes the following components:
 
 1. **Cost-Effective**
 
-   * We do not need to buy expensive physical servers or equipment.
-   * We only pay for the resources we actually use, which saves a lot of money.
+   - We do not need to buy expensive physical servers or equipment.
+   - We only pay for the resources we actually use, which saves a lot of money.
 
 2. **Scalability**
 
-   * We can easily increase or decrease computing resources depending on our needs.
-   * This makes it perfect for growing or changing businesses.
+   - We can easily increase or decrease computing resources depending on our needs.
+   - This makes it perfect for growing or changing businesses.
 
 3. **Flexibility**
 
-   * We can choose the operating system, storage type, and software we want.
-   * It gives us full control over how our system is set up.
+   - We can choose the operating system, storage type, and software we want.
+   - It gives us full control over how our system is set up.
 
 4. **Quick Deployment**
 
-   * New servers and virtual machines can be created in minutes.
-   * This helps us start projects faster and meet deadlines easily.
+   - New servers and virtual machines can be created in minutes.
+   - This helps us start projects faster and meet deadlines easily.
 
 5. **Reliability**
 
-   * Data is stored across many secure data centers.
-   * Even if one system fails, another one keeps our applications running smoothly.
+   - Data is stored across many secure data centers.
+   - Even if one system fails, another one keeps our applications running smoothly.
 
 6. **Improved Security**
 
-   * IaaS providers offer built-in security tools like firewalls, data encryption, and access control.
-   * This helps protect our data and applications from attacks.
+   - IaaS providers offer built-in security tools like firewalls, data encryption, and access control.
+   - This helps protect our data and applications from attacks.
 
 7. **Automatic Updates and Maintenance**
 
-   * The cloud provider manages hardware and network maintenance.
-   * We don’t have to worry about updating or repairing physical machines.
+   - The cloud provider manages hardware and network maintenance.
+   - We don’t have to worry about updating or repairing physical machines.
 
 8. **Access from Anywhere**
 
-   * Since everything runs on the internet, we can access our systems from any location using any device.
+   - Since everything runs on the internet, we can access our systems from any location using any device.
 
 9. **Supports Innovation**
 
-   * Developers can test and launch new applications quickly without worrying about hardware setup.
-   * This encourages faster innovation and creativity.
+   - Developers can test and launch new applications quickly without worrying about hardware setup.
+   - This encourages faster innovation and creativity.
 
 10. **Business Continuity and Backup**
 
-* IaaS platforms offer disaster recovery and data backup options.
-* This ensures that our data and applications remain safe even during technical failures or natural disasters.
-
+- IaaS platforms offer disaster recovery and data backup options.
+- This ensures that our data and applications remain safe even during technical failures or natural disasters.
 
 #### **4. Examples of IaaS Providers**
 
-* **Amazon Web Services (AWS)**
-* **Microsoft Azure**
-* **Google Cloud Platform (GCP)**
-* **IBM Cloud**
+- **Amazon Web Services (AWS)**
+- **Microsoft Azure**
+- **Google Cloud Platform (GCP)**
+- **IBM Cloud**
 
 ---
 
@@ -149,29 +150,29 @@ The service provider hosts and maintains the software, updates it, and takes car
 
 #### **Examples:**
 
-* Gmail
-* Google Docs
-* Microsoft 365
-* Zoom
-* Salesforce
+- Gmail
+- Google Docs
+- Microsoft 365
+- Zoom
+- Salesforce
 
 ---
 
 ### **2. Major Categories of SaaS**
 
-* **2021 (NMCAE24) - Section A, (a):** *What are the two major categories of SaaS?*
+- **2021 (NMCAE24) - Section A, (a):** _What are the two major categories of SaaS?_
 
 There are mainly **two major categories** of SaaS:
 
 #### **(i) Vertical SaaS**
 
-* These are applications made for a **specific industry** or **business area**.
-* They meet the **unique needs** of that field.
-* Example:
+- These are applications made for a **specific industry** or **business area**.
+- They meet the **unique needs** of that field.
+- Example:
 
-  * *Healthcare SaaS*: Electronic Health Record (EHR) systems
-  * *Education SaaS*: Google Classroom
-  * *Retail SaaS*: Shopify
+  - _Healthcare SaaS_: Electronic Health Record (EHR) systems
+  - _Education SaaS_: Google Classroom
+  - _Retail SaaS_: Shopify
 
 **In simple terms:**
 
@@ -181,13 +182,13 @@ There are mainly **two major categories** of SaaS:
 
 #### **(ii) Horizontal SaaS**
 
-* These are **general-purpose applications** used by many types of businesses.
-* They are not limited to one industry.
-* Example:
+- These are **general-purpose applications** used by many types of businesses.
+- They are not limited to one industry.
+- Example:
 
-  * *Google Workspace* (used in schools, offices, and startups)
-  * *Dropbox*
-  * *Slack*
+  - _Google Workspace_ (used in schools, offices, and startups)
+  - _Dropbox_
+  - _Slack_
 
 **In simple terms:**
 
@@ -197,77 +198,76 @@ There are mainly **two major categories** of SaaS:
 
 ### **3. Limitations of SaaS**
 
-* **2021 (NMCAE24) - Section A, (c):** *Give the limitation of SaaS?*
+- **2021 (NMCAE24) - Section A, (c):** _Give the limitation of SaaS?_
 
 Even though SaaS is very popular, it has some **limitations** we should know about:
 
 1. **Less Control**
 
-   * We cannot change or customize the software deeply.
-   * The provider controls most of the features and updates.
+   - We cannot change or customize the software deeply.
+   - The provider controls most of the features and updates.
 
 2. **Internet Dependency**
 
-   * SaaS needs a stable internet connection.
-   * If the internet is down, we cannot access the service.
+   - SaaS needs a stable internet connection.
+   - If the internet is down, we cannot access the service.
 
 3. **Limited Customization**
 
-   * We can change only a few settings like themes or layouts.
-   * Advanced customization may not be possible.
+   - We can change only a few settings like themes or layouts.
+   - Advanced customization may not be possible.
 
 4. **Data Security and Privacy Issues**
 
-   * Our data is stored on the provider’s servers.
-   * If their system is attacked, our data may be at risk.
+   - Our data is stored on the provider’s servers.
+   - If their system is attacked, our data may be at risk.
 
 5. **Integration Problems**
 
-   * Sometimes SaaS apps may not connect properly with older or local systems.
+   - Sometimes SaaS apps may not connect properly with older or local systems.
 
 6. **Downtime or Service Outages**
 
-   * If the provider faces downtime, we can’t use the software until it’s fixed.
+   - If the provider faces downtime, we can’t use the software until it’s fixed.
 
 7. **Hidden Costs**
 
-   * Some SaaS tools charge extra for storage, users, or advanced features.
+   - Some SaaS tools charge extra for storage, users, or advanced features.
 
 ---
 
 ### **4. Main Security Challenges in SaaS**
 
-* **2022 (KCA014) - Section A, (i):** *Describe main security challenges in SaaS.*
-
+- **2022 (KCA014) - Section A, (i):** _Describe main security challenges in SaaS._
 
 Security is a **big concern** in SaaS because everything is online.
 Here are some of the major challenges:
 
 1. **Data Breaches**
 
-   * Hackers may try to steal sensitive user data stored in the cloud.
+   - Hackers may try to steal sensitive user data stored in the cloud.
 
 2. **Data Loss**
 
-   * If the provider faces a technical failure or cyberattack, data can be lost.
+   - If the provider faces a technical failure or cyberattack, data can be lost.
 
 3. **Unauthorized Access**
 
-   * Weak passwords or stolen login details can let outsiders access our account.
+   - Weak passwords or stolen login details can let outsiders access our account.
 
 4. **Insider Threats**
 
-   * Employees of the SaaS provider might misuse customer data if not monitored properly.
+   - Employees of the SaaS provider might misuse customer data if not monitored properly.
 
 5. **Compliance and Privacy Rules**
 
-   * Different countries have different data laws (like GDPR).
-   * SaaS providers must follow them strictly to avoid legal issues.
+   - Different countries have different data laws (like GDPR).
+   - SaaS providers must follow them strictly to avoid legal issues.
 
 6. **API Security Risks**
 
-   * SaaS apps often use APIs to connect with other tools.
-   * If an API is weak, it can be exploited by attackers.
+   - SaaS apps often use APIs to connect with other tools.
+   - If an API is weak, it can be exploited by attackers.
 
 ---
 
@@ -286,7 +286,6 @@ Some of the **leading companies providing SaaS platforms** are:
 | **Slack**      | Team communication and collaboration   |
 
 ![SaaS Stack Diagram](https://upload.wikimedia.org/wikipedia/commons/1/1b/SaaS_PaaS_IaaS.svg)
-
 
 ![How SaaS Works Diagram](https://www.researchgate.net/publication/324479703/figure/fig2/AS:614367364579331@1523508036553/Software-as-a-Service-SaaS-architecture.png)
 
@@ -318,7 +317,7 @@ It helps us **focus on writing code** while the provider handles the setup, main
 
 Example:
 
-* When we use **Google App Engine** or **Microsoft Azure App Service**, we just upload our code, and the cloud platform runs it automatically.
+- When we use **Google App Engine** or **Microsoft Azure App Service**, we just upload our code, and the cloud platform runs it automatically.
 
 ### **4. Advantages of PaaS**
 
@@ -326,23 +325,23 @@ PaaS offers many benefits that make development faster and easier:
 
 1. **Faster Development**
 
-   * We get pre-built tools and environments to start coding quickly.
+   - We get pre-built tools and environments to start coding quickly.
 
 2. **Easy Collaboration**
 
-   * Many developers can work on the same project from anywhere.
+   - Many developers can work on the same project from anywhere.
 
 3. **Built-in Security**
 
-   * Security tools like firewalls, identity management, and data encryption are provided.
+   - Security tools like firewalls, identity management, and data encryption are provided.
 
 4. **Focus on Coding**
 
-   * We can spend more time developing features instead of setting up hardware.
+   - We can spend more time developing features instead of setting up hardware.
 
 5. **Testing and Deployment Support**
 
-   * PaaS provides built-in environments to test and deploy apps safely.
+   - PaaS provides built-in environments to test and deploy apps safely.
 
 ---
 
@@ -352,19 +351,19 @@ Although useful, PaaS also has some drawbacks:
 
 1. **Less Control**
 
-   * The provider controls the platform’s environment and updates.
+   - The provider controls the platform’s environment and updates.
 
 2. **Compatibility Issues**
 
-   * Applications developed on one PaaS might not work easily on another.
+   - Applications developed on one PaaS might not work easily on another.
 
 3. **Security Concerns**
 
-   * Our app and data depend on the provider’s security system.
+   - Our app and data depend on the provider’s security system.
 
 4. **Performance Issues**
 
-   * If many users use the same resources, performance may slow down.
+   - If many users use the same resources, performance may slow down.
 
 ---
 
@@ -405,27 +404,27 @@ In simple words,
 
 1. **Automated Setup**
 
-   * The provider handles database installation and configuration.
+   - The provider handles database installation and configuration.
 
 2. **Backup and Recovery**
 
-   * Automatic backups are done regularly to prevent data loss.
+   - Automatic backups are done regularly to prevent data loss.
 
 3. **Scalability**
 
-   * We can easily increase or decrease storage and performance as needed.
+   - We can easily increase or decrease storage and performance as needed.
 
 4. **High Availability**
 
-   * Data is stored in multiple locations to avoid downtime.
+   - Data is stored in multiple locations to avoid downtime.
 
 5. **Security Management**
 
-   * Providers include encryption, firewalls, and user access control.
+   - Providers include encryption, firewalls, and user access control.
 
 6. **Performance Monitoring**
 
-   * Built-in tools to check database speed, usage, and health.
+   - Built-in tools to check database speed, usage, and health.
 
 ---
 
@@ -453,11 +452,9 @@ In simple words,
 
 ![DBaaS Diagram](https://upload.wikimedia.org/wikipedia/commons/d/d2/Cloud_database_model.png)
 
-
-
 ## Monitoring as a Service (MAAS)
 
-* **2022 (KCA014) - Section C, Q4(b):** *Explain in detail the concept of Monitoring as a Service in Cloud Computing.*
+- **2022 (KCA014) - Section C, Q4(b):** _Explain in detail the concept of Monitoring as a Service in Cloud Computing._
 
 ### **1. Meaning of MaaS**
 
@@ -475,24 +472,24 @@ The cloud provider gives us dashboards, alerts, and reports that help detect pro
 
 1. **Data Collection**
 
-   * MaaS tools collect data from servers, applications, and networks.
-   * This data includes CPU usage, memory, traffic, and error rates.
+   - MaaS tools collect data from servers, applications, and networks.
+   - This data includes CPU usage, memory, traffic, and error rates.
 
 2. **Data Analysis**
 
-   * The collected data is processed to detect unusual patterns or failures.
+   - The collected data is processed to detect unusual patterns or failures.
 
 3. **Alerts and Notifications**
 
-   * If a problem occurs (like a crash or slow performance), the system sends instant alerts to the user.
+   - If a problem occurs (like a crash or slow performance), the system sends instant alerts to the user.
 
 4. **Reporting and Visualization**
 
-   * It provides easy-to-read dashboards and charts to track performance over time.
+   - It provides easy-to-read dashboards and charts to track performance over time.
 
 5. **Optimization Suggestions**
 
-   * Some MaaS tools even recommend fixes or improvements automatically.
+   - Some MaaS tools even recommend fixes or improvements automatically.
 
 ---
 
@@ -500,29 +497,27 @@ The cloud provider gives us dashboards, alerts, and reports that help detect pro
 
 1. **Early Problem Detection**
 
-   * We can identify and fix issues before they cause system failures.
+   - We can identify and fix issues before they cause system failures.
 
 2. **Cost-Effective**
 
-   * No need to buy expensive hardware or monitoring software — we pay only for what we use.
+   - No need to buy expensive hardware or monitoring software — we pay only for what we use.
 
 3. **Real-Time Monitoring**
 
-   * Data is updated instantly, so we always know our system’s health.
+   - Data is updated instantly, so we always know our system’s health.
 
 4. **Scalable**
 
-   * We can monitor a few or thousands of systems depending on our needs.
+   - We can monitor a few or thousands of systems depending on our needs.
 
+5. **Automatic Alerts**
 
-6. **Automatic Alerts**
+   - The system sends instant notifications to reduce downtime.
 
-   * The system sends instant notifications to reduce downtime.
+6. **Improved Security**
 
-7. **Improved Security**
-
-   * MaaS can also track suspicious activities and detect cyber threats.
-
+   - MaaS can also track suspicious activities and detect cyber threats.
 
 ---
 
@@ -530,19 +525,19 @@ The cloud provider gives us dashboards, alerts, and reports that help detect pro
 
 1. **Internet Dependence**
 
-   * Without internet access, monitoring may stop or slow down.
+   - Without internet access, monitoring may stop or slow down.
 
 2. **Data Privacy Concerns**
 
-   * Monitoring data is stored on the provider’s servers, which may raise privacy issues.
+   - Monitoring data is stored on the provider’s servers, which may raise privacy issues.
 
 3. **Limited Customization**
 
-   * Some MaaS tools may not allow us to modify all metrics or dashboards.
+   - Some MaaS tools may not allow us to modify all metrics or dashboards.
 
 4. **Vendor Lock-in**
 
-   * Once we depend on one provider’s system, switching can be difficult.
+   - Once we depend on one provider’s system, switching can be difficult.
 
 ---
 
@@ -563,8 +558,6 @@ The cloud provider gives us dashboards, alerts, and reports that help detect pro
 ### **7. Diagram: How MaaS Works**
 
 ![MaaS Diagram](https://upload.wikimedia.org/wikipedia/commons/9/91/Monitoring_as_a_Service_%28MaaS%29_Model.png)
-
-
 
 ## Communication as a Service (CaaS)
 
@@ -594,19 +587,23 @@ In simple words,
 
 1. **Cost Savings**
 
-   * No need to buy expensive phone systems or communication servers.
+   - No need to buy expensive phone systems or communication servers.
+
 2. **Flexibility**
 
-   * Easily scalable — add more users or services anytime.
+   - Easily scalable — add more users or services anytime.
+
 3. **Accessibility**
 
-   * Works from any device with an internet connection.
+   - Works from any device with an internet connection.
+
 4. **Reliability**
 
-   * Providers ensure high uptime and backup.
+   - Providers ensure high uptime and backup.
+
 5. **Maintenance-Free**
 
-   * The provider handles software updates and system care.
+   - The provider handles software updates and system care.
 
 ---
 
@@ -626,7 +623,7 @@ In simple words,
 
 ![CaaS Diagram](https://upload.wikimedia.org/wikipedia/commons/9/9d/Communication_as_a_Service_Model.png)
 
-*(Image Source: Wikimedia Commons)*
+_(Image Source: Wikimedia Commons)_
 
 ---
 
@@ -650,6 +647,7 @@ In simple words,
 3. **Identity and Access Management (IAM)** – Controls who can access what.
 4. **Firewall as a Service (FWaaS)** – Filters and blocks harmful network traffic.
 5. **Intrusion Detection and Prevention (IDS/IPS)** – Monitors systems for suspicious activity.
+
 ---
 
 #### **4. Advantages of SECaaS**
@@ -682,23 +680,23 @@ Here are the major ones:
 
 1. **Data Breaches**
 
-   * Unauthorized access to sensitive data stored in the cloud.
+   - Unauthorized access to sensitive data stored in the cloud.
 
 2. **Data Loss**
 
-   * Accidental deletion, corruption, or failure in backups.
+   - Accidental deletion, corruption, or failure in backups.
 
 3. **Insider Threats**
 
-   * Employees or administrators may misuse data.
+   - Employees or administrators may misuse data.
 
 4. **Account Hijacking**
 
-   * Stolen login credentials can lead to full account access.
+   - Stolen login credentials can lead to full account access.
 
 5. **Denial of Service (DoS) Attacks**
 
-   * Attackers overload systems, making them unavailable.
+   - Attackers overload systems, making them unavailable.
 
 ---
 
@@ -708,38 +706,36 @@ To make the cloud more secure, we can use the following methods:
 
 1. **Data Encryption**
 
-   * Always encrypt data during storage and transmission.
+   - Always encrypt data during storage and transmission.
 
 2. **Strong Authentication and Access Control**
 
-   * Use multi-factor authentication (MFA) and give limited access to users.
+   - Use multi-factor authentication (MFA) and give limited access to users.
 
 3. **Regular Backups**
 
-   * Schedule automatic backups to avoid data loss.
+   - Schedule automatic backups to avoid data loss.
 
 4. **Monitor Activity and Logs**
 
-   * Use monitoring tools to track unusual actions.
+   - Use monitoring tools to track unusual actions.
 
 5. **Update Software Regularly**
 
-   * Keep all systems and apps up to date to fix security flaws.
+   - Keep all systems and apps up to date to fix security flaws.
 
 ![Cloud Security Diagram](https://upload.wikimedia.org/wikipedia/commons/0/0d/Cloud_computing_security_concept.png)
-
 
 # Service Providers
 
 ## Amazon Web services (AWS)
 
-* **2018 (NMCAE24) - Section B, Q2(c):** *Explain the services provided by Amazon infrastructure cloud from user perspective.*
-* **2021 (NMCAE24) - Section C, Q3(b):** *Write short notes on (i) Cloud Sim (ii) Amazon Web Services.*
-* **2022 (KCA014) - Section C, Q4(a):** *Illustrate the key components of Amazon AWS.*
-* **2023 (KCA014) - Section C, Q4(a):** *Explain in detail the key components of Amazon AWS. Also analyze its importance in domain of Cloud Computing.*
-* **2024 (KCA014) - Section B, (c):** *What do you mean by services provided by Amazon infrastructure cloud from user perspective?*
-* **2024 (KCA014) - Section C, Q6(a):** *Illustrate any five web services of Amazon in detail.*
-
+- **2018 (NMCAE24) - Section B, Q2(c):** _Explain the services provided by Amazon infrastructure cloud from user perspective._
+- **2021 (NMCAE24) - Section C, Q3(b):** _Write short notes on (i) Cloud Sim (ii) Amazon Web Services._
+- **2022 (KCA014) - Section C, Q4(a):** _Illustrate the key components of Amazon AWS._
+- **2023 (KCA014) - Section C, Q4(a):** _Explain in detail the key components of Amazon AWS. Also analyze its importance in domain of Cloud Computing._
+- **2024 (KCA014) - Section B, (c):** _What do you mean by services provided by Amazon infrastructure cloud from user perspective?_
+- **2024 (KCA014) - Section C, Q6(a):** _Illustrate any five web services of Amazon in detail._
 
 ### 🟦 **1. Introduction to AWS**
 
@@ -757,41 +753,41 @@ AWS has many components, but the main ones are:
 
 #### (1) **Compute**
 
-* The compute service helps us **run applications and process data**.
-* The most popular compute service is **Amazon EC2 (Elastic Compute Cloud)**, which provides virtual servers that we can start, stop, and scale anytime.
-* It also includes **AWS Lambda** for serverless computing (we run code without managing servers).
+- The compute service helps us **run applications and process data**.
+- The most popular compute service is **Amazon EC2 (Elastic Compute Cloud)**, which provides virtual servers that we can start, stop, and scale anytime.
+- It also includes **AWS Lambda** for serverless computing (we run code without managing servers).
 
 #### (2) **Storage**
 
-* AWS provides different types of storage to store and back up data safely.
-* **Amazon S3 (Simple Storage Service)** is used to store files and media.
-* **Amazon EBS (Elastic Block Store)** gives fast, secure disk storage for EC2 instances.
-* **Amazon Glacier** stores data at a very low cost for long-term use.
+- AWS provides different types of storage to store and back up data safely.
+- **Amazon S3 (Simple Storage Service)** is used to store files and media.
+- **Amazon EBS (Elastic Block Store)** gives fast, secure disk storage for EC2 instances.
+- **Amazon Glacier** stores data at a very low cost for long-term use.
 
 #### (3) **Database**
 
-* AWS offers both relational and non-relational databases.
-* **Amazon RDS (Relational Database Service)** supports MySQL, PostgreSQL, and more.
-* **Amazon DynamoDB** is a NoSQL database for fast performance.
-* **Amazon Redshift** is used for data analytics.
+- AWS offers both relational and non-relational databases.
+- **Amazon RDS (Relational Database Service)** supports MySQL, PostgreSQL, and more.
+- **Amazon DynamoDB** is a NoSQL database for fast performance.
+- **Amazon Redshift** is used for data analytics.
 
 #### (4) **Networking**
 
-* Networking services help us connect and secure cloud resources.
-* **Amazon VPC (Virtual Private Cloud)** lets us build private networks.
-* **Route 53** handles domain name services.
-* **Elastic Load Balancing (ELB)** distributes traffic evenly to avoid overloads.
+- Networking services help us connect and secure cloud resources.
+- **Amazon VPC (Virtual Private Cloud)** lets us build private networks.
+- **Route 53** handles domain name services.
+- **Elastic Load Balancing (ELB)** distributes traffic evenly to avoid overloads.
 
 #### (5) **Security and Identity**
 
-* **AWS Identity and Access Management (IAM)** helps us control who can access what.
-* It also provides encryption and compliance tools to protect data.
+- **AWS Identity and Access Management (IAM)** helps us control who can access what.
+- It also provides encryption and compliance tools to protect data.
 
 #### (6) **Monitoring and Management**
 
-* **Amazon CloudWatch** tracks usage, performance, and errors.
-* **AWS CloudTrail** records all user activities for auditing.
-* These help us monitor and manage all cloud resources easily.
+- **Amazon CloudWatch** tracks usage, performance, and errors.
+- **AWS CloudTrail** records all user activities for auditing.
+- These help us monitor and manage all cloud resources easily.
 
 ---
 
@@ -826,8 +822,8 @@ AWS has many components, but the main ones are:
 
 ## Microsoft Azure / Microsoft SQL Services
 
-* **2021 (NMCAE24) - Section A, (d):** *Write about Microsoft SQL services?*
-* **2023 (KCA014) - Section A, (c):** *Write down the key components of Microsoft Azure.*
+- **2021 (NMCAE24) - Section A, (d):** _Write about Microsoft SQL services?_
+- **2023 (KCA014) - Section A, (c):** _Write down the key components of Microsoft Azure._
 
 ### 🟦 **1. Introduction to Microsoft Azure**
 
@@ -849,60 +845,61 @@ Let’s look at the **main building blocks** (components) of Azure that make clo
 
 #### (a) **Compute Services**
 
-* Used to **run applications and workloads** in virtual machines or containers.
-* **Azure Virtual Machines (VMs)** allow us to rent virtual computers.
-* **Azure App Service** helps us host web and mobile apps easily.
-* **Azure Functions** lets us run code without managing servers (like AWS Lambda).
+- Used to **run applications and workloads** in virtual machines or containers.
+- **Azure Virtual Machines (VMs)** allow us to rent virtual computers.
+- **Azure App Service** helps us host web and mobile apps easily.
+- **Azure Functions** lets us run code without managing servers (like AWS Lambda).
 
 ---
 
 #### (b) **Storage Services**
 
-* Azure provides **secure, scalable, and durable storage**.
-* **Blob Storage** – for unstructured data like images, videos, and files.
-* **Queue Storage** – for message communication between apps.
-* **File Storage** – for shared file systems.
-* **Table Storage** – for structured NoSQL data.
+- Azure provides **secure, scalable, and durable storage**.
+- **Blob Storage** – for unstructured data like images, videos, and files.
+- **Queue Storage** – for message communication between apps.
+- **File Storage** – for shared file systems.
+- **Table Storage** – for structured NoSQL data.
 
 ---
 
 #### (c) **Database Services**
 
-* Azure offers both **relational** and **non-relational** databases.
-* The most popular one is **Azure SQL Database**, which is a **fully managed database service** based on Microsoft SQL Server.
+- Azure offers both **relational** and **non-relational** databases.
+- The most popular one is **Azure SQL Database**, which is a **fully managed database service** based on Microsoft SQL Server.
 
-  * It automatically handles **updates, backups, scaling, and security**.
-  * We can run queries using standard SQL language.
-* Other options:
+  - It automatically handles **updates, backups, scaling, and security**.
+  - We can run queries using standard SQL language.
 
-  * **Cosmos DB** (for global, NoSQL databases)
-  * **Azure Database for MySQL** and **PostgreSQL** (for open-source users)
+- Other options:
+
+  - **Cosmos DB** (for global, NoSQL databases)
+  - **Azure Database for MySQL** and **PostgreSQL** (for open-source users)
 
 ---
 
 #### (d) **Networking Services**
 
-* Helps connect cloud resources securely.
-* **Virtual Network (VNet)** – builds private networks inside Azure.
-* **Azure Load Balancer** – distributes user traffic evenly.
-* **VPN Gateway** – connects on-premise systems with Azure securely.
-* **Azure DNS** – manages domains and names.
+- Helps connect cloud resources securely.
+- **Virtual Network (VNet)** – builds private networks inside Azure.
+- **Azure Load Balancer** – distributes user traffic evenly.
+- **VPN Gateway** – connects on-premise systems with Azure securely.
+- **Azure DNS** – manages domains and names.
 
 ---
 
 #### (e) **Security and Identity**
 
-* **Azure Active Directory (AD)** – manages user identities and logins.
-* **Azure Security Center** – monitors and protects cloud resources.
-* **Key Vault** – stores passwords, encryption keys, and secrets safely.
+- **Azure Active Directory (AD)** – manages user identities and logins.
+- **Azure Security Center** – monitors and protects cloud resources.
+- **Key Vault** – stores passwords, encryption keys, and secrets safely.
 
 ---
 
 #### (f) **Monitoring and Management**
 
-* **Azure Monitor** – tracks performance, usage, and errors.
-* **Azure Resource Manager (ARM)** – helps deploy and manage resources easily.
-* **Azure Advisor** – gives recommendations to optimize cost and performance.
+- **Azure Monitor** – tracks performance, usage, and errors.
+- **Azure Resource Manager (ARM)** – helps deploy and manage resources easily.
+- **Azure Advisor** – gives recommendations to optimize cost and performance.
 
 ---
 
@@ -920,9 +917,9 @@ Let’s look at the **main building blocks** (components) of Azure that make clo
 
 #### ✅ **Types of SQL Services in Azure:**
 
-* **Azure SQL Database** – Single managed database.
-* **Azure SQL Managed Instance** – For migrating entire SQL Server instances.
-* **SQL Server on Azure Virtual Machines** – For users who want full control over SQL setup.
+- **Azure SQL Database** – Single managed database.
+- **Azure SQL Managed Instance** – For migrating entire SQL Server instances.
+- **SQL Server on Azure Virtual Machines** – For users who want full control over SQL setup.
 
 ---
 
@@ -956,14 +953,13 @@ Let’s look at the **main building blocks** (components) of Azure that make clo
 
 ## Salesforce
 
-> **“Salesforce is the world's number one cloud-based CRM platform.” Illustrate your answer.**
-> *(Asked in 2022 and 2023 papers)*
+> **“Salesforce is the world's number one cloud-based CRM platform.” Illustrate your answer.** > _(Asked in 2022 and 2023 papers)_
 
 #### 🔹 What is Salesforce?
 
-* Salesforce is a **cloud-based CRM (Customer Relationship Management)** platform.
-* It helps organizations **manage customer interactions, sales, marketing, and support** through the internet—no local installations or hardware needed.
-* It is delivered as **Software as a Service (SaaS)**, meaning users just log in and use it via a browser.
+- Salesforce is a **cloud-based CRM (Customer Relationship Management)** platform.
+- It helps organizations **manage customer interactions, sales, marketing, and support** through the internet—no local installations or hardware needed.
+- It is delivered as **Software as a Service (SaaS)**, meaning users just log in and use it via a browser.
 
 ---
 
@@ -971,9 +967,9 @@ Let’s look at the **main building blocks** (components) of Azure that make clo
 
 #### 1. **Cloud-Centric Model**
 
-* Salesforce was one of the **first to fully embrace cloud computing** for CRM.
-* Data, applications, and services are hosted on the Salesforce cloud, enabling **anytime, anywhere access**.
-* Customers don’t need to maintain servers or installations.
+- Salesforce was one of the **first to fully embrace cloud computing** for CRM.
+- Data, applications, and services are hosted on the Salesforce cloud, enabling **anytime, anywhere access**.
+- Customers don’t need to maintain servers or installations.
 
 #### 2. **Comprehensive Service Ecosystem**
 
@@ -995,39 +991,39 @@ Salesforce provides a full suite of **Cloud Services** under its umbrella:
 
 1. **Multitenant Architecture**
 
-   * All users share the same infrastructure but with **data isolation and security**.
-   * Updates and patches apply automatically across all clients.
+   - All users share the same infrastructure but with **data isolation and security**.
+   - Updates and patches apply automatically across all clients.
 
 2. **Customization and Integration**
 
-   * Salesforce allows **custom dashboards, workflows, and third-party integrations** via APIs.
-   * It supports **integration with Google Cloud, Microsoft Azure, AWS**, and internal systems.
+   - Salesforce allows **custom dashboards, workflows, and third-party integrations** via APIs.
+   - It supports **integration with Google Cloud, Microsoft Azure, AWS**, and internal systems.
 
 3. **AppExchange Marketplace**
 
-   * A massive **app marketplace** where businesses can install or publish applications to extend Salesforce functionality.
+   - A massive **app marketplace** where businesses can install or publish applications to extend Salesforce functionality.
 
 4. **AI-Powered Insights (Einstein AI)**
 
-   * Built-in AI provides **predictive analytics, automation, and recommendations** for better customer engagement.
+   - Built-in AI provides **predictive analytics, automation, and recommendations** for better customer engagement.
 
 5. **Scalability and Flexibility**
 
-   * Suitable for **small startups to large enterprises**, adapting easily as business scales.
+   - Suitable for **small startups to large enterprises**, adapting easily as business scales.
 
 6. **Security and Compliance**
 
-   * Enterprise-level **data protection, encryption, and compliance** with GDPR, HIPAA, and ISO standards.
+   - Enterprise-level **data protection, encryption, and compliance** with GDPR, HIPAA, and ISO standards.
 
 ---
 
 ### 💼 **Benefits to Organizations**
 
-* Reduces IT costs (no hardware or maintenance).
-* Increases team productivity with centralized access.
-* Improves customer engagement and retention.
-* Enhances business decision-making via real-time analytics.
-* Scales seamlessly as data and customers grow.
+- Reduces IT costs (no hardware or maintenance).
+- Increases team productivity with centralized access.
+- Improves customer engagement and retention.
+- Enhances business decision-making via real-time analytics.
+- Scales seamlessly as data and customers grow.
 
 ---
 
@@ -1035,9 +1031,9 @@ Salesforce provides a full suite of **Cloud Services** under its umbrella:
 
 Imagine a company like **Coca-Cola** using Salesforce:
 
-* Its **Sales Cloud** manages global distribution and dealer networks.
-* **Marketing Cloud** automates customer campaigns.
-* **Service Cloud** helps respond to millions of customer queries efficiently.
+- Its **Sales Cloud** manages global distribution and dealer networks.
+- **Marketing Cloud** automates customer campaigns.
+- **Service Cloud** helps respond to millions of customer queries efficiently.
   This unified platform ensures **consistency, personalization, and data-driven growth**.
 
 ## IBM Cloud
@@ -1049,17 +1045,17 @@ It allows businesses to deploy and manage workloads across both **public and pri
 
 ### 🔹 **Main Services**
 
-* **IBM Cloud Infrastructure (IaaS):** Provides virtual servers, storage, and networking resources on demand.
-* **IBM Cloud Foundry (PaaS):** Platform for developers to build, deploy, and manage applications without managing the underlying hardware.
-* **IBM Watson (AI Services):** Offers AI-powered APIs for natural language processing, data analysis, and automation.
-* **IBM Cloud Kubernetes Service:** Container orchestration platform for deploying and managing containerized applications.
-* **IBM Cloud Functions (FaaS):** Serverless computing service for event-driven functions.
+- **IBM Cloud Infrastructure (IaaS):** Provides virtual servers, storage, and networking resources on demand.
+- **IBM Cloud Foundry (PaaS):** Platform for developers to build, deploy, and manage applications without managing the underlying hardware.
+- **IBM Watson (AI Services):** Offers AI-powered APIs for natural language processing, data analysis, and automation.
+- **IBM Cloud Kubernetes Service:** Container orchestration platform for deploying and managing containerized applications.
+- **IBM Cloud Functions (FaaS):** Serverless computing service for event-driven functions.
 
 ### 🔹 **Key Components**
 
-* **IBM Cloud Console:** Centralized dashboard for managing cloud resources.
-* **Cloud Object Storage:** Scalable and secure storage solution.
-* **Virtual Private Cloud (VPC):** Provides isolated networking for cloud workloads.
+- **IBM Cloud Console:** Centralized dashboard for managing cloud resources.
+- **Cloud Object Storage:** Scalable and secure storage solution.
+- **Virtual Private Cloud (VPC):** Provides isolated networking for cloud workloads.
 
 ---
 
@@ -1071,15 +1067,15 @@ Google Cloud Platform (GCP) is a **suite of cloud computing services** offered b
 
 ### 🔹 **Main Services**
 
-* **Compute Engine (IaaS):** Virtual machines for scalable computing power.
-* **App Engine (PaaS):** Fully managed platform for developing and hosting web applications.
-* **Cloud Storage:** Object storage for unstructured data like images, videos, or backups.
-* **BigQuery:** Data warehouse for large-scale analytics and querying.
-* **Kubernetes Engine (GKE):** Managed container service based on Kubernetes.
-* **Firebase:** Mobile and web application development platform integrated with GCP.
+- **Compute Engine (IaaS):** Virtual machines for scalable computing power.
+- **App Engine (PaaS):** Fully managed platform for developing and hosting web applications.
+- **Cloud Storage:** Object storage for unstructured data like images, videos, or backups.
+- **BigQuery:** Data warehouse for large-scale analytics and querying.
+- **Kubernetes Engine (GKE):** Managed container service based on Kubernetes.
+- **Firebase:** Mobile and web application development platform integrated with GCP.
 
 ### 🔹 **Key Components**
 
-* **Cloud Console:** Web-based management interface.
-* **Cloud SDK:** Tools and APIs for developers.
-* **Cloud IAM (Identity & Access Management):** Controls access to cloud resources securely.
+- **Cloud Console:** Web-based management interface.
+- **Cloud SDK:** Tools and APIs for developers.
+- **Cloud IAM (Identity & Access Management):** Controls access to cloud resources securely.

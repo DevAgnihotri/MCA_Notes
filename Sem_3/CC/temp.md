@@ -1,85 +1,45 @@
-# Cloud Services Questions (2018-2024) - Topic-wise Arrangement
+## Collaborating Using Cloud Services — topic-wise arrangement
 
----
+- Email Communication over the Cloud
+    - 2018 C Q3: What do you mean by communication as service? Discuss any two service providers used in cloud computing in detail.
+    - (Related) 2018 A(h): What is web conferencing? — web conferencing / real-time communication tools.
 
-## 📌 **IaaS (Infrastructure as a Service)**
+- CRM Management
+    - 2021 B Q2(a): Discuss what a CRM is with an example based on cloud computing technologies.
 
-* **2018 (NMCAE24) - Section C, Q5:** *Write short notes on the following – (i) IaaS (ii) SaaS (iii) PaaS (iv) DaaS (v) MaaS.*
-* **2021 (NMCAE24) - Section A, (b):** *Write down any two advantages of IaaS?*
-* **2022 (KCA014) - Section A, (c):** *Discuss the advantages of IaaS computing model.*
+- Project Management
+    - 2023 B Q2(c): Write short notes on: (i) Project Management
 
----
+- Event Management
+    - 2024 A (j): What do you mean by Events Management?
 
-## 📌 **SaaS (Software as a Service)**
+- Task Management
+    - 2023 C Q5(a): Discuss about collaborating on calendars, schedules, and task management.
 
-* **2018 (NMCAE24) - Section C, Q5:** *Write short notes on the following – (i) IaaS (ii) SaaS (iii) PaaS (iv) DaaS (v) MaaS.*
-* **2021 (NMCAE24) - Section A, (a):** *What are the two major categories of SaaS?*
-* **2021 (NMCAE24) - Section A, (c):** *Give the limitation of SaaS?*
-* **2022 (KCA014) - Section A, (i):** *Describe main security challenges in SaaS.*
-* **2023 (KCA014) - Section A, (d):** *List top vendors who are providing SaaS cloud computing environment.*
+- Calendar / Schedules
+    - 2021 C Q7(a): How to explore online scheduling and planning? Explain with example.
+    - 2023 C Q5(a): Discuss about collaborating on calendars, schedules, and task management.
 
----
+- Word Processing
+    - 2023 B Q2(c): Write short notes on: (ii) Web Based Word Processors.
 
-## 📌 **PaaS (Platform as a Service)**
+- Presentation
+    - No questions found in the provided papers.
 
-* **2018 (NMCAE24) - Section C, Q5:** *Write short notes on the following – (i) IaaS (ii) SaaS (iii) PaaS (iv) DaaS (v) MaaS.*
+- Spreadsheet
+    - No questions found in the provided papers.
 
----
+- Databases
+    - 2021 C 4(a) What is difference between Data store and Simple-DB? Define the limitations of Simple-DB
 
-## 📌 **DaaS (Desktop as a Service)**
+- Desktop
+    - No questions found in the provided papers.
 
-* **2018 (NMCAE24) - Section C, Q5:** *Write short notes on the following – (i) IaaS (ii) SaaS (iii) PaaS (iv) DaaS (v) MaaS.*
-* **2023 (KCA014) - Section B, (b):** *Explain MaaS, DaaS, and CaaS in detail.*
+- Social Networks
+    - 2023 C Q5(b): How to create groups on social networks? Explain with example.
 
----
+- Groupware
+    - 2018 A(j): What do you mean by Groupware?
+    - 2022 B Q2(c): Determine the concept of Groupware in Clouds. Also discuss its pros and cons.
 
-## 📌 **MaaS (Monitoring as a Service)**
-
-* **2018 (NMCAE24) - Section C, Q5:** *Write short notes on the following – (i) IaaS (ii) SaaS (iii) PaaS (iv) DaaS (v) MaaS.*
-* **2022 (KCA014) - Section C, Q4(b):** *Explain in detail the concept of Monitoring as a Service in Cloud Computing.*
-* **2023 (KCA014) - Section B, (b):** *Explain MaaS, DaaS, and CaaS in detail.*
-
----
-
-## 📌 **CaaS (Container as a Service)**
-
-* **2023 (KCA014) - Section B, (b):** *Explain MaaS, DaaS, and CaaS in detail.*
-
----
-
-## 📌 **Communication as a Service**
-
-* **2018 (NMCAE24) - Section C, Q3:** *What do you mean by communication as a service? Discuss any two service providers used in cloud computing in detail.*
-
----
-
-## 📌 **Security as a Service**
-
-* **2021 (NMCAE24) - Section C, Q6(a):** *Describe Security as a Service in cloud. What are the security issues in cloud? Discuss the ways to enhance security in cloud.*
-
----
-
-## 📌 **Amazon Web Services (AWS)**
-
-* **2018 (NMCAE24) - Section B, Q2(c):** *Explain the services provided by Amazon infrastructure cloud from user perspective.*
-* **2021 (NMCAE24) - Section C, Q3(b):** *Write short notes on (i) Cloud Sim (ii) Amazon Web Services.*
-* **2022 (KCA014) - Section C, Q4(a):** *Illustrate the key components of Amazon AWS.*
-* **2023 (KCA014) - Section C, Q4(a):** *Explain in detail the key components of Amazon AWS. Also analyze its importance in domain of Cloud Computing.*
-* **2024 (KCA014) - Section B, (c):** *What do you mean by services provided by Amazon infrastructure cloud from user perspective?*
-* **2024 (KCA014) - Section C, Q6(a):** *Illustrate any five web services of Amazon in detail.*
-
----
-
-## 📌 **Microsoft Azure / Microsoft SQL Services**
-
-* **2021 (NMCAE24) - Section A, (d):** *Write about Microsoft SQL services?*
-* **2023 (KCA014) - Section A, (c):** *Write down the key components of Microsoft Azure.*
-
----
-
-## 📌 **Salesforce**
-
-* **2022 (KCA014) - Section B, (b):** *"Salesforce is the world's number one cloud-based CRM platform", illustrate your answer.*
-* **2023 (KCA014) - Section C, Q4(b):** *"Salesforce is the world's number one cloud-based CRM platform", Illustrate your answer.*
-
----
+Topics not covered at all in the extracted questions: Presentation, Spreadsheet, Databases, Desktop.
