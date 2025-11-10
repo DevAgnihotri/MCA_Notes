@@ -1,31 +1,27 @@
-## Machine Learning: Introduction, types and application areas
-- What is machine learning? Differentiate between supervised, unsupervised and reinforcement learning. (2022 — Section B Q2(d))  
-- Define the term machine learning. (2023 — Section A Q1(g))  
-- Write short note on machine learning. (2024 — Section C Q6(a) ii)
+## Pattern Recognition: Introduction and design principles
+- 2023 — Section A (Q1(i)): Define the term pattern with example.  
+- 2024 — Section B (Q2(e)): Define pattern recognition. What are the components of pattern recognition?  
+- 2023 — Section C (Q7(a)): Explain design cycle of a pattern recognition system with diagram.  
+- 2022 — Section B (Q2(e)): Design principles of pattern recognition system. (Also covers PCA & LDA)
 
-## Decision trees
-- Describe the decision tree-learning model by choosing a suitable example. Discuss issues related to the application of decision tree. (2022 — Section C Q6(a))  
-- Discuss steps and algorithm to construct a decision tree. (2023 — Section C Q6(b))  
-- Describe decision tree with diagram. (2024 — Section A Q1(h))
+## Statistical pattern recognition
+- 2024 — Section A (Q1(i)): What is Statistical PR?
 
-## Statistical learning methods
-- What are statistical learning models? (2022 — Section A Q1(h))  
-- What is Statistical learning method? (2024 — Section A Q1(g))  
-- Write short note on Support Vector Machine (SVM). (2022 — Section A Q1(i))  
-- Define the term clustering. Discuss k-means clustering algorithm. (2023 — Section B Q2(e))
+## Parameter estimation methods — Principal Component Analysis (PCA) and Linear Discriminant Analysis (LDA)
+- 2022 — Section B (Q2(e)): Explain Principal Component Analysis (PCA) and Linear Discriminant Analysis (LDA).  
+- 2023 — Section C (Q7(b)): Explain need and concept of principal component analysis in pattern recognition process.  
+- 2024 — Section C (Q7(a)): Define Principal Component Analysis (PCA). Write steps involved in making principal components to do a classification of given data.
 
-## Learning with complete data – concept and Naïve Bayes models
-- Discuss back propagation algorithm for learning in multilayer neural network. (2019 — Section C Q7(a))  
-- What do you mean by statistical learning? Explain Naïve Bayes model. (2023 — Section B Q2(d))  
-- Explain discrete model, Naïve Bayes Model & Continuous Model. (2024 — Section C Q6(b))  
-- What do you mean by Maximum Likelihood estimation? (2023 — Section C Q6(a))
+## Classification techniques — Nearest neighbor rule and Bayes classifier
+- 2023 — Section A (Q1(j)): State nearest neighbor rule.  
+- 2022 — Section C (Q7(b)): Show how classification is done by k‑nearest neighbors. Construct KNN on given dataset and predict class for X (p1=4, p2=6), k=3.  
+- 2024 — Section C (Q7(b)): Explain Nearest Neighbor (NN) rule in detail.  
+- Bayes classifier: No matching questions found in the provided selection.
 
-## Learning with hidden data – concept and EM algorithm
-- Explain the expectation and maximization (EM) algorithm for finding the maximum likelihood with hidden variables. (2022 — Section C Q6(b))  
-- What do you mean by Maximum Likelihood estimation? Also explain Expectation Maximization algorithm. (2023 — Section C Q6(a))  
-- Explain learning with hidden data – EM algorithm. (2024 — Section B Q2(d))  
-- Describe the use of Hidden Markov models in speech recognition. (2024 — Section B Q2(c))
+## K-means clustering
+- 2023 — Section B (Q2(e)): Define clustering. Discuss k‑means clustering algorithm.  
+- 2024 — Section A (Q1(j)): Explain K‑means clustering.  
+- 2022 — Section C (Q7(a)): To which category of clustering schemes does the k‑means algorithm belong? What is its major advantage? Which factors influence computation duration?
 
-## Reinforcement learning
-- Write a short note on reinforcement learning. (2023 — Section A Q1(h))  
-- Short note on Reinforcement learning. (2024 — Section C Q6(a) i)
+## Support Vector Machine
+- 2022 — Section A (Q1(i)): Write short note on Support Vector Machine (SVM).
