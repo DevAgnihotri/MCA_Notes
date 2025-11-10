@@ -1,45 +1,31 @@
-## Knowledge Representation
-- What do you mean by knowledge representation? Describe the techniques of knowledge representation. [2024 – SECTION C Q5(a)]
-- Represent the following in partitioned semantic networks: (i) Every player kicked a ball. (ii) All players like the referee. (iii) Andrew believes that there is a fish with lungs. [2019 – SECTION C Q5(a)]
+## Machine Learning: Introduction, types and application areas
+- What is machine learning? Differentiate between supervised, unsupervised and reinforcement learning. (2022 — Section B Q2(d))  
+- Define the term machine learning. (2023 — Section A Q1(g))  
+- Write short note on machine learning. (2024 — Section C Q6(a) ii)
 
-## Propositional logic / Predicate logic
-- Compare propositional logic and predicate logic. [2019 – SECTION A Q1(d)]
-- Compare propositional logic and predicate logic. [2022 – SECTION A Q1(f)]
-- Justify the usage of universal and existential quantifier with an example. [2019 – SECTION A Q1(e)]
-- Justify the usage of universal and existential quantifier with an example. [2022 – SECTION A Q1(e)]
+## Decision trees
+- Describe the decision tree-learning model by choosing a suitable example. Discuss issues related to the application of decision tree. (2022 — Section C Q6(a))  
+- Discuss steps and algorithm to construct a decision tree. (2023 — Section C Q6(b))  
+- Describe decision tree with diagram. (2024 — Section A Q1(h))
 
-## First Order Logic (FOPL)
-- Write the steps for converting FOPL into CNF. [2022 – SECTION B Q2(c)]
-- Explain concept and use of clause form conversion algorithm. [2023 – SECTION C Q5(a)]
+## Statistical learning methods
+- What are statistical learning models? (2022 — Section A Q1(h))  
+- What is Statistical learning method? (2024 — Section A Q1(g))  
+- Write short note on Support Vector Machine (SVM). (2022 — Section A Q1(i))  
+- Define the term clustering. Discuss k-means clustering algorithm. (2023 — Section B Q2(e))
 
-## Inference in First Order Logic / Resolution
-- Give the completeness proof of resolution. [2019 – SECTION B Q2(e)]
-- Convert the following sentence into predicate logic and then prove “Was Marcus loyal to Caesar?” using resolution (full 8‑statement problem). [2022 – SECTION C Q5(a)]
+## Learning with complete data – concept and Naïve Bayes models
+- Discuss back propagation algorithm for learning in multilayer neural network. (2019 — Section C Q7(a))  
+- What do you mean by statistical learning? Explain Naïve Bayes model. (2023 — Section B Q2(d))  
+- Explain discrete model, Naïve Bayes Model & Continuous Model. (2024 — Section C Q6(b))  
+- What do you mean by Maximum Likelihood estimation? (2023 — Section C Q6(a))
 
-## Clause form conversion
-- Write the steps for converting FOPL into CNF. [2022 – SECTION B Q2(c)]
-- Explain concept and use of clause form conversion algorithm. [2023 – SECTION C Q5(a)]
+## Learning with hidden data – concept and EM algorithm
+- Explain the expectation and maximization (EM) algorithm for finding the maximum likelihood with hidden variables. (2022 — Section C Q6(b))  
+- What do you mean by Maximum Likelihood estimation? Also explain Expectation Maximization algorithm. (2023 — Section C Q6(a))  
+- Explain learning with hidden data – EM algorithm. (2024 — Section B Q2(d))  
+- Describe the use of Hidden Markov models in speech recognition. (2024 — Section B Q2(c))
 
-## Resolution
-- Give the completeness proof of resolution. [2019 – SECTION B Q2(e)]
-- Prove “Was Marcus loyal to Caesar?” using resolution (predicate logic conversion + resolution proof). [2022 – SECTION C Q5(a)]
-
-## Chaining — concept, forward chaining and backward chaining
-- Which algorithm is more similar to backward chaining algorithm? Write its algorithm. [2019 – SECTION A Q1(g)]
-- Identify the difference between forward and backward chaining; given KB P, P→Q, Q→R infer R using forward and backward chaining. [2022 – SECTION C Q4(a)]
-- Discuss and compare forward and backward chaining methods with example. [2023 – SECTION B Q2(c)]
-- Describe forward chaining. [2024 – SECTION A Q1(f)]
-
-## Utility theory and Probabilistic reasoning
-
-## Hidden Markov Model (HMM)
-- Discuss the different design issues to be solved to use Hidden Markov Model for real world application. [2019 – SECTION B Q2(c)]
-- Distinguish between Markov model and Hidden Markov Model (HMM). [2022 – SECTION C Q5(b)]
-- Describe the use of Hidden Markov models in speech recognition. [2024 – SECTION B Q2(c)]
-
-## Bayesian networks
-- What does a Bayesian network represent? [2022 – SECTION A Q1(j)]
-- What is Bayesian network? Explain steps to create a Bayesian network. [2023 – SECTION C Q5(b)]
-- Explain Bayesian networks. [2024 – SECTION A Q1(e)]
-- What is Bayesian network? Explain steps to create a Bayesian network. [2023 – SECTION C Q5(b)] (duplicate entry from above)
-- What does a Bayesian network represent? [2022 – SECTION A Q1(j)] (duplicate entry from above)
+## Reinforcement learning
+- Write a short note on reinforcement learning. (2023 — Section A Q1(h))  
+- Short note on Reinforcement learning. (2024 — Section C Q6(a) i)
