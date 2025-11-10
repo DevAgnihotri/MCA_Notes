@@ -1,52 +1,85 @@
-## Cloud Computing: Features, Characteristics, and Principles
+# Cloud Services Questions (2018-2024) - Topic-wise Arrangement
 
-- 2021 Section A: State the basic features of cloud computing.
-- 2022 Section C: Explain several properties & characteristics exhibited by Cloud Computing.
-- 2023 Section C: What do you mean by Cloud Computing? Discuss any one of the cloud architectures.
-- 2024 Section C: List out and discuss the innovative characteristics of cloud computing.
-- 2018 Section B: Describe the characteristics of cloud computing environments.
+---
 
-## Cloud Computing Architectures & Reference Models
+## 📌 **IaaS (Infrastructure as a Service)**
 
-- 2023 Section C: What do you mean by Cloud Computing? Discuss any one of the cloud architectures.
-- 2024 Section B: Give the diagram of cloud computing reference architecture. Illustrate in detail about the Conceptual Reference Model of cloud.
-- 2024 Section B: Explain the cloud computing reference model with neat diagram.
-- 2021 Section C: Who are the different actors involved in NIST defined cloud referenced architecture and explain how they communicate among them to bring out a successful computing.
-- 2023 Section B: Illustrate the importance of 5:3:4 model in reference to cloud computing with proper justification.
+* **2018 (NMCAE24) - Section C, Q5:** *Write short notes on the following – (i) IaaS (ii) SaaS (iii) PaaS (iv) DaaS (v) MaaS.*
+* **2021 (NMCAE24) - Section A, (b):** *Write down any two advantages of IaaS?*
+* **2022 (KCA014) - Section A, (c):** *Discuss the advantages of IaaS computing model.*
 
+---
 
-## Parallel, Distributed, and Grid Computing
+## 📌 **SaaS (Software as a Service)**
 
-- 2024 Section A: Compare parallel computing and distributed computing.
-- 2023 Section A: Explain underlying principles of parallel and distributed computing.
-- 2021 Section A: Differentiate between Cloud computing and Distributed computing.
-- 2018 Section A: Differentiate between Grid Computing and Distributed computing.
+* **2018 (NMCAE24) - Section C, Q5:** *Write short notes on the following – (i) IaaS (ii) SaaS (iii) PaaS (iv) DaaS (v) MaaS.*
+* **2021 (NMCAE24) - Section A, (a):** *What are the two major categories of SaaS?*
+* **2021 (NMCAE24) - Section A, (c):** *Give the limitation of SaaS?*
+* **2022 (KCA014) - Section A, (i):** *Describe main security challenges in SaaS.*
+* **2023 (KCA014) - Section A, (d):** *List top vendors who are providing SaaS cloud computing environment.*
 
-## Nimbus
+---
 
-- 2023 Section A: List features of Nimbus.
-- 2022 Section C: Show the architecture of Nimbus and explain its components.
+## 📌 **PaaS (Platform as a Service)**
 
-## Cloud Service Models & SOA
+* **2018 (NMCAE24) - Section C, Q5:** *Write short notes on the following – (i) IaaS (ii) SaaS (iii) PaaS (iv) DaaS (v) MaaS.*
 
-- 2024 Section C: What do you understand by service oriented architecture (SOA). How it support cloud computing?
+---
 
-## Cloud Types & Design Principles
+## 📌 **DaaS (Desktop as a Service)**
 
-- 2024 Section C: List and discuss the principles for designing public cloud, private cloud and hybrid cloud.
+* **2018 (NMCAE24) - Section C, Q5:** *Write short notes on the following – (i) IaaS (ii) SaaS (iii) PaaS (iv) DaaS (v) MaaS.*
+* **2023 (KCA014) - Section B, (b):** *Explain MaaS, DaaS, and CaaS in detail.*
 
-## On-demand Functionality
+---
 
-- 2023 Section C: Show the concept of On-demand functionality. Illustrate its importance in cloud computing.
+## 📌 **MaaS (Monitoring as a Service)**
 
-## Commercial Clouds
+* **2018 (NMCAE24) - Section C, Q5:** *Write short notes on the following – (i) IaaS (ii) SaaS (iii) PaaS (iv) DaaS (v) MaaS.*
+* **2022 (KCA014) - Section C, Q4(b):** *Explain in detail the concept of Monitoring as a Service in Cloud Computing.*
+* **2023 (KCA014) - Section B, (b):** *Explain MaaS, DaaS, and CaaS in detail.*
 
-- 2022 Section A: What are commercial Clouds.
+---
 
-## CloudSim & AWS
+## 📌 **CaaS (Container as a Service)**
 
-- 2021 Section C: Write short notes on: (i) CloudSim (ii) Amazon Web Services.
+* **2023 (KCA014) - Section B, (b):** *Explain MaaS, DaaS, and CaaS in detail.*
 
-## Cloud Computing vs Internet
+---
 
-- 2022 Section A: Differentiate between Cloud Computing and Internet.
+## 📌 **Communication as a Service**
+
+* **2018 (NMCAE24) - Section C, Q3:** *What do you mean by communication as a service? Discuss any two service providers used in cloud computing in detail.*
+
+---
+
+## 📌 **Security as a Service**
+
+* **2021 (NMCAE24) - Section C, Q6(a):** *Describe Security as a Service in cloud. What are the security issues in cloud? Discuss the ways to enhance security in cloud.*
+
+---
+
+## 📌 **Amazon Web Services (AWS)**
+
+* **2018 (NMCAE24) - Section B, Q2(c):** *Explain the services provided by Amazon infrastructure cloud from user perspective.*
+* **2021 (NMCAE24) - Section C, Q3(b):** *Write short notes on (i) Cloud Sim (ii) Amazon Web Services.*
+* **2022 (KCA014) - Section C, Q4(a):** *Illustrate the key components of Amazon AWS.*
+* **2023 (KCA014) - Section C, Q4(a):** *Explain in detail the key components of Amazon AWS. Also analyze its importance in domain of Cloud Computing.*
+* **2024 (KCA014) - Section B, (c):** *What do you mean by services provided by Amazon infrastructure cloud from user perspective?*
+* **2024 (KCA014) - Section C, Q6(a):** *Illustrate any five web services of Amazon in detail.*
+
+---
+
+## 📌 **Microsoft Azure / Microsoft SQL Services**
+
+* **2021 (NMCAE24) - Section A, (d):** *Write about Microsoft SQL services?*
+* **2023 (KCA014) - Section A, (c):** *Write down the key components of Microsoft Azure.*
+
+---
+
+## 📌 **Salesforce**
+
+* **2022 (KCA014) - Section B, (b):** *"Salesforce is the world's number one cloud-based CRM platform", illustrate your answer.*
+* **2023 (KCA014) - Section C, Q4(b):** *"Salesforce is the world's number one cloud-based CRM platform", Illustrate your answer.*
+
+---
