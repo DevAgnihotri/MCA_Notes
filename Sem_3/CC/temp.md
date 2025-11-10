@@ -1,51 +1,30 @@
-## Topic-wise arrangement of questions (from provided papers)
+## Security, Standards and Applications
 
-### Virtualization for Cloud / Need for Virtualization
-- 2023 (A g): What is the usage of virtualization platform in implementing cloud?
-- 2022 (A h): Determine the reasons used for adopting Virtual Machine Monitors.
+### Security in Clouds
+- Cloud security challenges (papers: 2021, 2024)
+- Software-as-a-Service (SaaS) security — main challenges and protections (2018 topics, 2022 A(i))
+- Security as a Service; security issues and ways to enhance cloud security (2021 Q6(a))
+- Monitoring as a Service / security monitoring (2022 Q4(b))
+- Actors and communication in the NIST cloud reference architecture (2021 Q7(b))
 
-### Pros and cons of Virtualization (including pitfalls)
-- 2024 (C Q5b): Analyze the pros and cons of virtualization in detail.
-- 2018 (B h / 2021 C Q4(b)): Enlist and explain some of the common pitfalls that come with virtualizations.
+### Common Standards
+- The Open Cloud Consortium (mention as a common-cloud body)
+- Distributed Management Task Force (DMTF): role in cloud security and benefits of DMTF standards (2022 B(e), Q7(a))
+- Standards for application developers / web developers (2022 A(j), 2023 B(e))
+- Standards for messaging and standards for security (general developer/security standards)
+- Testbeds and standards for testing cloud systems (2022 Q7(b), 2023 A(j))
 
-### Types of Virtualization / Levels
-- 2024 (A e): Express the levels of virtualization.
-- 2022 (B d): Differentiate between Hardware Virtualization and Server Virtualization.
-- 2023 (C Q6b): Describe in detail about hardware virtualization and server virtualization with diagram and examples.
-- 2023 (A h) / 2023 (A h) & 2023 (A h): Differentiate between Para virtualization and Full virtualization. (2023 A h, 2022 C Q6b)
+### End‑user Access & Mobile Devices
+- End‑user access to cloud computing and Mobile Internet devices + cloud implications
+- Cloud management and service‑creation tools (2021 B(c))
+- Services provided by Amazon infrastructure cloud from a user perspective (2018 (c), 2024 B(c))
 
-### System VM
-- Related coverage: 2022 (B d) Hardware vs Server virtualization; 2023 (C Q6b) hardware/server virtualization (no explicit "System VM" question wording).
+### Big Data, Virtualization & Platform Services
+- Hadoop, MapReduce, HDFS/GFS (2021 Q3(a)) — distributed file systems and MapReduce model
+- Google App Engine (GAE): major cloud features, architecture, and programming environment (2021 Q5(a), 2023 Q7(b), 2024 Q7(a))
+- Amazon AWS: key components and domain importance (2023 Q4(a))
+- Virtualization and virtual machine monitors (VMMs): properties of VMs, Xen vs Hyper‑V, VirtualBox/KVM/XEN/Hyper‑V/VMware (2018 Q4, 2023 Q6(a))
+- Types of VMMs: process VMs, host VMMs, native VMMs (2024 B(e))
 
-### Process VM
-- 2018 (B e): What is the difference between process virtual machines, host VMMs and native VMMs?
-- 2024 (B e): What is the difference between process virtual machines, host VMMs and native VMMs?
+(Use the bullets above to map exam questions into the grouped topics for study/rewrite.)
 
-### Virtual Machine Monitor (VMM) / Hypervisor
-- 2018 (C Q4): Explain the virtual machine monitor?
-- 2022 (A h): Determine the reasons used for adopting Virtual Machine Monitors.
-- 2023 (B d): Illustrate the virtual machine monitor and the properties of a virtual machine.
-- 2018 (A a) & 2022 (A g): What is a Hypervisor? / Define the hypervisor.
-
-### Virtual machine properties
-- 2018 (C Q4): Discuss the properties of a virtual machine.
-- 2023 (B d): Illustrate the virtual machine monitor and the properties of a virtual machine.
-
-### Interpretation and Binary Translation (and Full vs Para virtualization)
-- 2018 (A e): What do you mean by full virtualization?
-- 2022 (C Q6b): Binary Translation is a method for achieving Full Virtualization. Discuss. Also compare Binary Translation with Para Virtualization.
-
-### HLL VM
-- No explicit exam questions found for HLL (High-Level-Language) VMs in the provided papers.
-
-### Supervisors / Specific Hypervisors (Xen, KVM, VMware, VirtualBox, Hyper‑V)
-- 2018 (C Q4): Distinguish between Xen and Hyper-V.
-
-
----
-
-Topics with no explicit exam questions found (in this dataset)
-- HLL VM (High-Level-Language VM) — no direct questions.
-- System VM — no explicit question labeled "System VM" (covered indirectly via hardware/server virtualization).
-
-If you want, I can produce a condensed study checklist per topic with only the exact question texts and year tags.
