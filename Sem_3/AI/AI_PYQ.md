@@ -1,52 +1,45 @@
-## **Grouped Questions by Topic**
+## Knowledge Representation
+- What do you mean by knowledge representation? Describe the techniques of knowledge representation. [2024 – SECTION C Q5(a)]
+- Represent the following in partitioned semantic networks: (i) Every player kicked a ball. (ii) All players like the referee. (iii) Andrew believes that there is a fish with lungs. [2019 – SECTION C Q5(a)]
 
-### **Uninformed vs Informed Search**
-- Compare *uninformed and informed search methods* (2023, Section A)
-- Give the heuristic function for shortest path problem (2019, Section A)
-- Discuss *water jug problem with heuristic search techniques* (2024, Section C)
-- Explain the *A* Algorithm\* with steps till goal state (2022, Section C)
+## Propositional logic / Predicate logic
+- Compare propositional logic and predicate logic. [2019 – SECTION A Q1(d)]
+- Compare propositional logic and predicate logic. [2022 – SECTION A Q1(f)]
+- Justify the usage of universal and existential quantifier with an example. [2019 – SECTION A Q1(e)]
+- Justify the usage of universal and existential quantifier with an example. [2022 – SECTION A Q1(e)]
 
-### **Local Search (Hill Climbing)**
-- What do you infer from *hill-climbing search algorithm*? (2019, Section A)
-- Differentiate between *simple hill climbing* and *steepest ascent hill climbing* (2022, Section A)
-- Explain Steepest-ascent climbing algo... and discuss problems with it (2018, Section B)
+## First Order Logic (FOPL)
+- Write the steps for converting FOPL into CNF. [2022 – SECTION B Q2(c)]
+- Explain concept and use of clause form conversion algorithm. [2023 – SECTION C Q5(a)]
 
-### **Global Search**
-- Diff between Local Search and Global Search (2018, Section A)
+## Inference in First Order Logic / Resolution
+- Give the completeness proof of resolution. [2019 – SECTION B Q2(e)]
+- Convert the following sentence into predicate logic and then prove “Was Marcus loyal to Caesar?” using resolution (full 8‑statement problem). [2022 – SECTION C Q5(a)]
 
-### **Adversarial Search (Min-Max, Alpha-Beta, Games)**
-- Apply the *minimax algorithm* to the search tree for nim game (2019, Section B)
-- Discuss *Min-Max search algorithm* with diagram (2023, Section C)
-- Describe *alpha-beta pruning* and other Min-Max improvements (2022, Section B)
-- Explain *Alpha-Beta pruning* with example (2024, Section C)
-- Explain the concept of the Alpha - bata testing pruning and write the alpha beta test algorith (2018, Section C)
-- Explain *Searching techniques used in games* (2024, Section B)
-- Briefly explain *adversarial search* (2023, Section A)
+## Clause form conversion
+- Write the steps for converting FOPL into CNF. [2022 – SECTION B Q2(c)]
+- Explain concept and use of clause form conversion algorithm. [2023 – SECTION C Q5(a)]
 
-### **General Search Algorithms**
-- Implement the *Search Algorithms* in LISP/C. Comment suitability (2019, Section C)
-- Discuss use of *PROLOG* for search algorithms (2019, Section C)
-- Discuss branch bound search algo (2018, Section A)
-- Discuss constraint satisfaction search strategy via DFS, BFS, Best-first (2019, Section C)
-- Explain *Best-first search algorithm* with diagram (2023, Section B)
-- Discuss *searching process* (2024, Section A)
+## Resolution
+- Give the completeness proof of resolution. [2019 – SECTION B Q2(e)]
+- Prove “Was Marcus loyal to Caesar?” using resolution (predicate logic conversion + resolution proof). [2022 – SECTION C Q5(a)]
 
-### **AND-OR Graphs**
-- Explain *AND-OR graph searching algorithm* (2023, Section C)
+## Chaining — concept, forward chaining and backward chaining
+- Which algorithm is more similar to backward chaining algorithm? Write its algorithm. [2019 – SECTION A Q1(g)]
+- Identify the difference between forward and backward chaining; given KB P, P→Q, Q→R infer R using forward and backward chaining. [2022 – SECTION C Q4(a)]
+- Discuss and compare forward and backward chaining methods with example. [2023 – SECTION B Q2(c)]
+- Describe forward chaining. [2024 – SECTION A Q1(f)]
 
-### **Simulated Annealing**
-- Discuss Simulated Annealing seach algorthm with its advantages and disadvantages (2018, Section C)
+## Utility theory and Probabilistic reasoning
 
-### **State Space Search**
-- Explain *forward and backward state space search* (2019, Section C)
+## Hidden Markov Model (HMM)
+- Discuss the different design issues to be solved to use Hidden Markov Model for real world application. [2019 – SECTION B Q2(c)]
+- Distinguish between Markov model and Hidden Markov Model (HMM). [2022 – SECTION C Q5(b)]
+- Describe the use of Hidden Markov models in speech recognition. [2024 – SECTION B Q2(c)]
 
----
-
-✅ **Summary of Coverage:**
-- **Uninformed Search** → 2023 (Section A – compare uninformed vs informed).
-- **Informed Search (Heuristic, A*)*\* → 2019 (heuristic), 2022 (A\*), 2024 (heuristic search water jug).
-- **Local Search (Hill Climbing)** → 2019 (hill climbing), 2022 (simple vs steepest hill climbing).
-- **Adversarial Search (Min-Max, Alpha-Beta)** → 2019 (nim game minimax), 2022 (alpha-beta), 2023 (min-max), 2024 (alpha-beta).
-- **Search in Games** → 2019 (minimax nim), 2024 (games search).
-- **AND-OR Graphs** → 2023 (Section C).
-- **General Search Algorithms** → 2019 (implementations), 2023 (best-first), 2024 (search process).
+## Bayesian networks
+- What does a Bayesian network represent? [2022 – SECTION A Q1(j)]
+- What is Bayesian network? Explain steps to create a Bayesian network. [2023 – SECTION C Q5(b)]
+- Explain Bayesian networks. [2024 – SECTION A Q1(e)]
+- What is Bayesian network? Explain steps to create a Bayesian network. [2023 – SECTION C Q5(b)] (duplicate entry from above)
+- What does a Bayesian network represent? [2022 – SECTION A Q1(j)] (duplicate entry from above)
