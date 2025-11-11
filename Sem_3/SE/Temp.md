@@ -1,48 +1,50 @@
-## Software Design — Basic Concepts
-- What is software design? Describe levels of software design. [2020, Section B Q3(c)]
-- What is software design? Explain the various principles and design concepts of software design. [2024, Section B Q(c)]
-- What are the elements/components of design model? [2021, Section A (c)]
-- Discuss risk management (adjacent topic). Explain how to select the best risk reduction technique. [2023, Section B (e)]
+## Testing Objectives
+- What are the objectives of testing? (2021 A(d))
 
-## Architectural Design
-- Differentiate architectural design and procedural design. [2024, Section C Q5(b)]
-- What is meant by the term cohesion in the context of software design? [2024, Section C Q5(b)]
-- Describe structure chart. [2023, Section A (e)]
+## Unit Testing
+- Explain how Unit testing of a Software System is performed? (2021 B(a))
+- Describe the errors commonly found during Unit Testing. (2024 C Q6(a))
 
-## Low-Level Design — Modularization
-- What are the advantages of Modularization? [2021, Section A (j)]
-- What do you mean by function oriented design? Discuss the advantages of modular system. [2020, Section C Q5(a)]
+## Integration Testing
+- What is integration testing? Explain different types of integration testing. (2020 C Q6(b))
+- Explain in detail about integration testing? How integration testing is different from system testing? (2021 C Q7(b))
+- What is integration testing? Explain different types of integration testing. (2023 B(d))
+- What is integration testing? Differentiate between top-down and bottom-up integration testing. (2024 B(d))
+- Explain the Integration-testing process and system-testing process and discuss their outcomes. (2024 C Q6(b))
 
-## Design Structure Charts
-- Describe structure chart. [2023, Section A (e)]
+## Acceptance Testing
+- List the levels or phases of testing. (Unit, Integration, System, Acceptance) (2021 C Q4(b))
 
-## Pseudocodes and Flow Charts
-- (No explicit pseudocode/flow chart questions in provided papers; related coding/cyclomatic questions appear under metrics.)
+## Regression Testing
+- What are the two main activities of regression testing? (2023 A(g))
 
-## Coupling and Cohesion Measures
-- Explain various types of coupling with the help of an example. [2020, Section C Q5(b)]
-- Explain the types of coupling and cohesion. [2021, Section B (d)]
-- Define Cohesion. What is Functional Cohesion? Does Functional Cohesion within a module bring about good software design? Give an example. What type of coupling and cohesion is preferred? [2023, Section C Q5(a)]
-- What is meant by the term cohesion in the context of software design? [2024, Section C Q5(b)]
+## Testing for Functionality and Testing for Performance
+- Define black-box testing strategy. (2024 A(g))
+- What is equivalence partitioning? (Black-box testing technique) (2021 A(e))
+- Write the difference between black-box testing and white-box testing; for a program computing square root of an integer between 0 and 5000 determine equivalence-class and boundary-value test cases. (2023 C Q6(b))
 
-## Design Strategies
-- Function-Oriented Design
-    - What do you mean by function oriented design? Discuss the advantages of modular system. [2020, Section C Q5(a)]
-    - Compare the object oriented and function-oriented design. [2021, Section C Q5 (one part)]
-- Object-Oriented Design
-    - What are the main advantages of using an object-oriented design approach over a function-oriented approach? [2024, Section C Q5(a)]
-    - Compare the object oriented and function-oriented design. [2021, Section C Q5 (one part)]
-- Top-Down and Bottom-Up Design
-    - (No explicit TD/BU question in provided papers; related conceptual items appear under basic/architectural topics.)
+## Top-Down and Bottom-Up Testing Strategies; Test Drivers and Test Stubs
+- Write about drivers and stubs. (2021 A(g))
+- Differentiate between test drivers and test stubs. (2023 A(h))
+- Differentiate between top-down and bottom-up integration testing. (2024 B(d))
 
-## Software Measurement and Metrics
-- Halstead’s Software Science
-    - What is Halstead’s software science metric? Define. [2021, Section C Q6 (part b)(a)]
-    - Calculate Halstead metrics (Volume and Difficulty) for given code. [2023, Section C Q6(a)]
-- Function Point (FP) Based Measures
-    - Explain about function point metric in detail. [2021, Section C Q6 (part b)(b)]
-- Cyclomatic Complexity / Control Flow Graphs
-    - What is cyclomatic complexity? Calculate the cyclomatic complexity of the following code: [largest() { ... }]. [2020, Section C Q6(a)]
-    - How to compute the cyclomatic complexity? [2021, Section A (f)]
-    - What is Cyclomatic Complexity? [2024, Section A (e)]
-- Coding-to-metrics items (code-based cyclomatic/Halstead problems referenced above). [2020, 2021, 2023, 2024 as listed]
+## Structural Testing (White-Box Testing)
+- Differentiate between Structural testing and Functional testing. (White-box vs Black-box) (2021 C Q3(b))
+- Write the difference between black-box testing and white-box testing. (2023 C Q6(b))
+
+## Functional Testing (Black-Box Testing)
+- Differentiate between Structural testing and Functional testing. (White-box vs Black-box) (2021 C Q3(b))
+- Define black-box testing strategy. (2024 A(g))
+- What is equivalence partitioning? (Black-box testing technique) (2021 A(e))
+
+## Test Data Suite Preparation
+- Determine the equivalence-class test cases and boundary-value test cases for a program that computes the square root of an input integer between 0 and 5000. (2023 C Q6(b))
+- What is equivalence partitioning? (2021 A(e))
+
+## Alpha and Beta Testing of Products
+- Distinguish between alpha and beta testing. (2021 A(h))
+
+## Static Testing Strategies: Formal Technical Reviews, Walk-through, Code Inspection, Compliance with Standards
+- Write a short note on Formal Technical Review and Code Inspection and compare them. (2020 B Q2(d))
+- What is a formal technical review? What are the objectives of formal technical review? Give a comparative study of code inspection, reviews and walk-through. (2023 C Q5(b))
+- Compliance with design and coding standards — (no explicit question in the provided set)

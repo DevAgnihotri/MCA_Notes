@@ -408,7 +408,7 @@ Perfect, dear 🌟 — here are your **detailed, clear, and exam-ready notes** o
 
 ---
 
-## 🧩 **Software Measurement and Metrics — Overview**
+# 🧩 **Software Measurement and Metrics — Overview**
 
 - Halstead’s Software Science
     - What is Halstead’s software science metric? Define. [2021, Section C Q6 (part b)(a)]
@@ -622,3 +622,4 @@ Helps in **visualizing program logic** and **calculating CC**.
 * Guides **modular design** decisions.
 
 ---
+
