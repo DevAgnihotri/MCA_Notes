@@ -1,0 +1,624 @@
+## 🧩 **1. Basic Concept of Software Design**
+
+- What is software design? Describe levels of software design. [2020, Section B Q3(c)]
+- What is software design? Explain the various principles and design concepts of software design. [2024, Section B Q(c)]
+- What are the elements/components of design model? [2021, Section A (c)]
+- Discuss risk management (adjacent topic). Explain how to select the best risk reduction technique. [2023, Section B (e)]
+
+### ✳️ What is Software Design?
+
+Software design is the **process of defining the architecture, components, interfaces, and data** for a software system to satisfy specified requirements.
+It bridges the gap between **requirements specification** and **implementation**.
+
+---
+
+### 🧱 Levels of Software Design
+
+There are **three main levels**:
+
+1. **Architectural Design:**
+
+   * Defines the system structure — major modules and their relationships.
+   * Output: **Architecture diagram**.
+2. **High-Level Design (HLD):**
+
+   * Describes module-level functionality and interfaces.
+   * Defines how modules interact.
+3. **Low-Level Design (LLD):**
+
+   * Focuses on internal logic, algorithms, and data structures of individual modules.
+
+---
+
+### ⚙️ Principles of Good Software Design
+
+1. **Modularity:** Divide system into manageable components.
+2. **Abstraction:** Focus on essential features, hide complexity.
+3. **Encapsulation:** Keep data and operations safe within modules.
+4. **Cohesion & Coupling:** Aim for **high cohesion**, **low coupling**.
+5. **Simplicity:** Avoid unnecessary complexity.
+6. **Reusability:** Encourage reuse of components.
+7. **Maintainability:** Design for easy modification.
+
+---
+
+### 🧩 Design Concepts
+
+* **Design Model:** A representation of software from different viewpoints — data, architecture, interface, and components.
+* **Elements of Design Model:**
+
+  1. **Data Design** — how data is structured and accessed.
+  2. **Architectural Design** — defines the overall structure.
+  3. **Interface Design** — how modules communicate.
+  4. **Component-Level Design** — details of algorithms and logic.
+  5. **Procedural Design** — step-by-step algorithmic representation.
+
+---
+
+### ⚠️ Risk Management (Linked Topic)
+
+**Risk Management** in software design identifies, analyzes, and mitigates potential project risks.
+Steps:
+
+1. **Identify** possible risks (e.g., delay, cost, technology).
+2. **Analyze** their probability and impact.
+3. **Plan** risk reduction strategies (avoidance, transfer, mitigation).
+4. **Monitor** throughout development.
+
+👉 **Risk Reduction Techniques:**
+
+* **Avoidance:** Change plan to eliminate risk.
+* **Mitigation:** Reduce likelihood or impact.
+* **Transfer:** Shift risk to third party (e.g., insurance).
+* **Acceptance:** Prepare to deal with it if it occurs.
+
+---
+
+## 🏗️ **2. Architectural Design**
+
+- Differentiate architectural design and procedural design. [2024, Section C Q5(b)]
+- What is meant by the term cohesion in the context of software design? [2024, Section C Q5(b)]
+- Describe structure chart. [2023, Section A (e)]
+
+### 🧠 Definition
+
+Architectural design is the **blueprint of the software system** that defines major components and their interaction.
+It answers **“What are the main parts and how do they work together?”**
+
+---
+
+### 🔀 Architectural vs. Procedural Design
+
+| **Aspect** | **Architectural Design**  | **Procedural Design**     |
+| ---------- | ------------------------- | ------------------------- |
+| **Focus**  | Structure of the system   | Internal logic/algorithms |
+| **Scope**  | Entire system             | Individual components     |
+| **Output** | Architecture diagram      | Flowchart or pseudocode   |
+| **Goal**   | Define module interaction | Define process steps      |
+
+---
+
+### 🧩 Cohesion (2024 — Q5(b))
+
+**Cohesion** refers to **how closely related the functions within a module are**.
+
+* **High cohesion:** module performs a single, well-defined task → desirable.
+* **Low cohesion:** module performs unrelated tasks → undesirable.
+
+**Types of Cohesion (in increasing order):**
+
+1. Coincidental
+2. Logical
+3. Temporal
+4. Procedural
+5. Communicational
+6. Sequential
+7. Functional (best)
+
+---
+
+### 📊 Structure Chart (2023 — A (e))
+
+A **Structure Chart** represents the **hierarchical structure of modules** in a system.
+It shows:
+
+* **Modules** (rectangles)
+* **Call relationships** (lines/arrows)
+* **Data flow** between modules
+
+**Used for:**
+
+* Visualizing architecture
+* Understanding module relationships
+* Supporting modular design
+
+---
+
+## ⚙️ **3. Low-Level Design — Modularization**
+
+- What are the advantages of Modularization? [2021, Section A (j)]
+- What do you mean by function oriented design? Discuss the advantages of modular system. [2020, Section C Q5(a)]
+
+### 🧩 What is Modularization?
+
+**Modularization** is the process of **dividing a system into smaller, independent modules** that can be developed and tested separately.
+
+---
+
+### ✅ Advantages of Modularization
+
+1. **Simplicity:** Each module is easier to design and maintain.
+2. **Reusability:** Modules can be reused in other projects.
+3. **Maintainability:** Easy to isolate and fix bugs.
+4. **Parallel Development:** Teams can work on different modules simultaneously.
+5. **Scalability:** System can be easily expanded.
+6. **Testing Ease:** Each module can be unit tested separately.
+
+---
+
+### ⚙️ Function-Oriented Design
+
+Focuses on **functions** performed by the system rather than data.
+
+* Uses **Data Flow Diagrams (DFDs)** to represent system flow.
+* Each function is later converted into a module.
+
+**Advantages:**
+
+* Promotes modularity and structure.
+* Easy to track functional dependencies.
+* Simple for small to medium systems.
+
+---
+
+## 🧭 **4. Design Structure Charts (DSC)**
+
+
+- Describe structure chart. [2023, Section A (e)]
+
+A **Design Structure Chart** shows:
+
+* **Hierarchical relationships** among modules.
+* **Control flow** (solid lines).
+* **Data flow** (dotted lines).
+
+**Symbols used:**
+
+* **Rectangles:** represent modules
+* **Arrows:** show control or data transfer
+* **Loop/Decision symbols:** indicate iteration or conditions
+
+**Benefits:**
+
+* Clarifies module hierarchy.
+* Highlights communication paths.
+* Useful for debugging and maintenance.
+
+---
+
+Perfect, dear 🌟 — here’s your **well-structured, exam-ready notes** for the topics:
+**Pseudocodes, Flowcharts, Coupling & Cohesion Measures, and Design Strategies (Function-Oriented, Object-Oriented, Top-Down, Bottom-Up)** — fully aligned with your given past-year questions 👇
+
+---
+
+## 🧮 **1. Pseudocodes and Flowcharts**
+
+### ✳️ Pseudocode
+
+Pseudocode is a **high-level, human-readable description of an algorithm** that uses simple language constructs to represent logic.
+It helps in bridging the gap between **program logic** and **actual coding**.
+
+**Key Features:**
+
+* Uses keywords like `IF`, `ELSE`, `FOR`, `WHILE`, `BEGIN`, `END`.
+* Focuses on **logic**, not syntax.
+* Easily converts into any programming language.
+
+**Example:**
+
+```
+BEGIN
+   INPUT num
+   IF num % 2 == 0 THEN
+        PRINT "Even"
+   ELSE
+        PRINT "Odd"
+   ENDIF
+END
+```
+
+---
+
+### 🌀 Flowchart
+
+A **Flowchart** is a **graphical representation of an algorithm** showing the flow of control using **standard symbols**.
+
+**Common Symbols:**
+
+| Symbol | Meaning        |
+| ------ | -------------- |
+| ⭘      | Start / End    |
+| ⬛      | Process        |
+| ⧉      | Input / Output |
+| ◆      | Decision       |
+| ⬇️     | Flow line      |
+
+**Advantages:**
+
+* Easy visualization of process flow.
+* Helps in debugging and documentation.
+* Makes logic easier to communicate.
+
+---
+
+## 🧩 **2. Coupling and Cohesion Measures**
+
+- Explain various types of coupling with the help of an example. [2020, Section C Q5(b)]
+- Explain the types of coupling and cohesion. [2021, Section B (d)]
+- Define Cohesion. What is Functional Cohesion? Does Functional Cohesion within a module bring about good software design? Give an example. What type of coupling and cohesion is preferred? [2023, Section C Q5(a)]
+- What is meant by the term cohesion in the context of software design? [2024, Section C Q5(b)]
+
+### 🧠 Cohesion
+
+Cohesion measures **how strongly elements within a module are related**.
+
+* **High Cohesion:** Module focuses on a single task → desirable.
+* **Low Cohesion:** Module performs unrelated functions → undesirable.
+
+**Types of Cohesion (lowest → highest):**
+
+1. **Coincidental:** Random tasks grouped together.
+2. **Logical:** Similar category of actions (e.g., input/output).
+3. **Temporal:** Related by time (e.g., initialization).
+4. **Procedural:** Related by control sequence.
+5. **Communicational:** Use same data set.
+6. **Sequential:** Output of one part is input to another.
+7. **Functional:** One single, well-defined task → ✅ **Best type**.
+
+👉 **Example:**
+A function that only calculates and returns the area of a circle = **functional cohesion**.
+
+---
+
+### ⚙️ Coupling
+
+Coupling measures **how dependent modules are on each other**.
+
+* **Low Coupling:** Modules communicate minimally → desirable.
+* **High Coupling:** Modules heavily depend on each other → undesirable.
+
+**Types of Coupling (highest → lowest):**
+
+1. **Content Coupling:** One module modifies another’s data or logic (worst).
+2. **Common Coupling:** Shared global data.
+3. **External Coupling:** Shared external data format or device.
+4. **Control Coupling:** Module passes control info to another.
+5. **Stamp Coupling:** Passes data structures, not individual elements.
+6. **Data Coupling:** Passes only necessary data → ✅ **Best type**.
+
+---
+
+### ✅ Preferred Design
+
+* **Cohesion:** High (Functional Cohesion preferred)
+* **Coupling:** Low (Data Coupling preferred)
+
+👉 **Functional Cohesion leads to a good modular design** — as it improves maintainability, reliability, and reusability.
+
+---
+
+## 🧭 **3. Design Strategies**
+
+- Function-Oriented Design
+    - What do you mean by function oriented design? Discuss the advantages of modular system. [2020, Section C Q5(a)]
+    - Compare the object oriented and function-oriented design. [2021, Section C Q5 (one part)]
+- Object-Oriented Design
+    - What are the main advantages of using an object-oriented design approach over a function-oriented approach? [2024, Section C Q5(a)]
+    - Compare the object oriented and function-oriented design. [2021, Section C Q5 (one part)]
+- Top-Down and Bottom-Up Design
+    - (No explicit TD/BU question in provided papers; related conceptual items appear under basic/architectural topics.)
+
+
+Software Design Strategies define **how a system is broken down and developed**, guiding overall structure and logic flow.
+
+---
+
+### ⚙️ Function-Oriented Design (FOD)
+
+**Definition:**
+A top-down approach where the system is designed **around the functions or processes** that it performs.
+
+**Features:**
+
+* Uses **Data Flow Diagrams (DFDs)**.
+* Emphasizes *what functions are performed* and *how data moves*.
+* Each function becomes a separate module.
+
+**Advantages:**
+
+1. Promotes **modularity and reusability**.
+2. **Easier to understand** for procedural systems.
+3. **Good for small to medium projects.**
+
+**Limitations:**
+
+* Less focus on data structure.
+* Harder to maintain in complex, data-driven systems.
+
+---
+
+### 🧱 Object-Oriented Design (OOD)
+
+**Definition:**
+System is modeled as a collection of **objects** that encapsulate both **data and behavior**.
+
+**Core Concepts:**
+
+1. **Encapsulation** — bind data + functions together.
+2. **Inheritance** — reuse and extend existing classes.
+3. **Polymorphism** — same operation behaves differently on different objects.
+4. **Abstraction** — focus on essential features only.
+
+**Advantages:**
+
+* Promotes **reusability and scalability**.
+* **Easier maintenance** and **real-world mapping**.
+* Supports **data integrity** and **code extensibility**.
+
+---
+
+### 🔄 FOD vs OOD Comparison
+
+| **Aspect**          | **Function-Oriented Design** | **Object-Oriented Design**       |
+| ------------------- | ---------------------------- | -------------------------------- |
+| **Focus**           | Functions / Processes        | Objects / Data                   |
+| **Data Handling**   | Data flows between functions | Data encapsulated within objects |
+| **Design Basis**    | DFDs, flowcharts             | Class diagrams, use cases        |
+| **Reusability**     | Limited                      | High                             |
+| **Maintainability** | Hard for large systems       | Easier due to encapsulation      |
+| **Example**         | Payroll calculation process  | Employee class with methods      |
+
+**👉 Exam Tip:** Mention that modern systems often **combine both FOD and OOD** for flexibility.
+
+---
+
+### 🧭 Top-Down and Bottom-Up Design
+
+#### **Top-Down Design**
+
+* Start from the **highest-level system** and break it into smaller components.
+* Used in **function-oriented** approach.
+* Focuses on **decomposition** first.
+  **Advantages:**
+* Clear structure, easy to trace requirements.
+* Early detection of missing functionality.
+
+#### **Bottom-Up Design**
+
+* Start from **low-level modules or components** and integrate them into a complete system.
+* Used in **object-oriented** systems.
+* Focuses on **composition** first.
+  **Advantages:**
+* Promotes reusability.
+* Early testing of modules possible.
+
+Perfect, dear 🌟 — here are your **detailed, clear, and exam-ready notes** on
+**Software Measurement and Metrics**, covering:
+**Halstead’s Software Science, Function Point (FP) Based Measures, and Cyclomatic Complexity (Control Flow Graphs)** — written in **simple, learnable English** like our earlier ones 👇
+
+---
+
+## 🧩 **Software Measurement and Metrics — Overview**
+
+- Halstead’s Software Science
+    - What is Halstead’s software science metric? Define. [2021, Section C Q6 (part b)(a)]
+    - Calculate Halstead metrics (Volume and Difficulty) for given code. [2023, Section C Q6(a)]
+- Function Point (FP) Based Measures
+    - Explain about function point metric in detail. [2021, Section C Q6 (part b)(b)]
+- Cyclomatic Complexity / Control Flow Graphs
+    - What is cyclomatic complexity? Calculate the cyclomatic complexity of the following code: [largest() { ... }]. [2020, Section C Q6(a)]
+    - How to compute the cyclomatic complexity? [2021, Section A (f)]
+    - What is Cyclomatic Complexity? [2024, Section A (e)]
+- Coding-to-metrics items (code-based cyclomatic/Halstead problems referenced above). [2020, 2021, 2023, 2024 as listed]
+
+
+### ✳️ What are Software Metrics?
+
+Software Metrics are **quantitative measures** that help us **analyze, evaluate, and improve** software quality, size, complexity, and performance.
+
+**Purpose of Software Metrics:**
+
+1. To **measure software productivity**.
+2. To **estimate effort, time, and cost**.
+3. To **analyze software quality and complexity**.
+4. To **compare projects** and **improve future design**.
+
+---
+
+## 📘 **1. Halstead’s Software Science**
+
+### 💡 Definition
+
+Halstead’s Software Science is a **size-oriented software metric** developed by **Maurice Halstead** to measure software’s complexity and effort based on the **number of operators and operands** in a program.
+
+It helps to **predict effort, time, and errors** in software development.
+
+---
+
+### 📊 **Halstead’s Parameters**
+
+| Symbol | Meaning                        | Description               |
+| ------ | ------------------------------ | ------------------------- |
+| **n₁** | Number of unique operators     | e.g. +, -, if, return     |
+| **n₂** | Number of unique operands      | e.g. variables, constants |
+| **N₁** | Total occurrences of operators | Count all operators used  |
+| **N₂** | Total occurrences of operands  | Count all operands used   |
+
+---
+
+### 📐 **Formulas**
+
+| **Measure**                | **Formula**              | **Meaning**                |
+| -------------------------- | ------------------------ | -------------------------- |
+| **Program Vocabulary (n)** | n = n₁ + n₂              | Total unique elements      |
+| **Program Length (N)**     | N = N₁ + N₂              | Total elements used        |
+| **Volume (V)**             | V = N × log₂(n)          | Size of the program        |
+| **Difficulty (D)**         | D = (n₁ / 2) × (N₂ / n₂) | Effort to understand code  |
+| **Effort (E)**             | E = D × V                | Total mental effort        |
+| **Time (T)**               | T = E / 18 sec           | Time to code or understand |
+| **Bugs (B)**               | B = E^(2/3) / 3000       | Estimated errors           |
+
+---
+
+### 🧠 **Interpretation**
+
+* **Higher Volume → More code to understand**
+* **Higher Difficulty → More complex code**
+* **Higher Effort → More development or debugging time**
+
+✅ **Example Question:**
+“Calculate Halstead Volume and Difficulty for the given code.”
+👉 Use formulas with the given operator/operand counts.
+
+---
+
+## ⚙️ **2. Function Point (FP) Based Measures**
+
+### 💡 Definition
+
+**Function Point (FP)** is a **functionality-oriented metric** used to measure the **size of software** based on the **features delivered to the user**, not lines of code.
+
+Developed by **Allan Albrecht (IBM)**, it focuses on **what the software does**, not how it’s implemented.
+
+---
+
+### 📊 **Five Major Components**
+
+| **Component**                         | **Description**                | **Example**       |
+| ------------------------------------- | ------------------------------ | ----------------- |
+| **1. External Inputs (EI)**           | User inputs that update data   | Forms, data entry |
+| **2. External Outputs (EO)**          | Outputs generated              | Reports, messages |
+| **3. External Inquiries (EQ)**        | Input-output combinations      | Search forms      |
+| **4. Internal Logical Files (ILF)**   | Internal data stores           | Database tables   |
+| **5. External Interface Files (EIF)** | Shared data with other systems | Linked databases  |
+
+---
+
+### 🧾 **Computation Steps**
+
+1. **Identify & Count** the above five components.
+2. **Assign Weights** (low, average, high complexity).
+3. **Calculate Unadjusted Function Points (UFP):**
+   [
+   UFP = \sum (\text{count of each component × its weight})
+   ]
+4. **Calculate Value Adjustment Factor (VAF):**
+   [
+   VAF = 0.65 + 0.01 × \sum (\text{complexity adjustment values})
+   ]
+5. **Final Function Points (FP):**
+   [
+   FP = UFP × VAF
+   ]
+
+---
+
+### 💬 **Advantages**
+
+* Independent of programming language.
+* Measures user functionality.
+* Useful for **early estimation** before coding starts.
+
+---
+
+### 📘 **Example**
+
+A system with:
+
+* 10 Inputs (avg weight = 4)
+* 5 Outputs (avg weight = 5)
+* 2 Files (avg weight = 10)
+
+Then,
+UFP = (10×4) + (5×5) + (2×10) = 40 + 25 + 20 = **85 FP**
+
+---
+
+## 🧮 **3. Cyclomatic Complexity (CC)**
+
+### 💡 Definition
+
+Cyclomatic Complexity is a **control flow-based metric** proposed by **Thomas McCabe**.
+It measures the **number of linearly independent paths** in a program.
+
+👉 **It indicates the logical complexity of a program.**
+
+---
+
+### 📊 **Formula**
+
+[
+V(G) = E - N + 2P
+]
+where:
+
+* **E =** Number of edges in Control Flow Graph
+* **N =** Number of nodes in Control Flow Graph
+* **P =** Number of connected components (usually 1 for a single function)
+
+---
+
+### 🧠 **Alternate Method**
+
+Count the **number of decision points (like if, while, for, case)**:
+[
+V(G) = \text{Number of decision nodes} + 1
+]
+
+---
+
+### 🧾 **Example**
+
+```c
+if (a > b)
+   x = a;
+else
+   x = b;
+printf("%d", x);
+```
+
+👉 There is 1 decision point →
+Cyclomatic Complexity = 1 + 1 = **2**
+
+---
+
+### 📈 **Interpretation**
+
+| **Cyclomatic Complexity** | **Meaning**         | **Remarks**              |
+| ------------------------- | ------------------- | ------------------------ |
+| 1 – 10                    | Simple, low risk    | ✅ Easy to test           |
+| 11 – 20                   | Moderate complexity | ⚠️ Needs careful testing |
+| 21 – 50                   | Complex             | ❌ Hard to test           |
+| > 50                      | Very complex        | 🚫 Re-design needed      |
+
+---
+
+### 📘 **Control Flow Graph (CFG)**
+
+A **graphical representation** of the control flow of a program:
+
+* **Nodes** → Statements or blocks of code
+* **Edges** → Control paths between them
+
+Helps in **visualizing program logic** and **calculating CC**.
+
+---
+
+### 🧩 **Importance**
+
+* Identifies complex areas of code.
+* Helps in **unit testing and debugging**.
+* Reduces risk of logical errors.
+* Guides **modular design** decisions.
+
+---

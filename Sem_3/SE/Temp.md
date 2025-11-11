@@ -1,82 +1,48 @@
-## 🗂️ Topic-wise Arrangement of Exam Questions
+## Software Design — Basic Concepts
+- What is software design? Describe levels of software design. [2020, Section B Q3(c)]
+- What is software design? Explain the various principles and design concepts of software design. [2024, Section B Q(c)]
+- What are the elements/components of design model? [2021, Section A (c)]
+- Discuss risk management (adjacent topic). Explain how to select the best risk reduction technique. [2023, Section B (e)]
 
-### **Requirement Engineering**
+## Architectural Design
+- Differentiate architectural design and procedural design. [2024, Section C Q5(b)]
+- What is meant by the term cohesion in the context of software design? [2024, Section C Q5(b)]
+- Describe structure chart. [2023, Section A (e)]
 
-- Define Function Requirement. *(2020, Sec A)*
-- What is Software Requirement Engineering? *(2021, Sec A)*
-- Describe 2 characteristics of SRS. *(2023, Sec A)*
-- Discuss the significance of requirement engineering. Also write the various steps with requirement engineering with proper explanation. *(2023, Sec C)*
-- What are the various steps in requirement engineering process? *(2024, Sec A)*
-- Differentiate between functional and non-functional requirements of software engineering. *(2024, Sec B)*
-- Explain the Software requirement Analysis and Specification. Discuss various methods for Requirement gathering.(2022, Sec C)
-- Explain the Requirement Elicitation and Analysis Process.(2022, Sec C)
-- Explain the process of 'Risk Analysis and Management.' *(2021, Sec B)*
+## Low-Level Design — Modularization
+- What are the advantages of Modularization? [2021, Section A (j)]
+- What do you mean by function oriented design? Discuss the advantages of modular system. [2020, Section C Q5(a)]
 
----
+## Design Structure Charts
+- Describe structure chart. [2023, Section A (e)]
 
-### **Information Modelling (DFD, ER Diagram, Structure Chart)**
+## Pseudocodes and Flow Charts
+- (No explicit pseudocode/flow chart questions in provided papers; related coding/cyclomatic questions appear under metrics.)
 
-- What does data flow diagram level 0 represent? *(2020, Sec A)*
-- Draw Context level and Level-1 DFD for Attendance Monitoring System. *(2020, Sec B)*
-- Describe ER Diagram. *(2023, Sec A)*
-- Explain in detail about DFD and Structure Chart. (2022, sec B)
-- Describe structure chart. *(2023, Sec A)*
-- Draw a DFD for result preparation automation system of MCA Courses. *(2023, Sec B)*
-- What does Level 0 DFD represent? *(2024, Sec A)*
+## Coupling and Cohesion Measures
+- Explain various types of coupling with the help of an example. [2020, Section C Q5(b)]
+- Explain the types of coupling and cohesion. [2021, Section B (d)]
+- Define Cohesion. What is Functional Cohesion? Does Functional Cohesion within a module bring about good software design? Give an example. What type of coupling and cohesion is preferred? [2023, Section C Q5(a)]
+- What is meant by the term cohesion in the context of software design? [2024, Section C Q5(b)]
 
----
+## Design Strategies
+- Function-Oriented Design
+    - What do you mean by function oriented design? Discuss the advantages of modular system. [2020, Section C Q5(a)]
+    - Compare the object oriented and function-oriented design. [2021, Section C Q5 (one part)]
+- Object-Oriented Design
+    - What are the main advantages of using an object-oriented design approach over a function-oriented approach? [2024, Section C Q5(a)]
+    - Compare the object oriented and function-oriented design. [2021, Section C Q5 (one part)]
+- Top-Down and Bottom-Up Design
+    - (No explicit TD/BU question in provided papers; related conceptual items appear under basic/architectural topics.)
 
-### **Feasibility Study**
-
-- Discuss the role of feasibility study in development of project. Explain any two types of feasibility study. *(2020, Sec C)*
-- What is feasibility study? What are the contents we should contain in the feasibility report? *(2023, Sec B)*
-- What are the important activities that are carried out during the feasibility study phase? *(2024, Sec C)*
-
----
-
-### **SQA, SEI-CMM, ISO**
-
-- Explain the CMM with the help of diagram. Differentiate between ISO and CMM. *(2020, Sec C)*
-- Describe the levels of CMM. *(2021, Sec C)*
-- List the process maturity levels in SEI’s CMM. *(2024, Sec A)*
-- What is software quality assurance? What are the various quality concepts of SQA? Explain. *(2024, Sec C)*
-- Differentiate between Validation and Verification of a Software Product. *(2021, Sec C)*
-
----
-
-# ✅ Final Year-Wise Coverage
-
-### **2020**
-
-* Function Requirement (SRS) – Sec A
-* DFD (Info Modelling) – Sec A, B
-* Feasibility Study – Sec C
-* CMM vs ISO – Sec C
-
-### **2021**
-
-* Requirement Engineering definition – Sec A
-* Verification & Validation – Sec C
-* SEI-CMM Levels – Sec C
-
-### **2023**
-
-* SRS Characteristics – Sec A
-* ER Diagram – Sec A
-* Feasibility Study – Sec B
-* DFD – Sec B
-* Requirement Engineering (steps) – Sec C
-* Requirement Elicitation (techniques) – Sec C
-
-### **2024**
-
-* Requirement Engineering Steps – Sec A
-* SEI-CMM Maturity Levels – Sec A
-* DFD Level 0 – Sec A
-* Functional vs Non-Functional Requirements – Sec B
-* Feasibility Study Phase – Sec C
-* Software Quality Assurance (concepts) – Sec C
-
----
-
-Do you want me to **arrange these questions unit-wise under “Requirement Engineering” and “SQA” headings**, so your notes are directly structured into **Unit 1 & Unit 2 style** with exam questions mapped?
+## Software Measurement and Metrics
+- Halstead’s Software Science
+    - What is Halstead’s software science metric? Define. [2021, Section C Q6 (part b)(a)]
+    - Calculate Halstead metrics (Volume and Difficulty) for given code. [2023, Section C Q6(a)]
+- Function Point (FP) Based Measures
+    - Explain about function point metric in detail. [2021, Section C Q6 (part b)(b)]
+- Cyclomatic Complexity / Control Flow Graphs
+    - What is cyclomatic complexity? Calculate the cyclomatic complexity of the following code: [largest() { ... }]. [2020, Section C Q6(a)]
+    - How to compute the cyclomatic complexity? [2021, Section A (f)]
+    - What is Cyclomatic Complexity? [2024, Section A (e)]
+- Coding-to-metrics items (code-based cyclomatic/Halstead problems referenced above). [2020, 2021, 2023, 2024 as listed]
