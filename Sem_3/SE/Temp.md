@@ -1,50 +1,48 @@
-## Testing Objectives
-- What are the objectives of testing? (2021 A(d))
+## Software as an Evolutionary Entity
+* No direct question found in the uploaded papers. (See related: [2024 — Section A (h)] "Explain the need of Software Project Management.")
 
-## Unit Testing
-- Explain how Unit testing of a Software System is performed? (2021 B(a))
-- Describe the errors commonly found during Unit Testing. (2024 C Q6(a))
+## Need for Maintenance
+* [2023 — Section A (i)] "Define need of maintenance."
 
-## Integration Testing
-- What is integration testing? Explain different types of integration testing. (2020 C Q6(b))
-- Explain in detail about integration testing? How integration testing is different from system testing? (2021 C Q7(b))
-- What is integration testing? Explain different types of integration testing. (2023 B(d))
-- What is integration testing? Differentiate between top-down and bottom-up integration testing. (2024 B(d))
-- Explain the Integration-testing process and system-testing process and discuss their outcomes. (2024 C Q6(b))
+## Categories of Maintenance: Preventive, Corrective and Perfective Maintenance
+* [2021 — Section C Q6(a)] "Explain the maintenance activities and maintenance problems. How is the cost of maintenance estimated?"
+* [2020 — Section A (g)] "Discuss two fundamental sources of change." (context: drivers of maintenance)
 
-## Acceptance Testing
-- List the levels or phases of testing. (Unit, Integration, System, Acceptance) (2021 C Q4(b))
+## Cost of Maintenance
+* [2021 — Section C Q6(a)] "How is the cost of maintenance estimated?"
 
-## Regression Testing
-- What are the two main activities of regression testing? (2023 A(g))
+## Software Re-Engineering
+* [2024 — Section C Q7(b)] "Explain the role of CASE tools in Software Re-engineering in detail."
 
-## Testing for Functionality and Testing for Performance
-- Define black-box testing strategy. (2024 A(g))
-- What is equivalence partitioning? (Black-box testing technique) (2021 A(e))
-- Write the difference between black-box testing and white-box testing; for a program computing square root of an integer between 0 and 5000 determine equivalence-class and boundary-value test cases. (2023 C Q6(b))
+## Reverse Engineering
+* [2024 — Section B (e)] "What is Reverse Engineering? Describe the reverse engineering process."
 
-## Top-Down and Bottom-Up Testing Strategies; Test Drivers and Test Stubs
-- Write about drivers and stubs. (2021 A(g))
-- Differentiate between test drivers and test stubs. (2023 A(h))
-- Differentiate between top-down and bottom-up integration testing. (2024 B(d))
+## Software Configuration Management Activities
+* [2023 — Section C Q7(b)] "What are the benefits of Software Configuration Management (SCM)? Elaborate the activities for SCM performed during SDLC."
+* [2020 — Section B (e)] "State Baseline. Discuss the process of modification of baseline."
+* [2020 — Section A (f)] "Name two configuration items."
 
-## Structural Testing (White-Box Testing)
-- Differentiate between Structural testing and Functional testing. (White-box vs Black-box) (2021 C Q3(b))
-- Write the difference between black-box testing and white-box testing. (2023 C Q6(b))
+## Change Control Process
+* [2020 — Section C Q7(a)] "What do you mean by Change Control? Explain the process of change control with the help of a diagram."
+* [2020 — Section B (e)] "State Baseline. Discuss the process of modification of baseline."
+* [2020 — Section A (g)] "Discuss two fundamental sources of change."
 
-## Functional Testing (Black-Box Testing)
-- Differentiate between Structural testing and Functional testing. (White-box vs Black-box) (2021 C Q3(b))
-- Define black-box testing strategy. (2024 A(g))
-- What is equivalence partitioning? (Black-box testing technique) (2021 A(e))
+## Software Version Control
+* [2020 — Section A (f)] "Name two configuration items."
+* [2020 — Section B (e)] "State Baseline. Discuss the process of modification of baseline."
 
-## Test Data Suite Preparation
-- Determine the equivalence-class test cases and boundary-value test cases for a program that computes the square root of an input integer between 0 and 5000. (2023 C Q6(b))
-- What is equivalence partitioning? (2021 A(e))
+## An Overview of CASE Tools
+* [2023 — Section C Q7(a)] "Categorize the use of CASE tools in software engineering with their advantages and disadvantages."
+* [2024 — Section C Q7(b)] "Explain the role of CASE tools in Software Re-engineering in detail."
 
-## Alpha and Beta Testing of Products
-- Distinguish between alpha and beta testing. (2021 A(h))
+## Estimation of Various Parameters (Cost, Effort, Schedule/Duration, COCOMO, Resource Allocation)
+* [2021 — Section C Q6(a)] "How is the cost of maintenance estimated?"
+* No direct questions found on COCOMO or Resource Allocation Models in the uploaded papers.
 
-## Static Testing Strategies: Formal Technical Reviews, Walk-through, Code Inspection, Compliance with Standards
-- Write a short note on Formal Technical Review and Code Inspection and compare them. (2020 B Q2(d))
-- What is a formal technical review? What are the objectives of formal technical review? Give a comparative study of code inspection, reviews and walk-through. (2023 C Q5(b))
-- Compliance with design and coding standards — (no explicit question in the provided set)
+## Software Risk Analysis and Management
+* [2024 — Section C Q7(a)] "What do you understand by Software Risk Analysis and how Risk Analysis is important in Software Engineering?"
+* [2021 — Section B (c)] "Explain the process of Risk Analysis and Management."
+* [2020 — Section C Q7(b)] "Discuss the various activities of Risk Assessment."
+* [2023 — Section B (e)] "Discuss risk management? Explain how to select the best risk reduction technique when there are many ways of reducing a risk."
+* [2023 — Section A (j)] "Discuss the ways to avoid risk."
+* [2024 — Section A (i)] "Differentiate between reactive risk and proactive risk strategies."
