@@ -1,35 +1,51 @@
-# Transport Layer:  
-Introduction to Transport Layer: Process-to-Process Delivery: 08  
-MASTER OF COMPUTER APPLICATION (MCA) — Page 9
+## Application Layer — Basic Concepts
 
-# Introduction to Transport Layer
-## 1) Introduction / Process-to-Process Delivery / Responsibilities
-- List responsibilities of Transport Layer (2022 — A, (h))
-- Illustrate sockets (2022 — A, (j))
+### Domain Name System (DNS)
+- 2021 — Sec C: Q7(b) (Purpose of DNS; three classifications of domain name space)  
+- 2023 — Sec B: (e) (short note on DNS)  
+- 2024 — Sec C: Q7(b)(i) (short note on DNS)
 
-## 2) Reliable vs Unreliable Connections; Port & Socket Addressing
-- Explain three‑way handshake (TCP) (2019 — B, (e))
-- Explain three‑way handshake and Two‑Army problem (2021 — C, Q6(b))
-- What is three‑way handshaking? (2023 — A, (h))
-- Advantages of using port numbers (2024 — A, (h))
+### World Wide Web (WWW)
+- 2022 — Sec C: Q7(a) (option a: URL — WWW concept)  
+- 2024 — Sec C: Q7(b)(iii) (short note on WWW)
 
-# Transport Layer Protocols with packet formats
-## 3) Transport Layer Protocols with packet formats: UDP, TCP, SCTP
-- UDP header (hex CB84000D001C001C): source port, dest port, data length, total UDP length (2019 — C, Q6(b))
-- Same UDP header questions (2022 — C, Q6(a))
-- Explain TCP / UDP / SCTP  (2024 — C, Q6(a))
-- Explain any two protocols in TCP/IP suite (SCTP, TCP, UDP) (2022 — C, Q6(b))
+### Hyper Text Transfer Protocol (HTTP)
+- 2024 — Sec C: Q7(b)(ii) (short note on HTTP)  
+- 2022 — Sec C: Q7(a) (Cookies — HTTP/Web context)
 
-## 4) Congestion Control: Techniques and TCP congestion mechanisms
-- How is congestion controlled? Explain TCP congestion control (2019 — C, Q6(a))
-- Define congestion; open and closed loop methods (2021 — C, Q6(a))
-- Differentiate Open Loop vs Closed Loop congestion control (2023 — C, Q6(a))
-- Explain a congestion control algorithm (2024 — B, (d))
+### Electronic mail (Email)
+- 2019 — Sec C: Q7(b) (message format, message transfer, mail reader)  
+- 2021 — Sec A: (j) (which application layer protocol supports electronic mail?)  
+- 2021 — Sec C: Q7(a) (E‑mail components; E‑mail architectures)  
+- 2023 — Sec A: (i) (role of SMTP in email)  
+- 2023 — Sec C: Q7(b) (E‑mail architectures with components)
 
-## 5) Quality of Service (QoS), Flow Characteristics & Techniques to improve QoS
-- Describe QoS and techniques to improve QoS (2024 — C, Q6(b))
-- Explain traffic shaping algorithms (2023 — C, Q6(b))
-- Explain Round‑Trip Time (RTT) (2023 — A, (f))
-- Maximum window size for selective reject with n‑bit sequence numbers (flow control concept) (2021 — A, (h))
+### File Transfer Protocol (FTP)
+- 2021 — Sec B: (e) (short note on FTP)  
+- 2023 — Sec B: (e) (short note on FTP)
 
-Note: Bluetooth architecture question marked as irrelevant (2022 — B, (e)) and omitted from topic grouping.
+### Remote login (Telnet / NVT)
+- 2021 — Sec B: (e) (short note on TELNET)  
+- 2022 — Sec C: Q7(a) (option d: NVT — Telnet)  
+- 2023 — Sec B: (e) (short note on Telnet)  
+- 2024 — Sec C: Q7(b)(iv) (short note on TELNET)
+
+---
+
+## Introduction to Cryptography
+
+### Definition & Goals (security goals)
+- 2024 — Sec A: (i) (Define security goals of information)  
+- 2019 — Sec C: Q7(a) (What is security goals?)
+
+### Applications & Security Services
+- 2023 — Sec C: Q7(a) (Define network security; discuss network security services)  
+- 2019 — Sec C: Q7(a) (types of network attacks — related to cryptographic application)
+
+### Attacks
+- 2019 — Sec C: Q7(a) (Explain different types of network attacks)
+
+### Encryption / Decryption; Public‑key vs Private‑key
+- 2024 — Sec C: Q7(a) (Significance of cryptography; compare public‑key and private‑key cryptography)
+- 2024 — Sec C: Q7(a) (encryption/decryption — covered within significance/comparison)
+- 2019 — Sec C: Q7(a) (cryptography basics — referenced in topics covered)
