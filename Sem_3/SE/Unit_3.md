@@ -120,6 +120,11 @@ Modularization is a technique to divide a software system into multiple discrete
 
 ### 🧩Coupling & Cohesion (2024 — Q5(b))
 
+- Explain various types of coupling with the help of an example. [2020, Section C Q5(b)]
+- Explain the types of coupling and cohesion. [2021, Section B (d)]
+- Define Cohesion. What is Functional Cohesion? Does Functional Cohesion within a module bring about good software design? Give an example. What type of coupling and cohesion is preferred? [2023, Section C Q5(a)]
+- What is meant by the term cohesion in the context of software design? [2024, Section C Q5(b)]
+
 - What is meant by the term cohesion in the context of software design? [2024, Section C Q5(b)]
 
 When a software program is modularized, its tasks are divided into several modules based on some characteristics.
@@ -167,64 +172,35 @@ Lower cohesion is bad because the module tries to do many unrelated things.
 
 - Describe structure chart. [2023, Section A (e)]
 
-A **Structure Chart** represents the **hierarchical structure of modules** in a system.
-It shows:
+A **structure chart** is a diagram that shows the **organization and relationship** between different modules of a system.
+It is used in the **design phase** of software development to represent how the system is divided into smaller parts.
+A structure chart helps in understanding how data moves and how control is passed between modules.
 
-* **Modules** (rectangles)
-* **Call relationships** (lines/arrows)
-* **Data flow** between modules
+A **structure chart** uses simple symbols like boxes and arrows —
 
-**Used for:**
+* **Boxes** represent modules.
+* **Arrows** show the flow of data or control between them.
 
-* Visualizing architecture
-* Understanding module relationships
-* Supporting modular design
-
-
-### ⚙️ Function-Oriented Design
-
-Focuses on **functions** performed by the system rather than data.
-
-* Uses **Data Flow Diagrams (DFDs)** to represent system flow.
-* Each function is later converted into a module.
-
-**Advantages:**
-
-* Promotes modularity and structure.
-* Easy to track functional dependencies.
-* Simple for small to medium systems.
+Structure charts make it easier to see the **hierarchy** (which module controls which) and how all modules fit together to form the complete system.
 
 ---
 
-## 🧭 **4. Design Structure Charts (DSC)**
+### **Features/Adv of Structure Charts**
 
+1. **Hierarchical View:**
+   A structure chart shows modules in a **top-down hierarchy**, with the main module at the top and smaller modules below it.
 
-- Describe structure chart. [2023, Section A (e)]
+2. **Modular Representation:**
+   Each module in the structure chart represents one specific function or task of the system.
 
-A **Design Structure Chart** shows:
+3. **Clear Relationships:**
+   It clearly shows how one module is connected or linked to another through arrows or lines.
 
-* **Hierarchical relationships** among modules.
-* **Control flow** (solid lines).
-* **Data flow** (dotted lines).
+4. **Control and Data Flow:**
+   Structure charts show both **control signals** and **data flow** between modules using different arrow styles.
 
-**Symbols used:**
-
-* **Rectangles:** represent modules
-* **Arrows:** show control or data transfer
-* **Loop/Decision symbols:** indicate iteration or conditions
-
-**Benefits:**
-
-* Clarifies module hierarchy.
-* Highlights communication paths.
-* Useful for debugging and maintenance.
-
----
-
-Perfect, dear 🌟 — here’s your **well-structured, exam-ready notes** for the topics:
-**Pseudocodes, Flowcharts, Coupling & Cohesion Measures, and Design Strategies (Function-Oriented, Object-Oriented, Top-Down, Bottom-Up)** — fully aligned with your given past-year questions 👇
-
----
+5. **Improves Understanding:**
+   By using a structure chart, developers can easily understand how the system works and how tasks are divided.
 
 ## 🧮 **1. Pseudocodes and Flowcharts**
 
@@ -275,60 +251,6 @@ A **Flowchart** is a **graphical representation of an algorithm** showing the fl
 * Makes logic easier to communicate.
 
 ---
-
-## 🧩 **2. Coupling and Cohesion Measures**
-
-- Explain various types of coupling with the help of an example. [2020, Section C Q5(b)]
-- Explain the types of coupling and cohesion. [2021, Section B (d)]
-- Define Cohesion. What is Functional Cohesion? Does Functional Cohesion within a module bring about good software design? Give an example. What type of coupling and cohesion is preferred? [2023, Section C Q5(a)]
-- What is meant by the term cohesion in the context of software design? [2024, Section C Q5(b)]
-
-### 🧠 Cohesion
-
-Cohesion measures **how strongly elements within a module are related**.
-
-* **High Cohesion:** Module focuses on a single task → desirable.
-* **Low Cohesion:** Module performs unrelated functions → undesirable.
-
-**Types of Cohesion (lowest → highest):**
-
-1. **Coincidental:** Random tasks grouped together.
-2. **Logical:** Similar category of actions (e.g., input/output).
-3. **Temporal:** Related by time (e.g., initialization).
-4. **Procedural:** Related by control sequence.
-5. **Communicational:** Use same data set.
-6. **Sequential:** Output of one part is input to another.
-7. **Functional:** One single, well-defined task → ✅ **Best type**.
-
-👉 **Example:**
-A function that only calculates and returns the area of a circle = **functional cohesion**.
-
----
-
-### ⚙️ Coupling
-
-Coupling measures **how dependent modules are on each other**.
-
-* **Low Coupling:** Modules communicate minimally → desirable.
-* **High Coupling:** Modules heavily depend on each other → undesirable.
-
-**Types of Coupling (highest → lowest):**
-
-1. **Content Coupling:** One module modifies another’s data or logic (worst).
-2. **Common Coupling:** Shared global data.
-3. **External Coupling:** Shared external data format or device.
-4. **Control Coupling:** Module passes control info to another.
-5. **Stamp Coupling:** Passes data structures, not individual elements.
-6. **Data Coupling:** Passes only necessary data → ✅ **Best type**.
-
----
-
-### ✅ Preferred Design
-
-* **Cohesion:** High (Functional Cohesion preferred)
-* **Coupling:** Low (Data Coupling preferred)
-
-👉 **Functional Cohesion leads to a good modular design** — as it improves maintainability, reliability, and reusability.
 
 ---
 
@@ -393,17 +315,24 @@ System is modeled as a collection of **objects** that encapsulate both **data an
 ---
 
 ### 🔄 FOD vs OOD Comparison
+Perfect 👍 here’s a **clear, exam-ready table** comparing **Function-Oriented Design** and **Object-Oriented Design** — written in **simple, easy-to-learn language**, no jargon, just the core theory 👇
 
-| **Aspect**          | **Function-Oriented Design** | **Object-Oriented Design**       |
-| ------------------- | ---------------------------- | -------------------------------- |
-| **Focus**           | Functions / Processes        | Objects / Data                   |
-| **Data Handling**   | Data flows between functions | Data encapsulated within objects |
-| **Design Basis**    | DFDs, flowcharts             | Class diagrams, use cases        |
-| **Reusability**     | Limited                      | High                             |
-| **Maintainability** | Hard for large systems       | Easier due to encapsulation      |
-| **Example**         | Payroll calculation process  | Employee class with methods      |
+---
 
-**👉 Exam Tip:** Mention that modern systems often **combine both FOD and OOD** for flexibility.
+### **Function-Oriented Design vs Object-Oriented Design**
+
+| **No.** | **Function-Oriented Design**                                    | **Object-Oriented Design**                                             |
+| :-----: | :-------------------------------------------------------------- | :--------------------------------------------------------------------- |
+|  **1**  | Focuses on functions or procedures that perform tasks.          | Focuses on objects that combine data and functions together.           |
+|  **2**  | The main aim is to break the system into smaller functions.     | The main aim is to break the system into classes and objects.          |
+|  **3**  | Data is given less importance and kept separate from functions. | Data and functions are combined inside objects.                        |
+|  **4**  | Functions can directly access data from other functions.        | Data is hidden inside objects and accessed through methods only.       |
+|  **5**  | Reusability is low because functions depend on global data.     | Reusability is high because objects and classes can be reused easily.  |
+|  **6**  | Changes in data may affect many functions.                      | Changes are easier to manage because data is protected inside objects. |
+|  **7**  | Uses a top-down design approach.                                | Uses a bottom-up design approach.                                      |
+|  **8**  | Suitable for small and simple programs.                         | Suitable for large and complex systems.                                |
+|  **9**  | Examples: Structured programming using C.                       | Examples: Object-oriented programming using Java, C++, Python.         |
+|  **10** | Focus is on “what actions to perform.”                          | Focus is on “who performs the action” (the object).                    |
 
 ---
 
