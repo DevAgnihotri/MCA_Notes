@@ -64,8 +64,6 @@ There are **three main levels**:
 ## 🏗️ **2. Architectural Design**
 
 - Differentiate architectural design and procedural design. [2024, Section C Q5(b)]
-- What is meant by the term cohesion in the context of software design? [2024, Section C Q5(b)]
-- Describe structure chart. [2023, Section A (e)]
 
 ### 🧠 Definition
 
@@ -120,26 +118,54 @@ Modularization is a technique to divide a software system into multiple discrete
 
 ---
 
-### 🧩 Cohesion (2024 — Q5(b))
+### 🧩Coupling & Cohesion (2024 — Q5(b))
 
-**Cohesion** refers to **how closely related the functions within a module are**.
+- What is meant by the term cohesion in the context of software design? [2024, Section C Q5(b)]
 
-* **High cohesion:** module performs a single, well-defined task → desirable.
-* **Low cohesion:** module performs unrelated tasks → undesirable.
+When a software program is modularized, its tasks are divided into several modules based on some characteristics.
 
-**Types of Cohesion (in increasing order):**
+There are measures by which the quality of a design of modules and their interaction among each other can be measured. These measures are called coupling and cohesion.
 
-1. Coincidental
-2. Logical
-3. Temporal
-4. Procedural
-5. Communicational
-6. Sequential
-7. Functional (best)
+**Coupling** means how much one module in a software system depends on another.
+It shows the level of connection between modules.
+If coupling is high, modules depend too much on each other.
+If coupling is low, modules work more independently, which is better for software design.
+
+![Coupling Illustration](https://media.licdn.com/dms/image/v2/C5612AQE3VK4whXDp9w/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1520234740041?e=2147483647&v=beta&t=K-dNJioqi7OjATK0NFaSDh4G7TE6lBw7wi-bKVluqBQ)
+
+| **Type of Coupling**                             | **Explanation (Easy and Clear)**                                                                                                                                                         |
+| ------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **1. Content Coupling**                          | In **content coupling**, one module directly uses or changes the content of another module. This makes them tightly connected, and any change in one can break the other.                |
+| **2. Common Coupling**                           | In **common coupling**, two or more modules share the same common data or global variables. Because of this shared data, changing one module’s value can affect all others using it.     |
+| **3. External Coupling**                         | **External coupling** happens when modules depend on external systems like files, devices, or communication links. If the external part changes, the modules may stop working correctly. |
+| **4. Control Coupling**                          | In **control coupling**, one module controls the behavior of another by passing control information like flags or commands. The control of one module depends on another.                |
+| **5. Stamp Coupling (Data-Structured Coupling)** | **Stamp coupling** means that modules share a data structure or record, but each module only uses part of it. So, they are linked through a common structured group of data.             |
+| **6. Data Coupling**                             | **Data coupling** occurs when modules share only necessary data through parameters. It is the best type of coupling because modules stay independent and easy to modify.                 |
+
+#### Cohesion
+
+**Cohesion** means how closely the elements or parts inside a single module are related to each other.
+It shows how well the tasks within a module work together to perform one purpose.
+Higher cohesion is good because it means the module does one clear job.
+Lower cohesion is bad because the module tries to do many unrelated things.
+
+![module_cohesion](https://cdn.botpenguin.com/assets/website/software_engineering_coupling_and_cohesion7_d0cacade52.webp)
+
+| **Type of Cohesion**            | **Explanation (Easy and Clear)**                                                                                                                                             |
+| ------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **1. Coincidental Cohesion**    | In **coincidental cohesion**, the elements in a module are grouped randomly without any proper relation. The tasks do not depend on each other and are just placed together. |
+| **2. Logical Cohesion**         | **Logical cohesion** happens when elements in a module perform similar types of tasks, like input or output operations, but are chosen by control flags or conditions.       |
+| **3. Temporal Cohesion**        | In **temporal cohesion**, elements are grouped because they are executed at the same time. For example, tasks done during program start-up or shutdown belong together.      |
+| **4. Procedural Cohesion**      | **Procedural cohesion** means the elements are grouped because they follow a specific sequence of execution. The tasks are related by order, not by the same purpose.        |
+| **5. Communicational Cohesion** | In **communicational cohesion**, elements work on the same data or contribute to the same output. They are grouped because they share common data.                           |
+| **6. Sequential Cohesion**      | **Sequential cohesion** means the output of one element becomes the input for another element in the same module. The tasks are connected in a clear sequence.               |
+| **7. Functional Cohesion**      | **Functional cohesion** is the best type of cohesion. It means all elements in the module work together to perform one single, well-defined function.                        |
 
 ---
 
 ### 📊 Structure Chart (2023 — A (e))
+
+- Describe structure chart. [2023, Section A (e)]
 
 A **Structure Chart** represents the **hierarchical structure of modules** in a system.
 It shows:
