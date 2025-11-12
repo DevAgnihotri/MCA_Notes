@@ -7,7 +7,9 @@
 
 ### ✳️ What is Software Design?
 
-Software design is the **process of defining the architecture, components, interfaces, and data** for a software system to satisfy specified requirements.
+Software design is a process to transform user requirements into some suitable form, which helps the programmer in software coding and implementation.
+
+It involves the **process of defining the architecture, components, interfaces, and data** for a software system to satisfy specified requirements.
 It bridges the gap between **requirements specification** and **implementation**.
 
 ---
@@ -34,9 +36,9 @@ There are **three main levels**:
 
 1. **Modularity:** Divide system into manageable components.
 2. **Abstraction:** Focus on essential features, hide complexity.
-3. **Encapsulation:** Keep data and operations safe within modules.
+3. **Encapsulation:** Keep data and logic safe within modules.
 4. **Cohesion & Coupling:** Aim for **high cohesion**, **low coupling**.
-5. **Simplicity:** Avoid unnecessary complexity.
+5. **Simplicity:** Avoid unnecessary complexity, while desinging the softawre
 6. **Reusability:** Encourage reuse of components.
 7. **Maintainability:** Design for easy modification.
 
@@ -45,33 +47,18 @@ There are **three main levels**:
 ### 🧩 Design Concepts
 
 * **Design Model:** A representation of software from different viewpoints — data, architecture, interface, and components.
-* **Elements of Design Model:**
 
-  1. **Data Design** — how data is structured and accessed.
-  2. **Architectural Design** — defines the overall structure.
-  3. **Interface Design** — how modules communicate.
-  4. **Component-Level Design** — details of algorithms and logic.
-  5. **Procedural Design** — step-by-step algorithmic representation.
+### **Elements of Design Model**
 
----
+1. **Data Design** — It shows how data is arranged, stored, and used in the system. It helps in planning how information will move between different parts of the program. Proper data design makes it easier to handle and update the data whenever required.
 
-### ⚠️ Risk Management (Linked Topic)
+2. **Architectural Design** — It explains the overall structure or layout of the software. This design shows how different modules are linked and how they work together to form the complete system. It acts as a guide for developers to build the system in a clear and organized way.
 
-**Risk Management** in software design identifies, analyzes, and mitigates potential project risks.
-Steps:
+3. **Interface Design** — It defines how users and system components will communicate with each other. This design helps in creating a smooth connection between user and system. A good interface makes it easier for users to use the system.
 
-1. **Identify** possible risks (e.g., delay, cost, technology).
-2. **Analyze** their probability and impact.
-3. **Plan** risk reduction strategies (avoidance, transfer, mitigation).
-4. **Monitor** throughout development.
+4. **Component-Level Design** — It focuses on the inner details of each part of the software. It describes what each component will do and how it will perform its task. This helps in breaking the system into smaller units that are easier to develop, test, and maintain.
 
-👉 **Risk Reduction Techniques:**
-
-* **Avoidance:** Change plan to eliminate risk.
-* **Mitigation:** Reduce likelihood or impact.
-* **Transfer:** Shift risk to third party (e.g., insurance).
-* **Acceptance:** Prepare to deal with it if it occurs.
-
+5. **Procedural Design** — It explains the step-by-step working of the program. This design helps to show the order in which tasks are done to get the final output. It makes the coding process simple and helps developers understand the exact flow of operations.
 ---
 
 ## 🏗️ **2. Architectural Design**
@@ -85,16 +72,51 @@ Steps:
 Architectural design is the **blueprint of the software system** that defines major components and their interaction.
 It answers **“What are the main parts and how do they work together?”**
 
+It explains the overall structure or layout of the software. This design shows how different modules are linked and how they work together to form the complete system. It acts as a guide for developers to build the system in a clear and organized way.
+
 ---
 
 ### 🔀 Architectural vs. Procedural Design
+| **No.** | **Architectural Design**                                            | **Procedural Design**                                 |
+| :-----: | :------------------------------------------------------------------ | :---------------------------------------------------- |
+|  **1**  | Shows the overall structure of the software.                        | Shows the step-by-step working of the program.        |
+|  **2**  | Focuses on how modules or parts are connected.                      | Focuses on how each part performs its task.           |
+|  **3**  | It is a high-level design.                                          | It is a low-level design.                             |
+|  **4**  | Helps to understand how the system is divided.                      | Helps to understand how the system actually works.    |
+|  **5**  | Describes relationships between different modules.                  | Describes the logic and flow inside a module.         |
+|  **6**  | Acts as a blueprint of the whole system.                            | Acts as a guide for coding and implementation.        |
+|  **7**  | Gives a broad view of the system’s structure.                       | Gives a detailed view of the system’s procedures.     |
+|  **8**  | Used in the early stage of design.                                  | Used after the architectural design is complete.      |
+|  **9**  | Focuses more on connections and data flow between modules.          | Focuses more on control flow and processing steps.    |
+|  **10** | Example: dividing software into input, process, and output modules. | Example: writing algorithm steps for data processing. |
 
-| **Aspect** | **Architectural Design**  | **Procedural Design**     |
-| ---------- | ------------------------- | ------------------------- |
-| **Focus**  | Structure of the system   | Internal logic/algorithms |
-| **Scope**  | Entire system             | Individual components     |
-| **Output** | Architecture diagram      | Flowchart or pseudocode   |
-| **Goal**   | Define module interaction | Define process steps      |
+
+---
+
+## ⚙️ **3. Low-Level Design — Modularization**
+
+- What are the advantages of Modularization? [2021, Section A (j)]
+- What do you mean by function oriented design? Discuss the advantages of modular system. [2020, Section C Q5(a)]
+
+Detailed design deals with the implementation part of sub-systems in the previous two designs.
+
+It is more detailed towards modules and their implementations. It defines logical structure of each module and their interfaces to communicate with other modules.
+
+### 🧩 What is Modularization?
+
+**Modularization** is the process of **dividing a system into smaller, independent modules** that can be developed and tested separately.
+
+Modularization is a technique to divide a software system into multiple discrete and independent modules, which are expected to be capable of carrying out task(s) independently.
+---
+
+### ✅ Advantages of Modularization
+
+1. **Simplicity:** Each module is easier to design and maintain.
+2. **Reusability:** Modules can be reused in other projects.
+3. **Maintainability:** Easy to isolate and fix bugs.
+4. **Parallel Development:** Teams can work on different modules simultaneously.
+5. **Scalability:** System can be easily expanded.
+6. **Testing Ease:** Each module can be unit tested separately.
 
 ---
 
@@ -132,29 +154,6 @@ It shows:
 * Understanding module relationships
 * Supporting modular design
 
----
-
-## ⚙️ **3. Low-Level Design — Modularization**
-
-- What are the advantages of Modularization? [2021, Section A (j)]
-- What do you mean by function oriented design? Discuss the advantages of modular system. [2020, Section C Q5(a)]
-
-### 🧩 What is Modularization?
-
-**Modularization** is the process of **dividing a system into smaller, independent modules** that can be developed and tested separately.
-
----
-
-### ✅ Advantages of Modularization
-
-1. **Simplicity:** Each module is easier to design and maintain.
-2. **Reusability:** Modules can be reused in other projects.
-3. **Maintainability:** Easy to isolate and fix bugs.
-4. **Parallel Development:** Teams can work on different modules simultaneously.
-5. **Scalability:** System can be easily expanded.
-6. **Testing Ease:** Each module can be unit tested separately.
-
----
 
 ### ⚙️ Function-Oriented Design
 
