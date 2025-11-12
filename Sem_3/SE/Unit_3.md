@@ -111,7 +111,7 @@ Modularization is a technique to divide a software system into multiple discrete
 
 ### ✅ Advantages of Modularization
 
-1. **Simplicity:** Each module is easier to design and maintain.
+1. **Simplicity:** Each module is easier to work with.
 2. **Reusability:** Modules can be reused in other projects.
 3. **Maintainability:** Easy to isolate and fix bugs.
 4. **Parallel Development:** Teams can work on different modules simultaneously.
