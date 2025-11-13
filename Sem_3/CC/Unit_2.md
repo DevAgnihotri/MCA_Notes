@@ -36,7 +36,7 @@ In simple words,
 
 > We use IaaS when we want to **rent IT infrastructure** instead of buying and managing it ourselves.
 
-So, we don’t need to buy physical computers or servers — everything is provided and managed by the **cloud service provider**.
+So, we don’t need to buy physical computers or servers everything is provided and managed by the **cloud service provider**.
 
 ---
 
@@ -285,9 +285,9 @@ Some of the **leading companies providing SaaS platforms** are:
 | **Dropbox**    | Cloud storage and file sharing         |
 | **Slack**      | Team communication and collaboration   |
 
-![SaaS Stack Diagram](https://upload.wikimedia.org/wikipedia/commons/1/1b/SaaS_PaaS_IaaS.svg)
+![SaaS Diagram 1](https://www.simform.com/wp-content/uploads/2022/06/SaaS-Architecture-.png)
 
-![How SaaS Works Diagram](https://www.researchgate.net/publication/324479703/figure/fig2/AS:614367364579331@1523508036553/Software-as-a-Service-SaaS-architecture.png)
+![SaaS Diagram 2](https://cdn-ilebjlc.nitrocdn.com/ncNVohTnyZHFwVZRyrDJJWBfVJpoFXJK/assets/images/optimized/rev-16b19ce/ideausher.com/wp-content/uploads/2022/04/What-is-Vertical-SaaS-and-Horizontal-SaaS_.webp)
 
 ---
 
@@ -306,7 +306,7 @@ In simple words,
 
 > We use PaaS when we want to **create and deploy apps** easily without buying or managing hardware and software tools ourselves.
 
-The cloud provider gives us everything we need — operating systems, databases, storage, networks, and development tools — all in one place.
+The cloud provider gives us all the development tools in one place.
 
 ---
 
@@ -448,9 +448,16 @@ In simple words,
 
 ---
 
-### **6. Diagram: How DBaaS Works**
+### **Types of DBaaS**
 
-![DBaaS Diagram](https://upload.wikimedia.org/wikipedia/commons/d/d2/Cloud_database_model.png)
+1. **Relational DBaaS:** Gives us ready-to-use databases like MySQL or SQL Server for storing organized data in tables.
+2. **NoSQL DBaaS:** Lets us use databases like MongoDB for saving messy or changing data, not just tables.
+3. **In-memory DBaaS:** Uses fast databases like Redis to keep data in memory, so we can get it quickly—great for games or live updates.
+4. **Multi-model DBaaS:** Combines different ways to store data (tables, documents, graphs) in one service, making it easy to use what we need.
+
+### **6. Diagram:**
+
+![DBaaS Diagram](https://buzzclan.com/wp-content/uploads/2023/12/Types-of-DBaaS-1.jpg)
 
 ## Monitoring as a Service (MAAS)
 
@@ -554,10 +561,6 @@ The cloud provider gives us dashboards, alerts, and reports that help detect pro
 | **SolarWinds** | SolarWinds Cloud Monitoring                 |
 
 ---
-
-### **7. Diagram: How MaaS Works**
-
-![MaaS Diagram](https://upload.wikimedia.org/wikipedia/commons/9/91/Monitoring_as_a_Service_%28MaaS%29_Model.png)
 
 ## Communication as a Service (CaaS)
 
@@ -818,7 +821,7 @@ AWS has many components, but the main ones are:
 
 ### 🟦 **5. Diagram: AWS Cloud Overview**
 
-![AWS Cloud Architecture](https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_logo.svg)
+![AWS Cloud Architecture](https://i0.wp.com/cloudwithease.com/wp-content/uploads/2023/03/aws-architecture.jpg?fit=800%2C455&amp;ssl=1)
 
 ## Microsoft Azure / Microsoft SQL Services
 
@@ -837,7 +840,7 @@ It supports **Infrastructure as a Service (IaaS)**, **Platform as a Service (Paa
 
 ---
 
-### 🟩 **2. Key Components of Microsoft Azure**
+#### 🟩 **2. Key Components of Microsoft Azure**
 
 Let’s look at the **main building blocks** (components) of Azure that make cloud computing possible 👇
 
@@ -903,7 +906,7 @@ Let’s look at the **main building blocks** (components) of Azure that make clo
 
 ---
 
-### 🟨 **3. Microsoft SQL Services in Azure**
+#### 🟨 **3. Microsoft SQL Services in Azure**
 
 **Azure SQL Database** is one of the most important services in Azure’s database offerings.
 
@@ -923,7 +926,7 @@ Let’s look at the **main building blocks** (components) of Azure that make clo
 
 ---
 
-### 🟧 **4. Importance of Microsoft Azure in Cloud Computing**
+#### 🟧 **4. Importance of Microsoft Azure in Cloud Computing**
 
 1. **Global Reach** – Data centers in over 60+ regions.
 2. **Cost-Effective** – Pay only for what we use.
@@ -934,7 +937,7 @@ Let’s look at the **main building blocks** (components) of Azure that make clo
 
 ---
 
-### 🟦 **5. Major Microsoft Azure Services (Summary Table)**
+#### 🟦 **5. Major Microsoft Azure Services (Summary Table)**
 
 | **Category**   | **Service Name**       | **Purpose**                       |
 | -------------- | ---------------------- | --------------------------------- |
@@ -947,9 +950,9 @@ Let’s look at the **main building blocks** (components) of Azure that make clo
 
 ---
 
-### 🟩 **6. Diagram: Azure Cloud Architecture**
+#### 🟩 **6. Diagram:    **
 
-![Microsoft Azure Cloud Diagram](https://upload.wikimedia.org/wikipedia/commons/f/fa/Microsoft_Azure.svg)
+![Microsoft Azure Cloud Diagram](https://media.geeksforgeeks.org/wp-content/uploads/20241004135011343786/Azure-Architecture.webp)
 
 ## Salesforce
 
