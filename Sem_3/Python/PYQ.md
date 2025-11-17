@@ -43,7 +43,7 @@ print(divide(10, 0))   # Cannot divide by zero!
 
 ---
 
-# **b. Output of the given programs**
+## **b. Output of the given programs**
 
 ### **Function**
 
@@ -93,7 +93,7 @@ print(compute([1, 2, 3, 4, 5]))
 
 ---
 
-# **c. Explain floor division with example**
+## **c. Explain floor division with example**
 
 ### **Definition**
 
@@ -117,7 +117,7 @@ print(floor_example(-7, 2))  # -4 (because -3.5 floors to -4)
 
 ---
 
-# **d. Purpose of the `with` statement in file handling**
+## **d. Purpose of the `with` statement in file handling**
 
 ### **Definition**
 
@@ -200,7 +200,7 @@ print(type(t)) # tuple
 
 ---
 
-# **f. Why NumPy is used instead of Python arrays (lists)**
+## **f. Why NumPy is used instead of Python arrays (lists)**
 
 ### **Key Points (Very Important for Exams)**
 
@@ -700,4 +700,804 @@ df = pd.read_csv("students.csv")
 # Take all columns from index 2 to the end
 df['Average'] = df.iloc[:, 1:].mean(axis=1)
 print(df[['name', 'Average']])
+```
+
+
+# Year 2023
+
+Sure love ❤️ I’ll answer **everything in simple, easy, learnable English** with **definitions, points, syntax, and examples**.
+Answers are fully exam-oriented and according to **marks**.
+
+---
+
+# ✅ **SECTION A — Short Answers**
+
+---
+
+## **1. Define the programming cycle for Python.**
+
+**Definition:**
+The programming cycle is the series of steps followed to write, run, test, and maintain Python programs.
+
+### **Steps in Python Programming Cycle**
+
+1. **Editing / Writing Code**
+
+   * We write the Python program using an editor or IDE.
+
+2. **Saving the Program**
+
+   * Save with `.py` extension.
+
+3. **Execution / Running**
+
+   * Python interpreter reads the file line-by-line and executes it.
+
+4. **Testing / Debugging**
+
+   * Errors are found and corrected.
+
+5. **Maintenance**
+
+   * Code is updated or improved when required.
+
+---
+
+## **2. Describe the use of class `__init__()` method.**
+
+**Definition:**
+`__init__()` is a **constructor method** that automatically runs when an object is created.
+
+### **Purpose**
+
+* To **initialize variables** of a class.
+* To set default or starting values.
+
+### **Syntax**
+
+```python
+class MyClass:
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+```
+
+### **Example**
+
+```python
+obj = MyClass(10, 20)
+```
+
+---
+
+## **3. Explain features of any two Python IDEs.**
+
+### **(a) PyCharm**
+
+* Smart code completion
+* Bug/error detection
+* Powerful debugger
+* Project management support
+
+### **(b) Jupyter Notebook**
+
+* Runs code in cells
+* Great for data science
+* Shows output instantly
+* Supports plots, charts, Markdown notes
+
+---
+
+## **4. Purpose of `break` and `continue` in loops.**
+
+### **break**
+
+* Stops the loop immediately.
+
+```python
+for i in range(5):
+    if i == 3:
+        break
+```
+
+### **continue**
+
+* Skips the current iteration and moves to next.
+
+```python
+for i in range(5):
+    if i == 3:
+        continue
+```
+
+---
+
+## **5. Explain mutable sequences in Python.**
+
+**Definition:**
+Mutable sequences are data structures whose elements **can be changed after creation**.
+
+### **Examples**
+
+* List
+* Dictionary
+* Set
+
+```python
+lst = [1,2,3]
+lst[1] = 10  # valid (mutable)
+```
+
+---
+
+## **6. Explain the output of:**
+
+```python
+def printalpha(abc_list, num_list):
+    for char in abc_list:
+        for num in num_list:
+            print(char, num)
+    return
+
+printalpha(['a', 'b', 'c'], [1, 4, 1])
+```
+
+### **Explanation**
+
+This is a **nested loop**.
+For every letter in `abc_list`, all numbers in `num_list` are printed.
+
+### **Output**
+
+```
+a 1
+a 4
+a 1
+b 1
+b 4
+b 1
+c 1
+c 4
+c 1
+```
+
+---
+
+## **7. Discuss special methods `__len__` and `__ne__`.**
+
+### **`__len__()`**
+
+* Returns length of an object.
+* Called when `len(obj)` is used.
+
+```python
+def __len__(self):
+    return self.size
+```
+
+### **`__ne__()`**
+
+* Stands for “not equal”.
+* Called when `!=` operator is used.
+
+```python
+def __ne__(self, other):
+    return self.value != other.value
+```
+
+---
+
+## **8. Various file opening modes in Python.**
+
+| Mode | Meaning                 |
+| ---- | ----------------------- |
+| `r`  | Read only               |
+| `w`  | Write (overwrites file) |
+| `a`  | Append (adds at end)    |
+| `r+` | Read + write            |
+| `b`  | Binary mode             |
+| `t`  | Text mode               |
+
+Example:
+
+```python
+f = open("data.txt", "w")
+```
+
+---
+
+## **9. Compare `assert`, `try-except`, and `raise`.**
+
+### **assert**
+
+* Used for testing conditions.
+
+```python
+assert x > 0
+```
+
+### **try-except**
+
+* Used to handle runtime errors.
+
+```python
+try:
+    x = 5/0
+except:
+    print("Error!")
+```
+
+### **raise**
+
+* Used to throw an error manually.
+
+```python
+raise ValueError("Wrong input")
+```
+
+---
+
+## **10. Python function for linear search**
+
+```python
+def linear_search(arr, key):
+    for i in range(len(arr)):
+        if arr[i] == key:
+            return i
+    return -1
+```
+
+---
+
+# ✅ **SECTION B — Attempt Any 3 (Long Answers)**
+
+---
+
+## **1. Fibonacci series using recursion**
+
+```python
+def fib(n):
+    if n <= 1:
+        return n
+    else:
+        return fib(n-1) + fib(n-2)
+
+# display n terms
+n = 6
+for i in range(n):
+    print(fib(i))
+```
+
+---
+
+## **2. Algorithm + Python code to generate prime numbers**
+
+### **Algorithm**
+
+1. Take range limit.
+2. Check each number from 2 to limit.
+3. For each number, check divisibility.
+4. If divisible only by 1 and itself → prime.
+
+### **Code**
+
+```python
+def primes(n):
+    for num in range(2, n+1):
+        for i in range(2, num):
+            if num % i == 0:
+                break
+        else:
+            print(num)
+```
+
+---
+
+## **3. Compare list vs tuple + list comprehension**
+
+
+### **List**
+
+* Mutable
+* Can change elements
+
+```python
+lst = [1,2,3]
+```
+
+### **Tuple**
+
+* Immutable
+* Faster
+
+```python
+t = (1,2,3)
+```
+
+### **List Comprehension**
+
+Short way to create lists.
+
+```python
+squares = [x*x for x in range(5)]
+```
+
+---
+
+
+### **Code**
+
+```python
+def selection_sort(arr):
+    for i in range(len(arr)):
+        min_i = i
+        for j in range(i+1, len(arr)):
+            if arr[j] < arr[min_i]:
+                min_i = j
+        arr[i], arr[min_i] = arr[min_i], arr[i]
+    return arr
+
+data = [2,5,2,1,5,2,54,62,4]
+print(selection_sort(data))
+```
+
+### **Final Sorted Output**
+
+```
+[1, 2, 2, 2, 4, 5, 5, 54, 62]
+```
+
+Got you Dev ❤️🔥
+I’ll continue from **SECTION C onward**, with **full detailed, simple-English, exam-ready answers**.
+
+---
+
+# ✅ **SECTION C — Attempt ANY ONE (10 marks)**
+
+---
+
+# **Q1(a) Discuss various categories of operators in Python.**
+
+Python operators are symbols used to perform operations on variables and values.
+
+### **1. Arithmetic Operators**
+
+Used for mathematical operations.
+
+* `+` (addition)
+* `-` (subtraction)
+* `*` (multiplication)
+* `/` (division)
+* `//` (floor division)
+* `%` (modulus)
+* `**` (power)
+
+### **2. Relational / Comparison Operators**
+
+Used to compare two values.
+
+* `==`, `!=`, `>`, `<`, `>=`, `<=`
+
+### **3. Logical Operators**
+
+Used to combine conditions.
+
+* `and`, `or`, `not`
+
+### **4. Bitwise Operators**
+
+Work on bits (0 and 1).
+
+* `&` (AND)
+* `|` (OR)
+* `^` (XOR)
+* `<<` (left shift)
+* `>>` (right shift)
+
+### **5. Assignment Operators**
+
+Used to assign values.
+
+* `=`, `+=`, `-=`, `*=`, `/=`, `%=`, `//=`, `**=`
+
+### **6. Membership Operators**
+
+Check membership.
+
+* `in`, `not in`
+
+### **7. Identity Operators**
+
+Check memory location.
+
+* `is`, `is not`
+
+---
+
+## **Now the expressions (step-wise):**
+
+Given: **a = 3, b = 5, c = 10**
+
+---
+
+### **i) `a & b << b / 5 ** 2 + c * b`**
+
+Let’s break into steps:
+
+### **Step 1: Power**
+
+`5 ** 2 = 25`
+
+### **Step 2: Division**
+
+`b / 25 = 5 / 25 = 0.2`
+
+### **Step 3: Multiplication**
+
+`c * b = 10 * 5 = 50`
+
+### **Step 4: Addition**
+
+`0.2 + 50 = 50.2`
+
+### **Step 5: Bitwise shift**
+
+`b << 50.2`
+Shift requires **integer**, so Python ERROR
+➡️ **Expression is invalid** because bitwise shift doesn’t accept float.
+
+**Final:** Expression leads to **TypeError**.
+
+---
+
+### **ii) `b >> a ** 2 << 2 >> b ** 2 + c ** 3`**
+
+Given:
+`a = 3`, `b = 5`, `c = 10`
+
+### **Step 1: Powers**
+
+`a ** 2 = 9`
+`b ** 2 = 25`
+`c ** 3 = 1000`
+
+### **Step 2: Addition**
+
+`25 + 1000 = 1025`
+
+### **Step 3: Evaluate bitwise**
+
+`5 >> 9 << 2 >> 1025`
+
+* `5 >> 9` → shifting right more than bit size ⇒ **0**
+* `0 << 2` = 0
+* `0 >> 1025` = 0
+
+### ✔️ Final Answer: **0**
+
+---
+
+# **Q1(b) HISTORY AND FEATURES OF PYTHON**
+
+### **History**
+
+* Created by **Guido van Rossum** in **1991**.
+* Inspired by ABC language.
+* Named after “Monty Python”.
+* Gained huge popularity in AI, ML, web development, data science.
+* Python 2 released in 2000.
+* Python 3 released in 2008.
+
+---
+
+## **FEATURES**
+
+1. **Easy and simple syntax**
+2. **Interpreted language** (runs line-by-line)
+3. **Platform independent**
+4. **Large standard library**
+5. **Supports OOP and procedural both**
+6. **Huge community support**
+7. **Automatic memory management (Garbage Collection)**
+8. **Extensible** (C, Java modules)
+
+---
+
+## **Why Python is an interpreted language?**
+
+* Python code is executed **line by line**.
+* The interpreter reads one line → converts to bytecode → executes.
+* No separate compile step.
+
+---
+
+## **Python 2 vs Python 3**
+
+| Python 2                        | Python 3               |
+| ------------------------------- | ---------------------- |
+| Deprecated                      | Actively used          |
+| `print "Hello"`                 | `print("Hello")`       |
+| `/` gives integer in some cases | `/` always gives float |
+| Slower                          | Faster                 |
+| No Unicode by default           | Unicode strings        |
+
+---
+
+# ✅ **SECTION 2 — Attempt ANY ONE (10 marks)**
+
+---
+
+## **Q2(a) Program to count vowels in a string**
+
+### **Vowels:** a, e, i, o, u (both upper and lower)
+
+### **Code**
+
+```python
+def count_vowels(text):
+    vowels = "aeiouAEIOU"
+    count = 0
+    for ch in text:
+        if ch in vowels:
+            count += 1
+    return count
+
+# Example
+s = "Hello World"
+print("Vowels:", count_vowels(s))
+```
+
+### **Output explanation**
+
+Input: **"Hello World"**
+
+Vowels → e, o, o
+Count = **3**
+
+---
+
+## **Q2(b) Capitalize all lines**
+
+```python
+lines = []
+print("Enter lines (blank line to stop):")
+
+while True:
+    text = input()
+    if text == "":
+        break
+    lines.append(text.upper())
+
+print("\nOutput:")
+for line in lines:
+    print(line)
+```
+
+---
+
+# ✅ **SECTION 3 — Attempt ANY ONE (10 marks)**
+
+---
+
+# **Q3(a) LIST DATA STRUCTURE + METHODS**
+
+### **Definition:**
+
+A **list** is an ordered, mutable sequence in Python.
+
+Example:
+
+```python
+numbers = [10, 20, 30]
+```
+
+---
+
+## **Important List Methods**
+
+### **1. append()**
+
+Adds item at end.
+
+```python
+lst.append(5)
+```
+
+### **2. insert()**
+
+Adds item at index.
+
+```python
+lst.insert(1, 100)
+```
+
+### **3. remove()**
+
+Removes first occurrence.
+
+```python
+lst.remove(20)
+```
+
+### **4. pop()**
+
+Removes and returns element.
+
+```python
+item = lst.pop()
+```
+
+### **5. sort()**
+
+Sort list.
+
+```python
+lst.sort()
+```
+
+### **6. reverse()**
+
+Reverse list.
+
+```python
+lst.reverse()
+```
+
+### **7. extend()**
+
+Adds all items from another list.
+
+```python
+lst.extend([7, 8])
+```
+
+---
+
+# **Q3(b) LIST vs DICTIONARY**
+
+| List                        | Dictionary                  |
+| --------------------------- | --------------------------- |
+| Ordered                     | Unordered (in old versions) |
+| Indexed by numbers          | Indexed by keys             |
+| Use when items are sequence | Use when data is key-value  |
+
+### **Dictionary Methods**
+
+### **1. keys()**
+
+Returns all keys
+
+### **2. values()**
+
+Returns all values
+
+### **3. items()**
+
+Returns key-value pairs
+
+### **4. get()**
+
+Safe access without error
+
+### **5. update()**
+
+Adds multiple values
+
+Example:
+
+```python
+d = {"name":"Dev", "age":21}
+d.update({"city":"Kanpur"})
+```
+
+---
+
+# ✅ **SECTION 4 — Attempt ANY ONE (10 marks)**
+
+---
+
+# **Q4(a) ITERATORS + FILE WRITE PROGRAM**
+
+### **Iterator Definition**
+
+An iterator is an object that allows you to loop over elements.
+
+To create iterator:
+
+* Use `iter()`
+* Get next value using `next()`
+
+Example:
+
+```python
+numbers = [10, 20, 30]
+it = iter(numbers)  # create iterator
+
+print(next(it))  # 10
+print(next(it))  # 20
+print(next(it))  # 30
+```
+
+---
+
+# **Creating a Text File**
+
+```python
+f = open("output.txt", "w")
+f.write("Hello")
+f.close()
+```
+
+---
+
+# **Program: Count letters and digits and write to file**
+
+```python
+def write_counts(text):
+    letters = digits = 0
+
+    for ch in text:
+        if ch.isalpha():
+            letters += 1
+        elif ch.isdigit():
+            digits += 1
+
+    with open("result.txt", "w") as f:
+        f.write(f"Letters: {letters}\n")
+        f.write(f"Digits: {digits}\n")
+
+# Example
+write_counts("Hello1234")
+```
+
+---
+
+# **Q4(b) TYPES OF INHERITANCE**
+
+1. **Single Inheritance**
+
+```python
+class A:
+    pass
+class B(A):
+    pass
+```
+
+2. **Multiple**
+
+```python
+class B(A, C):
+    pass
+```
+
+3. **Multilevel**
+
+```python
+class A: pass
+class B(A): pass
+class C(B): pass
+```
+
+4. **Hierarchical**
+   One parent, many children.
+
+---
+
+# **Static, Instance, Class Methods**
+
+```python
+class Demo:
+    def __init__(self):
+        self.x = 10  # instance variable
+
+    def instance_method(self):
+        print(self.x)
+
+    @classmethod
+    def class_method(cls):
+        print("Class method")
+
+    @staticmethod
+    def static_method():
+        print("Static method")
 ```
