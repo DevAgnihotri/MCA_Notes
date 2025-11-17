@@ -628,26 +628,6 @@ t = (1, 2)
 **Code using csv module (works in standard library):**
 
 ```python
-import csv
-
-def filter_csv_by_threshold(csv_path, column_name, threshold):
-    with open(csv_path, newline='', encoding='utf-8') as csvfile:
-        reader = csv.DictReader(csvfile)
-        for row in reader:
-            try:
-                value = float(row[column_name])
-            except (ValueError, KeyError):
-                continue
-            if value > threshold:
-                print(row)
-
-# Example usage:
-# filter_csv_by_threshold("students.csv", "score", 75)
-```
-
-**Notes:** If you prefer pandas (convenient for larger tasks):
-
-```python
 import pandas as pd
 df = pd.read_csv("students.csv")
 print(df[df['score'] > 75])
