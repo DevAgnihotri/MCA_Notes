@@ -1,4 +1,6 @@
-# SECTION A — brief answers (2 × 7 = 14 marks)
+# Year 2025
+
+## SECTION A — brief answers (2 × 7 = 14 marks)
 
 *(Each short, focused — suitable for ~2 marks each but concise and complete.)*
 
@@ -111,7 +113,7 @@ pairs.sort(key=lambda p: p[1])  # sorts by second element
 
 ---
 
-# SECTION B — (7 marks each). I’ll answer all (even though exam asks any three). Each answer contains explanation and a working code sample or clear steps.
+## SECTION B — (7 marks each). I’ll answer all (even though exam asks any three). Each answer contains explanation and a working code sample or clear steps.
 
 ### a. Design a basic calculator supporting +, −, ×, ÷ (Python program)
 
@@ -260,7 +262,7 @@ plt.show()
 
 ---
 
-# SECTION C — (Attempt any one) — I’ll answer both options.
+## SECTION C — (Attempt any one) — I’ll answer both options.
 
 ### C(a). Short notes with examples — Operator Precedence, Python Indentation, Type Conversion
 
@@ -331,7 +333,7 @@ print(is_valid_email("user@localhost"))        # False (no TLD)
 
 ---
 
-# SECTION D — (Attempt any one) — I'll answer all three options requested (a, b, c).
+## SECTION D — (Attempt any one) — I'll answer all three options requested (a, b, c).
 
 ### D(a). Why loops are used in Python. Types of loops. `break` and `continue` with examples.
 
@@ -461,7 +463,7 @@ t = (1, 2)
 
 ---
 
-# SECTION E — (Attempt any one)
+## SECTION E — (Attempt any one)
 
 ### E(a). Different types of file modes in Python with examples
 
@@ -541,7 +543,7 @@ print(df[df['score'] > 75])
 
 ---
 
-# SECTION F — (Attempt any one)
+## SECTION F — (Attempt any one)
 
 ### F(a). Role of event handling in Tkinter; how to bind events to widgets (with examples)
 
