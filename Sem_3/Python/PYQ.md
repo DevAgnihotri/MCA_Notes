@@ -1,115 +1,258 @@
 # Year 2025
 
 ## SECTION A — brief answers (2 × 7 = 14 marks)
+Got you bro — now I’ll rewrite **every answer in perfect exam-style format** with:
 
-*(Each short, focused — suitable for ~2 marks each but concise and complete.)*
+✔️ **Definition**
+✔️ **Explanation**
+✔️ **Syntax (where needed)**
+✔️ **Proper examples using `def`**
+✔️ **Bullet-points**
+✔️ **Simple English**
 
-### a. How to handle exceptions in Python — with example
+Let’s go.
 
-**Explanation:** Use `try`, `except` blocks to catch runtime errors (exceptions). Optionally use `else` to run code if no exception occurs, and `finally` for cleanup that must run regardless of exceptions.
-**Example:**
+---
+
+# **a. How to handle exceptions in Python**
+
+### **Definition**
+
+Exception handling is a way to **catch errors** during program execution and **prevent the program from crashing**.
+
+### **Key Points**
+
+* Done using **try–except** block
+* Put risky code inside `try`
+* Handle error in `except`
+* You can add `else` (runs when no error)
+* `finally` always runs (cleanup code)
+
+### **Syntax**
 
 ```python
 try:
-    x = int(input("Enter a number: "))
-    result = 10 / x
-except ValueError:
-    print("You must enter an integer.")
-except ZeroDivisionError:
-    print("Cannot divide by zero.")
-else:
-    print("Result is", result)
-finally:
-    print("Execution complete.")
+    # code that may cause error
+except ErrorType:
+    # code to handle error
 ```
 
-**Key points:** prevents program crash, allows graceful handling, can catch specific exceptions or use a bare `except Exception as e:` to inspect unknown errors.
+### **Example (with def function)**
+
+```python
+def divide(a, b):
+    try:
+        result = a / b
+        return result
+    except ZeroDivisionError:
+        return "Cannot divide by zero!"
+    except Exception as e:
+        return "Some other error occurred: " + str(e)
+
+print(divide(10, 2))   # 5.0
+print(divide(10, 0))   # Cannot divide by zero!
+```
 
 ---
 
-### b. Output of the two code snippets (explain difference)
+# **b. Output of the given programs**
 
-**Code 1 (tuple input):**
+### **Function**
 
 ```python
 def compute(x):
     return [i**2 for i in x if i % 2 == 0]
+```
+
+### **Explanation**
+
+* The comprehension keeps **even numbers only**
+* Then returns their **squares**
+* Input type (tuple or list) does NOT change the result
+
+---
+
+### **1. Input as tuple**
+
+```python
 print(compute((1, 2, 3, 4, 5)))
 ```
 
-**Output:** `[4, 16]`
-**Reason:** Tuple `(1,2,3,4,5)` is iterable; comprehension selects even numbers (2 and 4) and returns their squares `4` and `16`.
+Even numbers → 2, 4
+Squares → 4, 16
 
-**Code 2 (list input):**
+### **Output**
+
+```
+[4, 16]
+```
+
+---
+
+### **2. Input as list**
 
 ```python
-def compute(x):
-    return [i**2 for i in x if i % 2 == 0]
 print(compute([1, 2, 3, 4, 5]))
 ```
 
-**Output:** `[4, 16]`
-**Reason:** Works exactly the same with a list because the comprehension only requires an iterable. No difference in output.
+### **Output**
 
----
-
-### c. Explain floor division with an example
-
-**Definition:** Floor division `//` divides two numbers and returns the largest integer less than or equal to the exact quotient (i.e., rounds down). Works with integers and floats.
-**Example:**
-
-```python
-7 // 3   # -> 2  (because 7/3 = 2.333..., floor is 2)
--7 // 3  # -> -3 (because -7/3 = -2.333..., floor is -3)
-7.0 // 2 # -> 3.0 (float result)
+```
+[4, 16]
 ```
 
-**Key point:** floor division is different from integer truncation for negative numbers — it always floors (toward −∞).
+**Both programs give the same output.**
 
 ---
 
-### d. Purpose of the `with` statement in file handling
+# **c. Explain floor division with example**
 
-**Explanation:** `with` creates a context that automatically handles setup and teardown. For files it ensures the file is properly closed even if an error occurs. This avoids forgetting `file.close()` and resource leaks.
-**Example:**
+### **Definition**
+
+Floor division `//` divides two numbers and **rounds the result down** to the nearest whole number.
+
+### **Key Points**
+
+* Symbol: `//`
+* Always **rounds down** (towards negative infinity)
+* Works for integers and floats
+
+### **Example (with def)**
 
 ```python
-with open("data.txt", "r") as f:
-    text = f.read()
-# f is automatically closed here
-```
+def floor_example(a, b):
+    return a // b
 
-**Key point:** simpler, safer resource management (files, locks, network connections).
+print(floor_example(7, 2))   # 3
+print(floor_example(-7, 2))  # -4 (because -3.5 floors to -4)
+```
 
 ---
 
-### e. Use of lambda functions in Python
+# **d. Purpose of the `with` statement in file handling**
 
-**Definition:** A `lambda` is an anonymous (unnamed) small function defined with the `lambda` keyword, useful for short throwaway functions (often passed as arguments).
-**Example:**
+### **Definition**
+
+`with` is used to **automatically manage resources** like files.
+It **opens** a file and **closes it automatically**, even if an error happens.
+
+### **Key Points**
+
+* Automatically closes the file
+* Prevents memory leaks
+* Cleaner than manual `file.close()`
+* Uses **context manager** internally
+
+### **Syntax**
 
 ```python
-doubler = lambda x: x * 2
-print(doubler(5))  # -> 10
-
-# used in sorting
-pairs = [(1, 'b'), (2, 'a')]
-pairs.sort(key=lambda p: p[1])  # sorts by second element
+with open("filename", "mode") as file:
+    # work with file
 ```
 
-**Alternate question (assign a single value to a tuple):** To create a single-element tuple, include a trailing comma: `t = (5,)`. Without the comma `(5)` is just `5` in parentheses, not a tuple.
+### **Example (with def)**
+
+```python
+def read_file():
+    with open("data.txt", "r") as f:
+        content = f.read()
+        return content
+```
 
 ---
 
-### f. Why NumPy is used instead of Python lists/arrays for math calculations
+# **e. Use of lambda functions in Python**
 
-**Reasons (concise):**
+### **Definition**
 
-1. **Performance:** NumPy arrays are stored in contiguous memory and use optimized C loops — much faster for large numerical computations.
-2. **Vectorized operations:** Element-wise operations (e.g., `a + b`, `a * 2`) apply to whole arrays without Python-level loops.
-3. **Memory efficiency:** Less overhead per element compared to Python objects in lists.
-4. **Rich mathematical functions:** Provides linear algebra, FFT, random, statistical functions, broadcasting, etc.
-   **Example:** `np.array([1,2,3]) * 2` returns `[2,4,6]` quickly without explicit loop.
+A lambda function is a **small anonymous (nameless) function** used for small tasks.
+
+### **Key Points**
+
+* Defined using `lambda`
+* Used for short, one-line functions
+* Common in `map()`, `filter()`, `sorted()`
+* No `def` or function name needed
+
+### **Syntax**
+
+```python
+lambda arguments: expression
+```
+
+### **Example (with def comparison)**
+
+```python
+# normal function
+def square(x):
+    return x * x
+
+# lambda function
+sq = lambda x: x * x
+
+print(square(4))  # 16
+print(sq(4))      # 16
+```
+
+---
+
+### **OR — Assign a single value to a tuple**
+
+### **Rule**
+
+A single-value tuple must have a **comma**.
+
+### **Example**
+
+```python
+t = (5,)
+print(t)       # (5,)
+print(type(t)) # tuple
+```
+
+---
+
+# **f. Why NumPy is used instead of Python arrays (lists)**
+
+### **Key Points (Very Important for Exams)**
+
+1. **Faster execution**
+
+   * NumPy uses C and vectorization (no Python loops)
+
+2. **Less memory usage**
+
+   * Stores data in continuous blocks of memory
+
+3. **Supports mathematical operations directly**
+
+   * Vector & matrix operations, linear algebra, etc.
+
+4. **Broadcasting**
+
+   * Allows operations on arrays of different shapes
+
+5. **Works with scientific libraries**
+
+   * SciPy, pandas, scikit-learn, TensorFlow depend on NumPy
+
+### **Example (with def)**
+
+```python
+import numpy as np
+
+def numpy_example():
+    arr = np.array([1, 2, 3, 4])
+    return arr * arr   # element-wise square
+
+print(numpy_example())   # [ 1  4  9 16 ]
+```
+
+### **Why lists are weaker**
+
+* No direct math operations (must use loops)
+* Slower because loops run in Python
+* No multi-dimensional support like NumPy arrays
 
 ---
 
@@ -243,24 +386,6 @@ reverse_file("original.txt", "reversed.txt")
 
 ---
 
-### e. Create a pie chart using matplotlib to represent data [9, 7, 5]
-
-**Code (matplotlib):**
-
-```python
-import matplotlib.pyplot as plt
-
-data = [9, 7, 5]
-labels = ['A', 'B', 'C']  # optional labels
-plt.pie(data, labels=labels, autopct='%1.1f%%', startangle=90)
-plt.title("Simple Pie Chart")
-plt.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
-plt.show()
-```
-
-**Explanation:** `autopct` displays percentage, `startangle` rotates start. `axis('equal')` makes the pie circular.
-
----
 
 ## SECTION C — (Attempt any one) — I’ll answer both options.
 
