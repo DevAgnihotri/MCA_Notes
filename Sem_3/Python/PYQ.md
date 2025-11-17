@@ -1,26 +1,14 @@
 # Year 2025
 
 ## SECTION A — brief answers (2 × 7 = 14 marks)
-Got you bro — now I’ll rewrite **every answer in perfect exam-style format** with:
 
-✔️ **Definition**
-✔️ **Explanation**
-✔️ **Syntax (where needed)**
-✔️ **Proper examples using `def`**
-✔️ **Bullet-points**
-✔️ **Simple English**
+### **a. How to handle exceptions in Python**
 
-Let’s go.
-
----
-
-# **a. How to handle exceptions in Python**
-
-### **Definition**
+#### **Definition**
 
 Exception handling is a way to **catch errors** during program execution and **prevent the program from crashing**.
 
-### **Key Points**
+#### **Key Points**
 
 * Done using **try–except** block
 * Put risky code inside `try`
@@ -28,7 +16,7 @@ Exception handling is a way to **catch errors** during program execution and **p
 * You can add `else` (runs when no error)
 * `finally` always runs (cleanup code)
 
-### **Syntax**
+#### **Syntax**
 
 ```python
 try:
@@ -37,7 +25,7 @@ except ErrorType:
     # code to handle error
 ```
 
-### **Example (with def function)**
+#### **Example (with def function)**
 
 ```python
 def divide(a, b):
@@ -161,13 +149,13 @@ def read_file():
 
 ---
 
-# **e. Use of lambda functions in Python**
+### **e. Use of lambda functions in Python**
 
-### **Definition**
+#### **Definition**
 
 A lambda function is a **small anonymous (nameless) function** used for small tasks.
 
-### **Key Points**
+#### **Key Points**
 
 * Defined using `lambda`
 * Used for short, one-line functions
@@ -344,23 +332,14 @@ x is y    # False (different objects in memory)
 **Code (dictionary-based):**
 
 ```python
-def char_frequency(s):
-    freq = {}
-    for ch in s:
-        freq[ch] = freq.get(ch, 0) + 1
-    return freq
+a= input("Enter the string")
+freq = {}
 
-print(char_frequency("HELLO"))  # -> {'H':1, 'E':1, 'L':2, 'O':1}
+for ch in a:
+    freq[ch] = freq.get(ch,0) + 1
+
+print(freq)
 ```
-
-**Using Counter:**
-
-```python
-from collections import Counter
-print(Counter("HELLO"))
-```
-
-**Notes:** Can normalize case (`s.upper()` or `s.lower()`), ignore spaces/punctuation if required.
 
 ---
 
@@ -371,18 +350,15 @@ print(Counter("HELLO"))
 **Code (simple and reliable):**
 
 ```python
-def reverse_file(input_path, output_path):
-    with open(input_path, "r", encoding="utf-8") as fin:
-        content = fin.read()
-    reversed_content = content[::-1]  # reverses by character
-    with open(output_path, "w", encoding="utf-8") as fout:
-        fout.write(reversed_content)
+with open("file.txt","r",encoding='utf-8') as fin:
+    content = fin.read()
 
-# Usage
-reverse_file("original.txt", "reversed.txt")
+rev_content = content[::-1]
+
+with open("new.txt","w",encoding='utf=8') as fout:
+    fout.write(rev_content)
+
 ```
-
-**If must read character by character (memory-conservative):** Seek from end and read backwards in chunks. That is more complex; above method suffices for typical exam question.
 
 ---
 
@@ -435,17 +411,15 @@ reverse_file("original.txt", "reversed.txt")
 ```python
 import re
 
-pattern = re.compile(r'^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$')
+pattern = re.compile(r'^[A-Za-z0-9.-_%+]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$')
 
-def is_valid_email(email):
-    if ' ' in email:
-        return False
-    return bool(pattern.match(email))
-
-# Tests:
-print(is_valid_email("user@example.com"))      # True
-print(is_valid_email("user name@x.com"))       # False (space)
-print(is_valid_email("user@localhost"))        # False (no TLD)
+email = input("Enter your mail")
+if ' ' in email:
+    print("Wrong")
+elif bool(pattern.match(email)):
+    print("it's ok")
+else:
+    print("Wrong dear")
 ```
 
 **Explanation:**
@@ -517,14 +491,27 @@ def longest_word(words):
 print(longest_word(['apple', 'banana', 'cherry']))  # -> 'banana'
 ```
 
-**Alternative (return all longest if tie):**
+or
 
 ```python
-def longest_words(words):
-    if not words:
-        return []
-    max_len = max(len(w) for w in words)
-    return [w for w in words if len(w) == max_len]
+a = ["longest","medium_","small"]
+length = 0
+for word in a:
+    if len(word) > length:
+        max_w = word
+        length = len(word)
+
+print(max_w)
+```
+
+
+**Alternative**
+
+```python
+a = ["longest", "medium_", "small"]
+
+max_w = max(a, key=len)
+print(max_w)
 ```
 
 **Notes:** `max(..., key=len)` is pythonic and O(n) time.
@@ -724,35 +711,13 @@ root.mainloop()
 
 **Code assuming `name, m1, m2, m3, ...`:**
 
-```python
-import csv
-
-def average_marks_per_student(csv_path):
-    with open(csv_path, newline='', encoding='utf-8') as f:
-        reader = csv.reader(f)
-        header = next(reader)
-        # assume first column is 'name', others are numeric marks
-        for row in reader:
-            name = row[0]
-            marks = []
-            for val in row[1:]:
-                try:
-                    marks.append(float(val))
-                except ValueError:
-                    pass
-            avg = sum(marks)/len(marks) if marks else 0
-            print(f"{name}: Average = {avg:.2f}")
-
-# Example usage:
-# average_marks_per_student("students.csv")
-```
-
 **If CSV is long or has varying columns, consider `pandas`:**
 
 ```python
 import pandas as pd
 df = pd.read_csv("students.csv")
-# assume first column 'name', rest are marks
+# assume first column 'name' or 'roll_no', rest are marks
+# Take all columns from index 2 to the end
 df['Average'] = df.iloc[:, 1:].mean(axis=1)
 print(df[['name', 'Average']])
 ```
