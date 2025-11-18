@@ -302,14 +302,6 @@ Testing individual components or modules of a program in isolation to verify the
 3. Verify outputs against expected results.
 4. Use tools like **JUnit**, **PyTest**, etc.
 
-### **Common Errors Found:**
-
-* Logical errors in computation
-* Incorrect variable initialization
-* Faulty control structures
-* Boundary condition failures
-* Interface or parameter mismatches
-
 ### **Goal:**
 
 To ensure that **each unit performs as designed** and integrates smoothly later.
@@ -353,14 +345,6 @@ Integration Testing checks the **interaction between integrated modules** to det
    * All modules integrated at once and tested together.
    * Quick but difficult to debug errors.
 
-### **Integration vs System Testing:**
-
-| Aspect    | Integration Testing            | System Testing                  |
-| --------- | ------------------------------ | ------------------------------- |
-| Focus     | Interfaces between modules     | Entire system as a whole        |
-| Scope     | Limited                        | Broad                           |
-| Objective | Verify data flow & interaction | Validate complete functionality |
-
 ---
 
 ## ✅ **Acceptance Testing**
@@ -402,11 +386,6 @@ Testing done after modifications to ensure that **new changes haven’t affected
 1. **Re-execute test cases** after updates or bug fixes.
 2. **Compare new results** with previous outputs to detect side effects.
 
-### **Importance:**
-
-* Maintains software **stability**.
-* Prevents **re-introduction of old bugs**.
-* Often automated using tools (e.g., Selenium, Jenkins).
 
 # Question 6 
 
