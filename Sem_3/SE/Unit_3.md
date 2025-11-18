@@ -464,11 +464,11 @@ Developed by **Allan Albrecht (IBM)**, it focuses on **what the software does**,
 2. **Assign Weights** (low, average, high complexity).
 3. **Calculate Unadjusted Function Points (UFP):**
    [
-   UFP = \sum (\text{count of each component × its weight})
+   UFP = \sum ({count of each component × its weight})
    ]
 4. **Calculate Value Adjustment Factor (VAF):**
    [
-   VAF = 0.65 + 0.01 × \sum (\text{complexity adjustment values})
+   VAF = 0.65 + 0.01 × \sum ({complexity adjustment values})
    ]
 5. **Final Function Points (FP):**
    [
