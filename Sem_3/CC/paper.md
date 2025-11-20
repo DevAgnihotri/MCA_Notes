@@ -1,4 +1,3 @@
-# Question Virtuaization
 
 # ⭐ **Question 1**
 
@@ -234,7 +233,7 @@ We can run the virtual machine in full screen or seamless mode.
 
 ---
 
-# ⭐ **VirtualBox Architecture Diagram**
+## ⭐ **VirtualBox Architecture Diagram**
 
 ```
 +--------------------------------------------------------------+
@@ -634,6 +633,7 @@ The VM thinks it has its own real CPU, RAM, and storage, even though everything 
 Sure dear, here are the same topics written in **full sentences**, more detailed, very clear, and still in **simple 7th-grade English**. Everything is written in **“we”** form and kept easy to learn.
 
 ---
+
 # Question 8 Short Notes
 
 ## **2. Collaboration on Project Management and Task Management (Full Sentence Notes)**
