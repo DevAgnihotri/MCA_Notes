@@ -167,187 +167,227 @@ Here’s a **complete, exam-ready explanation** of the topics:
 Classification is the process of assigning a data sample (unknown pattern) to one of the predefined classes based on features.
 It is a **supervised learning** method because the model is trained with labeled data.
 
+## ⭐ **1. Nearest Neighbor Rule (K-NN)**
+
+### ✅ **Definition**
+
+K-Nearest Neighbor is a **classification technique** where you classify a new data point by looking at the **closest (nearest) existing points**.
+
+### ⚙️ **How it works**
+
+1. Take the new point.
+2. Find its **K nearest neighbors** from the dataset.
+3. Whichever class appears the most, that becomes the new point’s class.
+
 ---
 
-### 🔸 (A) Nearest Neighbor (NN) Rule
+### 📈 **ASCII Diagram**
 
-#### ➤ Definition
+```
+Class A (●)          Class B (▲)
 
-The **Nearest Neighbor Rule** states that an unknown sample is assigned to the **class of its closest training sample** in the feature space.
+●       ●
+   ●      
+             ▲     ▲
+                  ▲
 
-**Formula:**
+New Point (X)
+
+           X
+```
+
+X will be classified depending on whether more **●** or **▲** are close to it.
+
+---
+
+### 🧪 **Simple Working Example**
+
+Dataset:
+
+| Point | X | Y | Class |
+| ----- | - | - | ----- |
+| P1    | 1 | 1 | A     |
+| P2    | 2 | 1 | A     |
+| P3    | 8 | 8 | B     |
+| P4    | 9 | 8 | B     |
+
+Predict for: **(3,2)**
+Choose **K = 3**
+
+Distances:
+
+* To P1 → close
+* To P2 → very close
+* To P3 → far
+* To P4 → far
+
+Nearest neighbors = **A, A, B → majority A**
+
+➡️ **Final Class = A**
+
+---
+
+## ⭐ **2. Bayes Classifier (Naïve Bayes)**
+
+### ✅ **Definition**
+
+Bayes classifier predicts class based on **probability**.
+
+Formula used:
+
 [
-\text{Class}(x) = \text{Class of } \min_i |x - x_i|
-]
-where
-
-* (x_i) = training sample
-* (|x - x_i|) = Euclidean distance
-
----
-
-#### ➤ Working (Example)
-
-Suppose two classes:
-
-* Class A → (1,1), (2,2)
-* Class B → (5,5), (6,6)
-
-Unknown point → (3,3)
-
-Nearest neighbor to (3,3) is (2,2) from Class A → So, **(3,3) belongs to Class A**.
-
----
-
-### 🔸 (B) K-Nearest Neighbor (KNN)
-
-#### ➤ Concept
-
-Instead of just one neighbor, **KNN** considers the *K closest samples*.
-The class with the majority among those K neighbors is assigned.
-
-**Steps of KNN Algorithm:**
-
-1. Choose K (odd number preferred to avoid ties).
-2. Compute the distance between the unknown sample and all training samples.
-3. Select the K samples with the smallest distances.
-4. Assign the class that occurs most frequently among them.
-
----
-
-#### ➤ Example (Exam-style)
-
-Dataset →
-
-| Point | p1 | p2 | Class |
-| ----- | -- | -- | ----- |
-| A     | 2  | 4  | +     |
-| B     | 4  | 2  | +     |
-| C     | 4  | 4  | –     |
-| D     | 6  | 2  | –     |
-
-Predict class for **X(4,6)** with **K = 3**.
-
-Compute distances →
-
-* A: √[(4–2)²+(6–4)²] = √8 = 2.82
-* B: √[(4–4)²+(6–2)²] = 4
-* C: √[(4–4)²+(6–4)²] = 2
-* D: √[(6–4)²+(2–6)²] = √20 = 4.47
-
-→ Closest 3: C(–), A(+), B(+) → 2 positives, 1 negative → Class = **Positive (+)**.
-
----
-
-#### ➤ Advantages
-
-* Simple and effective.
-* No training phase (lazy learner).
-* Works well for low-dimensional data.
-
-#### ➤ Limitations
-
-* Slow for large datasets.
-* Sensitive to noise and irrelevant features.
-* Needs proper feature scaling.
-
----
-
-### 🔸 (C) Bayes Classifier
-
-#### ➤ Concept
-
-Bayes Classifier is based on **Bayes’ Theorem**:
-[
-P(C_i|x) = \frac{P(x|C_i)P(C_i)}{P(x)}
-]
-where
-
-* (P(C_i|x)): posterior probability (class given data)
-* (P(x|C_i)): likelihood
-* (P(C_i)): prior probability
-
-The classifier assigns (x) to the class with the **highest posterior probability**.
-
----
-
-#### ➤ Naïve Bayes Classifier
-
-Assumes features are **conditionally independent** given the class.
-This simplifies computation for multidimensional data.
-
-**Decision Rule:**
-[
-C = \arg \max_{C_i} P(C_i) \prod_{j} P(x_j|C_i)
+P(Class | Data) = \frac{P(Data | Class) \cdot P(Class)}{P(Data)}
 ]
 
-**Use:** Spam detection, text classification, sentiment analysis.
+We choose the class with the **highest probability**.
 
 ---
 
-## **2️⃣ K-Means Clustering**
+### 🧠 **Simple Example**
 
-- 2023 — Section B (Q2(e)): Define clustering. Discuss k‑means clustering algorithm.  
-- 2024 — Section A (Q1(j)): Explain K‑means clustering.  
-- 2022 — Section C (Q7(a)): To which category of clustering schemes does the k‑means algorithm belong? What is its major advantage? Which factors influence computation duration?
+You want to classify a message as:
 
-### 🔹 Definition
+* Spam
+* Not Spam
 
-K-Means is an **unsupervised learning** algorithm used for **clustering**, where data is grouped into *K clusters* based on similarity.
+Training data:
 
----
+* 80% emails are **not spam**
+* 20% emails are **spam**
+* The word “Offer” appears:
 
-### 🔹 Steps of the Algorithm
+  * In **60%** spam
+  * In **10%** non-spam
 
-1. Choose number of clusters (K).
-2. Initialize (K) centroids randomly.
-3. Assign each data point to the nearest centroid.
-4. Recalculate centroids as the mean of all assigned points.
-5. Repeat steps 3–4 until centroids no longer move (convergence).
+New email contains the word **“Offer”**.
+Compare probabilities:
 
----
+```
+P(Spam | Offer)     = 0.6 × 0.2 = 0.12
+P(NotSpam | Offer)  = 0.1 × 0.8 = 0.08
+```
 
-### 🔹 Example
-
-Data points: (2,3), (3,3), (6,6), (7,7), (8,8)
-Let (K=2).
-Initial centroids → (2,3), (7,7)
-
-Iteration 1:
-
-* Cluster 1 → (2,3), (3,3) → mean = (2.5,3)
-* Cluster 2 → (6,6), (7,7), (8,8) → mean = (7,7)
-
-New centroids → (2.5,3), (7,7) → stable → final clusters formed.
+Since **0.12 > 0.08** → classify as **Spam**.
 
 ---
 
-### 🔹 Category and Characteristics
+### 📈 **ASCII Diagram**
 
-* **Category:** Partitional clustering method.
-* **Type:** Iterative refinement algorithm.
-* **Major Advantage:** Simple, fast, and efficient for large datasets.
-* **Factors Influencing Time:**
-
-  * Number of clusters (K).
-  * Number of data points (N).
-  * Number of iterations for convergence.
-  * Dimensionality of data.
-
----
-
-### 🔹 Limitations
-
-* Must specify K beforehand.
-* Sensitive to initial centroid selection.
-* Works only for spherical clusters (not irregular shapes).
+```
+ ┌─────────────── Bayes Classifier ────────────────┐
+ |   Input Word: "Offer"                           |
+ |   Calculate:                                     |
+ |     P(Spam|Offer)                                |
+ |     P(NotSpam|Offer)                             |
+ |   Compare and choose highest.                    |
+ └──────────────────────────────────────────────────┘
+```
 
 ---
 
-## **3️⃣ Support Vector Machine (SVM)**
+## ⭐ **3. K-Means Clustering**
 
-- 2022 — Section A (Q1(i)): Write short note on Support Vector Machine (SVM).
+### ✅ **Definition**
 
+K-means is **unsupervised**, meaning **no labels**.
+It groups data into **K clusters** based on similarity.
+
+---
+
+### ⚙️ **How K-Means works**
+
+1. Pick number of clusters **K**
+2. Randomly place **K centroids**
+3. Assign each point to nearest centroid
+4. Move centroids
+5. Repeat until stable
+
+---
+
+### 📈 **ASCII Diagram**
+
+```
+Initial (Random Centroids)
+
+●   ●         ○
+         ●
+    ○
+
+○ = centroid
+
+
+After Clustering:
+
+Cluster 1 (○1):
+● ● ● ●
+
+Cluster 2 (●2):
+▲ ▲ ▲ ▲
+```
+
+---
+
+### 🧪 **Working Example**
+
+Points:
+(1,1), (2,1), (1,2), (9,9), (10,9), (9,10)
+
+Choose **K = 2**
+
+Group 1 (near 1,1):
+(1,1), (2,1), (1,2)
+
+Group 2 (near 9,9):
+(9,9), (10,9), (9,10)
+
+➡️ **Clusters formed successfully**
+
+---
+
+## ⭐ **4. Support Vector Machine (SVM)**
+
+### ✅ **Definition**
+
+SVM is a classifier that finds the **best boundary (hyperplane)** between classes.
+It tries to maximize the **margin** (distance) between boundary and points.
+
+---
+
+### 📈 **ASCII Diagram of SVM**
+
+```
+Class A (●) on left
+Class B (▲) on right
+
+●   ●   ●   |   ▲   ▲   ▲
+             |
+         Max Margin
+             |
+●   ●   ●   |   ▲   ▲   ▲
+```
+
+The **middle vertical line** is the SVM decision boundary.
+
+---
+
+### 🧪 **Simple Working Example**
+
+Dataset:
+
+| X | Y | Class |
+| - | - | ----- |
+| 1 | 1 | A     |
+| 1 | 2 | A     |
+| 2 | 1 | A     |
+| 9 | 9 | B     |
+| 8 | 9 | B     |
+| 9 | 8 | B     |
+
+SVM finds a “line” between the two classes (A and B).
+
+Imagine two groups far apart → SVM draws the **best separation line** exactly in between.
+
+➡️ New point (7,7) → on B's side → **Class B**
 
 ### 🔹 Concept
 
