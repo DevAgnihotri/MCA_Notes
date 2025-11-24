@@ -306,6 +306,7 @@ print(factorial(5))
 
 - **Local Scope:** Variable defined inside a function, only accessible there.
 - **Global Scope:** Variable defined outside all functions, accessible everywhere.
+- **nonLocal Scope:** Used in nested functions to modify outer function variables.
 
 **Example:**
 
@@ -370,14 +371,6 @@ greet("Sam", "Hi")
 Hello Sam
 Hi Sam
 ```
-
----
-
-## ⭐ Summary: Why Use Dictionaries & Functions?
-
-- Dictionaries and functions are the backbone of Python programming.
-- They help you write clean, organized, and powerful code.
-- Mastering these topics will make you a better Python developer and help you build amazing projects!
 
 ---
 
