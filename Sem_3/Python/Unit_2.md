@@ -328,10 +328,21 @@ mx = max(l)
 mn = min(l)
 ```
 
-#### **b) Find Duplicates**
+#### **b) Find Duplicates** and removing them
 
 ```python
 dup = [x for x in l if l.count(x) > 1]
+```
+
+```python
+def remove_duplicates(s):
+    result = ""
+    for ch in s:
+        if ch not in result:
+            result += ch
+    return result
+
+print(remove_duplicates("programming"))
 ```
 
 #### **c) Rotate List (right by 1)**
