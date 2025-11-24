@@ -92,6 +92,10 @@ Key points:
 - Use `if __name__ == "__main__":` in modules to allow the file to be both importable and runnable as a script.
 - When a module is imported, `__name__` is the module name; when run directly, `__name__ == "__main__"`.
 
+* `__name__` is a special Python variable that stores the module’s name.
+* When a Python file is run directly, `__name__` becomes `"__main__"`.
+* Using `if __name__ == "__main__":` ensures certain code runs **only when the file is executed directly**, not when imported.
+
 ### Packages and `__init__.py`
 
 - A package is a folder containing Python modules and optionally an `__init__.py` file. In modern Python, `__init__.py` may be empty but is still commonly used.
@@ -170,74 +174,6 @@ Key points:
 
 - `math` works on Python numbers (floats, ints). For element-wise array math use `numpy`.
 
-## string module
-
-- Purpose: Text helpers and constants.
-- Useful items: `string.ascii_letters`, `string.ascii_lowercase`, `string.digits`, `string.punctuation`, and `string.Template`.
-
-### Useful items in the string module — quick table
-
-| Item                                  | What it is                                       | Example / usage                                             |
-| ------------------------------------- | ------------------------------------------------ | ----------------------------------------------------------- |
-| string.ascii_letters                  | All ASCII letters (lower+upper)                  | `string.ascii_letters` → "abcdefghijklmnopqrstuvwxyzA-to-Z" |
-| string.ascii_lowercase                | Lowercase ASCII letters                          | `string.ascii_lowercase` → "abcdefghijklmnopqrstuvwxyz"     |
-| string.ascii_uppercase                | Uppercase ASCII letters                          | `string.ascii_uppercase` → "ABCDEFGHIJKLMNOPQRSTUVWXYZ"     |
-| string.digits                         | Decimal digits                                   | `string.digits` → "0123456789"                              |
-| string.hexdigits                      | Hexadecimal digits                               | `string.hexdigits` → "0123456789abcdefABCDEF"               |
-| string.octdigits                      | Octal digits                                     | `string.octdigits` → "01234567"                             |
-| string.punctuation                    | Punctuation characters                           | `string.punctuation` → "!\"#$%&'()\*+,-./:;<=>?@[\\]^\_`{}  |
-| string.printable                      | All printable chars                              | `string.printable`                                          |
-| string.whitespace                     | Whitespace chars                                 | `string.whitespace` → `'\t\n\x0b\x0c\r '`                   |
-| string.Template                       | Simple $-based templates for substitution        | `Template('Hi, $name').substitute(name='Ravi')`             |
-| Template.substitute / safe_substitute | Substitute placeholders (safe avoids KeyError)   | `t.safe_substitute(name='Ravi')`                            |
-| string.capwords(s[, sep])             | Split on whitespace, capitalize words, rejoin    | `string.capwords('hello world')` → "Hello World"            |
-| string.Formatter                      | Advanced/custom formatting (parse/format fields) | `Formatter().format('{:.2f}', 3.14159)` → "3.14"            |
-
-Examples (copy-paste):
-
-```python
-import string
-from string import Template, Formatter
-
-# constants
-print(string.ascii_lowercase, string.digits)
-
-# Template (safe_substitute avoids KeyError)
-t = Template('Hello, $name! Age: $age')
-print(t.substitute(name='Ravi', age=21))
-print(t.safe_substitute(name='Ravi'))  # leaves $age if missing
-
-# capwords
-print(string.capwords('welcome to python'))
-
-# remove punctuation using translate (str.maketrans)
-s = "Hello, world!!!"
-trans = str.maketrans('', '', string.punctuation)
-print(s.translate(trans))  # "Hello world"
-
-# Formatter basic use
-fmt = Formatter()
-print(fmt.format("{:.2f}", 3.14159))  # "3.14"
-```
-
-Use the constants for whitelist/charset building, the Template for simple user-facing substitutions, capwords for title-like capitalization, and Formatter when you need custom field parsing/format behavior.
-
-Example:
-
-```python
-import string
-print(string.ascii_letters)
-print(string.digits)
-
-from string import Template
-t = Template('Hello, $name!')
-print(t.substitute(name='Ravi'))
-```
-
-Key points:
-
-- `str` objects have most methods; `string` provides constants and the `Template` helper.
-
 ## sys
 
 - Purpose: Access interpreter-level information and command-line arguments.
@@ -275,8 +211,7 @@ Key points:
 
 - Not in the standard library; a very common third-party package for numerical computing and arrays.
 - Core type: `numpy.ndarray` — fast, fixed-type arrays with vectorized operations.
- 
- 
+
 ### Common NumPy functions — syntax and use
 
 | Function / Topic             |                                                         Syntax | Use / Example                                         |
