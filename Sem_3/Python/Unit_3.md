@@ -113,6 +113,60 @@ city Delhi
 
 ---
 
+## **6. Interview Problems**
+
+---
+
+#### **🟦 (a) Count frequency of elements**
+
+```python
+data = ["a", "b", "a", "c", "b", "a"]
+
+freq = {}
+for i in data:
+    freq[i] = freq.get(i, 0) + 1
+
+print(freq)
+```
+
+---
+
+#### **🟦 (b) Merge two dictionaries**
+
+```python
+d1 = {"a": 1, "b": 2}
+d2 = {"b": 3, "c": 4}
+
+merged = d1 | d2   # Python 3.9+ (d2 overrides d1)
+print(merged)
+```
+
+Old method:
+
+```python
+merged = {**d1, **d2}
+```
+
+---
+
+#### **🟦 (c) Sort dictionary by values**
+
+```python
+d = {"a": 3, "b": 1, "c": 2}
+
+sorted_d = dict(sorted(d.items(), key=lambda x: x[1]))
+print(sorted_d)
+```
+
+---
+
+### **💡 When to Use Dictionary**
+
+* When you need **key–value mapping**
+* When searching or lookup is important (**O(1) average**)
+* When keys should be **unique**
+* Great for **counters, configs, JSON data, nested structures**
+
 ## 🚀 Functions
 
 ---
