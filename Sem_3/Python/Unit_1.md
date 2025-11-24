@@ -552,8 +552,54 @@ print("Loop finished")
 
 ## Comments
 
-Here is a **simple table** of Python keywords with their **use** and a small **syntax/example**.
-(Keeping it short, clear, and beginner-friendly.)
+Comments are notes you write **inside the code** to explain what it does.
+Python **ignores** comments when running the program.
+
+---
+
+### **1. Single-line Comment → `#`**
+
+* Used for short notes.
+* Everything after `#` is ignored.
+
+#### Example:
+
+```python
+# This adds two numbers
+x = 5 + 3
+```
+
+---
+
+### **2. Multi-line Comment → `"""  """` or `'''  '''`**
+
+* Used when you want to write **many lines** of explanation.
+* Python ignores the text inside these quotes.
+
+#### Example:
+
+```python
+"""
+This program shows
+how multi-line comments work.
+"""
+```
+
+---
+
+### **3. Docstring (Documentation String)**
+
+* A docstring is a special multi-line string placed at the **start of a function, class, or file**.
+* It explains **what the function does**.
+* Can be accessed using `function.__doc__`.
+
+#### Example:
+
+```python
+def add(a, b):
+    """This function adds two numbers."""
+    return a + b
+```
 
 ---
 
