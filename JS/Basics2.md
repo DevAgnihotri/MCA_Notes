@@ -711,7 +711,3 @@ console.log("end");
 
 Some platforms use the term "job queue" for microtasks. Jobs run right after the current script and before rendering.
 Keep microtasks short to avoid blocking rendering.
-
----
-
-_Notes:_ ES6+ and Error Handling sections added. Tell me if you want more examples or more topics.\*
