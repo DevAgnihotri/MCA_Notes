@@ -1,4 +1,3 @@
-````markdown
 # JavaScript Basics — Part 3
 
 **Table of Contents**
