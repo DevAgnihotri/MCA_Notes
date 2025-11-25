@@ -473,5 +473,3 @@ console.log(c()); // 2
 Use cases: private state (like above), partially applied functions, and maintaining state in async callbacks.
 
 ---
-
-_Notes:_ Add more topics below as needed; update the TOC when you append new sections.\*
