@@ -3,10 +3,7 @@
 **Table of Contents**
 
 - [16. Advanced Concepts](#16-advanced-concepts)
-  - [Hoisting (Variable and Function)](#hoisting-variable-and-function)
   - [this keyword in different contexts](#this-keyword-in-different-contexts)
-  - [Closures in detail](#closures-in-detail)
-  - [Prototype Chain](#prototype-chain)
   - [Shadowing](#shadowing)
   - [IIFE (Immediately Invoked Function Expression)](#iife-immediately-invoked-function-expression)
   - [Currying](#currying)
@@ -43,29 +40,6 @@
 Advanced concepts help you write better and faster JavaScript. They explain how the language works under the hood.
 Each subtopic below has a short explanation, the syntax, a tiny example, and the output.
 
-### Hoisting (Variable and Function)
-
-Hoisting means JavaScript moves declarations to the top before running code. Declarations exist before you reach them, but values do not.
-
-Syntax/example:
-
-```js
-console.log(x); // undefined (declaration hoisted, value not)
-var x = 5;
-
-foo(); // works because function declarations are hoisted
-function foo() {
-  console.log("called");
-}
-```
-
-Output:
-
-```txt
-undefined
-called
-```
-
 ### this keyword in different contexts
 
 `this` points to the object that called the function. In the global scope it points to global (or undefined in strict mode). Arrow functions do not have their own `this`.
@@ -89,54 +63,6 @@ Output:
 Amy
 ```
 
-### Closures in detail
-
-A closure happens when a function remembers the variables from the place it was created, even after that place finished running.
-
-Syntax/example:
-
-```js
-function makeCounter() {
-  let count = 0;
-  return function () {
-    count += 1;
-    return count;
-  };
-}
-const c = makeCounter();
-console.log(c()); // 1
-console.log(c()); // 2
-```
-
-Output:
-
-```txt
-1
-2
-```
-
-### Prototype Chain
-
-Objects can inherit from other objects. The prototype chain is how JavaScript finds a property by walking up linked prototypes.
-
-Syntax/example:
-
-```js
-function Person(n) {
-  this.name = n;
-}
-Person.prototype.say = function () {
-  return "Hi " + this.name;
-};
-const p = new Person("Zoe");
-console.log(p.say()); // 'Hi Zoe'
-```
-
-Output:
-
-```txt
-Hi Zoe
-```
 
 ### Shadowing
 
