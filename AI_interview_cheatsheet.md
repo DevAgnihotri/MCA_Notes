@@ -104,6 +104,7 @@ Quick intro (one sentence): Artificial Intelligence (AI) is the design of machin
   - Super AI: beyond human intelligence (speculative).
 
 - Machine types by memory/ability (Minsky-style)
+
   - Reactive machines: no memory, respond to current input (e.g., chess engine without learning).
   - Limited memory: can use recent history (many ML systems, RL agents).
   - Theory of mind: can model others (advanced research area).
