@@ -15,7 +15,7 @@
 
 ## Introduction to Python: Basics
 
-Python is a popular programming language that is easy to read and write. It is used for making websites, games, apps, and more. Python is known for its simple syntax (rules for writing code) and is a great choice for beginners.
+Python is a popular programming language that is easy to read and write. It is used for making websites(django , fastapi, flask), games(pygame godot), apps(  Scikit-learn,tensorflow, selenium(automation)), and more. Python is known for its simple syntax (rules for writing code) and is a great choice for beginners.
 
 ### What is Python?
 
@@ -264,8 +264,6 @@ Coding standards are rules to help you write clean and easy-to-read code.
   ```
 - Follow the PEP 8 style guide for Python
   - PEP 8 is a set of rules for writing Python code
-
-Here is a **simple, clean, 8th-grade level explanation** of all the topics:
 
 ---
 
