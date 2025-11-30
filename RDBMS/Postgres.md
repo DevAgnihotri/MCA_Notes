@@ -18,7 +18,6 @@
   - [Network types & UUID](#network-types--uuid)
   - [Composite & ENUM types](#composite--enum-types)
 - [3. SQL Operations in PostgreSQL](#3-sql-operations-in-postgresql)
-
   - [CREATE / ALTER / DROP](#create--alter--drop)
   - [INSERT / UPDATE / DELETE / SELECT](#insert--update--delete--select)
   - [PostgreSQL-specific clauses](#postgresql-specific-clauses)
