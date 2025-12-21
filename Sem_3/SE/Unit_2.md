@@ -228,7 +228,7 @@
 
 ---
 
-### SEI-CMM (Capability Maturity Model)
+### SEI-CMM (Capability Maturity Model) (OMDRI)
 
 - **Definition:**  
     The Capability Maturity Model (CMM) is a framework developed by the Software Engineering Institute (SEI) to assess and improve the maturity of software development processes in organizations. It provides a structured way to move from ad-hoc, chaotic processes to disciplined, mature processes that deliver high-quality software.

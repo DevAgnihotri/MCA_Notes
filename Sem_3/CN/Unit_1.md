@@ -9,8 +9,6 @@
 - [Network Connecting Devices](#network-connecting-devices)
 - [Transmission Media](#transmission-media)
 
----
-
 ## Data Communications
 
 ### Introduction to Data Communication
@@ -39,6 +37,10 @@ A data communication system has five main components:
 | Medium    | Path for data       | Internet cable, WiFi |
 | Protocol  | Rules for sending   | HTTP, TCP/IP         |
 
+![Components of Data Communication System](https://avcreatians.wordpress.com/wp-content/uploads/2020/08/images-60.png?w=772)
+
+*Figure: Components of a Data Communication System.*
+
 ### Characteristics of Data Communication
 
 **List out three fundamental characteristics that determines the effectiveness of the data communication system? (2021, Section A)**
@@ -59,10 +61,11 @@ Data can be represented in different forms:
 
 Data can flow in three ways:
 
-- **Simplex:** Data can only move in one direction. One device always sends, and the other always receives. For example, a radio station sends music, and your radio only receives it. You cannot send anything back to the radio station.
+- **Simplex-duplex:** Data can only move in one direction. One device always sends, and the other always receives. For example, a radio station sends music, and your radio only receives it. You cannot send anything back to the radio station.
 - **Half-duplex:** Data can move in both directions, but not at the same time. Devices take turns to send and receive information. For example, with a walkie-talkie, you have to press a button to talk, and then let go to listen. Only one person can talk at a time.
 - **Full-duplex:** Data can move in both directions at the same time. Both devices can send and receive information together. For example, during a phone call, you and your friend can talk and listen at the same time without waiting for the other to stop.
 
+![Data-Flow](https://www.totalphase.com/media/blog/2022/10/Half-Duplex-Full-Duplex.png)
 ---
 
 ## Networks and Classification

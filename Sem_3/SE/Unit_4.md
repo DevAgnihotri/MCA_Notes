@@ -63,6 +63,12 @@ Testing individual components or modules of a program in isolation to verify the
 
 To ensure that **each unit performs as designed** and integrates smoothly later.
 
+Unit Testing is a software testing method in which individual units or components of a program are tested separately. A unit can be a function, method, or small part of code. The main aim of unit testing is to check whether each unit of the software is working correctly on its own. This testing is usually done by the developer while writing the code.
+
+Unit testing is performed during the early stage of software development. By testing small parts first, errors can be found easily before they become big problems. It focuses mainly on the internal logic of the code and checks whether the given input produces the correct output. If a unit fails, it is easier to find and fix the mistake because only one small part is being tested.
+
+The main advantage of unit testing is that it helps in finding bugs early, which saves time and cost. It also improves the quality and reliability of the software. However, unit testing has a limitation because it does not check how different units work together. It only ensures that individual units are correct.
+
 ---
 
 ## 🔗 **Integration Testing**
@@ -78,6 +84,12 @@ To ensure that **each unit performs as designed** and integrates smoothly later.
 ### **Definition:**
 
 Integration Testing checks the **interaction between integrated modules** to detect interface defects.
+
+Integration Testing is a software testing method in which two or more tested units are combined and tested together. The purpose of integration testing is to check whether the different units of the software work properly when connected. This testing is done after unit testing.
+
+Integration testing mainly focuses on interaction, communication, and data flow between modules. Even if individual units work correctly, problems can still occur when they are joined together. Integration testing helps in finding errors related to interfaces, data passing, and control flow between modules.
+
+There are different approaches to integration testing such as Top-Down, Bottom-Up, and Big Bang, but the main goal remains the same: to ensure that all units function smoothly as a complete system. One major advantage of integration testing is that it helps in identifying interface errors early. However, debugging can be difficult because multiple units are involved at the same time.
 
 ### **Types:**
 
@@ -109,128 +121,6 @@ Integration Testing checks the **interaction between integrated modules** to det
 | Focus     | Interfaces between modules     | Entire system as a whole        |
 | Scope     | Limited                        | Broad                           |
 | Objective | Verify data flow & interaction | Validate complete functionality |
-
----
-
-## ✅ **Acceptance Testing**
-
-- List the levels or phases of testing. (Unit, Integration, System, Acceptance) (2021 C Q4(b))
-
-📘 *(2021 – C Q4(b))*
-
-### **Definition:**
-
-Final testing phase performed to ensure the system is ready for **delivery and use by end-users**.
-
-### **Types:**
-
-1. **Alpha Testing:**
-   Conducted by internal users/developers in a controlled environment.
-2. **Beta Testing:**
-   Done by external users/customers in the real environment.
-
-### **Purpose:**
-
-* Verify that software meets **business requirements**.
-* Ensure **usability and customer satisfaction**.
-
----
-
-## ♻️ **Regression Testing**
-
-- What are the two main activities of regression testing? (2023 A(g))
-
-📘 *(2023 – A (g))*
-
-### **Definition:**
-
-Testing done after modifications to ensure that **new changes haven’t affected existing functionality**.
-
-### **Main Activities:**
-
-1. **Re-execute test cases** after updates or bug fixes.
-2. **Compare new results** with previous outputs to detect side effects.
-
-### **Importance:**
-
-* Maintains software **stability**.
-* Prevents **re-introduction of old bugs**.
-* Often automated using tools (e.g., Selenium, Jenkins).
-
----
-
-Here are your crisp, exam-focused notes on
-**Testing for Functionality and Performance, Top-Down & Bottom-Up Testing Strategies, Test Drivers, and Test Stubs** —
-written exactly in the same structured format as before 👇
-
----
-
-## ⚙️ **Testing for Functionality and Testing for Performance**
-
-- Define black-box testing strategy. (2024 A(g))
-- What is equivalence partitioning? (Black-box testing technique) (2021 A(e))
-- Write the difference between black-box testing and white-box testing; for a program computing square root of an integer between 0 and 5000 determine equivalence-class and boundary-value test cases. (2023 C Q6(b))
-
-
-### **Functional Testing (Black-Box Testing)**
-
-📘 *(2024 — Section A (g))*
-
-#### **Definition:**
-
-Functional testing — also called **black-box testing** — focuses on **what the system does**, not *how* it does it.
-The internal logic or code is not visible to the tester.
-
-#### **Key Idea:**
-
-* Input → Processing → Output is tested purely based on **requirements**.
-* Ensures that all **functions and features** behave as expected.
-
-#### **Common Techniques:**
-
-1. **Equivalence Partitioning (EP)** 📘 *(2021 — A (e))*
-
-   * The input domain is divided into **equivalence classes** of valid and invalid data.
-   * Only one test case from each class is used — minimizing redundancy.
-     ✅ *Example:*
-     For an input range 0–5000:
-   * Valid class → [0–5000]
-   * Invalid classes → <0 and >5000
-
-2. **Boundary Value Analysis (BVA)**
-
-   * Errors often occur at limits of input ranges.
-     ✅ *Example (Square root program 0–5000):*
-   * Test boundaries: `-1, 0, 1, 4999, 5000, 5001`
-   * Ensures stability near edges of input domain.
-
-#### **Black-Box vs White-Box Testing** 📘 *(2023 — C Q6(b))*
-
-| Aspect           | Black-Box Testing             | White-Box Testing               |
-| ---------------- | ----------------------------- | ------------------------------- |
-| Focus            | Functionality                 | Internal logic/structure        |
-| Based On         | Requirements                  | Source code                     |
-| Tester Knowledge | No access to code             | Full access to code             |
-| Example          | Equivalence partitioning, BVA | Path testing, condition testing |
-
----
-
-### **Performance Testing**
-
-Focuses on **non-functional attributes** — speed, stability, scalability, and responsiveness of the system.
-
-#### **Types:**
-
-1. **Load Testing** – Checks system under expected workload.
-2. **Stress Testing** – Tests beyond limits to observe failure behavior.
-3. **Volume Testing** – Evaluates performance with large data volume.
-4. **Spike Testing** – Sudden increase in user load.
-
-#### **Goal:**
-
-To ensure that the system performs **efficiently and reliably** under real conditions.
-
----
 
 ## 🔼🔽 **Top-Down and Bottom-Up Testing Strategies**
 
@@ -327,6 +217,90 @@ Integration testing begins with **lowest-level modules**, proceeding upward.
 | Purpose | Invokes module under test     | Responds to calls from module under test |
 | Example | Main() calling sub-function   | Dummy function returning fixed value     |
 
+
+---
+
+## ✅ **Acceptance Testing**
+
+- List the levels or phases of testing. (Unit, Integration, System, Acceptance) (2021 C Q4(b))
+
+📘 *(2021 – C Q4(b))*
+
+### **Definition:**
+
+Final testing phase performed to ensure the system is ready for **delivery and use by end-users**.
+
+### **Types:**
+
+1. **Alpha Testing:**
+   Conducted by internal users/developers in a controlled environment.
+2. **Beta Testing:**
+   Done by external users/customers in the real environment.
+
+### **Purpose:**
+
+* Verify that software meets **business requirements**.
+* Ensure **usability and customer satisfaction**.
+
+Acceptance Testing is a type of software testing that is done to check whether the software is ready to be used by the user or customer. The main goal of acceptance testing is to confirm that the software meets the user requirements and business needs. It is usually the final testing performed before the software is released.
+
+Acceptance testing is done after system testing is completed. In this testing, the focus is not on internal code or technical details, but on real user behavior and expectations. The software is tested to see whether it works correctly in real-life situations and whether it solves the problem for which it was created.
+
+This testing is generally performed by the end users, clients, or customers, and sometimes by testers who act like real users. Acceptance testing helps in building confidence that the software is stable, usable, and acceptable for delivery. If the software passes acceptance testing, it is considered approved for release.
+
+The biggest advantage of acceptance testing is that it ensures customer satisfaction. However, if problems are found at this stage, fixing them can be time-consuming and costly, because the software is almost complete.
+
+**ALPHA TESTING**
+
+Alpha Testing is performed at the developer’s site before the software is released to external users. It is usually done by internal testers in a controlled environment. The purpose of alpha testing is to find bugs before the software reaches real users.
+
+**BETA TESTING**
+
+Beta Testing is performed by real users in a real environment. The software is released to a limited number of users to get feedback. This testing helps in finding issues that were not found during earlier testing stages.
+
+---
+
+## ♻️ **Regression Testing**
+
+- What are the two main activities of regression testing? (2023 A(g))
+
+📘 *(2023 – A (g))*
+
+### **Definition:**
+
+Testing done after modifications to ensure that **new changes haven’t affected existing functionality**.
+
+### **Main Activities:**
+
+1. **Re-execute test cases** after updates or bug fixes.
+2. **Compare new results** with previous outputs to detect side effects.
+
+### **Importance:**
+
+* Maintains software **stability**.
+* Prevents **re-introduction of old bugs**.
+* Often automated using tools (e.g., Selenium, Jenkins).
+
+---
+
+## ⚙️ **Testing for Functionality and Testing for Performance**
+
+### **Performance Testing**
+
+Focuses on **non-functional attributes** — speed, stability, scalability, and responsiveness of the system.
+
+#### **Types:**
+
+1. **Load Testing** – Checks system under expected workload.
+2. **Stress Testing** – Tests beyond limits to observe failure behavior.
+3. **Volume Testing** – Evaluates performance with large data volume.
+4. **Spike Testing** – Sudden increase in user load.
+
+#### **Goal:**
+
+To ensure that the system performs **efficiently and reliably** under real conditions.
+
+---
 
 ## ⚙️ **Structural Testing (White-Box Testing)**
 
