@@ -389,14 +389,25 @@ To validate that the software performs the **intended tasks correctly** under al
 
 ### **🧩 Difference Between White-Box and Black-Box Testing**
 
-| Feature          | White-Box (Structural)           | Black-Box (Functional)             |
-| ---------------- | -------------------------------- | ---------------------------------- |
-| Focus            | Internal logic & code paths      | External functionality & output    |
-| Tester Knowledge | Full access to source code       | No knowledge of code               |
-| Based On         | Design & implementation          | Requirements & specifications      |
-| Main Techniques  | Statement, branch, path coverage | Equivalence partitioning, BVA      |
-| Detects          | Logical, coding errors           | Missing or incorrect functionality |
-| Example          | Testing loop logic               | Testing login validation form      |
+Got it 👍
+Here is the **clean, exam-perfect TABLE** with **exactly 10 points** for **White Box Testing vs Black Box Testing**.
+
+---
+
+### WHITE BOX TESTING vs BLACK BOX TESTING
+
+| No. | White Box Testing                      | Black Box Testing                            |
+| --- | -------------------------------------- | -------------------------------------------- |
+| 1   | Requires knowledge of internal code    | Does not require code knowledge              |
+| 2   | Focuses on logic and program structure | Focuses on functionality and output          |
+| 3   | Based on internal design of software   | Based on user requirements                   |
+| 4   | Mainly used in unit testing            | Mainly used in system and acceptance testing |
+| 5   | Performed by developers                | Performed by testers or users                |
+| 6   | Tests paths, loops, and conditions     | Tests inputs and outputs                     |
+| 7   | Helps find logical errors              | Helps find functional errors                 |
+| 8   | Code coverage is important             | Code coverage is not considered              |
+| 9   | Testing is more technical              | Testing is user-oriented                     |
+| 10  | Requires programming knowledge         | Does not require programming knowledge       |
 
 ---
 

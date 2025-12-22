@@ -264,11 +264,13 @@
      - **Two types of metrics are collected:**
       - **Product Metrics:** Measure characteristics of the product being developed, such as size, reliability, time complexity, and understandability.
       - **Process Metrics:** Reflect the effectiveness of the process being used, such as average defect correction time, productivity, average number of defects found per hour of inspection, and average number of failures detected during testing per lines of code (LOC).
+    
 
 5. **Optimizing (Level 5):**
      - Focus on continuous process improvement.
      - Innovative ideas and technologies are adopted to improve processes.
      - Such an organization organization identifies identifies the bestsoftware engineering practices andinnovations which may be tools, methods, or processes
+     - Level 5 is called the Optimizing Level. This is the highest level of process maturity. The organization focuses on continuous improvement by learning from past projects and adopting new tools and technologies. Processes are regularly improved to increase efficiency and quality. Innovation and defect prevention are key goals at this level.
 
 ---
 
