@@ -492,15 +492,25 @@ Often, *larger teams* do **not** linearly reduce schedule because of communicati
 * [2021 — Section C Q6(a)] "How is the cost of maintenance estimated?"
 * No direct questions found on COCOMO or Resource Allocation Models in the uploaded papers.
 
+COCOMO stands for Constructive Cost Model. It is a software cost estimation model developed by Barry Boehm. COCOMO is used to estimate the effort, time, and cost required to develop a software project. This model helps managers and developers plan projects in a better and more realistic way.
 
-Developed by **Barry Boehm**, COCOMO estimates **effort and cost** based on project size in **KLOC (thousand lines of code).**
+The main idea of COCOMO is that the size of the software decides how much effort and time will be needed. The size of software is usually measured in Lines of Code (LOC)(uses a metric KLOC). Based on this size, COCOMO calculates how many person-months of effort will be required to complete the project.
+MODES OF COCOMO
 
+COCOMO also classifies software projects into three modes:
+
+- Organic Mode: Small, simple projects with experienced teams.
+- Semi-Detached Mode: Medium-sized projects with mixed experience teams.
+- Embedded Mode: Large, complex projects with strict requirements.
+
+```
 [
-E = a \times (KLOC)^b
+E = a * (KLOC)^b
 ]
 [
-D = c \times (E)^d
+D = c * (E)^d
 ]
+```
 
 Where:
 
