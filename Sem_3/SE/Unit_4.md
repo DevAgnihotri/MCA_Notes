@@ -435,6 +435,36 @@ A **test data suite** is a **collection of input test cases** designed to thorou
 
 Program → *Compute square root of integer (0–5000)*
 
+The equivalence class test cases are -1, 1000, and 5001, while the boundary value analysis test cases are -1, 0, 1, 4999, 5000, and 5001. 
+**Step 1:** Determine Equivalence Class Test Cases 
+
+To determine equivalence classes, we define valid and invalid partitions for the input range [0, 5000]. 
+
+• Valid Range: Integers N such that 0 <= N <= 5000. A representative case is selected, such as 1000. 
+• Invalid Range (Below Minimum): Integers N < 0. A representative case is selected, such as -1. 
+• Invalid Range (Above Maximum): Integers N > 5000. A representative case is selected, such as 5001.The test cases using equivalence partitioning are -1, 1000, and 5001. [3, 4, 5, 6, 7]  
+
+**Step 2:** Determine Test Cases using Boundary Value Analysis [8, 9]  
+
+Boundary value analysis focuses on the boundaries of the valid input range, [0, 5000]. We select inputs at the boundaries, just above them, and just below them. 
+
+• Lower Boundary (0): 
+
+	• Below (invalid): -1 
+	• On (valid): 0 
+	• Above (valid): 1 
+
+• Upper Boundary (5000): 
+
+	• Below (valid): 4999 
+	• On (valid): 5000 
+	• Above (invalid): 5001 [14, 15]  
+
+The test cases using boundary value analysis are -1, 0, 1, 4999, 5000, and 5001. 
+Answer: 
+The equivalence class test cases are -1, 1000, and 5001. The test cases using boundary value analysis are -1, 0, 1, 4999, 5000, and 5001. [16]  
+
+
 | Input Type | Test Values           | Expected Outcome                    |
 | ---------- | --------------------- | ----------------------------------- |
 | Valid      | 0, 1, 100, 4999, 5000 | Correct √ output                    |
