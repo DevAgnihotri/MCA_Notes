@@ -523,7 +523,27 @@ Its purpose is to find **errors early** in requirements, design, or code before 
 
 ✅ *Example:* Reviewing design documents for consistency before implementation.
 
+Here’s a **clean, exam-ready comparison TABLE** for **FTR vs Code Inspection**, written in **simple English** and **exactly what examiners expect**.
+
 ---
+
+### FTR vs CODE INSPECTION
+
+| No. | FTR (Formal Technical Review)           | Code Inspection                      |
+| --- | --------------------------------------- | ------------------------------------ |
+| 1   | Review of technical work products       | Review of program source code        |
+| 2   | Covers documents, design, and code      | Covers only code                     |
+| 3   | Done in a formal meeting                | Done in a structured review process  |
+| 4   | Focuses on correctness and standards    | Focuses on defects and errors        |
+| 5   | Involves a review team                  | Involves inspectors and a moderator  |
+| 6   | Can be applied at any development stage | Applied during coding phase          |
+| 7   | May include discussion and suggestions  | Discussion is limited and controlled |
+| 8   | Helps improve overall software quality  | Helps improve code quality           |
+| 9   | Less detailed at code level             | Very detailed at code level          |
+| 10  | Broad review process                    | Specific code review technique       |
+
+---
+
 
 ### **2. Walkthroughs**
 
