@@ -365,8 +365,7 @@ Items managed under SCM — like:
 
 ### **Definition:**
 
-Change Control is the **systematic process of managing software modifications** to ensure that only authorized and evaluated changes are implemented.
-
+Change Control is the **systematic process of managing all changes made in a software** it takes care of who's and what of all modifaications in the system. like who made the change and what change is made.
 ---
 
 ### **Steps in Change Control:**
