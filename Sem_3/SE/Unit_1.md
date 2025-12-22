@@ -371,11 +371,7 @@ The Waterfall Model is easy to understand and manage, but it is not flexible if 
 - Mistakes may be found late (during testing).
 - Users see the software only at the end.
 
-**Code space for image:**
-
-```
 ![Waterfall Model Diagram](https://media.geeksforgeeks.org/wp-content/uploads/20231030183557/waterfall.jpg)
-```
 
 ---
 
@@ -412,9 +408,8 @@ This model is helpful when it is hard to know exactly what users want at the beg
 
 **Code space for image:**
 
-```
 ![Prototype Model Diagram](https://i.ytimg.com/vi/fWEZFH8lwag/maxresdefault.jpg)
-```
+
 
 ---
 
@@ -457,9 +452,9 @@ The Spiral Model mixes the Waterfall and Prototype models. It repeats steps in c
 
 **Code space for image:**
 
-```
+
 ![Spiral Model Diagram](https://www.gtu-paper-solution.com/upload/2160701/W2016/Q2B_OR.png)
-```
+
 
 ---
 
