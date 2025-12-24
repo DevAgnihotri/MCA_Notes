@@ -684,20 +684,18 @@ When we access a website hosted in another country, **BGP** helps route packets 
 
 ## 🟩 **7. Comparison Between Intradomain and Interdomain Routing**
 
-| Basis                      | Intradomain Routing (within an AS)                | Interdomain Routing (between ASs)                       |
-| -------------------------- | ------------------------------------------------- | ------------------------------------------------------- |
-| Scope                      | Single Autonomous System (AS)                     | Multiple Autonomous Systems                             |
-| Purpose                    | Optimize internal paths and performance           | Exchange reachability and enforce inter-AS policies     |
-| Typical Protocols          | OSPF, IS-IS, RIP, EIGRP                           | BGP                                                     |
-| Algorithm Type             | Link-state or Distance-vector                     | Path-vector                                             |
-| Metric / Decision Criteria | Shortest path by cost/hops/bandwidth              | Policy, AS-path, local-pref, MED, reachability          |
-| Routing Information        | Detailed topology & full routes                   | Summarized routes + policy attributes                   |
-| Convergence                | Fast (designed for quick reconvergence)           | Slower (policy and scale increase stability delays)     |
-| Scalability                | Designed for internal scale (limited)             | Designed for global scale (highly scalable)             |
-| Administrative Control     | Single administrative domain (uniform policy)     | Multiple admins with independent policies               |
-| Route Aggregation          | Less aggregation (detail retained for efficiency) | Heavily aggregated to reduce global table size          |
-| Update Frequency           | Frequent, real-time updates                       | Less frequent, controlled updates to maintain stability |
-| Use Cases                  | Enterprise networks, campus, data center          | ISPs, Internet backbone, inter-organization peering     |
+| No. | Intradomain Routing                              | Interdomain Routing                                     |
+| --- | ------------------------------------------------ | ------------------------------------------------------- |
+| 1   | Routing **inside one network or organization**   | Routing **between different networks or organizations** |
+| 2   | Works **within a single Autonomous System (AS)** | Works **between multiple Autonomous Systems**           |
+| 3   | Used in **small or medium networks**             | Used in **very large networks like the Internet**       |
+| 4   | Focuses on **fast and efficient routing**        | Focuses on **policy and control**                       |
+| 5   | Routing decisions are **simple**                 | Routing decisions are **complex**                       |
+| 6   | Managed by **one network administrator**         | Managed by **multiple organizations**                   |
+| 7   | Uses **distance or cost metrics**                | Uses **path and policy rules**                          |
+| 8   | Examples: **RIP, OSPF, EIGRP**                   | Example: **BGP**                                        |
+| 9   | Changes in network are **quickly updated**       | Changes take **more time to update**                    |
+| 10  | Mainly cares about **performance**               | Mainly cares about **security and business rules**      |
 
 ---
 
