@@ -1,10 +1,12 @@
 # 🌐 **Transport Layer — Process-to-Process Delivery**
 
 **Introduction / Process-to-Process Delivery / Responsibilities**
+
 - List responsibilities of Transport Layer (2022 — A, (h))
 - Illustrate sockets (2022 — A, (j))
 
 **Reliable vs Unreliable Connections; Port & Socket Addressing**
+
 - Explain three‑way handshake (TCP) (2019 — B, (e))
 - Explain three‑way handshake and Two‑Army problem (2021 — C, Q6(b))
 - What is three‑way handshaking? (2023 — A, (h))
@@ -49,10 +51,10 @@ The Transport Layer uses this to deliver messages to the correct process.
 
 Example:
 
-* HTTP → Port 80
-* HTTPS → Port 443
-* FTP → Port 21
-* DNS → Port 53
+- HTTP → Port 80
+- HTTPS → Port 443
+- FTP → Port 21
+- DNS → Port 53
 
 So if you are using Chrome (port 80) and sending an email (port 25), both can run simultaneously without confusion.
 
@@ -62,8 +64,8 @@ So if you are using Chrome (port 80) and sending an email (port 25), both can ru
 
 ### ⚙️ **Port Number:**
 
-* A **16-bit integer** that identifies a specific process on a host.
-* Range: **0–65535**
+- A **16-bit integer** that identifies a specific process on a host.
+- Range: **0–65535**
 
 | **Port Range** | **Type**                  | **Example**                     |
 | -------------- | ------------------------- | ------------------------------- |
@@ -86,8 +88,8 @@ Socket = IP Address + Port Number
 
 📌 **Example:**
 
-* Client socket: 192.168.1.5:5151
-* Server socket: 142.250.1.110:80 (Google)
+- Client socket: 192.168.1.5:5151
+- Server socket: 142.250.1.110:80 (Google)
 
 Together, they form a **communication pair**.
 
@@ -99,9 +101,9 @@ Before communication, TCP establishes a reliable connection using **three steps*
 
 | **Step** | **Sender (Client)** | **Receiver (Server)** | **Action**                             |
 | -------- | ------------------- | --------------------- | -------------------------------------- |
-| 1️⃣      | Sends **SYN**       | —                     | Requests connection                    |
-| 2️⃣      | —                   | Sends **SYN + ACK**   | Acknowledges request and sends its own |
-| 3️⃣      | Sends **ACK**       | —                     | Confirms and connection established    |
+| 1️⃣       | Sends **SYN**       | —                     | Requests connection                    |
+| 2️⃣       | —                   | Sends **SYN + ACK**   | Acknowledges request and sends its own |
+| 3️⃣       | Sends **ACK**       | —                     | Confirms and connection established    |
 
 The **Three-Way Handshake** is a process used by **TCP (Transmission Control Protocol)** to **establish a reliable connection** between a client and a server before data transfer starts. It ensures that **both sides are ready to communicate** and can send and receive data properly.
 
@@ -113,78 +115,56 @@ TCP is a **connection-oriented protocol**, so it must first create a connection.
 
 ### Step 1: SYN (Synchronize)
 
-* The **client** sends a message called **SYN** to the server.
-* This message means: *“I want to start a connection.”*
-* The client also sends its **sequence number**.
-* After sending SYN, the client waits for a reply.
+- The **client** sends a message called **SYN** to the server.
+- This message means: _“I want to start a connection.”_
+- The client also sends its **sequence number**.
+- After sending SYN, the client waits for a reply.
 
 ---
 
 ### Step 2: SYN-ACK (Synchronize-Acknowledge)
 
-* The **server** receives the SYN message.
-* The server replies with **SYN-ACK**.
-* SYN means the server is ready to connect.
-* ACK means the server has received the client’s request.
-* The server also sends its own sequence number.
+- The **server** receives the SYN message.
+- The server replies with **SYN-ACK**.
+- SYN means the server is ready to connect.
+- ACK means the server has received the client’s request.
+- The server also sends its own sequence number.
 
 ---
 
 ### Step 3: ACK (Acknowledge)
 
-* The **client** receives the SYN-ACK message.
-* The client sends an **ACK** message back to the server.
-* This message confirms that the server’s response was received.
-* After this step, the connection is **successfully established**.
+- The **client** receives the SYN-ACK message.
+- The client sends an **ACK** message back to the server.
+- This message confirms that the server’s response was received.
+- After this step, the connection is **successfully established**.
 
----
+### Why It Is Called Three-Way Handshake
 
-## Why It Is Called Three-Way Handshake
-
-* It uses **three messages**:
+- It uses **three messages**:
 
   1. SYN
   2. SYN-ACK
   3. ACK
-* Both client and server **shake hands** to agree on communication.
-* This avoids confusion and data loss.
 
----
+- Both client and server **shake hands** to agree on communication.
+- This avoids confusion and data loss.
 
 ## Importance of Three-Way Handshake
 
-* Ensures **reliable connection**
-* Confirms **both sides are active**
-* Prevents **duplicate or old connections**
-* Sets up **sequence numbers** for data transfer
-
----
-
-## Advantages
-
-* Provides **reliable communication**
-* Avoids data transmission errors
-* Makes TCP **secure and organized**
+- Ensures **reliable connection**
+- Confirms **both sides are active**
+- Prevents **duplicate or old connections**
+- Sets up **sequence numbers** for data transfer
 
 ---
 
 ## Where It Is Used
 
-* Web browsing (HTTP/HTTPS)
-* Email (SMTP)
-* File transfer (FTP)
-* Any TCP-based communication
-
----
-
-## Simple Example
-
-When you open a website:
-
-* Your computer sends **SYN** to the server
-* Server replies **SYN-ACK**
-* Your computer sends **ACK**
-* Now the webpage data starts loading
+- Web browsing (HTTP/HTTPS)
+- Email (SMTP)
+- File transfer (FTP)
+- Any TCP-based communication
 
 ### 📊 **Diagram:**
 
@@ -196,9 +176,7 @@ Client                             Server
      ✅ Connection Established
 ```
 
-After this, data transfer begins securely.
-
----
+## ![Image](https://i.ytimg.com/vi/enET2x2eHU8/maxresdefault.jpg)
 
 ## 🟦 **7️⃣ The Two-Army Problem (Conceptual Limitation)**
 
@@ -249,10 +227,10 @@ The socket pair forms a **unique link** between the two processes.
 
 - UDP header (hex CB84000D001C001C): source port, dest port, data length, total UDP length (2019 — C, Q6(b))
 - Same UDP header questions (2022 — C, Q6(a))
-- Explain TCP / UDP / SCTP  (2024 — C, Q6(a))
+- Explain TCP / UDP / SCTP (2024 — C, Q6(a))
 - Explain any two protocols in TCP/IP suite (SCTP, TCP, UDP) (2022 — C, Q6(b))
----
 
+---
 
 ## 🟦 **1️⃣ Introduction**
 
@@ -261,9 +239,9 @@ It uses **protocols** to send and receive data efficiently and reliably.
 
 The three main protocols are:
 
-* **UDP (User Datagram Protocol)**
-* **TCP (Transmission Control Protocol)**
-* **SCTP (Stream Control Transmission Protocol)**
+- **UDP (User Datagram Protocol)**
+- **TCP (Transmission Control Protocol)**
+- **SCTP (Stream Control Transmission Protocol)**
 
 ---
 
@@ -317,19 +295,19 @@ Let's decode it 👇
 
 ✅ So,
 
-* **Source Port:** 52100
-* **Destination Port:** 13
-* **Total UDP Length:** 28 bytes
-* **Data Length:** 28 − 8 = **20 bytes**
+- **Source Port:** 52100
+- **Destination Port:** 13
+- **Total UDP Length:** 28 bytes
+- **Data Length:** 28 − 8 = **20 bytes**
 
 ---
 
 ### 💡 **Applications of UDP**
 
-* DNS (Port 53)
-* VoIP (Voice over IP)
-* Video Streaming
-* Online Games
+- DNS (Port 53)
+- VoIP (Voice over IP)
+- Video Streaming
+- Online Games
 
 ---
 
@@ -351,6 +329,7 @@ Here is a **simple English difference table** between **TCP and UDP** with **10 
 | 8   | Slower due to more overhead                     | Faster due to less overhead                      |
 | 9   | Used for **email, web browsing, file transfer** | Used for **video streaming, online games, VoIP** |
 | 10  | Examples: HTTP, HTTPS, FTP, SMTP                | Examples: DNS, DHCP, TFTP                        |
+| 11  | Size is of 8 bytes total                             | Size is of 20 - 60 bytes                              |
 
 ## 🟦 **3️⃣ Transmission Control Protocol (TCP)**
 
@@ -406,10 +385,10 @@ TCP is a **connection-oriented**, **reliable** transport protocol that ensures *
 
 ### 💡 **Applications of TCP**
 
-* Web Browsing (HTTP / HTTPS)
-* Email (SMTP)
-* File Transfer (FTP)
-* Remote Login (SSH, Telnet)
+- Web Browsing (HTTP / HTTPS)
+- Email (SMTP)
+- File Transfer (FTP)
+- Remote Login (SSH, Telnet)
 
 ---
 
@@ -447,17 +426,17 @@ It combines the best features of TCP and UDP.
 🧩 **Chunks:**
 After the header, SCTP data is divided into **chunks**, such as:
 
-* DATA chunk (actual message)
-* INIT chunk (connection setup)
-* SACK chunk (acknowledgment)
+- DATA chunk (actual message)
+- INIT chunk (connection setup)
+- SACK chunk (acknowledgment)
 
 ---
 
 ### 💡 **Applications of SCTP**
 
-* Telecom signaling (VoIP control)
-* 4G/5G cellular networks
-* Multimedia streaming
+- Telecom signaling (VoIP control)
+- 4G/5G cellular networks
+- Multimedia streaming
 
 ---
 
@@ -481,6 +460,7 @@ After the header, SCTP data is divided into **chunks**, such as:
 - Define congestion; open and closed loop methods (2021 — C, Q6(a))
 - Differentiate Open Loop vs Closed Loop congestion control (2023 — C, Q6(a))
 - Explain a congestion control algorithm (2024 — B, (d))
+
 ---
 
 ## 🟦 **1️⃣ What is Congestion?**
@@ -495,10 +475,10 @@ After the header, SCTP data is divided into **chunks**, such as:
 
 ### 📉 **Result of Congestion:**
 
-* Packet loss
-* Increased delay
-* Low throughput
-* Retransmissions (which make it worse!)
+- Packet loss
+- Increased delay
+- Low throughput
+- Retransmissions (which make it worse!)
 
 ---
 
@@ -506,10 +486,10 @@ After the header, SCTP data is divided into **chunks**, such as:
 
 We use **congestion control techniques** to:
 
-* Avoid network overload
-* Maintain good performance
-* Reduce packet loss and delay
-* Ensure fair use of network resources
+- Avoid network overload
+- Maintain good performance
+- Reduce packet loss and delay
+- Ensure fair use of network resources
 
 ---
 
@@ -524,36 +504,85 @@ Congestion control methods are divided into **two main types:**
 
 ---
 
-### 🔹 **(A) Open Loop Congestion Control (Prevention Methods)**
 
-These techniques are built into the network to **avoid congestion before it occurs.**
+### OPEN-LOOP vs CLOSED-LOOP CONGESTION CONTROL
 
-| **Technique**                | **Explanation**                                             |
-| ---------------------------- | ----------------------------------------------------------- |
-| **1. Retransmission Policy** | Avoids unnecessary retransmission to prevent extra load.    |
-| **2. Window Policy**         | Controls the number of unacknowledged packets sent at once. |
-| **3. Acknowledgment Policy** | Reduces ACK traffic (e.g., send cumulative ACKs).           |
-| **4. Admission Control**     | Limits number of connections accepted at a time.            |
-| **5. Discard Policy**        | Routers discard low-priority packets when full.             |
-
-🧠 **Example:**
-Routers use **buffer limits** to stop accepting packets when queues are full.
+| No. | Open-Loop Congestion Control             | Closed-Loop Congestion Control           |
+| --- | ---------------------------------------- | ---------------------------------------- |
+| 1   | Congestion is prevented before it occurs | Congestion is controlled after it occurs |
+| 2   | No feedback from the network             | Uses feedback from the network           |
+| 3   | Decisions are made at design time        | Decisions are made during runtime        |
+| 4   | Fixed rules are followed                 | Dynamic control is used                  |
+| 5   | Sender does not know network state       | Sender knows network condition           |
+| 6   | Less complex to implement                | More complex to implement                |
+| 7   | Examples: retransmission, window policy  | Examples: choke packet, backpressure     |
+| 8   | Less effective during heavy traffic      | More effective during heavy traffic      |
+| 9   | Cannot react to sudden congestion        | Can react quickly to congestion          |
+| 10  | Preventive approach                      | Corrective approach                      |
 
 ---
 
-### 🔹 **(B) Closed Loop Congestion Control (Feedback-Based)**
+### OPEN-LOOP CONGESTION CONTROL TECHNIQUES (RADWA)
 
-These methods **detect congestion** and take steps to fix it.
+*(Congestion is prevented before it happens)*
 
-| **Technique**             | **Explanation**                                                               |
-| ------------------------- | ----------------------------------------------------------------------------- |
-| **1. Back Pressure**      | Routers send signals to slow down upstream routers.                           |
-| **2. Choke Packet**       | Routers send a “slow down” message to the source.                             |
-| **3. Implicit Signaling** | Source guesses congestion using delay or packet loss.                         |
-| **4. Explicit Signaling** | Routers explicitly inform source of congestion using special bits in packets. |
+#### 1. Retransmission Policy
 
-🧩 **Example:**
-In **TCP**, the sender slows down automatically when ACKs come late or are missing.
+* Lost packets are retransmitted carefully.
+* Avoids sending too many duplicate packets.
+
+#### 2. Window Policy
+
+* Limits the amount of data sent at one time.
+* Prevents network overload.
+
+#### 3. Acknowledgement Policy
+
+* Uses delayed or compressed acknowledgements.
+* Reduces number of acknowledgement packets.
+
+#### 4. Discarding Policy
+
+* Routers drop less important packets when busy.
+* Helps control congestion early.
+
+#### 5. Admission Policy
+
+* New connections are not allowed when network is full.
+* Prevents congestion before it starts.
+
+---
+
+### CLOSED-LOOP CONGESTION CONTROL TECHNIQUES
+
+*(Congestion is detected and then controlled)*
+
+#### 1. Backpressure
+
+* Congested router tells previous router to slow down.
+* Traffic is reduced step by step.
+
+### 2. Choke Packet
+
+* Router sends a warning message to sender.
+* Sender reduces sending rate.
+
+### 3. Implicit Signaling
+
+* Sender guesses congestion by packet loss or delay.
+* No direct message is sent.
+
+### 4. Explicit Signaling
+
+* Router directly informs sender about congestion.
+* Sender immediately controls data rate.
+
+---
+
+### Easy Memory Line 🧠
+
+**Open-Loop = Prevent first**
+**Closed-Loop = Detect and control**
 
 ---
 
@@ -584,8 +613,8 @@ TCP tries to find the right balance:
 
 Let’s assume:
 
-* Initial cwnd = 1 MSS
-* ssthresh = 8 MSS
+- Initial cwnd = 1 MSS
+- ssthresh = 8 MSS
 
 | **Phase**                | **cwnd Growth**                        |
 | ------------------------ | -------------------------------------- |
@@ -644,7 +673,6 @@ Got it 👍 — here’s your answer in the **same structured format** as before
 - Explain Round‑Trip Time (RTT) (2023 — A, (f))
 - Maximum window size for selective reject with n‑bit sequence numbers (flow control concept) (2021 — A, (h))
 
-
 ---
 
 #### **Definition:**
@@ -681,13 +709,13 @@ The main flow characteristics are:
 1. **Traffic Shaping:**
    Controls data rate and smooths out bursty traffic to prevent congestion.
 
-   * **Leaky Bucket Algorithm:** Sends packets at a constant rate.
-   * **Token Bucket Algorithm:** Allows bursts but within defined limits.
+   - **Leaky Bucket Algorithm:** Sends packets at a constant rate.
+   - **Token Bucket Algorithm:** Allows bursts but within defined limits.
 
 2. **Scheduling:**
    Determines the order in which packets are transmitted based on priority.
 
-   * Example: **Priority Queuing, Weighted Fair Queuing (WFQ)**.
+   - Example: **Priority Queuing, Weighted Fair Queuing (WFQ)**.
 
 3. **Resource Reservation:**
    Network reserves bandwidth and buffers for high-priority traffic using protocols like **RSVP**.
@@ -699,9 +727,9 @@ The main flow characteristics are:
 
 #### **Additional Concepts:**
 
-* **Round Trip Time (RTT):**
+- **Round Trip Time (RTT):**
   The time taken for a packet to go from source → destination → source again.
   Used in TCP to estimate timeout values.
 
-* **Flow Control (Selective Reject):**
+- **Flow Control (Selective Reject):**
   For **n-bit sequence numbers**, the maximum window size = **2ⁿ⁻¹**.
