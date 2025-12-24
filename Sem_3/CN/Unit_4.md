@@ -126,6 +126,89 @@ Before communication, TCP establishes a reliable connection using **three steps*
 | 2️⃣      | —                   | Sends **SYN + ACK**   | Acknowledges request and sends its own |
 | 3️⃣      | Sends **ACK**       | —                     | Confirms and connection established    |
 
+The **Three-Way Handshake** is a process used by **TCP (Transmission Control Protocol)** to **establish a reliable connection** between a client and a server before data transfer starts. It ensures that **both sides are ready to communicate** and can send and receive data properly.
+
+TCP is a **connection-oriented protocol**, so it must first create a connection. The three-way handshake helps in setting up this connection safely and correctly.
+
+---
+
+## Steps of Three-Way Handshake
+
+### Step 1: SYN (Synchronize)
+
+* The **client** sends a message called **SYN** to the server.
+* This message means: *“I want to start a connection.”*
+* The client also sends its **sequence number**.
+* After sending SYN, the client waits for a reply.
+
+---
+
+### Step 2: SYN-ACK (Synchronize-Acknowledge)
+
+* The **server** receives the SYN message.
+* The server replies with **SYN-ACK**.
+* SYN means the server is ready to connect.
+* ACK means the server has received the client’s request.
+* The server also sends its own sequence number.
+
+---
+
+### Step 3: ACK (Acknowledge)
+
+* The **client** receives the SYN-ACK message.
+* The client sends an **ACK** message back to the server.
+* This message confirms that the server’s response was received.
+* After this step, the connection is **successfully established**.
+
+---
+
+## Why It Is Called Three-Way Handshake
+
+* It uses **three messages**:
+
+  1. SYN
+  2. SYN-ACK
+  3. ACK
+* Both client and server **shake hands** to agree on communication.
+* This avoids confusion and data loss.
+
+---
+
+## Importance of Three-Way Handshake
+
+* Ensures **reliable connection**
+* Confirms **both sides are active**
+* Prevents **duplicate or old connections**
+* Sets up **sequence numbers** for data transfer
+
+---
+
+## Advantages
+
+* Provides **reliable communication**
+* Avoids data transmission errors
+* Makes TCP **secure and organized**
+
+---
+
+## Where It Is Used
+
+* Web browsing (HTTP/HTTPS)
+* Email (SMTP)
+* File transfer (FTP)
+* Any TCP-based communication
+
+---
+
+## Simple Example
+
+When you open a website:
+
+* Your computer sends **SYN** to the server
+* Server replies **SYN-ACK**
+* Your computer sends **ACK**
+* Now the webpage data starts loading
+
 ### 📊 **Diagram:**
 
 ```
