@@ -521,6 +521,7 @@ When we connect our laptop or phone to Wi-Fi, we don’t manually set an IP addr
 
 > the **DHCP server (usually the router)** automatically gives one to us.
 
+![DHCP](https://study-ccna.com/wp-content/images/dhcp_process_explained.jpg)
 ---
 
 ### ⚙️ **Advantages of DHCP:**
