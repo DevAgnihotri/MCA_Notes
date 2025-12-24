@@ -329,7 +329,7 @@ Here is a **simple English difference table** between **TCP and UDP** with **10 
 | 8   | Slower due to more overhead                     | Faster due to less overhead                      |
 | 9   | Used for **email, web browsing, file transfer** | Used for **video streaming, online games, VoIP** |
 | 10  | Examples: HTTP, HTTPS, FTP, SMTP                | Examples: DNS, DHCP, TFTP                        |
-| 11  | Size is of 8 bytes total                             | Size is of 20 - 60 bytes                              |
+| 11  | Size is of 8 bytes total                        | Size is of 20 - 60 bytes                         |
 
 ## 🟦 **3️⃣ Transmission Control Protocol (TCP)**
 
@@ -504,7 +504,6 @@ Congestion control methods are divided into **two main types:**
 
 ---
 
-
 ### OPEN-LOOP vs CLOSED-LOOP CONGESTION CONTROL
 
 | No. | Open-Loop Congestion Control             | Closed-Loop Congestion Control           |
@@ -524,65 +523,58 @@ Congestion control methods are divided into **two main types:**
 
 ### OPEN-LOOP CONGESTION CONTROL TECHNIQUES (RADWA)
 
-*(Congestion is prevented before it happens)*
+_(Congestion is prevented before it happens)_
 
 #### 1. Retransmission Policy
 
-* Lost packets are retransmitted carefully.
-* Avoids sending too many duplicate packets.
+- Lost packets are retransmitted carefully.
+- Avoids sending too many duplicate packets.
 
 #### 2. Window Policy
 
-* Limits the amount of data sent at one time.
-* Prevents network overload.
+- Limits the amount of data sent at one time.
+- Prevents network overload.
 
 #### 3. Acknowledgement Policy
 
-* Uses delayed or compressed acknowledgements.
-* Reduces number of acknowledgement packets.
+- Uses delayed or compressed acknowledgements.
+- Reduces number of acknowledgement packets.
 
 #### 4. Discarding Policy
 
-* Routers drop less important packets when busy.
-* Helps control congestion early.
+- Routers drop less important packets when busy.
+- Helps control congestion early.
 
 #### 5. Admission Policy
 
-* New connections are not allowed when network is full.
-* Prevents congestion before it starts.
+- New connections are not allowed when network is full.
+- Prevents congestion before it starts.
 
 ---
 
-### CLOSED-LOOP CONGESTION CONTROL TECHNIQUES
+### CLOSED-LOOP CONGESTION CONTROL TECHNIQUES (BICE)
 
-*(Congestion is detected and then controlled)*
+_(Congestion is detected and then controlled)_
 
 #### 1. Backpressure
 
-* Congested router tells previous router to slow down.
-* Traffic is reduced step by step.
+- Congested router tells previous router to slow down.
+- Traffic is reduced step by step.
 
 ### 2. Choke Packet
 
-* Router sends a warning message to sender.
-* Sender reduces sending rate.
+- Router sends a choke packet to sender.
+- Data transfer is stopped from the Sender.
 
 ### 3. Implicit Signaling
 
-* Sender guesses congestion by packet loss or delay.
-* No direct message is sent.
+- Sender guesses congestion by packet loss or delay.
+- No direct message is sent.
 
 ### 4. Explicit Signaling
 
-* Router directly informs sender about congestion.
-* Sender immediately controls data rate.
-
----
-
-### Easy Memory Line 🧠
-
-**Open-Loop = Prevent first**
-**Closed-Loop = Detect and control**
+- Router sends a signal to inform sender about congestion.
+- Sender immediately controls data rate.
 
 ---
 
@@ -600,70 +592,14 @@ TCP tries to find the right balance:
 
 ### ⚙️ **TCP Congestion Control Phases (Algorithm)**
 
-| **Phase**                   | **Purpose**                                                    | **How it Works**                                                            |
-| --------------------------- | -------------------------------------------------------------- | --------------------------------------------------------------------------- |
-| **1. Slow Start**           | Gradually increases sending rate to discover network capacity. | cwnd starts small (1 MSS) and doubles every RTT until threshold (ssthresh). |
-| **2. Congestion Avoidance** | Grows window slowly to prevent congestion.                     | cwnd increases linearly after each successful ACK.                          |
-| **3. Fast Retransmit**      | Quickly detects packet loss (without waiting for timeout).     | After 3 duplicate ACKs, retransmit lost packet immediately.                 |
-| **4. Fast Recovery**        | Avoids returning to slow start after minor loss.               | Reduces cwnd to half and continues linear growth.                           |
+| **Phase**                   | **Purpose**                                                       | **How it Works**                                                            |
+| --------------------------- | ----------------------------------------------------------------- | --------------------------------------------------------------------------- |
+| **1. Slow Start**           | Gradually increases sending rate to discover network capacity.    | cwnd starts small (1 MSS) and doubles every RTT until threshold (ssthresh). |
+| **2. Congestion Avoidance** | Grows window slowly to prevent congestion.                        | cwnd increases linearly after each successful ACK.                          |
+| **3. Fast Retransmit**      | Quickly detects packet loss (without waiting for timeout).        | After 3 duplicate ACKs, retransmit lost packet immediately.                 |
+| **4. Fast Recovery**        | Avoids returning to slow start after minor loss keep up the pace. | Reduces cwnd to half and continues linear growth.                           |
 
----
-
-### 🧩 **Example:**
-
-Let’s assume:
-
-- Initial cwnd = 1 MSS
-- ssthresh = 8 MSS
-
-| **Phase**                | **cwnd Growth**                        |
-| ------------------------ | -------------------------------------- |
-| **Slow Start**           | 1 → 2 → 4 → 8 (exponential)            |
-| **Congestion Avoidance** | 8 → 9 → 10 (linear)                    |
-| **If packet loss**       | cwnd = cwnd/2 → 4, enter Fast Recovery |
-
----
-
-### 🖼️ **Illustration (Text Graph)**
-
-```
-      cwnd ↑
-        |
-   8 ──────────◉  (Threshold reached)
-   4 ───◉──◉──◉──→ Linear increase (Avoidance)
-   2 ─◉──→ Exponential increase (Slow Start)
-   0 ───────────────────────────── time →
-```
-
----
-
-## 🟩 **5️⃣ Common TCP Congestion Control Algorithms**
-
-| **Algorithm**                                         | **Description**                                                     |
-| ----------------------------------------------------- | ------------------------------------------------------------------- |
-| **Slow Start**                                        | Starts slowly, increases sending rate exponentially.                |
-| **Congestion Avoidance**                              | Uses linear increase to prevent congestion.                         |
-| **Fast Retransmit**                                   | Quickly resends lost packet after 3 duplicate ACKs.                 |
-| **Fast Recovery**                                     | Reduces congestion window slightly, not fully.                      |
-| **AIMD (Additive Increase, Multiplicative Decrease)** | Increases rate linearly, decreases sharply when congestion happens. |
-
-🧠 **Example:**
-AIMD is the heart of TCP congestion control — it helps stabilize the network.
-
----
-
-## 🟦 **6️⃣ Difference — Open Loop vs Closed Loop**
-
-| **Basis**                | **Open Loop**     | **Closed Loop**        |
-| ------------------------ | ----------------- | ---------------------- |
-| **Nature**               | Preventive        | Reactive               |
-| **Congestion Detection** | Not required      | Required               |
-| **Feedback Used**        | No                | Yes                    |
-| **Example**              | Admission Control | TCP Congestion Control |
-| **When Used**            | Before congestion | After congestion       |
-
-Got it 👍 — here’s your answer in the **same structured format** as before 👇
-
+[Image](https://www.gatevidyalay.com/wp-content/uploads/2018/09/TCP-Congestion-Control-Graph-1.png)
 ---
 
 ### **Topic: Quality of Service (QoS): Flow Characteristics and Techniques to Improve QoS**
@@ -682,7 +618,7 @@ It helps maintain performance levels by managing **bandwidth, delay, jitter, and
 
 ---
 
-#### **Flow Characteristics:**
+#### **Flow Characteristics:** (DJTBR)
 
 QoS depends on the characteristics of a data flow between sender and receiver.
 The main flow characteristics are:
@@ -694,7 +630,7 @@ The main flow characteristics are:
    Time taken for a packet to travel from source to destination. Lower delay = better QoS.
 
 3. **Jitter:**
-   Variation in packet arrival time; should be minimal for smooth performance (important in voice/video).
+   Time diff or Variation in packet arrival time; should be minimal for smooth performance (important in voice/video).
 
 4. **Bandwidth:**
    Maximum data that can be transmitted per second — determines network capacity.
