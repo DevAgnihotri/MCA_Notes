@@ -71,7 +71,7 @@ Packets may travel through **different routes** and are reassembled at the desti
 
 The **Internet** (using IP) works on packet switching.
 
----
+## ![Image](https://media.geeksforgeeks.org/wp-content/uploads/20200525213552/Untitled451.png)
 
 #### ⚙️ **C. Message Switching**
 
@@ -92,7 +92,7 @@ Each node **stores the complete message** before forwarding it to the next — k
 
 Early **telegraph systems** and **email services** use message switching concepts.
 
----
+## ![Message Switching](https://www.tutorialspoint.com/data_communication_computer_network/images/message_switching.jpg)
 
 ### 🟨 **3. Difference Between Datagram and Virtual Circuit Approach (in Packet Switching)**
 
@@ -117,6 +117,8 @@ Early **telegraph systems** and **email services** use message switching concept
 - 2024 Paper (KCA303) — Section C Q5(b): What is Internet Protocol (IP)? State and describe various classes used for IP addressing.
 
 ### 🟦 **1. What is IP Addressing?**
+
+Internet protocol (IP): A set of simple rules that lets tells the way that computers communicate online. It says how to break messages into small pieces, send them, and put them back together — like mail-delivery rules. It assigns addresses to each computer so they can send and receive data. An IP address looks like a set of numbers separated by periods, like this: 192.168.0.1. Every device connected to the internet has its own unique IP address and it allows computers to communicate with each other and access websites around the world.
 
 **Definition:**
 An **IP (Internet Protocol) address** is a **unique numerical label** assigned to each device (computer, phone, router) connected to a network.
@@ -181,29 +183,17 @@ IPv4 addresses are divided into **5 classes (A to E)** based on their **first oc
 | **Multicast** | One-to-many (specific group) | Live video conference       |
 | **Broadcast** | One-to-all in a network      | Sending ARP request         |
 
----
+#### Difference between Unicast, Multicast, and Broadcast
 
-### 🟦 **6. IPv4 Packet Format**
-
-Each IPv4 packet has several important fields:
-
-```
- ------------------------------------------------------------
-|Version|IHL|Type of Service|Total Length|
-|Identification|Flags|Fragment Offset|
-|Time to Live|Protocol|Header Checksum|
-|Source Address|Destination Address|
-|Options|Padding|Data|
- ------------------------------------------------------------
-```
-
-**Important Fields:**
-
-- **Version:** IP version (4 for IPv4)
-- **Header Length:** Length of IP header
-- **TTL (Time to Live):** Maximum hops allowed
-- **Protocol:** Next layer protocol (TCP/UDP)
-- **Source/Destination Address:** Sender and receiver IPs
+| No. | Basis of Difference   | Unicast                               | Multicast                                     | Broadcast                            |
+| --- | --------------------- | ------------------------------------- | --------------------------------------------- | ------------------------------------ |
+| 1   | Meaning               | One sender sends data to one receiver | One sender sends data to a group of receivers | One sender sends data to all devices |
+| 2   | Type of Communication | One-to-One                            | One-to-Many (selected)                        | One-to-All                           |
+| 3   | Receiver Selection    | Receiver is individually selected     | Receivers join a specific group               | No receiver selection                |
+| 4   | Bandwidth Usage       | High if many users request same data  | Efficient and saves bandwidth                 | Wastes bandwidth                     |
+| 5   | Data Delivery         | Separate copy for each receiver       | Single copy shared with group                 | Same data sent to everyone           |
+| 6   | Privacy Level         | High privacy                          | Medium privacy                                | No privacy                           |
+| 7   | Common Examples       | Email, web browsing, video call       | Live classes, video streaming                 | Network alerts, radio, TV            |
 
 ---
 
@@ -265,16 +255,141 @@ Instead of using fixed classes (A, B, C), **CIDR (Classless Inter-Domain Routing
 
 ### 🟦 **10. Difference Between IPv4 and IPv6**
 
-| **Feature**       | **IPv4**       | **IPv6**             |
-| ----------------- | -------------- | -------------------- |
-| **Address size**  | 32 bits        | 128 bits             |
-| **Notation**      | Decimal (dots) | Hexadecimal (colons) |
-| **Header length** | Variable       | Fixed (40 bytes)     |
-| **Security**      | Optional       | Built-in (IPSec)     |
-| **Address space** | 4 billion      | 3.4×10³⁸             |
-| **Example**       | 192.168.1.1    | 2001:0db8::1         |
+| No. | Feature                  | IPv4                                          | IPv6                                                              |
+| --- | ------------------------ | --------------------------------------------- | ----------------------------------------------------------------- |
+| 1   | Address size             | 32-bit (≈4.3 billion)                         | 128-bit (≈3.4×10^38)                                              |
+| 2   | Notation                 | Dotted decimal (e.g., 192.168.0.1)            | Hexadecimal colon-separated (e.g., 2001:db8::1)                   |
+| 3   | Address space / scarcity | Limited, exhausted pressure                   | Vast, eliminates address exhaustion                               |
+| 4   | Header format            | Variable header (20 bytes base) with options  | Fixed 40-byte header + extension headers (simpler processing)     |
+| 5   | Fragmentation            | Routers and hosts may fragment                | Only source fragments; routers do not fragment                    |
+| 6   | Broadcast support        | Broadcast available (e.g., limited broadcast) | No broadcast; uses multicast and anycast instead                  |
+| 7   | Header checksum          | Header checksum present                       | No header checksum (reliability handled by link/transport layers) |
+| 8   | NAT usage                | Widely used due to address shortage           | Designed to avoid NAT (end-to-end addressing)                     |
+| 9   | Auto-configuration       | DHCP (stateful) commonly used                 | SLAAC (stateless) + DHCPv6 (stateful) supported                   |
+| 10  | Security support         | IPSec optional (add-on)                       | IPSec originally specified as mandatory/standardized support      |
 
 ---
+
+### Ipv4 Packet format
+
+![Ipv4 Packet format](https://media.geeksforgeeks.org/wp-content/uploads/20220222105138/geekforgeeksIPv4header.png)
+
+Below is a **clear, exam-ready explanation of the IPv4 packet format at the Network Layer**, written in **simple English** and with a **suitable diagram**.
+
+---
+
+## IPv4 Packet Format (Network Layer)
+
+IPv4 (Internet Protocol version 4) is used at the **network layer** to send data from a **source host to a destination host** across networks.
+The IPv4 packet has **two main parts**:
+
+1. **Header** (minimum 20 bytes)
+2. **Data (Payload)**
+
+---
+
+## IPv4 Packet Diagram
+
+```
+  0                   1                   2                   3
+  0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
+ +---------------------------------------------------------------+
+ | Version |  IHL  | Type of Service |       Total Length       |
+ +---------------------------------------------------------------+
+ |        Identification        | Flags |   Fragment Offset     |
+ +---------------------------------------------------------------+
+ |   Time to Live   |  Protocol |        Header Checksum        |
+ +---------------------------------------------------------------+
+ |                    Source IP Address                         |
+ +---------------------------------------------------------------+
+ |                 Destination IP Address                       |
+ +---------------------------------------------------------------+
+ |                    Options (if any)           |  Padding     |
+ +---------------------------------------------------------------+
+ |                          Data (Payload)                       |
+ +---------------------------------------------------------------+
+```
+
+## Explanation of IPv4 Header Fields
+
+### 1. **Version (4 bits)**
+
+- Specifies the IP version
+- Value is **4** for IPv4
+
+### 2. **IHL – Internet Header Length (4 bits)**
+
+- Tells the length of the header
+- Minimum value = **5** (means 5 × 4 = 20 bytes)
+
+### 3. **Type of Service (ToS) (8 bits)**
+
+- Defines packet priority and quality of service
+- Used for delay, throughput, and reliability control
+
+### 4. **Total Length (16 bits)**
+
+- Total size of the packet (header + data)
+- Maximum size = **65,535 bytes**
+
+### 5. **Identification (16 bits)**
+
+- Used to identify fragments of the same packet
+- Important during packet fragmentation
+
+### 6. **Flags (3 bits)**
+
+- Controls fragmentation
+- Includes:
+
+  - **DF (Don’t Fragment)**
+  - **MF (More Fragments)**
+
+### 7. **Fragment Offset (13 bits)**
+
+- Shows the position of a fragment in the original packet
+
+### 8. **Time To Live (TTL) (8 bits)**
+
+- Limits packet lifetime
+- Decreases by 1 at each router
+- Prevents infinite looping
+
+### 9. **Protocol (8 bits)**
+
+- Specifies the upper-layer protocol
+- Examples:
+
+  - TCP → 6
+  - UDP → 17
+  - ICMP → 1
+
+### 10. **Header Checksum (16 bits)**
+
+- Used to detect errors in the header
+- Recalculated at each router
+
+### 11. **Source IP Address (32 bits)**
+
+- IP address of the sender
+
+### 12. **Destination IP Address (32 bits)**
+
+- IP address of the receiver
+
+### 13. **Options (Variable length)**
+
+- Used for special purposes like security or routing
+- Optional field
+
+### 14. **Padding**
+
+- Added to make the header a multiple of 4 bytes
+
+### 15. **Data (Payload)**
+
+- Actual data from the transport layer
+- Size varies depending on MTU
 
 ### 🟩 **11. Importance of Logical Addressing in Cloud and Networking**
 
@@ -284,15 +399,6 @@ Instead of using fixed classes (A, B, C), **CIDR (Classless Inter-Domain Routing
 - Makes it possible for **millions of devices** to communicate globally.
 
 ---
-
-### 🟦 **12. Diagram: IPv4 vs IPv6 Overview**
-
-```
-IPv4:  192.168.1.10      (32 bits)
-IPv6:  2001:db8:85a3::8a2e:0370:7334   (128 bits)
-```
-
-🧩 IPv6 solves the problem of **address exhaustion** and provides **faster, safer, and more scalable** networking.
 
 # **“Network Layer Protocols: ARP, RARP, BOOTP, and DHCP”**
 
@@ -326,6 +432,8 @@ These protocols are important for communication between devices in a TCP/IP netw
 
 If our PC wants to talk to the printer (IP 192.168.1.10), ARP helps find its MAC address first.
 
+![Image](https://www.cloudns.net/blog/wp-content/uploads/2023/05/How-Does-ARP-Work.png)
+
 ---
 
 ## 🟩 **3. Reverse Address Resolution Protocol (RARP)**
@@ -335,6 +443,13 @@ If our PC wants to talk to the printer (IP 192.168.1.10), ARP helps find its MAC
 **RARP** is the **opposite of ARP** — it is used to **find the IP address** of a device when it only knows its **MAC address**.
 
 > Converts **MAC address → IP address**.
+
+### Working
+
+1. Network Devices have MAC Add. but not IP address
+2. They broadcast an RARP Request... "Who has MAC Add 1111.2222.3333.4444"
+3. Device with that MAC Add replies with the IP Addr.
+4. THis IP add is stored in RARP cache
 
 ### ⚙️ **Use Case:**
 
@@ -356,7 +471,7 @@ A workstation sends a RARP request with its MAC address, and the RARP server rep
 
 ### ⚙️ **Functions:**
 
-- Provides **IP address**, **subnet mask**, **gateway**, and **boot file name** to clients.
+- Provides **IP address**, **subnet mask**, **gateway**, and **boot file name**(IP Config details) to clients.
 - Used mainly by diskless workstations.
 
 ### ⚙️ **Working:**
@@ -568,14 +683,20 @@ When we access a website hosted in another country, **BGP** helps route packets 
 
 ## 🟩 **7. Comparison Between Intradomain and Interdomain Routing**
 
-| **Basis**             | **Intradomain Routing**      | **Interdomain Routing**           |
-| --------------------- | ---------------------------- | --------------------------------- |
-| **Area of Operation** | Within a single AS           | Between different ASs             |
-| **Control**           | Managed by one organization  | Managed by multiple organizations |
-| **Protocols Used**    | RIP, OSPF, IGRP              | BGP                               |
-| **Algorithm Type**    | Distance Vector / Link State | Path Vector                       |
-| **Policy Control**    | Less focus on policy         | Strong policy control             |
-| **Example Use**       | Inside a company             | Between ISPs or countries         |
+| Basis                      | Intradomain Routing (within an AS)                | Interdomain Routing (between ASs)                       |
+| -------------------------- | ------------------------------------------------- | ------------------------------------------------------- |
+| Scope                      | Single Autonomous System (AS)                     | Multiple Autonomous Systems                             |
+| Purpose                    | Optimize internal paths and performance           | Exchange reachability and enforce inter-AS policies     |
+| Typical Protocols          | OSPF, IS-IS, RIP, EIGRP                           | BGP                                                     |
+| Algorithm Type             | Link-state or Distance-vector                     | Path-vector                                             |
+| Metric / Decision Criteria | Shortest path by cost/hops/bandwidth              | Policy, AS-path, local-pref, MED, reachability          |
+| Routing Information        | Detailed topology & full routes                   | Summarized routes + policy attributes                   |
+| Convergence                | Fast (designed for quick reconvergence)           | Slower (policy and scale increase stability delays)     |
+| Scalability                | Designed for internal scale (limited)             | Designed for global scale (highly scalable)             |
+| Administrative Control     | Single administrative domain (uniform policy)     | Multiple admins with independent policies               |
+| Route Aggregation          | Less aggregation (detail retained for efficiency) | Heavily aggregated to reduce global table size          |
+| Update Frequency           | Frequent, real-time updates                       | Less frequent, controlled updates to maintain stability |
+| Use Cases                  | Enterprise networks, campus, data center          | ISPs, Internet backbone, inter-organization peering     |
 
 ---
 

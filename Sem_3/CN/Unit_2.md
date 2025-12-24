@@ -93,11 +93,15 @@
   - Only after getting the acknowledgment does the sender send the next frame.
   - This method is easy to understand and use, but it can be slow, especially if the sender and receiver are far apart or the network is very fast. The sender spends a lot of time waiting.
 
+![Stop n wait](https://miro.medium.com/v2/resize:fit:1400/0*IatuNjprJFvIAFBA.jpg)
+
 - **Sliding Window Protocol:** (PYQ)
   - The sender can send several frames in a row before needing an acknowledgment. The number of frames it can send is called the "window size."
   - The receiver can accept frames within this window and send back acknowledgments for them.
   - This makes sending data much faster and more efficient because the sender does not have to wait after every single frame.
   - **Example:** If the window size is 4, the sender can send 4 frames one after another before waiting for an acknowledgment. This helps use the network better and saves time.
+
+![Sliding Window](https://media.geeksforgeeks.org/wp-content/uploads/Sliding-Window-Protocol.jpg)
 
 ### Error Control (ARQ Protocols) (PYQ)
 
@@ -110,6 +114,8 @@ Error control makes sure that the data sent from one computer to another arrives
   - The sender then goes back and sends the wrong frame again, along with all the frames that came after it.
   - This method is simple, but if there are lots of errors, it can waste time and network space because many frames might have to be sent again.
 
+![GO back N Arq](https://images.ctfassets.net/piwi0eufbb2g/1Zo71REgqDWZNSsQRC16eT/045d1f88e12c42054a73083aa7f0ca08/image.png) 
+
 - **Selective-Repeat ARQ (Selective Reject):**
   - Only the frames that have errors are sent again, not all the frames after the error.
   - The receiver keeps the frames that are correct and only asks for the missing or wrong frames to be sent again.
@@ -117,6 +123,7 @@ Error control makes sure that the data sent from one computer to another arrives
   - **Maximum Window Size:** If the sequence numbers for frames use n bits, the largest window size is 2^(n-1) frames.
     - **Example:** If n = 3, the window size is 2^(3-1) = 4 frames. This means the sender can send up to 4 frames before needing an acknowledgment.
 
+![Slective Repeat](https://media.geeksforgeeks.org/wp-content/uploads/20250527034148103332/Sliding_SET_2-1.jpg)
 ---
 
 ## Channel Allocation Protocols
