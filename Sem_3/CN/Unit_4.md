@@ -93,29 +93,6 @@ Together, they form a **communication pair**.
 
 ---
 
-## 🟦 **5️⃣ Reliable and Unreliable Connections**
-
-### 🔹 **Reliable Connection (TCP)**
-
-* Uses **connection-oriented** communication.
-* Ensures data reaches accurately and in order.
-* Provides **error control, flow control, and retransmission**.
-* Uses **Three-Way Handshake** to establish connection.
-
-📘 **Example:** Web browsing, Email (uses TCP).
-
----
-
-### 🔹 **Unreliable Connection (UDP)**
-
-* **Connectionless** service — no prior setup.
-* **Faster but no guarantee** of delivery or order.
-* Used for **real-time applications** like video calls, online gaming.
-
-📘 **Example:** Streaming, DNS, VoIP.
-
----
-
 ## 🟩 **6️⃣ Three-Way Handshake (TCP Connection Establishment)**
 
 Before communication, TCP establishes a reliable connection using **three steps** 👇
@@ -356,6 +333,25 @@ Let's decode it 👇
 
 ---
 
+Here is a **simple English difference table** between **TCP and UDP** with **10 clear points**, perfect for exams 👇
+
+---
+
+### Difference Between TCP and UDP
+
+| No. | TCP (Transmission Control Protocol)             | UDP (User Datagram Protocol)                     |
+| --- | ----------------------------------------------- | ------------------------------------------------ |
+| 1   | Connection-oriented protocol                    | Connectionless protocol                          |
+| 2   | Reliable data transfer                          | Unreliable data transfer                         |
+| 3   | Data is sent in **ordered sequence**            | Data may arrive **out of order**                 |
+| 4   | Uses **acknowledgements**                       | No acknowledgements                              |
+| 5   | Has **error checking and correction**           | Has basic error checking only                    |
+| 6   | Uses **flow control**                           | No flow control                                  |
+| 7   | Uses **congestion control**                     | No congestion control                            |
+| 8   | Slower due to more overhead                     | Faster due to less overhead                      |
+| 9   | Used for **email, web browsing, file transfer** | Used for **video streaming, online games, VoIP** |
+| 10  | Examples: HTTP, HTTPS, FTP, SMTP                | Examples: DNS, DHCP, TFTP                        |
+
 ## 🟦 **3️⃣ Transmission Control Protocol (TCP)**
 
 ### 📘 **Definition:**
@@ -478,33 +474,6 @@ After the header, SCTP data is divided into **chunks**, such as:
 | Use Cases       | HTTP, FTP, Email    | DNS, Streaming, Gaming | VoIP, Telecom Apps  |
 
 ---
-
-## 🟦 **6️⃣ Two-Protocol Question Reference (2022, 2024)**
-
-If exam asks:
-
-> **“Explain any two protocols in the TCP/IP suite (TCP, UDP, SCTP)”**
-
-✅ **Answer Example:**
-
-* **TCP:** Reliable, connection-oriented, ordered delivery protocol. Used in web, email, FTP.
-* **UDP:** Connectionless, faster but unreliable. Used in DNS, video streaming.
-
-Or choose **TCP & SCTP**:
-
-* TCP handles single-stream byte communication.
-* SCTP allows multi-stream message transmission with better reliability.
-
----
-
-## 🟩 **7️⃣ Summary**
-
-| Concept                                   | Key Point                                                          |
-| ----------------------------------------- | ------------------------------------------------------------------ |
-| **UDP**                                   | Fast, connectionless, 8-byte header, used for real-time apps.      |
-| **TCP**                                   | Reliable, ordered, uses 3-way handshake, 20-byte header.           |
-| **SCTP**                                  | Combines TCP’s reliability and UDP’s speed, supports multi-stream. |
-| **Example UDP Header (CB84000D001C001C)** | Source=52100, Dest=13, Length=28, Data=20 bytes                    |
 
 # 🚦 **Congestion Control — Techniques for Handling Congestion**
 
