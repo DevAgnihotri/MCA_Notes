@@ -77,7 +77,7 @@ Data can flow in three ways:
 
 A network is a collection of computers and other devices connected together to share resources and information. Networks allow devices to communicate with each other and share files, printers, internet connections, and more.
 
-### Applications of Computer Networks
+### Applications of Computer Networks (BIRDICEE)
 
 **PYQ: What are the applications of computer network? (2019, Section A)**
 
@@ -269,6 +269,8 @@ All topologies have their own uses, strengths, and weaknesses. Choosing the righ
 
 ---
 
+![Image](https://www.dnsstuff.com/wp-content/uploads/2019/08/network-topology-types-1024x536.png)
+
 ## Protocols and Standards
 
 ### What are Protocols?
@@ -288,7 +290,7 @@ Layered architecture breaks down complex network communication into smaller, man
 5. **Flexibility:** Changes in one layer don't affect other layers
 6. **Interoperability:** Different devices from different companies can work together
 
-### ISO-OSI Model
+### ISO-OSI Model (PDNTSPA)
 
 **PYQ: Explain responsibilities each layer in ISO/OSI Model with suitable diagrams. (2023, Section C)**
 

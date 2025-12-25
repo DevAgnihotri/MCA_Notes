@@ -272,6 +272,22 @@ So, on average, **about 7.39 attempts** are needed for a successful transmission
 - **Summary:**  
     Controlled access protocols make sure that devices do not talk over each other. They help keep the network organized and reduce the chance of data getting lost.
 
+### **Piggybacking in Computer Networks**
+
+1. **Piggybacking** means sending an acknowledgment along with data in the same packet.
+2. It is used when both computers can send and receive data at the same time.
+3. This method avoids sending extra packets only for acknowledgment.
+4. It helps save network space and makes communication faster.
+5. Piggybacking is used in protocols like **TCP**.
+
+### **Fragmentation in Computer Networks**
+
+1. **Fragmentation** means breaking a big data packet into smaller pieces.
+2. This is done because some networks cannot handle very large packets.
+3. Each small piece is sent separately through the network.
+4. At the destination, all the pieces are joined back together.
+5. Fragmentation helps data travel safely and correctly across networks.
+
 ### 3. Channelization Protocols
 
     Channelization protocols are methods that allow multiple devices to share the same communication channel at the same time, but without interfering with each other. These protocols divide the channel in different ways so that everyone can send and receive data smoothly.
