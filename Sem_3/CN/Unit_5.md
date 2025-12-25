@@ -141,14 +141,6 @@ Host: www.example.com
 
 ---
 
-### 🖼️ **Simple Diagram – How the Web Works**
-
-```
-[User] → (URL) → [DNS Server] → (IP Address) → [Web Server] → (HTTP Response) → [Browser Displays Page]
-```
-
----
-
 ### 🟩 **4. Electronic Mail (E-mail)**
 
 - 2019 — Sec C: Q7(b) (message format, message transfer, mail reader)  
@@ -242,6 +234,8 @@ Body: Please check the attached file.
 ```
 
 ---
+
+![Image](https://i.ytimg.com/vi/9E-FkFeksA8/maxresdefault.jpg)
 
 ### 🟦 **2. File Transfer Protocol (FTP)**
 
