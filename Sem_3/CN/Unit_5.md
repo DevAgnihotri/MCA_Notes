@@ -46,6 +46,8 @@ DNS uses a **hierarchical structure**, divided into:
 * Core DNS records: **A, AAAA, MX, CNAME, NS**
 
 ![image](https://scaler.com/topics/images/recursive-dns-service.webp)
+
+![image](https://images.squarespace-cdn.com/content/v1/678b1f8e72adda580889c414/60842a54-9c0e-4e45-9f36-6071c470dafa/diagram%2Bof%2Bhow%2Ba%2BDNS%2Bserver%2Bworks.png)
 ---
 
 ### 🟦 **2. World Wide Web (WWW)**
