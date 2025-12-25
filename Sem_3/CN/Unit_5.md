@@ -90,6 +90,7 @@ When a user enters a URL:
 * Uses multimedia content (text, audio, video).
 * Accessible through web browsers globally.
 
+![Image](https://www.tutorialspoint.com/internet_technologies/images/internet-www_operation.jpg)
 ---
 
 ### 🟨 **3. HyperText Transfer Protocol (HTTP)**
@@ -237,6 +238,8 @@ Body: Please check the attached file.
 
 ![Image](https://i.ytimg.com/vi/9E-FkFeksA8/maxresdefault.jpg)
 
+![Image](https://cdn.prod.website-files.com/6204a703ff61513f6fc04f59/65fa79d68288e4061242635f_MUA%20(2).webp)
+
 ### 🟦 **2. File Transfer Protocol (FTP)**
 
 - 2021 — Sec B: (e) (short note on FTP)  
@@ -298,6 +301,8 @@ To **upload**, **download**, **rename**, or **delete** files remotely.
 [FTP Client] ⇄ (Control Port 21) ⇄ [FTP Server]
 [FTP Client] ⇄ (Data Port 20) ⇄ [FTP Server]
 ```
+
+![Image](https://media.geeksforgeeks.org/wp-content/uploads/20240110113246/File-Transfer-Protocol-and-HTTPS-gif-2.gif)
 
 ---
 
