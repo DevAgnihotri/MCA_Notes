@@ -582,7 +582,7 @@ _(Congestion is detected and then controlled)_
 
 ### 📘 **Definition:**
 
-TCP congestion control uses **dynamic adjustment of the sending rate** based on network feedback — mainly using a variable called **Congestion Window (cwnd)**.
+TCP congestion control uses **dynamic adjustment of the sending rate** based on network feedback mainly using a variable called **Congestion Window (cwnd)**.
 
 TCP tries to find the right balance:
 

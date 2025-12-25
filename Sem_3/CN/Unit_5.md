@@ -45,6 +45,7 @@ DNS uses a **hierarchical structure**, divided into:
 * Used in both IPv4 and IPv6
 * Core DNS records: **A, AAAA, MX, CNAME, NS**
 
+![image](https://scaler.com/topics/images/recursive-dns-service.webp)
 ---
 
 ### 🟦 **2. World Wide Web (WWW)**
@@ -143,8 +144,6 @@ Host: www.example.com
 ```
 [User] → (URL) → [DNS Server] → (IP Address) → [Web Server] → (HTTP Response) → [Browser Displays Page]
 ```
-
-Perfect 💫 here’s your complete and clear **Application Layer Services notes** — written exactly in the same easy-to-learn and structured style 👇
 
 ---
 
