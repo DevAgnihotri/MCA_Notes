@@ -16,8 +16,6 @@ This is done using special software known as a **Virtual Machine Monitor (VMM)**
 
 Virtualization is the **backbone of cloud computing** — without it, cloud services like AWS, Azure, or Google Cloud could not exist in their flexible form. It provides the environment where **one physical server acts like many**.
 
-Here’s why it’s needed 👇
-
 1. **Efficient Resource Utilization**
 
    - Physical systems often remain underused, but virtualization allows dividing one system into multiple VMs, ensuring every bit of hardware is put to work efficiently.
