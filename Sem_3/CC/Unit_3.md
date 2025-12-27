@@ -29,7 +29,7 @@ It allows users to send, receive, and store emails online.
 
 ---
 
-## 🤝 **2. CRM Management (Customer Relationship Management)**
+## **2. CRM Management (Customer Relationship Management)**
 
 **2021 B Q2(a): Discuss what a CRM is with an example based on cloud computing technologies.**
 
@@ -104,6 +104,67 @@ It helps teams to:
 - **Scheduling:** Calendar and timeline tracking.
 - **Real-Time Collaboration:** Team members can comment, upload files, or update status.
 - **File Sharing:** Centralized cloud storage for documents and resources.
+
+### 🔑 Mnemonic: **“SCALE TASKER”**
+
+**S** – Scheduling
+**C** – Cost optimization
+**A** – Automation
+**L** – Load balancing
+**E** – Elasticity
+
+**T** – Task tracking
+**A** – Availability
+**S** – Security
+**K** – Key performance monitoring
+**E** – Error handling
+**R** – Resource management
+
+### **S – Scheduling**
+
+Cloud decides **when a task should run** and assigns it proper time to avoid delay.
+
+### **C – Cost Optimization**
+
+Cloud runs tasks in a way that **reduces cost** by using only required resources.
+
+### **A – Automation**
+
+Tasks are **executed automatically** without manual control.
+
+### **L – Load Balancing**
+
+Tasks are **distributed evenly** among servers to prevent overload.
+
+### **E – Elasticity**
+
+Cloud can **increase or decrease resources** based on task demand.
+
+### **T – Task Tracking**
+
+Cloud continuously **monitors task status** like running, completed, or failed.
+
+### **A – Availability**
+
+Tasks remain **accessible and operational** even if a server fails.
+
+### **S – Security**
+
+Cloud protects tasks using **authentication, authorization, and encryption**.
+
+### **K – Key Performance Monitoring**
+
+Cloud checks **speed, response time, and efficiency** of task execution.
+
+### **E – Error Handling**
+
+Cloud **detects and fixes task failures** by retrying or rescheduling tasks.
+
+### **R – Resource Management**
+
+Cloud **allocates, manages, and releases resources** efficiently for tasks.
+
+---
 
 ### 🔹 **Benefits**
 
@@ -185,6 +246,9 @@ We can view, share, and edit our calendars anytime using the internet.
 
 > **In short:** A cloud calendar helps us **stay organized, plan activities, and collaborate easily.**
 
+Cloud helps multiple users to keep their calendars in sync and also allows calendar sharing
+
+![Image](https://us1.discourse-cdn.com/spiceworks/original/4X/2/e/0/2e00b05e55aeb47d3d3749ff847cf567d102c674.jpeg)
 ---
 
 ### 🟧 **4. Scheduling in Cloud Computing**
