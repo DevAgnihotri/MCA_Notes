@@ -40,6 +40,8 @@ So, we don’t need to buy physical computers or servers everything is provided 
 
 ---
 
+![Image](https://intellipaat.com/blog/wp-content/uploads/2024/12/9-1.jpg)
+
 #### **2. Components of IaaS**
 
 IaaS mainly includes the following components:
