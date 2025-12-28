@@ -38,9 +38,9 @@ In simple words,
 
 So, we don’t need to buy physical computers or servers everything is provided and managed by the **cloud service provider**.
 
----
-
 ![Image](https://intellipaat.com/blog/wp-content/uploads/2024/12/9-1.jpg)
+
+---
 
 #### **2. Components of IaaS**
 
@@ -51,7 +51,7 @@ IaaS mainly includes the following components:
    - These are virtual servers that provide the power to run applications.
    - We can increase or decrease the number of virtual machines as needed.
 
-2. **Storage**
+2. **Storage/Data Center**
 
    - Data is stored in cloud-based storage systems.
    - It can be block storage, file storage, or object storage.
@@ -70,10 +70,6 @@ IaaS mainly includes the following components:
 
    - Protect data and systems from attacks.
    - Provide tools to monitor performance, logs, and network traffic.
-
-6. **Data Centers**
-
-   - The physical infrastructure (servers and storage) is hosted in the provider’s secure data centers.
 
 ---
 
@@ -400,7 +396,7 @@ In simple words,
 
 > We use DBaaS when we want to **use a database without installing or managing it ourselves.**
 
----
+![Image](https://labs.sogeti.com/wp-content/uploads/sites/2/2019/10/DBaaS.jpg)
 
 ### **2. Key Features/Advantages of DBaaS**
 
@@ -626,11 +622,7 @@ In simple words,
 
 #### **5. Diagram: CaaS Model**
 
-![CaaS Diagram](https://upload.wikimedia.org/wikipedia/commons/9/9d/Communication_as_a_Service_Model.png)
-
-_(Image Source: Wikimedia Commons)_
-
----
+![Image](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbp_JDVhX85KTrFPUbxy8RMwayGlxwPiGgEA&s)
 
 ## Security as a Service (SECaaS)
 
