@@ -159,17 +159,13 @@ Each type focuses on **which part of the system** is being virtualized (hardware
 - 2023 (C Q6b): Describe in detail about hardware virtualization and server virtualization with diagram and examples.
 - 2023 (A h) / 2023 (A h) & 2023 (A h): Differentiate between Para virtualization and Full virtualization. (2023 A h, 2022 C Q6b)
 
-# **Types of Virtualization**
-
-Virtualization is a technology that allows **one physical system to be used as many virtual systems**. It helps in **better use of resources**, **saving cost**, and **easy management** in cloud computing.
-
----
+# **Types of Virtualization(HONDASS)**
 
 ## **1. Hardware Virtualization**
 
 Hardware virtualization is a type of virtualization in which **physical hardware such as CPU, memory, storage, and devices are virtualized using a hypervisor**.
-The hypervisor creates multiple **virtual machines**, and each virtual machine runs its **own operating system** independently.
-Hardware virtualization is widely used in cloud computing because it allows many users to share the same physical hardware safely.
+- The hypervisor creates multiple **virtual machines**, and each virtual machine runs its **own operating system** independently.
+- Hardware virtualization is widely used in cloud computing because it allows many users to share the same physical hardware safely.
 
 ![Image](https://www.researchgate.net/publication/280095977/figure/fig7/AS:667718932000783@1536208007208/Hardware-virtualization.png)
 ---
@@ -177,8 +173,8 @@ Hardware virtualization is widely used in cloud computing because it allows many
 ## **2. Server Virtualization**
 
 Server virtualization is a type of virtualization in which **a physical server is divided into multiple virtual servers**.
-Each virtual server works independently and can run different applications or services.
-This type of virtualization improves **server efficiency**, reduces **wastage of resources**, and makes server management easier.
+- Each virtual server works independently and can run different applications or services.
+- This type of virtualization improves **server efficiency**, reduces **wastage of resources**, and makes server management easier.
 
 ![Image](https://www.researchgate.net/figure/Figure1-Architecture-of-Server-Virtualization_fig1_339749899)
 ---
@@ -186,17 +182,19 @@ This type of virtualization improves **server efficiency**, reduces **wastage of
 ## **3. Operating System Virtualization**
 
 Operating system virtualization is a type of virtualization in which **multiple virtual environments are created on a single operating system**.
-All virtual systems share the **same OS kernel**, but they work as separate systems.
-This type of virtualization is lightweight, fast, and commonly used for running applications in isolated environments.
+- All virtual systems share the **same OS kernel**, but they work as separate systems.
+- This type of virtualization is lightweight, fast, and commonly used for running applications in isolated environments.
 
 ---
+![Image](https://media.geeksforgeeks.org/wp-content/uploads/20250408150440048447/1.webp)
 
 ## **4. Storage Virtualization**
 
 Storage virtualization is a type of virtualization in which **multiple physical storage devices are combined into one virtual storage system**.
-Users do not see the actual physical disks and access storage as a single unit.
-This makes storage management simple and improves storage performance and reliability.
+- Users do not see the actual physical disks and access storage as a single unit.
+- This makes storage management simple and improves storage performance and reliability.
 
+![Image](https://www.interviewbit.com/blog/wp-content/uploads/2022/05/Storage-Virtualization-877x1024.png)
 ---
 
 ## **5. Network Virtualization**
@@ -238,12 +236,16 @@ This improves system stability and makes application deployment easier.
 
 ---
 
+# **What is a Virtual Machine (VM)?**
+
+A **Virtual Machine (VM)** is a **virtual software-based computer** that works like a real physical computer.
+It has its own **operating system, CPU, memory, and storage**, but it runs on a **physical machine using virtualization technology**.
+
 ## ⚙️ **System Virtual Machines (System VMs)**
 
 ### 🔹 **Definition**
 
-A **System VM** provides a **complete system platform** that supports the execution of a **full operating system (OS)**.
-It behaves like a **real physical computer**, running its own OS and applications.
+A System Virtual Machine is a type of virtual machine that allows a full operating system to run as if it were installed on a real physical computer. System VMs are mainly used to run multiple operating systems on one machine.
 
 ### 🔹 **Features:**
 
@@ -279,7 +281,7 @@ Used in **server consolidation**, **testing environments**, and **cloud infrastr
 
 ### 🔹 **Definition**
 
-A **Process Virtual Machine** is designed to run **a single process or program** as an independent environment.
+A **Process Virtual Machine** is a VM that is designed to run **a single process or program** as an independent environment.
 It **exists only while that process is running** and disappears after the program ends.
 
 ### 🔹 **Example:**
@@ -305,16 +307,26 @@ Host Operating System
 Hardware
 ```
 
-### 🔹 **Difference Between System VM and Process VM**
+## **Difference Between System VM and Process VM**
 
-| Aspect        | System VM                        | Process VM                        |
-| :------------ | :------------------------------- | :-------------------------------- |
-| **Purpose**   | Runs a complete OS               | Runs a single program/process     |
-| **Duration**  | Exists until the OS is shut down | Exists until the program stops    |
-| **Example**   | VMware, VirtualBox               | JVM, .NET CLR                     |
-| **Isolation** | Strong isolation between VMs     | Process-level isolation only      |
-| **Use Case**  | Cloud servers, testing OS        | Application execution (like Java) |
+| No. | System Virtual Machine                 | Process Virtual Machine                   |
+| --- | -------------------------------------- | ----------------------------------------- |
+| 1   | Virtualizes **entire hardware system** | Virtualizes **a single process**          |
+| 2   | Runs a **full operating system**       | Runs **one application**                  |
+| 3   | Exists as long as the VM is running    | Exists only while program runs            |
+| 4   | Uses a **hypervisor**                  | Uses a **runtime environment**            |
+| 5   | Heavier and uses more resources        | Lightweight and uses fewer resources      |
+| 6   | Used for system-level virtualization   | Used for application-level virtualization |
+| 7   | Can run different OS types             | OS-independent applications               |
+| 8   | Starts before applications             | Starts with the application               |
+| 9   | Example: VirtualBox, VMware            | Example: Java Virtual Machine (JVM)       |
+| 10  | Common in cloud infrastructure         | Common in software execution              |
 
+---
+
+![Image](https://media.geeksforgeeks.org/wp-content/uploads/20200728155828/SystemVM.png)
+
+![Image](https://media.geeksforgeeks.org/wp-content/uploads/20200728160724/ProcessVM1.png)
 ---
 
 ## ⚙️ **Virtual Machine Monitor (VMM) / Hypervisor**
@@ -348,13 +360,37 @@ It manages multiple VMs and allocates resources like CPU, RAM, and I/O devices t
 
 ---
 
-### 🔹 **Types of Virtual Machine Monitors**
+#### **Type 1 Hypervisor (Bare-Metal) – Definition**
 
-| Type                                        | Description                                            | Example                             |
-| :------------------------------------------ | :----------------------------------------------------- | :---------------------------------- |
-| **Type 1 – Native / Bare-Metal Hypervisor** | Runs **directly on hardware**; doesn’t need a host OS. | VMware ESXi, Microsoft Hyper-V, Xen |
-| **Type 2 – Hosted Hypervisor**              | Runs **on top of a host OS** like an application.      | VMware Workstation, VirtualBox      |
+A **Type 1 Hypervisor** runs **directly on the physical hardware** without any host operating system.
+It controls hardware resources and is mainly used in **servers and cloud data centers**.
 
+---
+
+#### **Type 2 Hypervisor (Hosted) – Definition**
+
+A **Type 2 Hypervisor** runs **on top of a host operating system** like a normal software.
+It is mainly used for **learning, testing, and personal use**.
+
+---
+
+#### **Difference Between Type 1 and Type 2 Hypervisor**
+
+| No. | Type 1 Hypervisor               | Type 2 Hypervisor                       |
+| --- | ------------------------------- | --------------------------------------- |
+| 1   | Runs directly on hardware       | Runs on host OS                         |
+| 2   | No host operating system needed | Host OS is required                     |
+| 3   | Faster performance              | Slightly slower                         |
+| 4   | More secure                     | Less secure                             |
+| 5   | Used in cloud computing         | Used on personal computers              |
+| 6   | Handles hardware directly       | Uses OS to access hardware              |
+| 7   | More complex to set up          | Easy to install                         |
+| 8   | Better resource efficiency      | Lower efficiency                        |
+| 9   | Example: VMware ESXi, Xen       | Example: VirtualBox, VMware Workstation |
+| 10  | Production-level use            | Learning and testing use                |
+
+
+![Image](https://miro.medium.com/v2/resize:fit:1400/0*r7b1FbiZM3bdTZDf.png)
 ---
 
 ### 🔹 **Host VMM vs Native VMM vs Process VM**
@@ -362,163 +398,6 @@ It manages multiple VMs and allocates resources like CPU, RAM, and I/O devices t
 ### Process VM
 
 - 2018 (B e): What is the difference between process virtual machines, host VMMs and native VMMs?
-
-### Difference: Process VM vs Host VMM vs Native VMM (concise)
-
-- Process VM: runtime for a single program (language/runtime abstraction, e.g., JVM).
-- Host VMM (Type 2): hypervisor running on a host OS (convenient, desktop/testing).
-- Native VMM (Type 1): bare‑metal hypervisor running directly on hardware (production, datacenter).
-
-| Aspect                      | Process VM                                                             | Host VMM (Type 2)                                                         | Native VMM (Type 1)                                                                            |
-| :-------------------------- | :--------------------------------------------------------------------- | :------------------------------------------------------------------------ | :--------------------------------------------------------------------------------------------- |
-| Purpose                     | Run one app with portability & managed runtime                         | Run multiple guest OS on top of host OS                                   | Run multiple guest OS directly on hardware for production                                      |
-| Base layer                  | Sits on host OS as a runtime                                           | Application on host OS                                                    | Installs on bare metal                                                                         |
-| Isolation                   | Process-level sandboxing                                               | VM-level, but depends on host OS                                          | Strong VM-level isolation (hypervisor controls hardware)                                       |
-| Performance                 | Optimized per-process; not comparable to VMs                           | Overhead from host OS mediation                                           | Best raw performance and scalability                                                           |
-| Use case                    | Java/.NET apps, sandboxing                                             | Dev/testing on laptops, quick VMs                                         | Cloud/datacenter,                                                                              |
-| Isolation level             | Process-level isolation (sandboxing between processes)                 | Strong OS-level isolation between VMs, but depends on host OS security    | Strongest isolation; hypervisor controls hardware and VMs directly                             |
-| Performance                 | Optimized for single-process semantics; not comparable to OS-level VMs | Additional overhead due to host OS context switching and device mediation | Best raw performance and lower I/O/CPU virtualization overhead                                 |
-| Resource management         | Runtime-managed (heap, threads)                                        | Relies on host OS + hypervisor layer for resource multiplexing            | Hypervisor manages CPUs, memory, I/O scheduling natively                                       |
-| Device/driver model         | Uses host OS services / runtime libraries                              | Uses host OS drivers; easier hardware compatibility                       | Hypervisor provides or includes drivers (or paravirtual drivers) for high performance          |
-| Scalability                 | Not intended for multiple OS instances; scales per-application needs   | Suitable for desktop or small server consolidation                        | Designed for large-scale datacenters and cloud infrastructures                                 |
-| Live migration & clustering | Not applicable                                                         | Limited; depends on host OS and hypervisor features                       | Full support in advanced hypervisors (live migration, clustering, HA)                          |
-| Security surface            | Language/runtime vulnerabilities (sandbox escapes)                     | Additional attack surface: host OS + hypervisor                           | Smaller trusted computing base when properly configured, but hypervisor compromise is critical |
-| Example uses                | Running Java/.NET applications portably; runtime sandboxing            | Development VMs on a laptop; testing multiple OSes locally                | Cloud servers, production virtualization, multi-tenant hosting                                 |
-| Examples                    | JVM, .NET CLR                                                          | VirtualBox, VMware Workstation                                            | VMware ESXi, KVM (as Type 1 with proper setup), Microsoft Hyper-V, Xen                         |
-
-Perfect dear 🌸 — let’s now cover the **next complete segment**:
-👉 **“Virtual Machine Properties – Interpretation and Binary Translation – HLL VM”**
-
-I’ll explain in **clear, easy-to-learn English**, with **definitions, points, examples, and short summaries** — naturally covering all those exam questions about _Virtual Machine Monitor (VMM), Hypervisor, VM properties, Full Virtualization, Binary Translation, and Para Virtualization._
-
----
-
-## ⚙️ **Virtual Machine Monitor (VMM) / Hypervisor**
-
-- 2018 (C Q4): Explain the virtual machine monitor?
-- 2022 (A h): Determine the reasons used for adopting Virtual Machine Monitors.
-- 2023 (B d): Illustrate the virtual machine monitor and the properties of a virtual machine.
-- 2018 (A a) & 2022 (A g): What is a Hypervisor? / Define the hypervisor.
-
-### 🔹 **Definition**
-
-A **Virtual Machine Monitor (VMM)**, also called a **Hypervisor**, is a **software layer that creates and manages virtual machines (VMs)**.
-It separates the **hardware (host)** from the **virtual environments (guests)** and allows multiple operating systems to run on one physical machine.
-
----
-
-### 🧩 **Functions of VMM / Hypervisor**
-
-1. **Creation and Management of VMs**
-
-   - Creates, starts, pauses, or deletes virtual machines.
-
-2. **Resource Allocation**
-
-   - Distributes CPU, memory, storage, and network resources among VMs.
-
-3. **Isolation and Security**
-
-   - Keeps all VMs independent — if one crashes, others are unaffected.
-
-4. **Performance Monitoring**
-
-   - Tracks CPU, memory, and storage usage for optimization.
-
-5. **Migration and Snapshotting**
-
-   - Allows live migration (moving VMs between servers without shutdown) and taking snapshots for quick recovery.
-
----
-
-### 🔹 **Types of Hypervisors**
-
-| Type                             | Description                                                           | Example                             |
-| :------------------------------- | :-------------------------------------------------------------------- | :---------------------------------- |
-| **Type 1 – Native / Bare-Metal** | Runs **directly on the physical hardware** without a host OS.         | VMware ESXi, Microsoft Hyper-V, Xen |
-| **Type 2 – Hosted**              | Runs **on top of a host operating system** like a normal application. | VirtualBox, VMware Workstation      |
-
----
-
-### 🔹 **Reasons for Adopting VMMs**
-
-1. **Efficient use of hardware** – run multiple OSs on one system.
-2. **Easy testing and development** – experiment safely with different OSs.
-3. **Fault isolation** – one VM crash doesn’t affect others.
-4. **Live migration** – move workloads across systems seamlessly.
-5. **Centralized management** – easy to control large-scale environments.
-
----
-
-### 🔹 **Illustration: Virtual Machine Monitor**
-
-```
-+-----------------------------------+
-| Applications (VM1)   |   (VM2)    |
-+-----------------------------------+
-| Guest OS 1           | Guest OS 2 |
-+-----------------------------------+
-|      Virtual Machine Monitor      |
-+-----------------------------------+
-|          Physical Hardware        |
-```
-
-The **VMM sits between hardware and virtual machines**, controlling how each VM uses resources.
-
----
-
-## 🧱 **Virtual Machine Properties**
-
-- 2018 (C Q4): Discuss the properties of a virtual machine.
-- 2023 (B d): Illustrate the virtual machine monitor and the properties of a virtual machine.
-
-A **Virtual Machine (VM)** has several important properties that make virtualization useful and efficient.
-
-### 🔹 **1. Isolation**
-
-- Each VM is **independent** of others.
-- Any crash, malware, or error in one VM **doesn’t affect** others or the host.
-
-### 🔹 **2. Encapsulation**
-
-- The entire state of a VM (disk, memory, config) is stored in files — like a **container**.
-- Easy to **copy, move, or back up** a VM.
-
-### 🔹 **3. Hardware Independence**
-
-- VMs can run on **different hardware platforms** without changes.
-- Example: a Linux VM created on Dell hardware can run on HP or Lenovo.
-
-### 🔹 **4. Portability**
-
-- Because of encapsulation, a VM can easily be **migrated** to another machine or cloud system.
-
-### 🔹 **5. Manageability**
-
-- VMs can be started, paused, cloned, or deleted easily using management software.
-
-### 🔹 **6. Performance Monitoring**
-
-- The hypervisor monitors how resources are used by each VM and can adjust allocation dynamically.
-
-### 🔹 **7. Sharing of Resources**
-
-- Multiple VMs can **share CPU, memory, and storage** effectively, increasing efficiency.
-
----
-
-### 🧠 **Summary Table: Virtual Machine Properties**
-
-| Property                  | Description                                  |
-| :------------------------ | :------------------------------------------- |
-| **Isolation**             | Keeps VMs separate and secure                |
-| **Encapsulation**         | Stores VM as files for easy backup/migration |
-| **Hardware Independence** | Run on any compatible hardware               |
-| **Portability**           | Move VMs easily between systems              |
-| **Manageability**         | Centralized control and maintenance          |
-| **Resource Sharing**      | Multiple VMs share one physical machine      |
-
----
 
 ## ⚙️ **Interpretation and Binary Translation**
 
@@ -567,27 +446,6 @@ If a guest OS tries to access hardware directly, the VMM intercepts that instruc
 
 **Example:** VMware Workstation uses binary translation.
 
----
-
-### 🧩 **Full Virtualization**
-
-- In **Full Virtualization**, the guest OS **does not know** it’s running in a virtual environment.
-- The hypervisor **fully simulates the hardware**, allowing unmodified OSs to run.
-- Techniques like **binary translation** or **hardware-assisted virtualization (Intel VT-x, AMD-V)** are used.
-
-**Example:** VMware, KVM.
-
----
-
-### 🧩 **Para Virtualization**
-
-- In **Para Virtualization**, the guest OS is **modified** to interact directly with the hypervisor using **hypercalls**.
-- No need for binary translation — faster performance.
-
-**Example:** Xen Hypervisor.
-
----
-
 ### ⚖️ **Comparison: Binary Translation vs Para Virtualization**
 
 | Aspect          | Binary Translation                           | Para Virtualization                    |
@@ -598,127 +456,15 @@ If a guest OS tries to access hardware directly, the VMM intercepts that instruc
 | **Complexity**  | Complex translation layer                    | Requires modified OS                   |
 | **Example**     | VMware                                       | Xen                                    |
 
----
-
-### 🧠 **In Simple Terms**
-
-- **Interpretation:** Executes each instruction slowly, one by one.
-- **Binary Translation:** Translates unsafe code into safe instructions — faster.
-- **Full Virtualization:** Complete simulation of hardware — guest OS unmodified.
-- **Para Virtualization:** OS knows it’s virtualized — faster communication with hypervisor.
-
----
-
-## 💻 **HLL VM (High-Level Language Virtual Machine)**
-
-### 🔹 **Definition**
-
-A **High-Level Language Virtual Machine (HLL VM)** is designed to run programs written in **a specific high-level language** by translating them into **machine-independent bytecode**.
-
-These virtual machines **don’t virtualize hardware**, but instead **virtualize the execution environment** for programming languages.
-
----
-
-### 🔹 **Examples**
-
-1. **Java Virtual Machine (JVM)** – runs Java programs on any platform.
-2. **.NET CLR (Common Language Runtime)** – runs C#, VB.NET, etc.
-3. **Python Virtual Machine (PVM)** – executes Python bytecode.
-
----
-
-### 🔹 **Features of HLL VMs**
-
-1. **Platform Independence** – same code runs on any system with that VM.
-2. **Security** – code runs in a controlled sandbox.
-3. **Portability** – compiled once, runs anywhere.
-4. **Memory Management** – automatic garbage collection.
-5. **Performance Optimization** – uses JIT (Just-In-Time) compilation.
-
----
-
-### 🧠 **Difference Between HLL VM and System VM**
-
-| Aspect              | HLL VM                      | System VM                   |
-| :------------------ | :-------------------------- | :-------------------------- |
-| **Purpose**         | Runs language-specific code | Runs full operating systems |
-| **Example**         | JVM, CLR                    | VMware, VirtualBox          |
-| **Scope**           | Application-level           | System-level                |
-| **Isolation**       | Process-level               | Hardware-level              |
-| **Hardware Access** | No direct access            | Full hardware access        |
-
----
-
-## 🏁 **Final Summary**
-
-| Concept                 | Meaning                                        | Example              |
-| :---------------------- | :--------------------------------------------- | :------------------- |
-| **VMM / Hypervisor**    | Software layer managing virtual machines       | VMware ESXi, Hyper-V |
-| **VM Properties**       | Isolation, Encapsulation, Portability, Sharing | —                    |
-| **Interpretation**      | Executes guest code instruction by instruction | Simple but slow      |
-| **Binary Translation**  | Translates privileged code for safe execution  | Used in VMware       |
-| **Full Virtualization** | Guest OS unmodified                            | VMware, KVM          |
-| **Para Virtualization** | Guest OS modified to work with hypervisor      | Xen                  |
-| **HLL VM**              | Runs programs of high-level languages          | JVM, .NET CLR        |
-
----
-
-## ⚙️ **1️⃣ Hypervisor (Supervisor) — Overview**
-
-- 2018 (A a) / 2022 (A g): What is a Hypervisor? / Define the hypervisor.
-- 2023 (C Q6a): Write short notes on: (i) KVM (ii) Virtual Box (iii) XEN (iv) Hyper-V (v) VMware.
-
-### 🔹 **Definition**
-
-A **Hypervisor** (also called a **Virtual Machine Monitor or Supervisor**) is a **software or firmware layer** that enables **virtualization** by allowing multiple operating systems (guest OSs) to run on a **single physical machine** (host).
-
-It divides and manages physical resources (CPU, memory, storage, etc.) among multiple **Virtual Machines (VMs)**.
-
----
-
-### 🔹 **Types of Hypervisors**
-
-| Type                              | Description                                                                                 | Example                                  |
-| :-------------------------------- | :------------------------------------------------------------------------------------------ | :--------------------------------------- |
-| **Type 1 – Native or Bare-Metal** | Runs **directly on hardware**, no host OS. High performance and used in data centers.       | Xen, KVM, VMware ESXi, Microsoft Hyper-V |
-| **Type 2 – Hosted**               | Runs **on top of a host OS** like a normal application. Easier to use for personal systems. | VirtualBox, VMware Workstation           |
-
----
-
----
-
 ## ⚙️ **2️⃣ Xen Hypervisor**
 
 ### 🔹 **Type:** Type-1 (Bare-Metal) Hypervisor
 
 ### 🔹 **Developer:** Originally by **University of Cambridge**, now maintained by **Xen Project (Linux Foundation)**
 
-### 🔹 **Architecture:**
-
-- The system runs a special **control domain** called **Dom0**, which has direct access to hardware.
-- Other guest OSs run as **DomU** (unprivileged domains).
-- Dom0 controls and manages all DomU virtual machines.
-
-```
-Hardware
-  ↓
-Xen Hypervisor
-  ↓
-Dom0 (control OS) → manages → DomU (guest VMs)
-```
-
-### 🔹 **Features:**
-
-1. Supports both **Full Virtualization** and **Para Virtualization**.
-2. High performance and security.
-3. Excellent for **cloud platforms** like Amazon EC2.
-4. Allows **live migration** of VMs without downtime.
-
-### 🔹 **Advantages:**
-
-- Lightweight and open-source.
-- Excellent isolation between VMs.
-- Scalable for enterprise and cloud use.
+- Xen is a Type 1 (Bare-Metal) hypervisor that runs directly on hardware. It's Open Source and Lightweight
+- Its main purpose is to run many virtual machines safely and efficiently in cloud systems.
+- It works by controlling hardware directly and sharing resources among virtual machines.
 
 ---
 
@@ -728,31 +474,9 @@ Dom0 (control OS) → manages → DomU (guest VMs)
 
 ### 🔹 **Developer:** Red Hat / Open-source Linux community
 
-### 🔹 **Definition:**
-
-KVM turns the **Linux kernel itself into a hypervisor**.
-Each virtual machine becomes a **regular Linux process**, managed by the kernel scheduler.
-
-### 🔹 **Working:**
-
-- Uses **hardware virtualization extensions** like **Intel VT-x** and **AMD-V**.
-- Each VM has its own **virtual CPU, memory, disk, and network interface**.
-
-### 🔹 **Features:**
-
-1. Part of the Linux kernel (no extra layer needed).
-2. Supports both Linux and Windows guests.
-3. High performance and security.
-4. Easy management using tools like **virt-manager** or **libvirt**.
-
-### 🔹 **Advantages:**
-
-- Open source and free.
-- High stability and performance.
-- Direct hardware access with Linux kernel security.
-
-**Example Use:** Used in **Google Cloud Platform (GCP)** and **Red Hat Virtualization**.
-
+- KVM is a Type 1 (Bare-Metal) hypervisor built into the Linux kernel. Open Source
+- Its purpose is to turn a Linux system into a virtual machine manager.
+- It works by using the Linux kernel to manage hardware and run virtual machines.
 ---
 
 ## ⚙️ **4️⃣ VMware**
@@ -761,23 +485,9 @@ Each virtual machine becomes a **regular Linux process**, managed by the kernel 
 
 ### 🔹 **Developer:** VMware Inc. (a part of Broadcom, formerly Dell Technologies)
 
-### 🔹 **Products:**
-
-- **VMware ESXi** → Type-1 enterprise hypervisor (bare metal).
-- **VMware Workstation / Fusion** → Type-2 desktop hypervisors.
-
-### 🔹 **Features:**
-
-1. High performance with **hardware-assisted virtualization**.
-2. Supports **snapshot**, **cloning**, and **live migration**.
-3. Provides **vCenter Server** for managing multiple hosts.
-4. Excellent **GUI** and integration tools.
-
-### 🔹 **Advantages:**
-
-- Industry-standard reliability.
-- Easy-to-use interface.
-- Supports all major operating systems.
+- VMware (like VMware ESXi) is a Type 1 (Bare-Metal) hypervisor used in enterprise and cloud environments.
+- Its purpose is to create and manage virtual machines easily and securely.
+- It works by virtualizing hardware and providing strong management tools.
 
 ### 🔹 **Use Cases:**
 
@@ -793,24 +503,9 @@ Each virtual machine becomes a **regular Linux process**, managed by the kernel 
 
 ### 🔹 **Definition:**
 
-VirtualBox is a **cross-platform** virtualization software that allows you to run multiple operating systems on your personal computer.
-
-### 🔹 **Working:**
-
-- Runs as an application on top of an existing OS (like Windows or Linux).
-- Each virtual machine acts like a separate system with its own OS.
-
-### 🔹 **Features:**
-
-1. Free and open source.
-2. Supports Windows, Linux, macOS, and Solaris guests.
-3. Simple GUI — perfect for students and developers.
-4. Offers **snapshots** and **shared folders**.
-
-### 🔹 **Advantages:**
-
-- User-friendly and lightweight.
-- Great for **learning, software testing, and development**.
+- VirtualBox is a Type 2 (Hosted) hypervisor that runs on top of an operating system.
+- Its purpose is learning, testing, and running different operating systems on personal computers.
+- It works like normal software that creates virtual machines using the host OS.
 
 ---
 
@@ -822,39 +517,8 @@ VirtualBox is a **cross-platform** virtualization software that allows you to ru
 
 ### 🔹 **Definition:**
 
-Hyper-V is Microsoft’s virtualization platform that allows users to **create and manage virtual machines** on Windows systems and servers.
-
-### 🔹 **Working:**
-
-- Installed as a Windows feature (Windows 10/11 Pro or Windows Server).
-- Creates isolated environments (VMs) using hardware-level virtualization.
-
-### 🔹 **Features:**
-
-1. Tight integration with **Windows OS** and **Active Directory**.
-2. Supports **live migration** and **replication**.
-3. Provides **Hyper-V Manager** for VM management.
-4. Allows running Linux or Windows guests.
-
-### 🔹 **Advantages:**
-
-- Reliable for enterprise use.
-- Strong Windows ecosystem support.
-- Efficient use of multicore hardware.
-
-### 🔹 **Use Case:** Used in **Windows Servers** and **Azure Cloud Infrastructure**.
+- Microsoft Hyper-V is a Type 1 (Bare-Metal) hypervisor developed by Microsoft.
+- Its purpose is to run virtual machines on Windows servers and data centers.
+- It works by directly controlling hardware and managing multiple virtual machines.
 
 ---
-
-## ⚖️ **Distinction: Xen vs Hyper-V**
-
-- 2018 (C Q4): Distinguish between Xen and Hyper-V.
-
-| Feature              | Xen                              | Hyper-V                                     |
-| :------------------- | :------------------------------- | :------------------------------------------ |
-| **Type**             | Type-1 (Bare-Metal)              | Type-1 (Native, Windows-based)              |
-| **Origin**           | Open source (Linux Foundation)   | Proprietary (Microsoft)                     |
-| **Control Domain**   | Dom0 manages DomU VMs            | Windows itself acts as the parent partition |
-| **Supported Guests** | Linux, Windows                   | Primarily Windows (also supports Linux)     |
-| **Performance**      | Lightweight, highly customizable | Optimized for Windows environments          |
-| **Used In**          | Amazon EC2, Citrix XenServer     | Microsoft Azure, Windows Server             |
