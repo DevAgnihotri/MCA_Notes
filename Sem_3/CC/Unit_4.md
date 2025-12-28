@@ -159,93 +159,82 @@ Each type focuses on **which part of the system** is being virtualized (hardware
 - 2023 (C Q6b): Describe in detail about hardware virtualization and server virtualization with diagram and examples.
 - 2023 (A h) / 2023 (A h) & 2023 (A h): Differentiate between Para virtualization and Full virtualization. (2023 A h, 2022 C Q6b)
 
-1. ### 🖥️ **Hardware Virtualization**
+# **Types of Virtualization**
 
-   - Hardware virtualization allows multiple operating systems to run on a **single physical machine** using a **hypervisor**.
-   - The hypervisor divides physical hardware resources (CPU, RAM, disk) into multiple **Virtual Machines (VMs)**.
-
-   **Example:** VMware ESXi, Microsoft Hyper-V, KVM.
-
-   **Diagram (simple form):**
-
-   ```
-   Hardware
-     ↓
-   Hypervisor (VMM)
-     ↓
-   Multiple Virtual Machines (OS + Apps)
-   ```
-
-   **Use Case:** Used by cloud providers to host multiple virtual servers.
+Virtualization is a technology that allows **one physical system to be used as many virtual systems**. It helps in **better use of resources**, **saving cost**, and **easy management** in cloud computing.
 
 ---
 
-2. ### 🗄️ **Server Virtualization**
+## **1. Hardware Virtualization**
 
-   - This type focuses on **dividing one physical server** into several **virtual servers**, each running its own OS.
-   - Each server acts independently, though all share the same hardware.
+Hardware virtualization is a type of virtualization in which **physical hardware such as CPU, memory, storage, and devices are virtualized using a hypervisor**.
+The hypervisor creates multiple **virtual machines**, and each virtual machine runs its **own operating system** independently.
+Hardware virtualization is widely used in cloud computing because it allows many users to share the same physical hardware safely.
 
-   **Example:** Running Linux, Windows, and Ubuntu servers on a single machine.
-   **Tools:** VMware vSphere, XenServer.
+![Image](https://www.researchgate.net/publication/280095977/figure/fig7/AS:667718932000783@1536208007208/Hardware-virtualization.png)
+---
 
-   **Difference from Hardware Virtualization:**
+## **2. Server Virtualization**
 
-   - Hardware virtualization works at the hardware level;
-   - Server virtualization focuses on creating multiple **server environments** using that hardware virtualization.
+Server virtualization is a type of virtualization in which **a physical server is divided into multiple virtual servers**.
+Each virtual server works independently and can run different applications or services.
+This type of virtualization improves **server efficiency**, reduces **wastage of resources**, and makes server management easier.
 
-   **Benefit:** Increases server efficiency and reduces hardware waste.
+![Image](https://www.researchgate.net/figure/Figure1-Architecture-of-Server-Virtualization_fig1_339749899)
+---
+
+## **3. Operating System Virtualization**
+
+Operating system virtualization is a type of virtualization in which **multiple virtual environments are created on a single operating system**.
+All virtual systems share the **same OS kernel**, but they work as separate systems.
+This type of virtualization is lightweight, fast, and commonly used for running applications in isolated environments.
 
 ---
 
-3. ### 💾 **Storage Virtualization**
+## **4. Storage Virtualization**
 
-   - Combines multiple physical storage devices (like HDDs, SSDs, SAN) into **one virtual storage pool**.
-   - The user sees it as a single storage unit, even though it’s made up of many devices.
-
-   **Example:** Storage Area Networks (SANs), IBM Storwize.
-
----
-
-4. ### 🌐 **Network Virtualization**
-
-   - Combines or divides physical networks into **virtual networks** that can be managed independently.
-   - Helps create virtual LANs (VLANs) or Software-Defined Networks (SDN).
-
-   **Example:** VMware NSX, Cisco ACI.
+Storage virtualization is a type of virtualization in which **multiple physical storage devices are combined into one virtual storage system**.
+Users do not see the actual physical disks and access storage as a single unit.
+This makes storage management simple and improves storage performance and reliability.
 
 ---
 
-5. ### 🧠 **Desktop Virtualization**
+## **5. Network Virtualization**
 
-   - Separates the **desktop environment** and stores it on a central server.
-   - Users can access their virtual desktops remotely.
-
-   **Example:** Virtual Desktop Infrastructure (VDI) from VMware or Citrix.
-
----
-
-6. ### 📱 **Application Virtualization**
-
-   - Applications are **run in a virtual environment** instead of being installed on each user’s system.
-   - This makes deployment and updates easier.
-
-   **Example:** Microsoft App-V, Citrix XenApp.
+Network virtualization is a type of virtualization in which **network resources such as switches, routers, and connections are created virtually**.
+It allows multiple virtual networks to operate on the same physical network.
+Network virtualization improves **network security**, **flexibility**, and **control** in cloud environments.
 
 ---
 
-### 🧩 **Para Virtualization vs Full Virtualization**
+## **6. Desktop Virtualization**
 
-| Aspect          | Full Virtualization                                                              | Para Virtualization                                                    |
-| :-------------- | :------------------------------------------------------------------------------- | :--------------------------------------------------------------------- |
-| **Definition**  | The guest OS runs **without modification**; it is unaware that it’s virtualized. | The guest OS is **modified** to interact directly with the hypervisor. |
-| **Performance** | Slightly slower (extra translation overhead).                                    | Faster (less translation needed).                                      |
-| **Example**     | VMware Workstation, KVM.                                                         | Xen Hypervisor.                                                        |
-| **Working**     | Uses **binary translation** to handle privileged instructions.                   | Uses **hypercalls** to communicate with the hypervisor.                |
+Desktop virtualization is a type of virtualization in which **desktop operating systems run on a central server instead of local computers**.
+Users access their desktop using the internet from any device.
+This type of virtualization helps in **centralized control**, **easy maintenance**, and **secure access**.
 
-**In simple words:**
+---
 
-- _Full virtualization_ = complete imitation of real hardware.
-- _Para virtualization_ = cooperative model where the OS knows it’s virtualized.
+## **7. Application Virtualization**
+
+Application virtualization is a type of virtualization in which **applications run in a virtual environment without being directly installed on the operating system**.
+The application is isolated from the system, which prevents conflicts with other software.
+This improves system stability and makes application deployment easier.
+
+#### **Difference Between Paravirtualization and Full Virtualization**
+
+| No. | Paravirtualization                   | Full Virtualization                          |
+| --- | ------------------------------------ | -------------------------------------------- |
+| 1   | Guest OS **knows** it is virtualized | Guest OS **does not know** it is virtualized |
+| 2   | Guest OS is **modified**             | Guest OS is **not modified**                 |
+| 3   | Works with **special OS support**    | Works with **any OS**                        |
+| 4   | OS talks **directly to hypervisor**  | OS talks to **virtual hardware**             |
+| 5   | **Faster performance**               | **Slightly slower** performance              |
+| 6   | Less hardware emulation              | Full hardware emulation                      |
+| 7   | Better efficiency                    | More resource usage                          |
+| 8   | Example: Xen (paravirtual mode)      | Example: VMware, VirtualBox                  |
+| 9   | Harder to install                    | Easy to install                              |
+| 10  | Less compatible                      | Highly compatible                            |
 
 ---
 
