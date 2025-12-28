@@ -817,6 +817,8 @@ AWS has many components, but the main ones are:
 
 ![AWS Cloud Architecture](https://i0.wp.com/cloudwithease.com/wp-content/uploads/2023/03/aws-architecture.jpg?fit=800%2C455&amp;ssl=1)
 
+![AWS](https://www.tutorialspoint.com/amazon_web_services/images/architecture.jpg)
+
 ## Microsoft Azure / Microsoft SQL Services
 
 - **2021 (NMCAE24) - Section A, (d):** _Write about Microsoft SQL services?_
@@ -955,7 +957,7 @@ Let’s look at the **main building blocks** (components) of Azure that make clo
 #### 🔹 What is Salesforce?
 
 - Salesforce is a **cloud-based CRM (Customer Relationship Management)** platform.
-- It helps organizations **manage customer interactions, sales, marketing, and support** through the internet—no local installations or hardware needed.
+- It helps organizations **manage customer interactions, sales, marketing, and support** all from one place. 
 - It is delivered as **Software as a Service (SaaS)**, meaning users just log in and use it via a browser.
 
 ---
