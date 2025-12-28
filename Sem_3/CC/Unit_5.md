@@ -3,7 +3,6 @@
 - Cloud security challenges (papers: 2021, 2024)
 - Software-as-a-Service (SaaS) security — main challenges and protections (2018 topics, 2022 A(i))
 - Security as a Service; security issues and ways to enhance cloud security (2021 Q6(a))
-- Monitoring as a Service / security monitoring (2022 Q4(b))
 
 Cloud security is one of the **most important areas in cloud computing**, as data, applications, and services are hosted on **remote servers** managed by third-party providers.
 Hence, strong **security mechanisms** are required to protect **data, networks, and user privacy**.
@@ -20,47 +19,58 @@ Hence, strong **security mechanisms** are required to protect **data, networks, 
 
 ### ⚠️ **Common Security Challenges in Cloud (as per 2021 & 2024 papers)**
 
-1. **Data Breaches**
+##### **DANGEROUS CAM – Cloud Computing Security Issues**
 
-   * Sensitive data can be stolen due to weak encryption or unauthorized access.
-   * Example: Customer data stolen from a cloud storage server.
+### **D – Data Breaches**
 
-2. **Data Loss**
+Sensitive data can be **stolen by hackers** due to weak encryption or unauthorized access.
+👉 *Example: Customer details leaked from cloud storage.*
 
-   * Data may be accidentally deleted, corrupted, or lost due to hardware/software failure.
-   * Need for **regular backups** and **redundant storage**.
+### **A – Account Hijacking**
 
-3. **Insider Threats**
+Attackers **steal login credentials** using phishing or weak passwords and take control of accounts.
 
-   * Employees or administrators with access rights can misuse their privileges.
+### **N – No Visibility & Control**
 
-4. **Account Hijacking**
+Users **cannot directly monitor or control** physical cloud servers; they depend on the provider.
 
-   * Attackers steal user credentials through phishing or weak passwords to access cloud services.
+### **G – Governance & Compliance Issues**
 
-5. **Insecure APIs and Interfaces**
+Following laws like **GDPR, HIPAA** becomes difficult because cloud data is stored across countries.
 
-   * Poorly designed **APIs (Application Programming Interfaces)** can allow hackers to manipulate or access data.
+### **E – Exposure via Insecure APIs**
 
-6. **Lack of Visibility and Control**
+Poorly designed **APIs and interfaces** allow attackers to access or manipulate cloud data.
 
-   * Users depend on the cloud provider; they can’t directly monitor or control physical servers.
+---
 
-7. **Compliance and Legal Issues**
+### **R – Resource Sharing (Multi-tenancy Risks)**
 
-   * Organizations must follow laws (like GDPR, HIPAA) — sometimes hard when data is stored globally.
+Multiple users share the same hardware, which may cause **data leakage** if isolation fails.
 
-8. **Multi-tenancy Risks**
+---
 
-   * Multiple users share the same physical resources → can lead to **data leakage** if isolation fails.
+### **O – Outages from DDoS Attacks**
 
-9. **DDoS (Distributed Denial of Service) Attacks**
+Attackers flood cloud servers with traffic, making services **unavailable to real users**.
 
-   * Attackers flood cloud services with fake traffic → making them unavailable to real users.
+---
 
-10. **Malware Injection**
+### **U – Untrusted Insiders**
 
-* Attackers upload fake service instances or scripts to steal or alter data.
+Employees or admins with access may **misuse their privileges** intentionally or accidentally.
+
+---
+
+### **S – Storage Data Loss**
+
+Data may be **deleted, corrupted, or lost** due to failures → backups and redundancy are needed.
+
+---
+
+### **C A M – Code & Malware Injection**
+
+Attackers inject **malicious code or fake services** into cloud systems to steal or modify data.
 
 ---
 
@@ -107,11 +117,11 @@ The **NIST Cloud Reference Architecture** defines **five major actors** who inte
   * Provider ↔ Auditor → for compliance checks
 
 ---
-Of course, dear 💫 — here’s your **next complete, exam-ready note** on **Common Cloud Standards**, written in clean, simple, and clear English (perfect for understanding and scoring well).
 
-I’ve covered every topic and connected them naturally with all your given questions — without making it look like a direct Q&A.
+![Image](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0m-GTEG9JPLnj1nbWdmPtDBOEQbQicmvfPw&s)
 
----
+![Image](https://media.geeksforgeeks.org/wp-content/uploads/20240403113508/GFG-2.jpg)
+
 
 # ☁️ **Common Standards in Cloud Computing**
 
