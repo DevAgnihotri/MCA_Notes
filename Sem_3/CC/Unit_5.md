@@ -87,36 +87,66 @@ Attackers inject **malicious code or fake services** into cloud systems to steal
 
 ## 🧩 **5️⃣ NIST Cloud Reference Architecture – Actors and Communication**
 
-- Actors and communication in the NIST cloud reference architecture (2021 Q7(b))
+### **NIST Cloud Reference Architecture**
 
-### 🔹 **Definition:**
+### What is it?
 
-The **NIST Cloud Reference Architecture** defines **five major actors** who interact within a cloud ecosystem and how they communicate securely.
+**NIST Cloud Reference Architecture** is a **standard model** made by **NIST** to explain **how cloud computing works** in a simple and organized way.
 
----
+👉 It tells us:
 
-### 👥 **Actors in NIST Cloud Model**
-
-| Actor              | Description                                                      | Key Role                                    |
-| :----------------- | :--------------------------------------------------------------- | :------------------------------------------ |
-| **Cloud Consumer** | Person or organization using cloud services                      | Uses SaaS, PaaS, or IaaS                    |
-| **Cloud Provider** | Entity offering cloud services                                   | Manages hardware, software, and storage     |
-| **Cloud Broker**   | Middleman between consumer and provider                          | Helps with service selection and management |
-| **Cloud Auditor**  | Independent party that checks security, privacy, and performance | Ensures compliance                          |
-| **Cloud Carrier**  | Network provider enabling cloud communication                    | Handles internet/data transport             |
+* **Who uses the cloud**
+* **Who provides the cloud**
+* **How cloud services work together**
 
 ---
 
-### 🔐 **Communication in NIST Model**
+## **Purpose (Why it is used)**
 
-* Communication happens through **secure APIs, encrypted channels, and authentication systems**.
-* Each actor must follow **security policies and service-level agreements (SLAs)**.
-* Example:
-
-  * Consumer ↔ Provider → via HTTPS/REST APIs
-  * Provider ↔ Auditor → for compliance checks
+* To **clearly explain cloud computing**
+* To create a **common standard** for everyone
+* To help **design, understand, and manage** cloud systems
+* To avoid confusion between users and providers
 
 ---
+
+## **Main Components / Actors (CPBAC)**
+
+NIST defines **5 main actors** in cloud computing:
+
+### 1️⃣ **Cloud Consumer**
+
+A Cloud Consumer is the person or organization that uses cloud services such as storage, software, or servers through the internet. The consumer only uses the service and does not worry about how it is managed inside.
+
+### 2️⃣ **Cloud Provider**
+
+A Cloud Provider is the company that owns and manages the cloud infrastructure. It provides cloud services like servers, storage, and applications and is responsible for maintenance, security, and availability.
+
+### 3️⃣ **Cloud Broker**
+
+A Cloud Broker is a middle person between the consumer and the provider. It helps consumers choose the best cloud service, manage multiple cloud services, and sometimes combine services from different providers.
+
+### 4️⃣ **Cloud Auditor**
+
+A Cloud Auditor is an independent authority that checks cloud services. It makes sure that the cloud provider is following security rules, performance standards, and legal requirements.
+
+### 5️⃣ **Cloud Carrier**
+
+A Cloud Carrier is the network or internet service provider that connects the cloud consumer to the cloud provider. It is responsible for safely transferring data between them.
+
+---
+
+### **How it Works (Simple Flow)**
+
+1. **Cloud Consumer** requests a service
+2. **Cloud Provider** gives the service
+3. **Cloud Carrier** connects them using the internet
+4. **Cloud Broker** may help manage services
+5. **Cloud Auditor** checks security and performance
+
+---
+
+### **Easy Diagram Idea (for exam)**
 
 ![Image](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0m-GTEG9JPLnj1nbWdmPtDBOEQbQicmvfPw&s)
 
@@ -157,8 +187,6 @@ The **Open Cloud Consortium (OCC)** is a **non-profit organization** that suppor
 
 It helps create a **common platform** for sharing cloud resources and developing **open-source cloud technologies**.
 
----
-
 ### 🌟 **Main Roles of OCC:**
 
 1. **Promoting Open Standards**
@@ -192,8 +220,6 @@ It helps create a **common platform** for sharing cloud resources and developing
 ### 🔹 **Definition:**
 
 The **Distributed Management Task Force (DMTF)** is an **industry group** that develops **standards for managing IT systems**, including **virtualization, networking, and cloud computing**.
-
----
 
 ### 🧰 **Key Roles of DMTF (from 2022 B(e), Q7(a)):**
 
