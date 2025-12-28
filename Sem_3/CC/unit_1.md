@@ -17,9 +17,9 @@
 
 ## Definition of Cloud Computing
 
-**PYQ: What do you mean by Cloud Computing? (2023 Section C)**
+**PYQ: What do we mean by Cloud Computing? (2023 Section C)**
 
-Cloud Computing means using computer resources (like servers and storage) from a provider over the internet. You can access your files and programs from anywhere, anytime. It is flexible and saves money because you only pay for what you use.
+Cloud Computing means using computer resources (like servers and storage) from a provider over the internet. We can access your files and programs from anywhere, anytime. It is flexible and saves money because we only pay for what we use.
 
 ## Evolution of Cloud Computing
 
@@ -28,8 +28,8 @@ Cloud computing did not start suddenly. It grew from older ways of using compute
 - In the 1960s, big computers called mainframes were used by many people at once.
 - In the 1980s, client-server computing let smaller computers connect to big servers.
 - In the 1990s, grid computing allowed many computers to work together on big problems.
-- Utility computing made computer power available like electricity—use as much as you need.
-- Today, cloud computing lets you use computer resources over the internet, easily and quickly.
+- Utility computing made computer power available like electricity—use as much as we need.
+- Today, cloud computing lets we use computer resources over the internet, easily and quickly.
 
 Cloud computing started with ideas from the 1960s. Over time, new ways to share computer power were invented. In 2006, Amazon started Amazon Web Services (AWS), which made cloud computing popular. Now, many companies use cloud computing for their work.
 
@@ -108,8 +108,8 @@ Cloud computing uses different ways to organize and deliver services. These are 
 - **Definition:** Public cloud means services are offered to anyone over the internet. Anyone can sign up and use these services.
 - **Points:**
   - Managed by companies like Amazon, Google, or Microsoft.
-  - You do not own the hardware; the provider takes care of everything.
-  - You pay only for what you use, like renting space or computer power.
+  - we do not own the hardware; the provider takes care of everything.
+  - we pay only for what we use, like renting space or computer power.
   - Good for small businesses or people who want to start quickly.
   - Example: Amazon Web Services (AWS), Google Cloud Platform.
 
@@ -127,7 +127,7 @@ Cloud computing uses different ways to organize and deliver services. These are 
 
 - **Definition:** Hybrid cloud is a mix of public and private clouds. It shares data and applications between them.
 - **Points:**
-  - Lets you keep important data in the private cloud and use public cloud for other tasks.
+  - Lets we keep important data in the private cloud and use public cloud for other tasks.
   - More flexibility and better use of resources.
   - Can save money and improve security.
   - Good for companies that want both privacy and the power of public cloud.
@@ -147,49 +147,7 @@ Cloud computing uses different ways to organize and deliver services. These are 
 
 ---
 
-## Business Models Around Clouds
-
-Cloud computing supports different business models, which means companies use the cloud in different ways to make money or save costs. Here are some common models:
-
-### Common Cloud Business Models
-
-#### 1. Software as a Service (SaaS)
-- **Definition:** Software is delivered over the internet. Users access applications through a web browser, without installing anything locally.
-- **Features:**
-    - No need to manage hardware or software updates.
-    - Pay-as-you-go or subscription pricing.
-    - Accessible from any device with internet.
-- **Examples:** Google Docs, Microsoft Office 365, Salesforce.
-- **Benefits:**
-    - Easy collaboration and sharing.
-    - Automatic updates and maintenance.
-    - Lower upfront costs.
-
-#### 2. Platform as a Service (PaaS)
-- **Definition:** Provides a platform for developers to build, test, and deploy applications. The provider manages infrastructure, operating systems, and runtime environments.
-- **Features:**
-    - Includes tools for coding, testing, and deploying.
-    - Scalable resources for applications.
-    - Supports multiple programming languages.
-- **Examples:** Google App Engine, Microsoft Azure, Heroku.
-- **Benefits:**
-    - Faster development and deployment.
-    - No need to manage servers or operating systems.
-    - Built-in scalability and security.
-
-#### 3. Infrastructure as a Service (IaaS)
-- **Definition:** Offers virtualized computing resources like servers, storage, and networking over the internet. Users control operating systems and applications.
-- **Features:**
-    - Flexible and scalable hardware resources.
-    - Pay only for what you use.
-    - Full control over the infrastructure.
-- **Examples:** Amazon Web Services (AWS), Google Cloud Platform, Microsoft Azure.
-- **Benefits:**
-    - No need to buy physical hardware.
-    - Easily scale up or down as needed.
-    - Suitable for hosting websites, databases, and custom applications.
-
----
+## Business Models Around Clouds IAAS PAAS SAAS (in unit 2)
 
 ## Major Players in Cloud Computing
 
@@ -233,7 +191,7 @@ Eucalyptus is a free, open-source software that helps companies build their own 
 - **Scalability:** Eucalyptus can grow or shrink as needed, handling more users or bigger workloads.
 
 **How it Works:**
-Eucalyptus lets you create virtual computers (VMs), store files, and manage networks, all inside your own company. You can add or remove resources easily, and only pay for what you use if you connect to public clouds.
+Eucalyptus lets we create virtual computers (VMs), store files, and manage networks, all inside your own company. we can add or remove resources easily, and only pay for what we use if we connect to public clouds.
 
 ---
 
