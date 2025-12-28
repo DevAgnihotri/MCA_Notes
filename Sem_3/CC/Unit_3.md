@@ -27,6 +27,49 @@ It allows users to send, receive, and store emails online.
 - Promotes teamwork through shared mailboxes and cloud contacts.
 - Easy integration with other cloud tools like Google Docs or Teams.
 
+## **Service Oriented Architecture (SOA)**
+
+### **Definition**
+
+Service Oriented Architecture (SOA) is a **software design approach** in which an application is built using **small independent services**.
+Each service performs a **specific task** and can be used by other applications through the network.
+
+---
+
+## **Purpose of SOA**
+
+The main purpose of SOA is to **divide large applications into smaller services** so they are **easy to build, manage, reuse, and update**.
+It helps different systems **communicate with each other easily**, even if they are built using different technologies.
+
+---
+
+## **Features of SOA**
+
+* Services are **independent** and loosely connected
+* Each service performs **one specific function**
+* Services can be **reused** in different applications
+* Services communicate using **standard protocols**
+* Easy to **update or change** services without affecting others
+
+---
+
+## **Working of SOA (Simple Steps)**
+
+1. The application is divided into **small services**.
+2. Each service is **published** so other systems can find it.
+3. A client **requests a service** through the network.
+4. The service **processes the request** and sends the result back.
+5. Multiple services work together to complete a task.
+
+---
+
+## **How SOA Supports Cloud Computing**
+
+SOA supports cloud computing by **organizing cloud applications as services**.
+Cloud platforms use SOA to provide **software, storage, and computing resources as services** over the internet.
+SOA allows cloud services to be **scalable, reusable, and flexible**, which matches cloud computing principles.
+
+![Image](https://www.mathworks.com/discovery/soa/_jcr_content/thumbnail.adapt.1200.medium.svg/1690900394130.svg)
 ---
 
 ## **2. CRM Management (Customer Relationship Management)**

@@ -229,6 +229,7 @@ Nimbus has several important parts:
 
 Nimbus helps researchers run experiments without needing expensive hardware. They can use remote computers and test their ideas easily.
 
+![Image](https://www.researchgate.net/publication/278665353/figure/fig5/AS:669205309444103@1536562387353/Nimbus-Architecture-Source-Nimbus-na.png)
 ---
 
 ### OpenNebula
@@ -269,6 +270,88 @@ Researchers use CloudSim to create models of cloud systems. They can change sett
 
 ---
 
-These four tools—Eucalyptus, Nimbus, OpenNebula, and CloudSim—are important for building, managing, and testing cloud computing systems. They help organizations and researchers use cloud technology in safe, flexible, and cost-effective ways.
+# **Web Service**
+
+## **What is a Web Service? (Definition)**
+
+A **Web Service** is a **software service** that allows **different applications to communicate with each other over the internet**.
+It works even if the applications are built using **different programming languages or platforms**.
+
+---
+
+## **Purpose of Web Service**
+
+The main purpose of a web service is to **share data and functions between different systems**.
+It helps applications **talk to each other easily** without knowing how they are built internally.
+
+---
+
+## **Features of Web Service**
+
+* Works over the **internet**
+* Platform and language **independent**
+* Uses **standard protocols**
+* Supports **data sharing**
+* Easy to **integrate** with other systems
+* Secure and reliable communication
+
+---
+
+## **Working of Web Service (Simple Steps)**
+
+1. A client application sends a **request** to the web service.
+2. The request is sent using **standard protocols** like HTTP.
+3. The web service **processes the request**.
+4. The web service sends a **response** back to the client.
+5. The client uses the received data or service.
+
+---
+
+## **Why Web Service is Required**
+
+Web services are required because modern applications need to **work together**.
+They allow **different systems, platforms, and devices** to share data easily.
+Web services make applications **scalable, reusable, and suitable for cloud computing**.
+
+---
+
+## **Types of Web Services (Just for understanding)**
+
+* **SOAP Web Service** – Uses XML and strict rules
+* **REST Web Service** – Uses simple URLs and HTTP methods
+
+---
+
+# **Difference Between API and Web Services**
+
+| No. | API                                 | Web Service                                         |
+| --- | ----------------------------------- | --------------------------------------------------- |
+| 1   | API is a **general interface**      | Web Service is a **type of API**                    |
+| 2   | API may or may not use internet     | Web Service **always uses internet**                |
+| 3   | API can work within same system     | Web Service works between **different systems**     |
+| 4   | API can use any protocol            | Web Service uses **standard web protocols**         |
+| 5   | API can be local                    | Web Service is **remote**                           |
+| 6   | API may not be platform independent | Web Service is **platform independent**             |
+| 7   | API can be faster                   | Web Service is slightly slower                      |
+| 8   | API may not use HTTP                | Web Service commonly uses **HTTP**                  |
+| 9   | API is broader term                 | Web Service is a **specific implementation**        |
+| 10  | API used in software development    | Web Service used in **distributed systems & cloud** |
+
+## **Difference Between Demand-Driven and Event-Driven Resource Provisioning**
+
+| No. | Demand-Driven Resource Provisioning      | Event-Driven Resource Provisioning            |
+| --- | ---------------------------------------- | --------------------------------------------- |
+| 1   | Resources are given **when user asks**   | Resources are given **when an event happens** |
+| 2   | Based on **user demand**                 | Based on **system events**                    |
+| 3   | Requires **manual request**              | Works **automatically**                       |
+| 4   | User controls resource request           | System controls resource allocation           |
+| 5   | Slower response compared to event-driven | Very fast response                            |
+| 6   | Suitable for planned workloads           | Suitable for sudden workloads                 |
+| 7   | Uses predefined user requests            | Uses predefined event rules                   |
+| 8   | Less automation                          | High automation                               |
+| 9   | Good for regular applications            | Good for dynamic applications                 |
+| 10  | Resources released after use             | Resources released after event ends           |
+| 11  | User decides when to scale               | System decides when to scale                  |
+| 12  | Common in simple cloud services          | Common in auto-scaling systems                |
 
 ---
