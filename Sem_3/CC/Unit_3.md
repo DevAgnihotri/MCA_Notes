@@ -87,7 +87,7 @@ Cloud-based project management means using **online tools hosted on the cloud** 
 It helps teams to:
 
 - Plan tasks
-- Share documents
+- Share resources
 - Assign responsibilities
 - Track progress in real-time
 
@@ -239,6 +239,40 @@ We can view, share, and edit our calendars anytime using the internet.
 2. **Event Sharing** – We can invite others and share schedules.
 3. **Reminders** – Sends alerts for upcoming meetings or events.
 4. **Integration** – Works with email, video meetings, and task apps.
+
+#### **CALENDAR – Features of a Cloud Calendar**
+
+### **C – Cloud Access**
+
+Calendar can be accessed from **any device, anywhere**, using the internet.
+
+### **A – Automatic Sync**
+
+Calendar events **automatically sync** across mobile, laptop, and tablet in real time.
+
+### **L – Live Updates**
+
+Calendar updates (add/edit/delete events) happen **instantly** for all users.
+
+### **E – Event Scheduling**
+
+Calendar helps users **schedule meetings, reminders, and appointments** easily.
+
+### **N – Notifications & Alerts**
+
+Calendar sends **email or app notifications** for upcoming events.
+
+### **D – Data Backup**
+
+Calendar data is **securely backed up in the cloud**, preventing data loss.
+
+### **A – Access Sharing**
+
+Calendar allows **sharing schedules** with others and setting permissions.
+
+### **R – Remote Collaboration**
+
+Calendar supports **team collaboration**, enabling multiple users to manage events together.
 
 #### 🌐 **Examples:**
 
