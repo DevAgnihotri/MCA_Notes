@@ -411,9 +411,20 @@ Below is a table listing common list functions and methods in Python, along with
 | Min              | `min(list)`                   | Returns smallest item in list                 | `min([1, 2, 3])` → `1`                            |
 | Sum              | `sum(list)`                   | Returns sum of items in list                  | `sum([1, 2, 3])` → `6`                            |
 
-These are some of the most commonly used list functions and methods in Python.
+## 📋 **List vs Tuple (10 Important Differences)**
 
----
+| No. | Feature         | **List**                            | **Tuple**                                |
+| --- | --------------- | ----------------------------------- | ---------------------------------------- |
+| 1   | Mutability      | **Mutable** (values can be changed) | **Immutable** (values cannot be changed) |
+| 2   | Brackets        | Uses `[ ]`                          | Uses `( )`                               |
+| 3   | Add Elements    | Can add elements                    | Cannot add elements                      |
+| 4   | Remove Elements | Can remove elements                 | Cannot remove elements                   |
+| 5   | Modify Elements | Can modify elements                 | Cannot modify elements                   |
+| 6   | Methods         | Many methods available              | Very few methods                         |
+| 7   | Speed           | Slower                              | Faster                                   |
+| 8   | Memory          | Uses more memory                    | Uses less memory                         |
+| 9   | Safety          | Less safe (data can change)         | More safe (data fixed)                   |
+| 10  | Use Case        | When data changes often             | When data should not change              |
 
 # Tuples
 
