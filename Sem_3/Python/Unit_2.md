@@ -1,6 +1,5 @@
 ## String Manipulation
 
----
 In Python, a string is a sequence of characters. we can access individual characters using their index (position) starting from 0.
 
 **How Strings Are Stored in Python**
