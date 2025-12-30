@@ -2,7 +2,7 @@
 
 ---
 
-# ✅ **1. String Creation, Indexing, Slicing**
+# **1. String Creation, Indexing, Slicing**
 
 ### **String Creation**
 
@@ -56,6 +56,23 @@ s = "y" + s[1:]
 ---
 
 ### **3. String Methods**
+
+🔤 **Mnemonic: `SLICEFORMAT`**
+
+Now relate each letter to common string methods:
+
+* **S** → `strip()`, `split()`, `startswith()`
+* **L** → `lower()`, `ljust()`, `len()`
+* **I** → `isalnum()`, `isalpha()`, `isdigit()`
+* **C** → `count()`, `capitalize()`
+* **E** → `endswith()`, `encode()`
+* **F** → `find()`, `format()`
+* **O** → `ord()`
+* **R** → `replace()`, `rfind()`
+* **M** → `upper()` *(M → Make uppercase)*
+* **A** → `append()` *(string concept in joins)*
+* **T** → `title()` , --- `join()`
+
 
 | Method      | Meaning                    | Example                                |
 | ----------- | -------------------------- | -------------------------------------- |
@@ -125,7 +142,24 @@ for ch in s:
         result += ch
 print(result)    # 'ban'
 ```
+
 # List
+
+A list is used to store multiple values in one variable.
+It is written inside square brackets [ ].
+
+### 🔑 **`AIREPCMS`**
+
+Break it like this:
+
+* **A** → `append()`
+* **I** → `insert()`
+* **R** → `remove()`
+* **E** → `extend()`
+* **P** → `pop()`
+* **C** → `clear()` , `count()`
+* **M** → `max()`, `min()`
+* **S** → `sort()`, `sum()`
 
 ## **List Creation**
 
@@ -382,6 +416,13 @@ These are some of the most commonly used list functions and methods in Python.
 ---
 
 # Tuples
+
+## 📦 **TUPLE Methods Mnemonic**
+
+### 🔑 **`CI`**
+
+* **C** → `count()`
+* **I** → `index()`
 
 ## **1. Tuple Creation and Immutability**
 
