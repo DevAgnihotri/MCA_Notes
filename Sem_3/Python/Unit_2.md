@@ -1,6 +1,15 @@
 ## String Manipulation
 
 ---
+In Python, a string is a sequence of characters. we can access individual characters using their index (position) starting from 0.
+
+**How Strings Are Stored in Python**
+
+- In Python, a string is stored as a sequence of characters.
+- Each character in the string is stored one by one in memory.
+- Every character has a Unicode value (like ASCII for English letters).
+- Python stores the string in continuous memory locations.
+- Each character is given an index number, starting from 0.
 
 # **1. String Creation, Indexing, Slicing**
 
