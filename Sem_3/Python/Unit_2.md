@@ -417,6 +417,8 @@ These are some of the most commonly used list functions and methods in Python.
 
 # Tuples
 
+A tuple is also used to store multiple values in one variable.
+It is written inside round brackets ( ).
 ## 📦 **TUPLE Methods Mnemonic**
 
 ### 🔑 **`CI`**
