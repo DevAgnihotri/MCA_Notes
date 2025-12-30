@@ -145,8 +145,7 @@ print(result)    # 'ban'
 
 # List
 
-A list is used to store multiple values in one variable.
-It is written inside square brackets [ ].
+A list in Python is an ordered, mutable collection of items. Lists can hold items of different types.
 
 ### 🔑 **`AIREPCMS`**
 
@@ -428,8 +427,8 @@ Below is a table listing common list functions and methods in Python, along with
 
 # Tuples
 
-A tuple is also used to store multiple values in one variable.
-It is written inside round brackets ( ).
+A tuple is similar to a list but it is immutable (unchangeable). Tuples are often used to store fixed collections of items.
+
 ## 📦 **TUPLE Methods Mnemonic**
 
 ### 🔑 **`CI`**
