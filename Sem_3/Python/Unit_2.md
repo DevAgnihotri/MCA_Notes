@@ -1,6 +1,7 @@
 ## Strings and String Manipulation
 
-In Python, a string is a sequence of characters. we can access individual characters using their index (position) starting from 0.
+A string is used to store text in Python.
+It is written inside quotes (" " or ' ').
 
 **How Strings Are Stored in Python**
 
