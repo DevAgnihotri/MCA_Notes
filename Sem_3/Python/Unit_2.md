@@ -1,8 +1,5 @@
 ## String Manipulation
 
-Here is a **simple, clean, 8th-grade level explanation** of all the string topics you listed.
-Easy English + necessary tech terms.
-
 ---
 
 # ✅ **1. String Creation, Indexing, Slicing**
