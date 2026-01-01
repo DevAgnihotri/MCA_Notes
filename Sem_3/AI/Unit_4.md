@@ -128,46 +128,39 @@ Here, the tree classifies whether to “Play” based on “Weather.”
 
 ---
 
-### ⚙️ **Steps to Construct a Decision Tree**
-
-*(2023 – Section C Q6(b))*
-
-1. **Select the Best Attribute** using criteria such as:
-
-   * Information Gain (ID3 Algorithm)
-   * Gini Index (CART Algorithm)
-   * Gain Ratio (C4.5 Algorithm)
-
-2. **Split the Dataset** based on that attribute’s values.
-
-3. **Repeat Recursively** for each subset until:
-
-   * All data points belong to one class, or
-   * No further improvement possible.
-
-4. **Prune the Tree** (optional):
-
-   * Remove branches that add little predictive power to avoid overfitting.
+Here are the **simple, easy-to-learn steps to make a Decision Tree (DT)**, written in **very simple English**, exam-friendly 👍
 
 ---
 
-### 🔹 **Algorithm Example – ID3 Algorithm**
+## Simple Steps to Make a Decision Tree (DT)
 
-**Input:** Training dataset with attributes and class labels.
-**Output:** Decision tree.
+1. **Collect the Data**
+   Gather the data that you want to use for prediction.
 
-**Steps:**
+2. **Choose the Target Column**
+   Decide what you want to predict (output or class).
 
-1. Calculate **Entropy** for the dataset.
-   [
-   Entropy = -\sum P(i) \log_2 P(i)
-   ]
-2. For each attribute, calculate **Information Gain**:
-   [
-   IG(Attribute) = Entropy(parent) - \sum \frac{|subset|}{|parent|} \times Entropy(subset)
-   ]
-3. Choose the attribute with the **highest IG** as the root.
-4. Repeat until all data classified.
+3. **Select the Best Feature**
+   Choose the feature that best splits the data
+   (using entropy, information gain, or Gini index).
+
+4. **Create a Root Node**
+   The best feature becomes the top (root) node of the tree.
+
+5. **Split the Data**
+   Divide the data into smaller groups based on the selected feature.
+
+6. **Create Decision Nodes**
+   Repeat the process for each group using remaining features.
+
+7. **Create Leaf Nodes**
+   Stop splitting when:
+
+   * All data belongs to one class, or
+   * No feature is left
+
+8. **Make Prediction**
+   Use the tree to predict output for new data.
 
 ---
 
