@@ -380,6 +380,8 @@ In summary, NLP is what makes computers smart enough to understand and use human
 
 ### Steps Involved in Natural Language Processing (NLP)
 
+![](https://media.geeksforgeeks.org/wp-content/uploads/20240704145701/Phases-of-Natural-Language-Processing.png)
+
 **Explain various steps involved in natural language processing. (2022–23, C)**
 
 Each step helps a computer understand a sentence better. Let's use the example sentence: **"AI is amazing!"** and see how it is processed:
