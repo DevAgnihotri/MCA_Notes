@@ -126,6 +126,10 @@ It represents decisions in the form of a **tree-like structure** — each intern
 
 Here, the tree classifies whether to “Play” based on “Weather.”
 
+
+![](https://www.techguruspeaks.com/wp-content/uploads/2020/05/dt.png)
+
+
 ### Simple Steps to Make a Decision Tree (DT)
 
 1. **Collect the Data**
