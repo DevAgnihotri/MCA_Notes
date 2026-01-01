@@ -198,8 +198,10 @@ _(Asked in 2022 B Q2(c) and 2023 C Q5(a))_
 
 1. **Eliminate implications (→):**
    Replace (P → Q) with (¬P ∨ Q)
+   p <-> Q then (P->Q) ulta V (Q -> P)
 
 2. **Move NOT (¬) inward:**
+
    Apply De Morgan’s Laws and remove double negations.
 
 3. **Standardize variables:**
