@@ -61,24 +61,49 @@ Raw Data → Preprocessing → Feature Extraction → Classification → Output 
 
 
 ### 🔹 Definition
+Ahh 👍 got it — you mean **SPR = Statistical Pattern Recognition** (not State Space).
 
-**Statistical Pattern Recognition (SPR)** uses **probability and statistics** to model the patterns and their variations mathematically.
-It assumes each pattern class has a **probability distribution**, and the classifier assigns an unknown sample to the class with the **highest probability (Bayes decision rule).**
-
-➡️ Example: In speech recognition, words are represented as probabilistic models, and the word with the highest likelihood is recognized.
+Here is a **super simple explanation**, exactly exam-oriented 👇
 
 ---
 
-### 🔹 Key Idea
+### **SPR (Statistical Pattern Recognition) — Super Simple**
 
-* Each pattern belongs to a class with probability ( P(C_i|x) )
-* Decision is made by maximizing this probability:
-  [
-  \text{Classify } x \text{ to } C_i \text{ if } P(C_i|x) = \max_j P(C_j|x)
-  ]
-* Models used: Gaussian distribution, Naïve Bayes, Hidden Markov Models.
+**SPR** is a method where a computer **recognizes patterns using statistics and probability**.
+
+👉 It looks at data, finds patterns using **math**, and then **classifies** or **predicts** something.
+
+**SPR = Learn patterns from data using probability**
 
 ---
+
+### How SPR works (easy)
+
+1. Data is collected (images, sounds, numbers, etc.)
+2. Important features are extracted
+3. Statistical methods are applied
+4. Probability is calculated
+5. Pattern is classified or recognized
+
+---
+
+### Simple example 🎤
+
+**Speech Recognition**
+
+* Input: voice
+* Features: sound frequencies
+* Statistics: probability of sounds
+* Output: recognized word
+
+---
+
+### Where SPR is used
+
+* Speech recognition
+* Face recognition
+* Handwritten character recognition
+* Medical diagnosis
 
 ## **3️⃣ Parameter Estimation Methods — PCA & LDA**
 

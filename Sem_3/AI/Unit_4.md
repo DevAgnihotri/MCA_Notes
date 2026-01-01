@@ -203,8 +203,6 @@ They find the best function that maps input variables (X) to output variables (Y
 
 > Example: Linear regression, Logistic regression, SVM, Clustering.
 
-![Bayes Theorem](https://cdn1.byjus.com/wp-content/uploads/2020/10/Bayes-Theorem.png)
-
 ---
 
 ### 🧠 **Key Statistical Models**
@@ -268,6 +266,8 @@ Naïve Bayes is a **probabilistic classifier** based on **Bayes’ Theorem**, as
 [
 P(C|X) = \frac{P(X|C) \times P(C)}{P(X)}
 ]
+
+![Bayes Theorem](https://cdn1.byjus.com/wp-content/uploads/2020/10/Bayes-Theorem.png)
 
 Where:
 
