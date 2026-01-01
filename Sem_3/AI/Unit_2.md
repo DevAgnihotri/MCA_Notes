@@ -479,6 +479,8 @@ graph TD
 
 ## Alpha-Beta Pruning and Minimax Improvements
 
+[https://youtu.be/l-hh51ncgDI?si=RynmaLhqSRzhrUjd]
+
 ![Image](https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/AB_pruning.svg/500px-AB_pruning.svg.png)
 
 **PYQ**
