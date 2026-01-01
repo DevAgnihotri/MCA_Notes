@@ -638,13 +638,6 @@ and probabilistic reasoning helps *estimate* what’s likely to happen.
 - Describe the use of Hidden Markov models in speech recognition. [2024 – SECTION B Q2(c)]
 ---
 
-Sure 🙂
-Below is a **full but very simple explanation of HMM (Hidden Markov Model)**, written in **easy English**, starting from **zero knowledge** and covering **all important points for exams**.
-
----
-
-# Hidden Markov Model (HMM)
-
 ## 1️⃣ What is HMM?
 
 A **Hidden Markov Model (HMM)** is a **statistical model** used to represent systems that **change over time** and have **hidden states**.
@@ -680,7 +673,7 @@ You **see mood**, but you **guess weather**.
 
 ---
 
-## 4️⃣ Main Components of HMM
+## 4️⃣ Main Components of HMM `SOTEI`
 
 ### 1. States (Hidden)
 
@@ -695,12 +688,12 @@ You **see mood**, but you **guess weather**.
 ### 3. Transition Probability (A)
 
 * Probability of moving from one state to another
-* Example: Sunny → Rainy
+* Example: Sunny → Rainy, one sound signal to another like B -> A
 
 ### 4. Emission Probability (B)
 
 * Probability of an observation from a state
-* Example: Rainy → Sad
+* Example: Rainy → Sad, signal -> word 
 
 ### 5. Initial Probability (π)
 
@@ -783,7 +776,7 @@ In speech recognition, each word is represented as an HMM. The model uses probab
 
 ---
 
-![Image](https://nipunbatra.github.io/hmm/images/fair_biased_images/hmm.svg)
+![Image](https://nipunbatra.github.io/hmm/images/rain_sun_images/hmm.svg)
 
 ## 🔗 **3️⃣ Bayesian Networks**
 
@@ -793,89 +786,113 @@ In speech recognition, each word is represented as an HMM. The model uses probab
 - Explain Bayesian networks. [2024 – SECTION A Q1(e)]
 - What is Bayesian network? Explain steps to create a Bayesian network. [2023 – SECTION C Q5(b)] (duplicate entry from above)
 - What does a Bayesian network represent? [2022 – SECTION A Q1(j)] (duplicate entry from above)
-
-### 🔹 **Definition**
-
-A **Bayesian Network (BN)** is a **directed acyclic graph (DAG)** that represents **probabilistic relationships** among a set of variables.
-
-> Each node = a random variable.
-> Each edge = probabilistic dependency (influence).
-
-### 💡 **What It Represents**
-
-*(2022 – SECTION A Q1(j))*
-
-A Bayesian network represents:
-
-* **Causal relationships** between events.
-* **Conditional dependencies** using **Bayes’ theorem**.
-* The **joint probability distribution** over all variables.
-
-### **Components of a Bayesian Network**
-
-1. **Nodes:** Represent random variables (e.g., Rain, Traffic, LateToWork).
-2. **Directed Edges:** Show dependencies (e.g., Rain → Traffic).
-3. **Conditional Probability Table (CPT):**
-   Each node has a table defining the probability of that node given its parents.
-
-### **Steps to Create a Bayesian Network**
-
-*(2023 – SECTION C Q5(b), 2024 – SECTION A Q1(e))*
-
-1. **Identify variables** in the domain (e.g., Weather, Traffic, Accident).
-2. **Determine causal relationships** between variables.
-3. **Draw a Directed Acyclic Graph (DAG)** connecting related variables.
-4. **Assign conditional probability tables (CPTs)** for each variable.
-5. **Use Bayes’ theorem** to perform inference on unknown variables.
+Sure 🙂
+Below is a **full but very simple explanation of Bayesian Networks**, written in **easy English**, starting from **zero knowledge** and covering **all important exam points**.
 
 ---
 
-### 🧠 **Example**
+# Bayesian Network (Belief Network)
 
-Let’s say:
+## 1️⃣ What is a Bayesian Network?
 
-* **Rain** influences **Traffic**,
-* **Traffic** influences **LateToWork**.
+A **Bayesian Network** is a **probabilistic graphical model** that shows **relationships between variables** using **probability**.
 
-Bayesian Network:
+👉 It helps us **reason under uncertainty** and **predict outcomes** when some information is missing.
+
+---
+
+## 2️⃣ Why is it called “Bayesian”?
+
+* It is based on **Bayes’ Theorem**
+* Uses **conditional probability**
+* Updates belief when new evidence is given
+
+---
+
+## 3️⃣ What Does a Bayesian Network Look Like?
+
+* A **Directed Acyclic Graph (DAG)**
+* **Nodes** = random variables
+* **Edges (arrows)** = dependency between variables
+
+Example:
 
 ```
-Rain → Traffic → LateToWork
+Rain → Wet Road → Accident
 ```
 
-Probabilities:
+---
 
-* P(Rain) = 0.3
-* P(Traffic|Rain) = 0.8
-* P(LateToWork|Traffic) = 0.7
+## 4️⃣ Main Components of Bayesian Network
 
-→ Using these, we can compute P(LateToWork|Rain).
+### 1. Nodes
+
+* Represent variables
+* Can be True/False or multiple values
+
+### 2. Edges
+
+* Show cause–effect or dependency
+
+### 3. Conditional Probability Table (CPT)
+
+* Shows probability of a node given its parent nodes
 
 ---
 
-### 🔹 **Advantages of Bayesian Networks**
+## 5️⃣ Simple Real-Life Example ☔
 
-1. Handle **uncertainty** effectively.
-2. Show **causal relationships** visually and mathematically.
-3. Support **learning and updating** probabilities from data.
-4. Useful in **medical diagnosis**, **fault detection**, and **forecasting**.
+Variables:
+
+* Rain
+* Sprinkler
+* Wet Grass
+
+Relationships:
+
+```
+Rain → Wet Grass
+Sprinkler → Wet Grass
+```
+
+👉 If grass is wet, Bayesian Network helps decide:
+
+* Was it rain?
+* Was it sprinkler?
 
 ---
 
-### 🔹 **Applications**
+## 6️⃣ How Bayesian Network Works (Simple Flow)
 
-* **Medical diagnosis:** Predict diseases based on symptoms.
-* **Spam filtering:** Probability of an email being spam.
-* **Weather prediction:** Relationship between humidity, rain, and temperature.
-* **Risk assessment:** Predicting financial risks or system failures.
+1. Build the network structure
+2. Assign probabilities to each node
+3. Enter known evidence
+4. Update probabilities
+5. Predict unknown variables
 
 ---
 
-### ⚖️ **Difference Between HMM and Bayesian Network**
+## 7️⃣ Bayes’ Theorem (Very Simple)
 
-| **Aspect**           | **Bayesian Network**          | **Hidden Markov Model**           |
-| :------------------- | :---------------------------- | :-------------------------------- |
-| **Type of Model**    | Static (non-temporal)         | Dynamic (time-based)              |
-| **Structure**        | DAG (no time sequence)        | Sequential chain                  |
-| **State Visibility** | All variables may be observed | Hidden states                     |
-| **Example Use**      | Medical diagnosis             | Speech recognition, sequence data |
+P(A|B) = (P(B|A).P(A))/P(B)
+
+👉 It means:
+
+> Probability of A after seeing B
+
+---
+
+## 8️⃣ Inference in Bayesian Network
+
+Inference means **finding unknown probabilities**.
+
+Methods:
+
+* Exact inference
+* Approximate inference
+
+---
+
+## 📝 One-Paragraph Exam Answer
+
+**A Bayesian Network is a probabilistic graphical model represented as a directed acyclic graph, where nodes represent random variables and edges represent dependencies. It uses Bayes’ theorem to perform reasoning under uncertainty.**
