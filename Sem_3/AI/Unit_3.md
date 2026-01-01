@@ -230,15 +230,6 @@ _(Asked in 2022 B Q2(c) and 2023 C Q5(a))_
 
 ---
 
-### ⚙️ **Clause Form Conversion Algorithm**
-
-This algorithm systematically converts FOPL sentences into **sets of clauses** used for **resolution-based inference**.
-Each clause is a disjunction of literals — e.g., {¬Man(x), Mortal(x)}.
-
-**Use:** It allows computers to perform **automated reasoning** efficiently.
-
----
-
 ## 🧩 **5️⃣ Inference in First Order Logic**
 
 ---
@@ -259,17 +250,174 @@ Each clause is a disjunction of literals — e.g., {¬Man(x), Mortal(x)}.
 | **Backward Chaining** | Start from the goal and find supporting facts backward.                             |
 | **Resolution**        | A powerful single inference rule that refutes contradictions to prove a conclusion. |
 
+| Feature        | **Forward Chaining**                                | **Backward Chaining**                           |
+| -------------- | --------------------------------------------------- | ----------------------------------------------- |
+| Meaning        | Starts from **facts** and moves forward             | Starts from a **goal** and moves backward       |
+| Direction      | **Data → Conclusion**                               | **Goal → Data**                                 |
+| Starts with    | Known **facts / data**                              | Desired **goal / result**                       |
+| Main question  | *“What can I conclude from this data?”*             | *“Is this goal true?”*                          |
+| How it works   | Applies rules again and again to get new facts      | Checks rules that can prove the goal            |
+| Stops when     | No new facts are found                              | Goal is proved or fails                         |
+| Best used when | You have **lots of data**                           | You have a **clear goal**                       |
+| Speed          | Can be slow (checks many rules)                     | Faster (checks only needed rules)               |
+| Example system | Expert systems, monitoring systems                  | Diagnostic systems                              |
+| Simple example | If **rain → wet road**, rain is known → road is wet | Want to know **road wet?** → check if it rained |
+
+
+## **QUESTION** Given Knowledge Base (KB)
+
+Facts and rules:
+
+1. **P** → (Fact)
+2. **P → Q** → (Rule)
+3. **Q → R** → (Rule)
+
+**Goal:** Infer **R**
+
 ---
 
-### 🔸 **Resolution in Predicate Logic**
+### 1️⃣ Forward Chaining (Data-Driven Reasoning)
 
-- Works by **proof by contradiction**.
-- Steps:
+### Meaning
 
-  1. Convert all statements into CNF.
-  2. Negate the statement to be proved.
-  3. Resolve pairs of clauses to derive new clauses.
-  4. If empty clause {} is derived → the statement is **proved true**.
+Forward chaining starts with **known facts** and moves **forward** by applying rules until the goal is reached.
+
+---
+
+### Step-by-Step Inference
+
+**Step 1:**
+Known fact:
+
+* **P** is true
+
+**Step 2:**
+Rule: **P → Q**
+Since **P** is true, we can infer:
+
+* **Q** is true
+
+**Step 3:**
+Rule: **Q → R**
+Since **Q** is true, we can infer:
+
+* **R** is true
+
+---
+
+### ✅ Final Conclusion (Forward Chaining)
+
+**R is inferred successfully.**
+
+---
+
+### Flow (easy to remember)
+
+```
+P  →  Q  →  R
+```
+
+---
+
+### 2️⃣ Backward Chaining (Goal-Driven Reasoning)
+
+### Meaning
+
+Backward chaining starts with the **goal** and works **backward** to see if known facts can support it.
+
+---
+
+### Step-by-Step Inference
+
+**Step 1:**
+Goal:
+
+* Prove **R**
+
+**Step 2:**
+Look for a rule that concludes **R**:
+
+* Rule found: **Q → R**
+
+So now, we must prove:
+
+* **Q**
+
+**Step 3:**
+Look for a rule that concludes **Q**:
+
+* Rule found: **P → Q**
+
+So now, we must prove:
+
+* **P**
+
+**Step 4:**
+Check the knowledge base:
+
+* **P** is already given as a fact
+
+So **P is true**, hence **Q is true**, hence **R is true**.
+
+---
+
+### ✅ Final Conclusion (Backward Chaining)
+
+**R is inferred successfully.**
+
+---
+
+### Flow (easy to remember)
+
+```
+R ← Q ← P
+```
+
+---
+### **Resolution in Inference Technique (AI)** – *Simple English*
+
+**Resolution** is a **rule used in Artificial Intelligence** to **prove a statement is true or false** by **logic**.
+
+### Simple definition 👇
+
+👉 **Resolution is a method of reasoning that proves conclusions by removing contradictions from logical statements.**
+
+---
+
+### How it works (easy steps) 🧩
+
+1. All statements are converted into **clauses** (simple logical sentences).
+2. Opposite literals are matched (like **A** and **¬A**).
+3. They are **removed (resolved)**.
+4. A new clause is formed.
+5. Process repeats until:
+
+   * **Empty clause** is found → statement is **TRUE**
+   * No more resolution possible → statement is **FALSE**
+
+---
+
+### One-line definition (exam-ready) 📝
+
+**Resolution is an inference technique that derives new clauses by eliminating opposite literals to prove logical statements.**
+
+---
+
+### Simple example 💡
+
+Statements:
+
+* `A OR B`
+* `¬A OR C`
+
+Resolve on **A**:
+➡ Result: `B OR C`
+
+---
+
+### Memory trick 🔑
+
+**Resolution = Remove Opposites**
 
 ---
 
@@ -400,228 +548,6 @@ It provides a **uniform structure** for logical comparison and unification.
 
 ---
 
-## ⚙️ **2️⃣ Resolution**
-
----
-- Give the completeness proof of resolution. [2019 – SECTION B Q2(e)]
-- Prove “Was Marcus loyal to Caesar?” using resolution (predicate logic conversion + resolution proof). [2022 – SECTION C Q5(a)]
-
-### 🔹 **Definition:**
-
-Resolution is a **rule of inference** used for **propositional and first-order logic** that derives a **contradiction** to prove a conclusion.
-
-> It’s a **refutation-based** proof method — you **negate the goal** and show that it leads to a contradiction.
-
----
-
-### 💡 **Key Idea:**
-
-If two clauses contain complementary literals (e.g., P and ¬P),
-they can be combined (resolved) into a new clause containing all remaining literals.
-
----
-
-### ⚙️ **Resolution Rule:**
-
-[
-\frac{A ∨ P, \quad B ∨ ¬P}{A ∨ B}
-]
-
-This rule says:
-If one clause contains P and another contains ¬P, we can derive a new clause (A ∨ B).
-
----
-
-### 🧠 **Example:**
-
-1. ( P ∨ Q )
-2. ( ¬P ∨ R )
-
-→ Resolve on P → New clause: ( Q ∨ R )
-
----
-
-### 🧩 **Steps in Resolution Process**
-
-1️⃣ Convert all sentences into **CNF (clause form)**.
-2️⃣ **Negate** the conclusion (the statement to be proved).
-3️⃣ Add the negated conclusion to the knowledge base.
-4️⃣ Repeatedly apply the **resolution rule** to pairs of clauses.
-5️⃣ If an **empty clause (⊥)** is derived → contradiction found →
-✅ Hence, conclusion is **proved true**.
-
----
-
-### 📘 **Completeness Proof of Resolution** (2019 – SECTION B Q2(e))
-
-Resolution is **complete** because:
-
-* If a sentence *S* is logically entailed by the knowledge base (KB ⊨ S),
-  then the resolution process will eventually produce a **contradiction** (empty clause).
-* This ensures that **any valid inference can be derived** using resolution alone.
-
-✅ **Hence, Resolution is both Sound (correct) and Complete (able to find all valid conclusions).**
-
----
-
-### ⚖️ **Prove “Was Marcus Loyal to Caesar?” using Resolution**
-
-*(2022 – SECTION C Q5(a))*
-
-This is a **classic AI reasoning problem** demonstrating full predicate logic conversion + resolution steps.
-
----
-
-**Given Knowledge Base (simplified)**
-
-1. Marcus was a man.
-2. Marcus was a Roman.
-3. All men are mortal.
-4. Caesar was a ruler.
-5. Marcus was loyal to Caesar if Marcus was not a traitor.
-6. Marcus hated all rulers.
-7. Anyone who hates someone is not loyal to him.
-8. Marcus was not a traitor.
-
-**Goal:** Prove → Marcus was loyal to Caesar.
-
----
-
-**Step 1:** Convert all statements to predicate logic
-Let:
-
-* Man(x), Mortal(x), Roman(x), Ruler(x), Loyal(x,y), Hates(x,y), Traitor(x)
-
-Example:
-“All men are mortal” → ∀x (Man(x) → Mortal(x))
-“Marcus was a man” → Man(Marcus)
-
----
-
-**Step 2:** Convert to CNF (apply all clause conversion steps).
-
-**Step 3:** Negate the goal: ¬Loyal(Marcus, Caesar).
-
-**Step 4:** Apply resolution repeatedly between clauses:
-
-* From “Hates(x,y) → ¬Loyal(x,y)”
-* From “Marcus hates Caesar” (implied by “hated all rulers”).
-  → Contradiction appears with ¬Loyal(Marcus, Caesar).
-
-✅ Hence, the original conclusion **Marcus was loyal to Caesar** is **proved**.
-
----
-
-## 🔁 **3️⃣ Chaining: Concept, Forward & Backward**
-
----
-
-### 🔹 **Concept of Chaining:**
-
-- Which algorithm is more similar to backward chaining algorithm? Write its algorithm. [2019 – SECTION A Q1(g)]
-- Identify the difference between forward and backward chaining; given KB P, P→Q, Q→R infer R using forward and backward chaining. [2022 – SECTION C Q4(a)]
-- Discuss and compare forward and backward chaining methods with example. [2023 – SECTION B Q2(c)]
-- Describe forward chaining. [2024 – SECTION A Q1(f)]
-
-
-Chaining is a **reasoning technique** used in *rule-based systems* (expert systems) to infer new facts.
-It repeatedly applies **IF–THEN rules** to derive conclusions.
-
-> It connects rules together like a chain — one rule’s output becomes another’s input.
-
----
-
-### 🧩 **Types of Chaining**
-
-| **Type**              | **Direction** | **Starts From**              | **Used In**                         |
-| :-------------------- | :------------ | :--------------------------- | :---------------------------------- |
-| **Forward Chaining**  | Data-driven   | Known facts → reach goal     | Real-time systems, production rules |
-| **Backward Chaining** | Goal-driven   | Goal → find supporting facts | Diagnostic/expert systems           |
-
----
-
-### 🧠 **Example Knowledge Base:**
-
-1. P
-2. P → Q
-3. Q → R
-
----
-
-### ⚙️ **Forward Chaining (2023 B Q2(c), 2024 A Q1(f))**
-
----
-
-**Process:**
-Start with *known facts* and apply rules until the *goal* is reached.
-
-**Algorithm:**
-
-```
-1. Start with initial facts (known true statements).
-2. Find all rules whose premises are satisfied by known facts.
-3. Add their conclusions to the known facts.
-4. Repeat until the goal is derived or no new facts can be added.
-```
-
-**Example (Infer R using P, P→Q, Q→R):**
-
-* Step 1: P is true.
-* Step 2: From P→Q → Q becomes true.
-* Step 3: From Q→R → R becomes true.
-  ✅ Therefore, R is inferred by forward chaining.
-
----
-
-### ⚙️ **Backward Chaining (2023 B Q2(c))**
-
----
-
-**Process:**
-Start from the *goal* and work backward to verify if known facts support it.
-
-**Algorithm:**
-
-```
-1. Start with the goal to be proved.
-2. Search for rules whose conclusion matches the goal.
-3. Prove all premises (sub-goals) of that rule.
-4. If all sub-goals are proved, conclude the goal.
-5. If not, fail.
-```
-
-**Example (Prove R using P, P→Q, Q→R):**
-
-* Goal: R
-* Rule: Q→R → Need to prove Q.
-* Q from rule P→Q → Need to prove P.
-* P is given true.
-  ✅ Hence, R is proved by backward chaining.
-
----
-
-### ⚖️ **Difference Between Forward and Backward Chaining**
-
-| **Aspect**      | **Forward Chaining**         | **Backward Chaining**              |
-| :-------------- | :--------------------------- | :--------------------------------- |
-| **Approach**    | Data-driven                  | Goal-driven                        |
-| **Starts From** | Facts                        | Goal                               |
-| **Ends At**     | Goal                         | Facts                              |
-| **Used In**     | Monitoring, control          | Diagnosis, query answering         |
-| **Example**     | From “symptoms” to “disease” | From “disease” to “check symptoms” |
-
----
-
-### 🧩 **Question (2019 A Q1(g))**
-
-> Which algorithm is more similar to backward chaining?
-
-✅ **Answer:**
-The **Depth-First Search (DFS)** algorithm is more similar to **Backward Chaining**,
-because both explore one possible goal path completely before backtracking.
-
----
-
 ## 🧩 **1️⃣ Utility Theory and Probabilistic Reasoning**
 
 ---
@@ -732,7 +658,7 @@ An HMM has three main parts:
 3. **Probabilities:**
 
    * **Transition Probability (A):** Probability of moving from one state to another.
-     ( a_{ij} = P(s_j | s_i) )
+     ( a_i{j} = P(s_j | s_i) )
    * **Emission Probability (B):** Probability of seeing an observation from a state.
      ( b_j(k) = P(o_k | s_j) )
    * **Initial Probability (π):** Probability of starting in a given state.
@@ -772,17 +698,22 @@ When applying HMMs to real-world problems, the following design questions must b
 
 ---
 
-### 🗣️ **Application – Speech Recognition (2024 – SECTION B Q2(c))**
+## HMM in Speech Recognition
 
-HMM is used in **speech recognition** systems as follows:
+A **Hidden Markov Model (HMM)** is a statistical model used in speech recognition to handle sounds that change over time. When a person speaks, the computer can hear the sound, but it cannot directly see the actual speech units (phonemes). These phonemes are called **hidden states**, while the sound signals we hear are called **observations**. HMM helps in finding the relationship between these hidden speech sounds and the observed audio signals using probability.
 
-1. Speech signals are divided into small frames → *observations*.
-2. Each sound (phoneme) represents a **hidden state**.
-3. HMM models the **probabilities of transitions** between phonemes.
-4. The system uses the **Viterbi algorithm** to find the most likely word sequence.
+In speech recognition, each word is represented as an HMM. The model uses probabilities to move from one sound to another and to generate the observed speech signal. This speech signal is then compared with different HMMs and selects the word whose model gives the highest probability. In this way, HMM helps the computer convert spoken language into text accurately.
 
-✅ **In short:**
-HMM maps *acoustic patterns (sounds)* → *linguistic units (words)* using probability.
+### Points: How HMM is Used in Speech Recognition
+
+1. Speech is given as input through a microphone.
+2. The speech signal is converted into small sound features.
+3. Phonemes are treated as **hidden states** in HMM.
+4. Audio features are treated as **observations**.
+5. Transition probability shows movement between speech sounds.
+6. Emission probability shows how sounds produce audio features.
+7. HMM calculates the probability of different word models.
+8. The word with the highest probability is selected as output.
 
 ---
 
@@ -793,6 +724,8 @@ HMM maps *acoustic patterns (sounds)* → *linguistic units (words)* using proba
 * Suitable for **speech, handwriting, gesture**, and **bioinformatics**.
 
 ---
+
+![Image](https://nipunbatra.github.io/hmm/images/fair_biased_images/hmm.svg)
 
 ## 🔗 **3️⃣ Bayesian Networks**
 
@@ -810,8 +743,6 @@ A **Bayesian Network (BN)** is a **directed acyclic graph (DAG)** that represent
 > Each node = a random variable.
 > Each edge = probabilistic dependency (influence).
 
----
-
 ### 💡 **What It Represents**
 
 *(2022 – SECTION A Q1(j))*
@@ -822,18 +753,14 @@ A Bayesian network represents:
 * **Conditional dependencies** using **Bayes’ theorem**.
 * The **joint probability distribution** over all variables.
 
----
-
-### 🧱 **Components of a Bayesian Network**
+### **Components of a Bayesian Network**
 
 1. **Nodes:** Represent random variables (e.g., Rain, Traffic, LateToWork).
 2. **Directed Edges:** Show dependencies (e.g., Rain → Traffic).
 3. **Conditional Probability Table (CPT):**
    Each node has a table defining the probability of that node given its parents.
 
----
-
-### ⚙️ **Steps to Create a Bayesian Network**
+### **Steps to Create a Bayesian Network**
 
 *(2023 – SECTION C Q5(b), 2024 – SECTION A Q1(e))*
 
