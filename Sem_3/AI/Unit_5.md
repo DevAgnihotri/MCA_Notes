@@ -460,6 +460,8 @@ The time taken by the k-means algorithm mainly depends on the following factors:
 
 ## ⭐ **4. Support Vector Machine (SVM)**
 
+![Image](https://miro.medium.com/v2/resize:fit:1400/1*qGl9Os6nA82aQrDUhZ7zOQ.png)
+
 ### ✅ **Definition**
 
 SVM is a classifier that finds the **best boundary (hyperplane)** between classes.
