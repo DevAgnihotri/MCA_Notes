@@ -809,6 +809,10 @@ A **Bayesian Network** is a **probabilistic graphical model** that shows **relat
 
 ---
 
+![](https://media.geeksforgeeks.org/wp-content/uploads/20240626180922/Difference-Between-Bayesian-Networks-and-Neural-Networks.webp)
+![](https://i0.wp.com/spotintelligence.com/wp-content/uploads/2024/02/bayesian-netowork-node-edges.jpg?fit=1920%2C1080&ssl=1)
+![](https://www.researchgate.net/publication/325517950/figure/fig1/AS:632939729670144@1527915999983/A-simple-Bayesian-network-with-conditional-probability-tables-CPT.png)
+
 ## 3️⃣ What Does a Bayesian Network Look Like?
 
 * A **Directed Acyclic Graph (DAG)**
