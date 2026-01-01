@@ -230,7 +230,7 @@ _(Asked in 2022 B Q2(c) and 2023 C Q5(a))_
 
 ---
 
-## 🧩 **5️⃣ Inference in First Order Logic**
+# 🧩 **5️⃣ Inference in First Order Logic**
 
 ---
 
