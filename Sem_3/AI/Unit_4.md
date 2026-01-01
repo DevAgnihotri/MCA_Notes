@@ -240,12 +240,12 @@ When **all the data and their class labels are available** to the learning algor
 
 *(2023 – Section C Q6(a))*
 
-MLE is a method to find the **parameters (θ)** of a statistical model that **maximize the probability (likelihood)** of observing the given data.
+Maximum Likelihood Estimation is a technique that selects model parameters which maximize the likelihood of the observed data.
 
 #### Formula:
 
 [
-\hat{θ} = \arg\max_{θ} P(Data | θ)
+\hat{θ} = argθmaxL(θ)
 ]
 
 It means: choose parameters that make the observed data most likely.
@@ -253,86 +253,98 @@ It means: choose parameters that make the observed data most likely.
 **Example:**
 If we observe 70 heads in 100 coin tosses, MLE estimates probability of head as 0.7.
 
+If coin toss data shows many heads, MLE estimates the coin’s head probability close to that value.
+
 ---
 
 ### 🔹 **Naïve Bayes Model**
 
 *(2023 – Section B Q2(d); 2024 – Section C Q6(b))*
 
-#### 🧠 **Definition:**
+# Naive Bayes Classifier
 
-Naïve Bayes is a **probabilistic classifier** based on **Bayes’ Theorem**, assuming that all features are **independent** of each other given the class label.
+## 1️⃣ What is Naive Bayes?
+
+**Naive Bayes** is a **simple and fast classification algorithm** based on **Bayes’ Theorem**.
+
+👉 It predicts the **class** of data using **probability**.
 
 ---
 
-#### ⚙️ **Bayes’ Theorem:**
+## 2️⃣ Why is it called “Naive”?
 
-[
-P(C|X) = \frac{P(X|C) \times P(C)}{P(X)}
-]
+It is called **naive** because it assumes:
+
+* All features are **independent** of each other
+
+👉 This assumption is usually not true in real life, but the algorithm still works well.
+
+---
+
+## 3️⃣ Bayes’ Theorem (Base Formula)
 
 ![Bayes Theorem](https://cdn1.byjus.com/wp-content/uploads/2020/10/Bayes-Theorem.png)
 
 Where:
 
-* ( P(C|X) ) → Posterior probability of class C given data X
-* ( P(X|C) ) → Likelihood (probability of data given class)
-* ( P(C) ) → Prior probability of class
-* ( P(X) ) → Evidence (normalizing constant)
+* (A) = class
+* (B) = data / features
 
 ---
 
-### 💡 **Naïve Assumption:**
+## 4️⃣ How Naive Bayes Works (Simple Idea)
 
-Features are **conditionally independent**:
-[
-P(X|C) = P(x_1|C) \times P(x_2|C) \times \ldots \times P(x_n|C)
-]
+> **Choose the class with the highest probability given the data.**
 
 ---
 
-### 🔹 **Types of Naïve Bayes Models**
+## 5️⃣ Step-by-Step Working
 
-*(2024 – Section C Q6(b))*
-
-| **Type**              | **Description**                                       | **Example**                      |
-| :-------------------- | :---------------------------------------------------- | :------------------------------- |
-| **Discrete Model**    | Used when data has categorical values.                | Spam detection (words as tokens) |
-| **Continuous Model**  | Used for numeric data; assumes Gaussian distribution. | Iris dataset classification      |
-| **Multinomial Model** | Used in text data (word counts).                      | Document classification          |
-| **Bernoulli Model**   | Used for binary features (presence/absence).          | Email spam filtering             |
+1. Identify all possible **classes**
+2. Calculate **prior probability** of each class
+3. Calculate **likelihood** of features for each class
+4. Multiply probabilities
+5. Choose class with **maximum probability**
 
 ---
 
-### ✅ **Advantages**
+## 6️⃣ Types of Naive Bayes
 
-* Simple, fast, and efficient.
-* Works well even with small datasets.
-* Handles multi-class classification.
+### 1. Gaussian Naive Bayes
 
-### ❌ **Limitations**
+* Used for **continuous data**
 
-* Assumes independence among features.
-* Poor performance if features are correlated.
-* Probability estimates can be inaccurate.
+### 2. Multinomial Naive Bayes
 
----
+* Used for **text / word counts**
 
-### 🧾 **Example:**
+### 3. Bernoulli Naive Bayes
 
-Suppose a message has features:
-X = {“offer”, “buy”, “discount”}.
-We compute:
-[
-P(\text{Spam}|X) \propto P(\text{Spam}) \times P(\text{offer}|\text{Spam}) \times P(\text{buy}|\text{Spam}) \times P(\text{discount}|\text{Spam})
-]
-The class (spam/not spam) with higher probability is chosen.
+* Used for **binary data**
 
 ---
 
+## 7️⃣ Simple Example (Spam Email)
+
+Features:
+
+* Words like “free”, “offer”
+
+Classes:
+
+* Spam
+* Not Spam
+
+👉 Naive Bayes calculates probability and predicts **Spam** or **Not Spam**.
+
+**Naive Bayes is a probabilistic classifier based on Bayes’ theorem that assumes independence between features. It is simple, fast, and widely used for text classification and spam detection.**
+
+
+**Naive Bayes = Probability + Independence**
+
 ---
 
-## 🔹 **2️⃣ Learning with Hidden Data – Concept & EM Algorithm**
+# 🔹 **2️⃣ Learning with Hidden Data – Concept & EM Algorithm**
 
 ---
 - Discuss back propagation algorithm for learning in multilayer neural network. (2019 — Section C Q7(a))  
@@ -354,7 +366,7 @@ The model must estimate both the **hidden variables** and the **parameters**.
 We cannot compute likelihood directly because hidden variables (Z) are missing.
 So, we estimate parameters **θ** that maximize:
 [
-P(X|\theta) = \sum_Z P(X,Z|\theta)
+P(X|theta) = sigma(Z) P(X,Z|theta)
 ]
 
 This is where the **Expectation-Maximization (EM) Algorithm** is used.
@@ -373,9 +385,37 @@ This is where the **Expectation-Maximization (EM) Algorithm** is used.
 
 The **EM Algorithm** is an **iterative optimization technique** used to estimate parameters of models that involve **hidden (latent) variables**.
 
+It works in two steps:
+
+**E-step (Expectation Step):** Using the current parameter estimates, the algorithm calculates the expected values of the missing or hidden variables. 
+
+**M-step (Maximization Step):** With these updated expectations from the E-step, the algorithm then re-estimates the model parameters by maximizing the expected log-likelihood. This improves how well the model explains the observed data.
+
+These two steps are repeated until convergence, which typically means that:
+
+- The parameter values stop changing significantly, or
+- The log-likelihood improves only by a negligible amount.
+
+![](https://media.geeksforgeeks.org/wp-content/uploads/20250905113438630863/update.webp)
+
 It alternates between two steps until convergence:
 
+Key Terms in Expectation-Maximization (EM) Algorithm
+Lets understand about some of the most commonly used key terms in the Expectation-Maximization (EM) Algorithm:
+
+- **Latent Variables**: Variables that are not directly observed but are inferred from the data. 
+
+- **Likelihood**: The probability of the observed data given a set of model parameters.
+
+- **Log-Likelihood**: The natural logarithm of the likelihood function. It simplifies calculations (turning products into sums) and is numerically more stable when dealing with very small probabilities.
+
+- **Posterior Probability**: In Bayesian inference, this represents the probability of parameters (or latent variables) given the observed data and prior knowledge. 
+
+- **Convergence**: The stopping criterion for the iterative process. 
 ---
+
+![](https://miro.medium.com/v2/resize:fit:1400/0*wsw3SMgEGfOUH_rU.jpg)
+
 
 ### 🔸 **Steps of EM Algorithm**
 
@@ -384,28 +424,13 @@ It alternates between two steps until convergence:
 
 2. **E-Step (Expectation):**
    Estimate the expected value of the hidden variables (Z) given the observed data (X) and current parameter estimates (θᵗ).
-   [
-   Q(θ|\theta^{(t)}) = E_Z[\log P(X,Z|θ)]
-   ]
 
 3. **M-Step (Maximization):**
    Find parameters that **maximize** this expectation.
-   [
-   θ^{(t+1)} = \arg\max_θ Q(θ|\theta^{(t)})
-   ]
 
 4. **Repeat:**
    Until convergence (parameters stop changing).
 
----
-
-### 💡 **Example (Conceptual):**
-
-Suppose we have data from two overlapping Gaussian distributions, but we don’t know which data point belongs to which group.
-
-* **E-step:** Estimate probability that each data point belongs to each Gaussian.
-* **M-step:** Update Gaussian parameters (mean, variance) using these probabilities.
-  Repeat until the model stabilizes.
 
 ---
 
