@@ -72,48 +72,48 @@
 
 **A\* Algorithm: Complete Explanation with Steps and Example**
 
-Below is a **complete, from-zero explanation of the A* algorithm**, written in **very simple English**, as if you **know nothing at all**. This is **perfect for understanding + exams**.
+Below is a **complete, from-zero explanation of the A\* algorithm**, written in **very simple English**, as if you **know nothing at all**. This is **perfect for understanding + exams**.
 
 ---
 
-# A* Algorithm (A-Star Algorithm)
+# A\* Algorithm (A-Star Algorithm)
 
-## 1️⃣ What is the A* Algorithm?
+## 1️⃣ What is the A\* Algorithm?
 
-The **A*** algorithm is a **search algorithm** used in **Artificial Intelligence** to find the **best (shortest and cheapest) path** from a **start point** to a **goal point**.
+The **A\*** algorithm is a **search algorithm** used in **Artificial Intelligence** to find the **best (shortest and cheapest) path** from a **start point** to a **goal point**.
 
 👉 It is commonly used in:
 
-* Path finding (maps, GPS)
-* Games
-* Robotics
-* AI problem solving
+- Path finding (maps, GPS)
+- Games
+- Robotics
+- AI problem solving
 
 ---
 
-## 2️⃣ Simple Idea of A*
+## 2️⃣ Simple Idea of A\*
 
-A* works by:
+A\* works by:
 
-* Looking at the **cost already spent**
-* Estimating the **cost to reach the goal**
-* Choosing the path with the **lowest total cost**
+- Looking at the **cost already spent**
+- Estimating the **cost to reach the goal**
+- Choosing the path with the **lowest total cost**
 
 In simple words:
 
-> **A* chooses the smartest path, not just the shortest-looking one.**
+> **A\* chooses the smartest path, not just the shortest-looking one.**
 
 ---
 
-## 3️⃣ Key Terms Used in A*
+## 3️⃣ Key Terms Used in A\*
 
 ### 1. g(n) – Cost so far
 
-* Actual cost from **start → current node**
+- Actual cost from **start → current node**
 
 ### 2. h(n) – Heuristic cost
 
-* Estimated cost from **current node → goal**
+- Estimated cost from **current node → goal**
 
 ### 3. f(n) – Total cost
 
@@ -121,7 +121,7 @@ In simple words:
 f(n) = g(n) + h(n)
 ]
 
-👉 A* always selects the node with the **lowest f(n)**.
+👉 A\* always selects the node with the **lowest f(n)**.
 
 ---
 
@@ -131,10 +131,10 @@ A **heuristic** is a **guess** of how far the goal is.
 
 Example:
 
-* Straight-line distance in maps
-* Manhattan distance in grids
+- Straight-line distance in maps
+- Manhattan distance in grids
 
-👉 It helps A* search **faster and smarter**.
+👉 It helps A\* search **faster and smarter**.
 
 ---
 
@@ -142,15 +142,15 @@ Example:
 
 ### Open List
 
-* Nodes to be explored
+- Nodes to be explored
 
 ### Closed List
 
-* Nodes already explored
+- Nodes already explored
 
 ---
 
-## 6️⃣ Step-by-Step Working of A*
+## 6️⃣ Step-by-Step Working of A\*
 
 1. Add the **start node** to the Open list.
 2. Calculate **f(n)** for the start node.
@@ -161,23 +161,23 @@ Example:
 7. Add neighbors to Open list (if not already explored).
 8. Repeat until:
 
-   * Goal node is reached, or
-   * Open list becomes empty.
+   - Goal node is reached, or
+   - Open list becomes empty.
 
 ---
 
 ## 7️⃣ Simple Example (Grid Path)
 
-* Start = S
-* Goal = G
-* A* checks nearby cells
-* Calculates cost
-* Moves step by step choosing lowest **f(n)**
-* Reaches goal using best path
+- Start = S
+- Goal = G
+- A\* checks nearby cells
+- Calculates cost
+- Moves step by step choosing lowest **f(n)**
+- Reaches goal using best path
 
 ---
 
-## 8️⃣ Why A* is Better Than Other Search Algorithms
+## 8️⃣ Why A\* is Better Than Other Search Algorithms
 
 ✔ Faster than BFS and DFS
 ✔ Finds optimal path
@@ -186,7 +186,7 @@ Example:
 
 ---
 
-## 9️⃣ Limitations of A*
+## 9️⃣ Limitations of A\*
 
 ❌ Uses more memory
 ❌ Depends on quality of heuristic
@@ -196,13 +196,168 @@ Example:
 
 ## 🔟 One-Paragraph Exam Answer
 
-**A* is an informed search algorithm that finds the optimal path by combining the actual cost from the start and the estimated cost to the goal. It uses a heuristic function to guide the search and selects the node with the minimum total cost value f(n).**
+**A\* is an informed search algorithm that finds the optimal path by combining the actual cost from the start and the estimated cost to the goal. It uses a heuristic function to guide the search and selects the node with the minimum total cost value f(n).**
 
 ---
 
 **PYQ Discuss constraint satisfaction search strategy via DFS, BFS, Best-first (2019, Section C)**
 
 # BFS DFS Best First
+
+Below is a **complete but easy explanation** of **BFS, DFS, and Best-First Search**, each with a **simple example**, written so you can **understand from zero** and also **write in exams**.
+
+---
+
+# 1️⃣ Breadth First Search (BFS)
+
+## What is BFS?
+
+**BFS** is a search algorithm that explores **all nodes level by level**.
+
+👉 It first checks **nearest nodes**, then moves outward.
+
+---
+
+## How BFS Works (Simple)
+
+- Uses a **Queue (FIFO)**
+- Explores **all neighbors first**
+- Guarantees **shortest path** (if all costs are equal)
+
+---
+
+## BFS Example
+
+### Tree:
+
+```
+        A
+      /   \
+     B     C
+    / \     \
+   D   E     F
+```
+
+### BFS Traversal:
+
+```
+A → B → C → D → E → F
+```
+
+---
+
+## Key Points of BFS
+
+✔ Complete
+✔ Finds shortest path
+❌ Uses more memory
+
+---
+
+# 2️⃣ Depth First Search (DFS)
+
+## What is DFS?
+
+**DFS** goes **deep into one path** before checking other paths.
+
+👉 It explores **as far as possible** along one branch.
+
+---
+
+## How DFS Works (Simple)
+
+- Uses a **Stack (LIFO)** or recursion
+- Goes **deep first**, then backtracks
+- Does **not guarantee shortest path**
+
+---
+
+## DFS Example
+
+### Same Tree:
+
+```
+        A
+      /   \
+     B     C
+    / \     \
+   D   E     F
+```
+
+### DFS Traversal:
+
+```
+A → B → D → E → C → F
+```
+
+---
+
+## Key Points of DFS
+
+✔ Uses less memory
+✔ Simple
+❌ May get stuck in deep path
+
+---
+
+# 3️⃣ Best First Search (Greedy Best-First Search)
+
+## What is Best First Search?
+
+Best First Search selects the node that **looks closest to the goal** using a **heuristic**.
+
+👉 It chooses the **most promising node** first.
+
+---
+
+## How Best First Works (Simple)
+
+- Uses **Priority Queue**
+- Uses only **heuristic h(n)**
+- Ignores cost so far
+
+---
+
+## Best First Search Example
+
+Assume goal is **G** and heuristic values:
+
+| Node | h(n) |
+| ---- | ---- |
+| A    | 6    |
+| B    | 4    |
+| C    | 2    |
+| D    | 3    |
+| G    | 0    |
+
+### Traversal:
+
+```
+A → C → G
+```
+
+(Chooses smallest h(n) every time)
+
+---
+
+## Key Points of Best First Search
+
+✔ Fast
+✔ Goal-directed
+❌ Not optimal
+❌ Can be misleading
+
+---
+
+# 🔁 Comparison Table (Exam Gold)
+
+| Feature             | BFS        | DFS        | Best First     |
+| ------------------- | ---------- | ---------- | -------------- |
+| Search type         | Uninformed | Uninformed | Informed       |
+| Data structure      | Queue      | Stack      | Priority Queue |
+| Uses heuristic      | ❌ No      | ❌ No      | ✅ Yes         |
+| Finds shortest path | ✅ Yes     | ❌ No      | ❌ No          |
+| Memory usage        | High       | Low        | Medium         |
 
 # Adversarial Search Methods & Game Search
 
@@ -213,7 +368,6 @@ Example:
 
   - Adversarial search is used in games where two players compete, like chess or tic-tac-toe. The goal is to find the best move by considering the opponent's possible responses.
   - The search tree represents all possible moves for both players. Each level alternates between the player's move and the opponent's move.
-
 
 ## Minimax Algorithm in Game Search (Nim Game Example)
 
@@ -232,13 +386,13 @@ Example:
 ### How Minimax Works
 
 1. **Build the Game Tree:**  
-    Draw all possible moves for both players, starting from the current position.
+   Draw all possible moves for both players, starting from the current position.
 2. **Assign Values to End States:**  
-    At the bottom (leaves) of the tree, mark win (+1), lose (-1), or draw (0).
+   At the bottom (leaves) of the tree, mark win (+1), lose (-1), or draw (0).
 3. **Backtrack and Choose Best Moves:**  
-    Starting from the leaves, work up the tree:
-    - If it's your turn, pick the move with the highest value.
-    - If it's the opponent's turn, pick the move with the lowest value.
+   Starting from the leaves, work up the tree:
+   - If it's your turn, pick the move with the highest value.
+   - If it's the opponent's turn, pick the move with the lowest value.
 
 ### Example: Nim Game
 
@@ -266,22 +420,22 @@ graph TD
 
 #### Step-by-Step Minimax
 
-1. **Leaf Nodes:**  
-    - S0a, S0b, S0c: Win (+1) or Lose (-1) depending on whose turn it is.
-2. **Backtrack:**  
-    - For each parent node, choose the best value:
-      - If it's your turn, pick the move with the highest value.
-      - If it's the opponent's turn, pick the lowest value.
+1. **Leaf Nodes:**
+   - S0a, S0b, S0c: Win (+1) or Lose (-1) depending on whose turn it is.
+2. **Backtrack:**
+   - For each parent node, choose the best value:
+     - If it's your turn, pick the move with the highest value.
+     - If it's the opponent's turn, pick the lowest value.
 
 #### Table Example
 
-| State         | Your Move | Opponent Move | Outcome |
-|---------------|-----------|---------------|---------|
-| 3 sticks      | Remove 1  | Remove 1/2    | ?       |
-| 3 sticks      | Remove 2  | Remove 1      | ?       |
-| 2 sticks      | Remove 1  | Remove 1      | ?       |
-| 2 sticks      | Remove 2  | Win           | +1      |
-| 1 stick       | Remove 1  | Win           | +1      |
+| State    | Your Move | Opponent Move | Outcome |
+| -------- | --------- | ------------- | ------- |
+| 3 sticks | Remove 1  | Remove 1/2    | ?       |
+| 3 sticks | Remove 2  | Remove 1      | ?       |
+| 2 sticks | Remove 1  | Remove 1      | ?       |
+| 2 sticks | Remove 2  | Win           | +1      |
+| 1 stick  | Remove 1  | Win           | +1      |
 
 ### Key Points
 
@@ -297,12 +451,12 @@ graph TD
 
 ### Summary Table
 
-| Step         | What Happens                        |
-|--------------|-------------------------------------|
-| Build Tree   | Draw all possible moves             |
-| Assign Value | Mark win (+1), lose (-1), draw (0)  |
-| Backtrack    | Choose best move at each level      |
-| Decide Move  | Pick move with highest value        |
+| Step         | What Happens                       |
+| ------------ | ---------------------------------- |
+| Build Tree   | Draw all possible moves            |
+| Assign Value | Mark win (+1), lose (-1), draw (0) |
+| Backtrack    | Choose best move at each level     |
+| Decide Move  | Pick move with highest value       |
 
 ---
 
@@ -323,44 +477,44 @@ graph TD
 
 ---
 
-
 ## Alpha-Beta Pruning and Minimax Improvements
 
 ![Image](https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/AB_pruning.svg/500px-AB_pruning.svg.png)
 
 **PYQ**
-- **Describe *alpha-beta pruning* and other Min-Max improvements (2022, Section B)**
-- **Explain *Alpha-Beta pruning* with example (2024, Section C)**
+
+- **Describe _alpha-beta pruning_ and other Min-Max improvements (2022, Section B)**
+- **Explain _Alpha-Beta pruning_ with example (2024, Section C)**
 - **Explain the concept of the Alpha - bata testing pruning and write the alpha beta test algorith (2018, Section C)**
 
 ### 1. What is Alpha-Beta Pruning?
 
 - **Definition:**  
-    Alpha-beta pruning is a technique used to speed up the minimax algorithm in two-player games (like chess, tic-tac-toe, nim). It "prunes" (cuts off) branches in the game tree that cannot possibly affect the final decision, so the computer doesn't waste time checking moves that won't matter.
+   Alpha-beta pruning is a technique used to speed up the minimax algorithm in two-player games (like chess, tic-tac-toe, nim). It "prunes" (cuts off) branches in the game tree that cannot possibly affect the final decision, so the computer doesn't waste time checking moves that won't matter.
 
 ### 2. Why Use Alpha-Beta Pruning?
 
 - **Minimax Problem:**  
-    Minimax checks every possible move for both players, which can be very slow for big games.
+   Minimax checks every possible move for both players, which can be very slow for big games.
 - **Alpha-Beta Solution:**  
-    Alpha-beta pruning skips parts of the tree that are not needed, making the search much faster and allowing deeper lookahead.
+   Alpha-beta pruning skips parts of the tree that are not needed, making the search much faster and allowing deeper lookahead.
 
 ### 3. How Does Alpha-Beta Pruning Work?
 
 - **Alpha:**  
-    The best value that the maximizer (you) can guarantee so far.
+   The best value that the maximizer (you) can guarantee so far.
 - **Beta:**  
-    The best value that the minimizer (opponent) can guarantee so far.
+   The best value that the minimizer (opponent) can guarantee so far.
 - **Pruning Rule:**  
-    If the current branch can't improve the outcome for either player, stop exploring it.
+   If the current branch can't improve the outcome for either player, stop exploring it.
 
 #### **Step-by-Step Algorithm**
 
 1. Start with alpha = $-\infty$, beta = $+\infty$.
 2. Traverse the game tree like minimax.
 3. At each node:
-     - If it's your turn (maximizer), update alpha.
-     - If it's opponent's turn (minimizer), update beta.
+   - If it's your turn (maximizer), update alpha.
+   - If it's opponent's turn (minimizer), update beta.
 4. If alpha $\geq$ beta at any point, prune (stop searching) that branch.
 5. Continue until all relevant branches are checked.
 
@@ -388,7 +542,7 @@ graph TD
 #### **Simple Table Example**
 
 | Node | Alpha | Beta | Prune? |
-|------|-------|------|--------|
+| ---- | ----- | ---- | ------ |
 | D1   | 3     | ∞    | No     |
 | D2   | 5     | ∞    | No     |
 | D3   | 2     | 5    | Yes    |
@@ -397,21 +551,20 @@ graph TD
 ### 5. Benefits of Alpha-Beta Pruning
 
 - **Faster:**  
-    Reduces the number of nodes checked, so the computer can look further ahead in the same amount of time.
+   Reduces the number of nodes checked, so the computer can look further ahead in the same amount of time.
 - **Same Result:**  
-    Finds the same best move as minimax, just quicker.
+   Finds the same best move as minimax, just quicker.
 - **Used in Games:**  
-    Essential for computer chess, tic-tac-toe, and other strategy games.
+   Essential for computer chess, tic-tac-toe, and other strategy games.
 
 ### 6. Other Minimax Improvements
 
 - **Move Ordering:**  
-    Try best moves first to maximize pruning.
+   Try best moves first to maximize pruning.
 - **Transposition Tables:**  
-    Remember already checked positions to avoid repeating work.
+   Remember already checked positions to avoid repeating work.
 - **Iterative Deepening:**  
-    Search deeper step by step, useful for time-limited searches.
-
+   Search deeper step by step, useful for time-limited searches.
 
 ### 10. Diagram: Alpha-Beta Pruning in Action
 
@@ -446,53 +599,61 @@ graph TD
 ## **Grouped Questions by Topic**
 
 ### **Uninformed vs Informed Search**
-- Compare *uninformed and informed search methods* (2023, Section A)
+
+- Compare _uninformed and informed search methods_ (2023, Section A)
 - Give the heuristic function for shortest path problem (2019, Section A)
-- Discuss *water jug problem with heuristic search techniques* (2024, Section C)
-- Explain the *A* Algorithm\* with steps till goal state (2022, Section C)
+- Discuss _water jug problem with heuristic search techniques_ (2024, Section C)
+- Explain the _A_ Algorithm\* with steps till goal state (2022, Section C)
 
 ### **Local Search (Hill Climbing)**
-- What do you infer from *hill-climbing search algorithm*? (2019, Section A)
-- Differentiate between *simple hill climbing* and *steepest ascent hill climbing* (2022, Section A)
+
+- What do you infer from _hill-climbing search algorithm_? (2019, Section A)
+- Differentiate between _simple hill climbing_ and _steepest ascent hill climbing_ (2022, Section A)
 - Explain Steepest-ascent climbing algo... and discuss problems with it (2018, Section B)
 
 ### **Global Search**
+
 - Diff between Local Search and Global Search (2018, Section A)
 
 ### **Adversarial Search (Min-Max, Alpha-Beta, Games)**
-- Apply the *minimax algorithm* to the search tree for nim game (2019, Section B)
-- Discuss *Min-Max search algorithm* with diagram (2023, Section C)
-- Describe *alpha-beta pruning* and other Min-Max improvements (2022, Section B)
-- Explain *Alpha-Beta pruning* with example (2024, Section C)
+
+- Apply the _minimax algorithm_ to the search tree for nim game (2019, Section B)
+- Discuss _Min-Max search algorithm_ with diagram (2023, Section C)
+- Describe _alpha-beta pruning_ and other Min-Max improvements (2022, Section B)
+- Explain _Alpha-Beta pruning_ with example (2024, Section C)
 - Explain the concept of the Alpha - bata testing pruning and write the alpha beta test algorith (2018, Section C)
-- Explain *Searching techniques used in games* (2024, Section B)
-- Briefly explain *adversarial search* (2023, Section A)
+- Explain _Searching techniques used in games_ (2024, Section B)
+- Briefly explain _adversarial search_ (2023, Section A)
 
 ### **General Search Algorithms**
-- Implement the *Search Algorithms* in LISP/C. Comment suitability (2019, Section C)
-- Discuss use of *PROLOG* for search algorithms (2019, Section C)
+
+- Implement the _Search Algorithms_ in LISP/C. Comment suitability (2019, Section C)
+- Discuss use of _PROLOG_ for search algorithms (2019, Section C)
 - Discuss branch bound search algo (2018, Section A)
 - Discuss constraint satisfaction search strategy via DFS, BFS, Best-first (2019, Section C)
-- Explain *Best-first search algorithm* with diagram (2023, Section B)
-- Discuss *searching process* (2024, Section A)
+- Explain _Best-first search algorithm_ with diagram (2023, Section B)
+- Discuss _searching process_ (2024, Section A)
 
 ### **AND-OR Graphs**
-- Explain *AND-OR graph searching algorithm* (2023, Section C)
+
+- Explain _AND-OR graph searching algorithm_ (2023, Section C)
 
 ### **Simulated Annealing**
+
 - Discuss Simulated Annealing seach algorthm with its advantages and disadvantages (2018, Section C)
 
 ### **State Space Search**
-- Explain *forward and backward state space search* (2019, Section C)
+
+- Explain _forward and backward state space search_ (2019, Section C)
 
 ---
 
 ✅ **Summary of Coverage:**
+
 - **Uninformed Search** → 2023 (Section A – compare uninformed vs informed).
-- **Informed Search (Heuristic, A*)*\* → 2019 (heuristic), 2022 (A\*), 2024 (heuristic search water jug).
+- \*_Informed Search (Heuristic, A_)\*\* → 2019 (heuristic), 2022 (A\*), 2024 (heuristic search water jug).
 - **Local Search (Hill Climbing)** → 2019 (hill climbing), 2022 (simple vs steepest hill climbing).
 - **Adversarial Search (Min-Max, Alpha-Beta)** → 2019 (nim game minimax), 2022 (alpha-beta), 2023 (min-max), 2024 (alpha-beta).
 - **Search in Games** → 2019 (minimax nim), 2024 (games search).
 - **AND-OR Graphs** → 2023 (Section C).
 - **General Search Algorithms** → 2019 (implementations), 2023 (best-first), 2024 (search process).
-
