@@ -126,13 +126,7 @@ It represents decisions in the form of a **tree-like structure** — each intern
 
 Here, the tree classifies whether to “Play” based on “Weather.”
 
----
-
-Here are the **simple, easy-to-learn steps to make a Decision Tree (DT)**, written in **very simple English**, exam-friendly 👍
-
----
-
-## Simple Steps to Make a Decision Tree (DT)
+### Simple Steps to Make a Decision Tree (DT)
 
 1. **Collect the Data**
    Gather the data that you want to use for prediction.
@@ -208,6 +202,8 @@ Here are the **simple, easy-to-learn steps to make a Decision Tree (DT)**, writt
 They find the best function that maps input variables (X) to output variables (Y).
 
 > Example: Linear regression, Logistic regression, SVM, Clustering.
+
+![Bayes Theorem](https://cdn1.byjus.com/wp-content/uploads/2020/10/Bayes-Theorem.png)
 
 ---
 
