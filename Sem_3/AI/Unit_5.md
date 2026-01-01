@@ -18,12 +18,13 @@ A **pattern** is an *object, signal, or data structure* that can be represented 
 ### 🔹 Components of a Pattern Recognition System
 
 1. **Sensing / Data Acquisition:** Collecting raw data (e.g., image, sound, text).
-2. **Preprocessing:** Cleaning or normalizing data (e.g., noise removal).
+2. **Preprocessing / Segemtation:** Cleaning or normalizing data (e.g., noise removal).
 3. **Feature Extraction:** Selecting the most relevant features that represent data efficiently.
 4. **Classification / Decision Making:** Assigning patterns to specific categories using algorithms (like decision trees, SVMs, neural networks).
 5. **Post-processing / Evaluation:** Assessing performance, accuracy, and refinement.
 
 ---
+![Image](https://d3lkc3n5th01x7.cloudfront.net/wp-content/uploads/2023/06/30020419/Pattern-recognition-in-ML-banner.png)
 
 ### 🔹 Design Principles of a PR System
 
@@ -34,6 +35,7 @@ A **pattern** is an *object, signal, or data structure* that can be represented 
 5. **Evaluation:** Using metrics such as accuracy, precision, recall, and confusion matrices.
 
 ---
+![Image](https://image.slidesharecdn.com/designcyclesofpatternrecognition-171214082049/75/Design-cycles-of-pattern-recognition-3-2048.jpg)
 
 ### 🔹 Design Cycle of Pattern Recognition System
 
@@ -58,16 +60,6 @@ Raw Data → Preprocessing → Feature Extraction → Classification → Output 
 ## **2️⃣ Statistical Pattern Recognition**
 
 - 2024 — Section A (Q1(i)): What is Statistical PR?
-
-
-### 🔹 Definition
-Ahh 👍 got it — you mean **SPR = Statistical Pattern Recognition** (not State Space).
-
-Here is a **super simple explanation**, exactly exam-oriented 👇
-
----
-
-### **SPR (Statistical Pattern Recognition) — Super Simple**
 
 **SPR** is a method where a computer **recognizes patterns using statistics and probability**.
 
@@ -105,7 +97,7 @@ Here is a **super simple explanation**, exactly exam-oriented 👇
 * Handwritten character recognition
 * Medical diagnosis
 
-## **3️⃣ Parameter Estimation Methods — PCA & LDA**
+# **3️⃣ Parameter Estimation Methods — PCA & LDA**
 
 - 2022 — Section B (Q2(e)): Explain Principal Component Analysis (PCA) and Linear Discriminant Analysis (LDA).  
 - 2023 — Section C (Q7(b)): Explain need and concept of principal component analysis in pattern recognition process.  
@@ -115,7 +107,7 @@ Below is a **proper, detailed explanation of PCA (Principal Component Analysis)*
 
 ---
 
-# PCA (Principal Component Analysis)
+### PCA (Principal Component Analysis)
 
 **Principal Component Analysis (PCA)** is a **statistical technique** used to **reduce the number of features (dimensions)** in a dataset **without losing important information**.
 
@@ -188,7 +180,7 @@ Below is a **clear, simple, exam-ready explanation of LDA**, followed by a **PCA
 ---
 ![PCA](https://www.simplilearn.com/ice9/free_resources_article_thumb/PrincipalComponents.PNG)
 
-# What is LDA? (Linear Discriminant Analysis)
+## What is LDA? (Linear Discriminant Analysis)
 
 **Linear Discriminant Analysis (LDA)** is a **supervised machine learning technique** used for **feature reduction and classification**.
 
@@ -217,7 +209,7 @@ So, classes become **well separated**.
 
 ---
 
-# PCA vs LDA (Difference Table)
+### PCA vs LDA (Difference Table)
 
 | Feature           | **PCA**                      | **LDA**                      |
 | ----------------- | ---------------------------- | ---------------------------- |
@@ -232,7 +224,7 @@ So, classes become **well separated**.
 | Output dimensions | ≤ number of features         | ≤ number of classes − 1      |
 | Example use       | Image compression            | Face recognition             |
 
-## **1️⃣ Classification Techniques — Nearest Neighbor Rule and Bayes Classifier**
+# **1️⃣ Classification Techniques — Nearest Neighbor Rule and Bayes Classifier**
 
 - 2023 — Section A (Q1(j)): State nearest neighbor rule.  
 - 2022 — Section C (Q7(b)): Show how classification is done by k‑nearest neighbors. Construct KNN on given dataset and predict class for X (p1=4, p2=6), k=3.  
@@ -426,6 +418,45 @@ Group 2 (near 9,9):
 ➡️ **Clusters formed successfully**
 
 ---
+
+#### 1️⃣ Category of Clustering Scheme of K-Means
+
+The **k-means algorithm** belongs to the **partition-based (partitional) clustering** category.
+
+👉 It divides the dataset into **k non-overlapping clusters**, where each data point belongs to **only one cluster**.
+
+---
+
+#### 2️⃣ Major Advantage of K-Means
+
+The **major advantage of k-means** is that it is:
+
+✔ **Simple and fast**
+✔ **Easy to understand and implement**
+✔ **Efficient for large datasets**
+
+Because of its simplicity, k-means is widely used in real-world clustering problems.
+
+---
+
+#### 3️⃣ Factors Influencing Computation Duration of K-Means
+
+The time taken by the k-means algorithm mainly depends on the following factors:
+
+1. **Number of Data Points (n)**
+   More data points → more distance calculations → more time.
+
+2. **Number of Clusters (k)**
+   Higher value of k increases computation.
+
+3. **Number of Dimensions (d)**
+   More features per data point increase distance calculation time.
+
+4. **Number of Iterations (i)**
+   More iterations needed for convergence increase execution time.
+
+5. **Initialization of Centroids**
+   Poor initial centroids may lead to more iterations.
 
 ## ⭐ **4. Support Vector Machine (SVM)**
 
