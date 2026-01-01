@@ -177,15 +177,6 @@ Example:
 
 ---
 
-## 8️⃣ Why A\* is Better Than Other Search Algorithms
-
-✔ Faster than BFS and DFS
-✔ Finds optimal path
-✔ Uses heuristics for smart search
-✔ Complete and optimal (with correct heuristic)
-
----
-
 ## 9️⃣ Limitations of A\*
 
 ❌ Uses more memory
