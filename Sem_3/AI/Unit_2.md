@@ -80,6 +80,8 @@ Below is a **complete, from-zero explanation of the A\* algorithm**, written in 
 
 ## 1️⃣ What is the A\* Algorithm?
 
+[https://www.youtube.com/watch?v=Eiu1Cb-veCc]
+
 The **A\*** algorithm is a **search algorithm** used in **Artificial Intelligence** to find the **best (shortest and cheapest) path** from a **start point** to a **goal point**.
 
 👉 It is commonly used in:
@@ -88,8 +90,6 @@ The **A\*** algorithm is a **search algorithm** used in **Artificial Intelligenc
 - Games
 - Robotics
 - AI problem solving
-
----
 
 ## 2️⃣ Simple Idea of A\*
 
@@ -394,86 +394,11 @@ A → C → G
    - If it's your turn, pick the move with the highest value.
    - If it's the opponent's turn, pick the move with the lowest value.
 
-### Example: Nim Game
-
-Suppose you have 3 sticks. Players take turns removing 1 or 2 sticks. The player who takes the last stick wins.
-
-#### Game Tree Diagram
-
-```mermaid
-graph TD
-     S3[3 sticks] --> S2a[Remove 1: 2 sticks]
-     S3 --> S1a[Remove 2: 1 stick]
-     S2a --> S1b[Remove 1: 1 stick]
-     S2a --> S0a[Remove 2: 0 sticks]
-     S1a --> S0b[Remove 1: 0 sticks]
-     S1b --> S0c[Remove 1: 0 sticks]
-     style S0a fill:#f9f,stroke:#333,stroke-width:2px
-     style S0b fill:#f9f,stroke:#333,stroke-width:2px
-     style S0c fill:#f9f,stroke:#333,stroke-width:2px
-```
-
-#### Assign Values
-
-- If you reach 0 sticks on your turn, you win (+1).
-- If the opponent reaches 0 sticks, you lose (-1).
-
-#### Step-by-Step Minimax
-
-1. **Leaf Nodes:**
-   - S0a, S0b, S0c: Win (+1) or Lose (-1) depending on whose turn it is.
-2. **Backtrack:**
-   - For each parent node, choose the best value:
-     - If it's your turn, pick the move with the highest value.
-     - If it's the opponent's turn, pick the lowest value.
-
-#### Table Example
-
-| State    | Your Move | Opponent Move | Outcome |
-| -------- | --------- | ------------- | ------- |
-| 3 sticks | Remove 1  | Remove 1/2    | ?       |
-| 3 sticks | Remove 2  | Remove 1      | ?       |
-| 2 sticks | Remove 1  | Remove 1      | ?       |
-| 2 sticks | Remove 2  | Win           | +1      |
-| 1 stick  | Remove 1  | Win           | +1      |
-
 ### Key Points
 
 - Minimax explores all possible moves and outcomes.
 - It helps you avoid moves that could let your opponent win.
 - The algorithm is slow for big games but works well for small ones like nim.
-
-### Simple Explanation
-
-- Imagine you and your friend play a game.
-- You look ahead at all possible moves.
-- You pick the move that gives you the best chance to win, even if your friend tries their best to beat you.
-
-### Summary Table
-
-| Step         | What Happens                       |
-| ------------ | ---------------------------------- |
-| Build Tree   | Draw all possible moves            |
-| Assign Value | Mark win (+1), lose (-1), draw (0) |
-| Backtrack    | Choose best move at each level     |
-| Decide Move  | Pick move with highest value       |
-
----
-
-### Minimax Algorithm Diagram
-
-```mermaid
-graph TD
-     A[Your Turn] --> B[Opponent Turn]
-     B --> C[Your Turn]
-     C --> D[Win (+1)]
-     C --> E[Lose (-1)]
-     B --> F[Your Turn]
-     F --> G[Win (+1)]
-     F --> H[Lose (-1)]
-```
-
-- At each level, minimax chooses the best move for you and the worst for your opponent.
 
 ---
 
@@ -512,43 +437,13 @@ graph TD
 
 #### **Step-by-Step Algorithm**
 
-1. Start with alpha = $-\infty$, beta = $+\infty$.
+1. Start with alpha = -\infty, beta = +\infty.
 2. Traverse the game tree like minimax.
 3. At each node:
    - If it's your turn (maximizer), update alpha.
    - If it's opponent's turn (minimizer), update beta.
-4. If alpha $\geq$ beta at any point, prune (stop searching) that branch.
+4. If alpha >= beta at any point, prune (stop searching) that branch.
 5. Continue until all relevant branches are checked.
-
-### 4. Alpha-Beta Pruning Example
-
-Suppose you have a simple game tree:
-
-```mermaid
-graph TD
-        A[Start] --> B[Max]
-        B --> C1[Min]
-        B --> C2[Min]
-        C1 --> D1[3]
-        C1 --> D2[5]
-        C2 --> D3[2]
-        C2 --> D4[9]
-        style D1 fill:#f9f,stroke:#333,stroke-width:2px
-        style D2 fill:#f9f,stroke:#333,stroke-width:2px
-        style D3 fill:#f9f,stroke:#333,stroke-width:2px
-        style D4 fill:#f9f,stroke:#333,stroke-width:2px
-```
-
-- As you evaluate nodes, if you find a value that is worse than what you already have, you stop checking further (prune).
-
-#### **Simple Table Example**
-
-| Node | Alpha | Beta | Prune? |
-| ---- | ----- | ---- | ------ |
-| D1   | 3     | ∞    | No     |
-| D2   | 5     | ∞    | No     |
-| D3   | 2     | 5    | Yes    |
-| D4   | 9     | 5    | Yes    |
 
 ### 5. Benefits of Alpha-Beta Pruning
 
@@ -567,34 +462,6 @@ graph TD
    Remember already checked positions to avoid repeating work.
 - **Iterative Deepening:**  
    Search deeper step by step, useful for time-limited searches.
-
-### 10. Diagram: Alpha-Beta Pruning in Action
-
-```mermaid
-graph TD
-        S[Start] --> M1[Max]
-        M1 --> N1[Min]
-        M1 --> N2[Min]
-        N1 --> L1[3]
-        N1 --> L2[5]
-        N2 --> L3[2]
-        N2 --> L4[9]
-        style L1 fill:#f9f,stroke:#333,stroke-width:2px
-        style L2 fill:#f9f,stroke:#333,stroke-width:2px
-        style L3 fill:#f9f,stroke:#333,stroke-width:2px
-        style L4 fill:#f9f,stroke:#333,stroke-width:2px
-        %% Pruned branches can be shown with dashed lines or notes
-```
-
----
-
-### 11. In Simple English (Grade 8 Level)
-
-- Alpha-beta pruning helps computers play games faster by skipping moves that don't matter.
-- It works with minimax to find the best move, but doesn't waste time on bad choices.
-- Used in chess, tic-tac-toe, and other games where you and your opponent take turns.
-
----
 
 # PYQ's
 
