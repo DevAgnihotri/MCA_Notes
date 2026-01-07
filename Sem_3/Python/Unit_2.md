@@ -82,20 +82,118 @@ Now relate each letter to common string methods:
 * **A** → `append()` *(string concept in joins)*
 * **T** → `title()` , --- `join()`
 
+#### 🧵 PYTHON STRING METHODS — COMPLETE TABLE
 
-| Method      | Meaning                    | Example                                |
-| ----------- | -------------------------- | -------------------------------------- |
-| `upper()`   | Make all letters uppercase | `"hi".upper()` → `"HI"`                |
-| `lower()`   | Make all letters lowercase | `"HI".lower()` → `"hi"`                |
-| `split()`   | Break string into list     | `"a b c".split()` → `['a','b','c']`    |
-| `join()`    | Join list into string      | `" ".join(['a','b'])` → `"a b"`        |
-| `replace()` | Replace part of string     | `"hello".replace("l","x")` → `"hexxo"` |
-| `find()`    | Find index of a word       | `"hello".find("l")` → `2`              |
-| `count()`   | Count how many times       | `"hello".count("l")` → `2`             |
+###### 🔹 1. Case Conversion Methods
+
+| Method         | Meaning                          | Example                            |
+| -------------- | -------------------------------- | ---------------------------------- |
+| `upper()`      | Sab characters uppercase         | `"hi".upper()` → `"HI"`            |
+| `lower()`      | Sab lowercase                    | `"HI".lower()` → `"hi"`            |
+| `capitalize()` | First char capital               | `"hello".capitalize()` → `"Hello"` |
+| `title()`      | Har word ka first letter capital | `"hello world".title()`            |
+| `swapcase()`   | Upper ↔ Lower                    | `"HeLLo".swapcase()`               |
+
+###### 🔹 2. Checking / Validation Methods (return **True / False**)
+
+| Method           | Meaning              | Example                   |
+| ---------------- | -------------------- | ------------------------- |
+| `isupper()`      | Sab uppercase?       | `"HI".isupper()`          |
+| `islower()`      | Sab lowercase?       | `"hi".islower()`          |
+| `isalpha()`      | Sirf letters?        | `"abc".isalpha()`         |
+| `isdigit()`      | Sirf digits?         | `"123".isdigit()`         |
+| `isalnum()`      | Letters + digits     | `"a1".isalnum()`          |
+| `isspace()`      | Sirf spaces?         | `"   ".isspace()`         |
+| `istitle()`      | Title case?          | `"Hello World".istitle()` |
+| `isidentifier()` | Valid variable name? | `"var_1".isidentifier()`  |
+| `isnumeric()`    | Numeric characters   | `"²".isnumeric()`         |
+| `isdecimal()`    | Decimal digits       | `"123".isdecimal()`       |
+| `isprintable()`  | Printable chars?     | `"hi\n".isprintable()`    |
+
+###### 🔹 3. Search / Find Methods
+
+| Method         | Meaning                              | Example                    |
+| -------------- | ------------------------------------ | -------------------------- |
+| `find()`       | Index of substring (−1 if not found) | `"hello".find("e")`        |
+| `rfind()`      | Last occurrence index                | `"hello".rfind("l")`       |
+| `index()`      | Like find, but error if not found    | `"hi".index("h")`          |
+| `rindex()`     | Last index (error if not found)      | `"hello".rindex("l")`      |
+| `count()`      | Substring count                      | `"banana".count("a")`      |
+| `startswith()` | Starts with?                         | `"hello".startswith("he")` |
+| `endswith()`   | Ends with?                           | `"hello".endswith("lo")`   |
+
+###### 🔹 4. Replace / Modify Content
+
+| Method        | Meaning           | Example                       |
+| ------------- | ----------------- | ----------------------------- |
+| `replace()`   | Replace substring | `"hi hi".replace("hi","hey")` |
+| `translate()` | Character mapping | `s.translate(table)`          |
+| `maketrans()` | Translation table | `str.maketrans("a","b")`      |
+
+###### 🔹 5. Splitting & Joining
+
+| Method         | Meaning             | Example                   |
+| -------------- | ------------------- | ------------------------- |
+| `split()`      | Split into list     | `"a,b".split(",")`        |
+| `rsplit()`     | Split from right    | `"a,b,c".rsplit(",",1)`   |
+| `splitlines()` | Split by lines      | `"a\nb".splitlines()`     |
+| `join()`       | Join list to string | `",".join(["a","b"])`     |
+| `partition()`  | Split into 3 parts  | `"a=b".partition("=")`    |
+| `rpartition()` | Right partition     | `"a=b=c".rpartition("=")` |
+
+###### 🔹 6. Trimming / Whitespace Removal
+
+| Method     | Meaning                  | Example          |
+| ---------- | ------------------------ | ---------------- |
+| `strip()`  | Remove both sides spaces | `" hi ".strip()` |
+| `lstrip()` | Remove left spaces       | `" hi".lstrip()` |
+| `rstrip()` | Remove right spaces      | `"hi ".rstrip()` |
+
+###### 🔹 7. Alignment & Padding
+
+| Method     | Meaning      | Example              |
+| ---------- | ------------ | -------------------- |
+| `center()` | Center align | `"hi".center(6,"*")` |
+| `ljust()`  | Left align   | `"hi".ljust(5,"-")`  |
+| `rjust()`  | Right align  | `"hi".rjust(5,"-")`  |
+| `zfill()`  | Zero padding | `"42".zfill(5)`      |
+
+###### 🔹 8. Encoding / Decoding
+
+| Method     | Meaning        | Example          |
+| ---------- | -------------- | ---------------- |
+| `encode()` | String → bytes | `"hi".encode()`  |
+| `decode()` | Bytes → string | `b"hi".decode()` |
+
+###### 🔹 9. Formatting
+
+| Method         | Meaning               | Example               |
+| -------------- | --------------------- | --------------------- |
+| `format()`     | Format values         | `"{} {}".format(1,2)` |
+| `format_map()` | Dict-based formatting | `"{a}".format_map(d)` |
+
+###### 🔹 10. Misc / Utility
+
+| Method           | Meaning              | Example                           |
+| ---------------- | -------------------- | --------------------------------- |
+| `expandtabs()`   | Tabs to spaces       | `"a\tb".expandtabs(4)`            |
+| `casefold()`     | Aggressive lowercase | `"ß".casefold()`                  |
+| `removeprefix()` | Remove prefix        | `"unhappy".removeprefix("un")`    |
+| `removesuffix()` | Remove suffix        | `"file.txt".removesuffix(".txt")` |
 
 ---
 
-### **4. String Formatting**
+##### 🧠 EXAM / INTERVIEW GOLD LINES
+
+* **Strings are immutable** → methods return **new string**
+* `find()` ❌ error nahi deta, `index()` ❌ error deta
+* `split()` → list return karta hai
+* `join()` → string ka method hai (NOT list)
+
+
+---
+
+### **4. String Formatting in 3 ways**
 
 #### **f-string (modern, easiest)**
 
@@ -118,17 +216,8 @@ print("Hello %s" % name)
 
 ---
 
-### **5. Reversing a String**
-
-```python
-s = "hello"
-rev = s[::-1]
-print(rev)    # 'olleh'
-```
-
----
-
-### **6. Checking Palindrome**
+### Q PREP
+###### **5. Reversing a String and Checking Palindrome**
 
 Palindrome = same forward and backward
 
@@ -137,9 +226,8 @@ s = "madam"
 print(s == s[::-1])   # True
 ```
 
----
 
-### **7. Removing Duplicates From String**
+### **6. Removing Duplicates From String**
 
 Keep characters only once:
 
