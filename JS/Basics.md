@@ -16,7 +16,6 @@
   - [Type conversion and type coercion](#type-conversion-and-type-coercion)
   - [typeof operator](#typeof-operator)
 - [3. Operators](#3-operators)
-
   - [Arithmetic Operators](#arithmetic-operators)
   - [Assignment Operators](#assignment-operators)
   - [Comparison Operators](#comparison-operators)
