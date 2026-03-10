@@ -4,8 +4,6 @@
 
 1. Discuss error, fault & failure with respect to Software Quality. *(Section A – Q1a)*
 2. Explain the term Software Quality. *(Section A – Q1b)*
-3. Illustrate software quality indicators. *(Section A – Q1c)*
-4. What is a software quality model? *(Section A – Q1e)*
 5. Demonstrate Software Quality Attributes and Specification in detail. *(Section C – Q3a)*
 6. Explain Defect Prevention and its activities. Mention the steps involved in Defect Prevention Techniques and Practices. *(Section C – Q3b)*
 
@@ -18,6 +16,8 @@
 7. Illustrate contents of Product Quality Metrics. *(Section A – Q1d)*
 8. What are the requirements of customer problem metrics? *(Section A – Q1i)*
 9. Explain different types of Software Quality Metrics in detail. *(Section C – Q4a)*
+3. Illustrate software quality indicators. *(Section A – Q1c)*
+
 
 ---
 
@@ -25,6 +25,7 @@
 
 ### *Software Quality Models & Reliability Models*
 
+4. What is a software quality model? *(Section A – Q1e)*
 10. Differentiate between McCall’s Quality Model and Boehm’s Quality Model. *(Section C – Q4b)*
 11. Illustrate Hierarchical Model of Software Quality Assessment with block diagram. *(Section C – Q5a)*
 12. Discuss the Rayleigh model of software quality Management. *(Section C – Q5b)*

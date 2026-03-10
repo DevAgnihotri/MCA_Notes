@@ -2,8 +2,6 @@
 
 Software quality cannot be improved unless it is **measured objectively**. Product quality metrics help organizations measure how good a software product is by analyzing defects, customer experience, and system functionality.
 
----
-
 # Product Quality Metrics
 
 ## Meaning of Product Quality Metrics
@@ -30,8 +28,6 @@ Product quality metrics help organizations:
 * Reduce defects
 * Improve user experience
 
----
-
 ### Main Product Quality Metrics
 
 The important product quality metrics include:
@@ -42,8 +38,6 @@ The important product quality metrics include:
 | Customer Problems Metric     | Measures problems reported by users        |
 | Customer Satisfaction Metric | Measures how satisfied users are           |
 | Function Points              | Measures functional size of software       |
-
----
 
 ### Mnemonic to Remember Product Quality Metrics
 

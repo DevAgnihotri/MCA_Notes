@@ -29,7 +29,93 @@ Thus, software quality ensures both:
 
 Software that satisfies user expectations over time is said to be of high quality.
 
+# Software Quality Engineering (SQE)
+
+## Definition
+
+Quality engineering (QE) is a systematic approach that integrates testing and quality assurance throughout the entire software development lifecycle (SDLC), rather than just at the end. 
+
+It focuses on preventing defects through automation, collaboration, and process optimization to deliver high-quality, reliable, and user-centric software efficiently.
+
+## Meaning of the Term
+
+The term **Software Quality Engineering** combines three concepts:
+
+* **Software** → The computer programs and related documentation
+* **Quality** → Degree that tells how well a software meets user requirements
+* **Engineering** → Application of systematic methods and scientific principles
+
+Thus, **Software Quality Engineering means applying engineering principles to ensure high software quality during development and maintenance.**
+
 ---
+
+## Explanation
+
+Software Quality Engineering focuses on **building quality into the software from the beginning**, rather than trying to fix defects later.
+
+It includes activities such as:
+
+* Defining quality standards
+* Preventing defects during development
+* Measuring software quality
+* Performing reviews and inspections
+* Monitoring reliability and performance
+
+SQE covers **both quality assurance and quality control**.
+
+| Aspect            | Focus              |
+| ----------------- | ------------------ |
+| Quality Assurance | Preventing defects |
+| Quality Control   | Detecting defects  |
+
+Together they ensure that software meets required quality levels.
+
+---
+
+# Key Activities in Software Quality Engineering
+
+Software Quality Engineering involves several important activities that help maintain product quality.
+
+### Major SQE Activities
+
+| Activity               | Explanation                            |
+| ---------------------- | -------------------------------------- |
+| Quality Planning       | Defining quality goals and standards   |
+| Quality Assurance      | Ensuring development follows standards |
+| Quality Control        | Detecting defects through testing      |
+| Quality Measurement    | Using metrics to evaluate quality      |
+| Continuous Improvement | Improving development processes        |
+
+---
+
+### Mnemonic to Remember SQE Activities
+
+👉 **PAQMI**
+
+* **P** – Planning
+* **A** – Assurance
+* **Q** – Quality Control
+* **M** – Measurement
+* **I** – Improvement
+
+Think:
+To engineer quality in software → follow **PAQMI activities**.
+
+---
+
+# Importance of Software Quality Engineering / Objectives of Software Quality Engineering
+
+Sofware quality enginerring is important as it helps.. /The main objectives of Software Quality Engineering are:
+
+**DUCRM - Defects, User Requirements, Customer Satisfaction, Reliability, Maintainability**
+
+1. To ensure that software meets user requirements
+2. To reduce defects in software products
+3. To improve reliability and performance
+4. To enhance maintainability and usability
+5. To improve customer satisfaction
+
+By achieving these objectives, SQE helps produce **high-quality and dependable software systems**.
 
 **5. Demonstrate Software Quality Attributes and Specification in detail. _(Section C – Q3a)_**
 
@@ -42,8 +128,6 @@ Software quality is evaluated based on certain measurable characteristics known 
 Software Quality Attributes are the properties or characteristics that determine how effectively and efficiently a software system performs its intended functions.
 
 These attributes describe the overall performance level of software.
-
----
 
 ### Major Software Quality Attributes
 
@@ -93,9 +177,118 @@ Without quality specification:
 - Testing becomes inconsistent
 - Final product may not satisfy users
 
+# Software Defect
+
+A Defect is a flaw in the software system caused by a fault that may lead to incorrect results.
+It indicates that the software does not behave as intended.
+
+## Causes of Defects (Mnemonic: **DEFECT**)
+
+| Letter | Cause               | Meaning                                                              |
+| ------ | ------------------- | -------------------------------------------------------------------- |
+| **D**  | Design Errors       | Mistakes made while designing system architecture or logic.          |
+| **E**  | Environment Issues  | Problems caused by hardware, operating system, or development tools. |
+| **F**  | Faulty Requirements | Incorrect, incomplete, or misunderstood requirements.                |
+| **E**  | Execution Mistakes  | Errors made by programmers while writing or implementing code.       |
+| **C**  | Communication Gaps  | Miscommunication between developers, testers, and clients.           |
+| **T**  | Testing Weakness    | Inadequate or improper testing that fails to detect defects early.   |
+
+## Defect Management Process
+
+### Definition
+
+The **Defect Management Process** is a systematic process used to identify, record, track, fix, and verify defects in software.
+It ensures that defects are properly handled so that the software product maintains good quality and reliability.
+
+### Common Example Used
+
+Suppose an **online shopping system calculates the total bill incorrectly**.
+Instead of **Total Price = Quantity × Price**, the system calculates the wrong amount.
+
+This same example will be used for all levels below.
+
+## Levels in the Defect Management Process
+
+## 1. Detection
+
+### Definition
+
+Detection is the stage where a defect is discovered during testing, review, or by users while using the software.
+It is the first step where the problem in the system is identified.
+
+### Example
+
+While testing the shopping website, the tester notices that the **total bill shown to the customer is incorrect**.
+
 ---
 
-# Software Defects and Their Effect on Quality
+## 2. Logging
+
+### Definition
+
+Logging is the process of recording the detected defect in a defect tracking system with proper details.
+Information such as defect description, severity, and steps to reproduce the problem are documented.
+
+### Example
+
+The tester reports the defect in a defect tracking tool and writes:
+*"Total bill is calculated incorrectly when the user adds multiple products."*
+
+---
+
+## 3. Assignment
+
+### Definition
+
+Assignment is the stage where the reported defect is assigned to a developer or development team for fixing.
+The project manager or team lead usually assigns the defect.
+
+### Example
+
+The team leader assigns the **billing calculation defect** to a developer who is responsible for the payment module.
+
+---
+
+## 4. Resolution (Fixing)
+
+### Definition
+
+Resolution is the process where the developer analyzes the defect and corrects the problem in the program code.
+The faulty logic or incorrect code is modified to remove the defect.
+
+### Example
+
+The developer finds that the formula in the code is wrong and corrects it to:
+
+Total Price = Quantity × Price
+
+---
+
+## 5. Verification
+
+### Definition
+
+Verification is the stage where the tester checks the software again to confirm that the defect has been fixed correctly.
+Testing ensures that the defect no longer exists and the system works properly.
+
+### Example
+
+The tester tests the shopping system again and confirms that the **total bill is now calculated correctly**.
+
+---
+
+## 6. Closure
+
+### Definition
+
+Closure is the final stage where the defect is marked as closed after successful verification.
+This means the defect has been resolved and no further action is required.
+
+### Example
+
+After confirming the correct bill calculation, the tester marks the defect as **closed in the defect tracking system**.
+
+## Software Defects and Their Effect on Quality
 
 Software quality is mainly affected by errors that occur during development.
 
@@ -103,145 +296,76 @@ Software quality is mainly affected by errors that occur during development.
 
 ---
 
-## Fault, Defect, and Failure
+## Terminologies in Software Engineering
 
-### Fault
+**Bug, Wrong (Error), Fault, Defect, Failure**
 
-A Fault is an incorrect step, logic mistake, or wrong instruction written in the program code.
+### Common Example Used
 
-Example: Using incorrect formula in interest calculation.
+A developer writes the billing formula incorrectly in an online shopping system.
+Instead of **Total Price = Quantity × Price**, the programmer writes **Quantity − Price**.
 
----
+## Wrong (Error)
 
-### Defect
+**Definition:**
+A Wrong (Error) is a human mistake made during software development such as misunderstanding requirements or writing incorrect logic.
+It usually occurs during requirement analysis, design, or coding.
 
-A Defect is a flaw in the software system that occurs due to the presence of a fault and may cause incorrect behavior.
+**Example:**
+The programmer misunderstands the billing logic and thinks subtraction should be used instead of multiplication.
 
-Example: Wrong interest amount displayed.
+## Fault
 
----
+**Definition:**
+A Fault is the incorrect statement or logic written in the program due to a human error.
+It exists inside the software code or design.
 
-### Failure
+**Example:**
+The programmer writes **Total = Quantity − Price** in the program code.
 
-A Failure occurs when the system does not perform its intended function during execution.
+## Defect
 
-Example: Application crashes when interest is calculated.
+**Definition:**
+A Defect is a flaw in the software system caused by a fault that may lead to incorrect results.
+It indicates that the software does not behave as intended.
 
----
+**Example:**
+Because of the wrong formula in the system, the billing module contains incorrect calculation logic.
 
-### Relationship:
+## Failure
 
-Fault (Coding Error)
-→ leads to
-Defect (System Flaw)
-→ causes
-Failure (Incorrect System Behavior)
+**Definition:**
+A Failure occurs when the software does not perform its intended function during execution.
+It is the visible incorrect behavior of the system.
 
-Failure occurs only when defective code is executed.
+**Example:**
+When a customer places an order, the system calculates the total price incorrectly.
 
-![Fault, Defect, and Failure Relationship](https://media.geeksforgeeks.org/wp-content/uploads/20230818110304/defect_-bug-and-failure.png)
+## Bug
 
----
+**Definition:**
+A Bug is a defect discovered during software testing or after software release.
+It is the commonly used term for reporting software problems.
 
-# Measuring Software Quality
+**Example:**
+The tester reports that the billing system is calculating the total price incorrectly.
 
-![Software Quality Image](https://appsierra-site.s3.ap-south-1.amazonaws.com/menskool_Blog_4b895f464c.jpg)
+## Relationship Between the Terms
 
-Measuring software quality uses objective metrics and indicators to track, compare, and improve product fitness.
+Simple Example of the Full Chain
 
-### Key Metrics and Indicators
+1. Developer misunderstands requirement (Error)
+2. Writes wrong calculation in code (Fault)
+3. Billing module contains wrong logic (Defect)
+4. Software calculates wrong bill during execution (Failure)
 
-- Defect Density  
-   Number of defects / size (e.g., defects per KLOC). Lower = better.
+Tester reports the issue (Bug)
 
-- Defect Rate  
-   Number of defects found per unit time or per release cycle.
-
-- Mean Time Between Failures (MTBF)  
-   Total operational time / number of failures — higher is better.
-
-- Mean Time To Repair (MTTR)  
-   Total downtime / number of repairs — lower is better.
-
-- Availability  
-   Availability = MTBF / (MTBF + MTTR)
-
-- Reliability  
-   Probability the system performs without failure for a specified period (measured via failure rates, MTBF).
-
-- Test Coverage  
-   % of code, requirements, or paths exercised by tests — higher coverage improves confidence.
-
-- Escaped Defects (Customer-reported)  
-   Defects found in production per release — used to measure release quality.
-
-- Requirement Coverage  
-   % of requirements verified by tests or acceptance criteria.
-
-- Performance Metrics  
-   Response time, throughput, resource utilization under expected loads.
-
-- Maintainability Metrics  
-   Cyclomatic complexity, code churn, modularity — indicate ease of change.
-
-- Security Metrics  
-   Number/severity of vulnerabilities, time-to-patch, successful penetration test findings.
-
-### Guidance
-
-- Use a balanced set of metrics (process, product, and outcome).
-- Track trends over time and set thresholds/targets.
-- Interpret metrics in context; correlate metrics to identify root causes.
-- Combine automated collection (CI/CD, telemetry) with periodic reviews for action.
-
----
-
-## Defect Rate
-
-### Definition
-
-Defect Rate is the number of defects identified in software per unit size (e.g., per 1000 lines of code) or per unit time.
-
-### Formula:
-
-Defect Rate = Number of Defects / Size of Software
-
-### Explanation
-
-- High Defect Rate = Low Quality
-- Low Defect Rate = High Quality
-
-Defect rate helps in:
-
-- Comparing development performance
-- Evaluating software stability
-- Predicting reliability
-
----
-
-## Reliability
-
-### Definition
-
-Reliability is the probability that software will function without failure for a specified period under specified operating conditions.
-
-### Explanation
-
-Reliable software:
-
-- Works continuously
-- Does not crash
-- Produces correct output consistently
-
-Reliability depends on:
-
-- Fewer defects
-- Proper testing
-- Good system design
-
-As defect rate decreases, reliability increases.
-
----
+Error (Wrong)
+→ Fault
+→ Defect
+→ Failure
+→ Bug
 
 # Cost of Quality (CoQ)
 
@@ -259,13 +383,12 @@ It includes both:
 ---
 
 ## Types of Cost of Quality
-
-| Type                  | Explanation                     |
-| --------------------- | ------------------------------- |
-| Prevention Cost       | Cost to avoid defects           |
-| Appraisal Cost        | Cost to detect defects          |
-| Internal Failure Cost | Cost of defects before delivery |
-| External Failure Cost | Cost of defects after delivery  |
+| Type                  | Definition                                                                 | Examples / Explanation |
+| --------------------- | -------------------------------------------------------------------------- | ---------------------- |
+| Prevention Cost       | Prevention Cost is the money spent to prevent defects from happening.      | Training, better requirements, design reviews, coding standards, tooling, process improvements. |
+| Appraisal Cost        | Appraisal Cost is the money spent to find and detect defects.              | Testing, inspections, code reviews, test automation, audits, QA environment costs. |
+| Internal Failure Cost | Internal Failure Cost is the money spent because defects were found after development but before delivery. | Rework, debugging, retesting, wasted developer time, scrap of faulty components. |
+| External Failure Cost | External Failure Cost is the money spent because defects were found after devlopment and delivery. | Customer support, patches, hotfixes, refunds, legal costs, lost sales and reputation. |
 
 ---
 
@@ -635,6 +758,63 @@ Measurement in software is achieved using metrics.
 
 ---
 
+## Functional vs Non‑Functional Requirements
+
+**Demonstate functional and Non Functional Requirements with example**
+
+### Definitions
+
+- Functional Requirements: Specify what the system must do — features, behaviors, inputs/outputs and business rules.
+- Non‑Functional Requirements (NFRs): Specify how the system performs those functions — qualities like performance, security, usability, reliability, and maintainability.
+
+### Key Differences
+
+| Aspect            |                            Functional Requirements | Non‑Functional Requirements                                         |
+| ----------------- | -------------------------------------------------: | :------------------------------------------------------------------ |
+| Purpose           |         Describe system behavior and functionality | Describe quality attributes and constraints                         |
+| Example statement | "The system shall allow users to create accounts." | "The system shall respond to search queries within 2 seconds."      |
+| Measurability     |       Often binary (implemented / not implemented) | Usually quantitative or subject to SLAs (performance, availability) |
+| Testability       |            Verified by functional/acceptance tests | Verified by performance, load, security, usability tests            |
+| Impact            |                     Affects features and use-cases | Affects architecture, design, operations                            |
+| Priority change   |                     May change with business needs | Typically stable but may change with scale or risk posture          |
+| Stakeholders      |       Product owners, business analysts, end users | Architects, operations, QA, security teams                          |
+| Documentation     |          Use cases, user stories, functional specs | NFR checklist, system quality specifications, SLOs/SLAs             |
+
+### Why both matter
+
+- Functional requirements deliver user value (what to build).
+- NFRs ensure the delivered value is usable, reliable, secure, and maintainable (how well it works).  
+  Balancing both is essential for perceived software quality.
+
+### Quick checklist to write NFRs
+
+- Be specific and measurable (e.g., numbers, thresholds).
+- Attach test criteria and monitoring method.
+- State environment/conditions and acceptable tolerance.
+- Link to functional requirements they constrain.
+
+### Simple examples of Functional and Non‑Functional Requirements
+
+#### Functional requirements (what the system must do)
+- Users can create an account using an email and password.
+- Users can log in and log out.
+- The system allows users to add items to a shopping cart and checkout.
+- The system sends an order confirmation email after purchase.
+- Admins can add, edit, or remove product listings.
+
+#### Non‑functional requirements (how the system performs)
+- The website responds to user actions within 2 seconds under normal load.
+- The system is available 99.9% of the time per month.
+- Passwords are stored using secure hashing (e.g., bcrypt).
+- The application supports at least 500 concurrent users.
+- Search results are returned within 1 second for typical queries.
+- All pages should render correctly on mobile and desktop screens.
+- Data backups are performed daily and retained for 30 days.
+- Sensitive data is transmitted only over HTTPS.
+
+These pair together: functional requirements define features; non‑functional requirements define quality, performance, security, and reliability.
+
+
 ## Software Metrics
 
 ### Definition
@@ -700,58 +880,100 @@ Measure:
 Think:
 Software quality measurement uses **PPP Metrics**.
 
-## Functional vs Non‑Functional Requirements
+## Measuring Software Quality
 
-**Demonstate functional and Non Functional Requirements with example**
+![Software Quality Image](https://appsierra-site.s3.ap-south-1.amazonaws.com/menskool_Blog_4b895f464c.jpg)
 
-### Definitions
+Measuring software quality uses objective metrics and indicators to track, compare, and improve product fitness.
 
-- Functional Requirements: Specify what the system must do — features, behaviors, inputs/outputs and business rules.
-- Non‑Functional Requirements (NFRs): Specify how the system performs those functions — qualities like performance, security, usability, reliability, and maintainability.
+### Key Metrics and Indicators
 
-### Key Differences
+- Defect Density  
+   Number of defects / size (e.g., defects per KLOC). Lower = better.
 
-| Aspect            |                            Functional Requirements | Non‑Functional Requirements                                         |
-| ----------------- | -------------------------------------------------: | :------------------------------------------------------------------ |
-| Purpose           |         Describe system behavior and functionality | Describe quality attributes and constraints                         |
-| Example statement | "The system shall allow users to create accounts." | "The system shall respond to search queries within 2 seconds."      |
-| Measurability     |       Often binary (implemented / not implemented) | Usually quantitative or subject to SLAs (performance, availability) |
-| Testability       |            Verified by functional/acceptance tests | Verified by performance, load, security, usability tests            |
-| Impact            |                     Affects features and use-cases | Affects architecture, design, operations                            |
-| Priority change   |                     May change with business needs | Typically stable but may change with scale or risk posture          |
-| Stakeholders      |       Product owners, business analysts, end users | Architects, operations, QA, security teams                          |
-| Documentation     |          Use cases, user stories, functional specs | NFR checklist, system quality specifications, SLOs/SLAs             |
+- Defect Rate  
+   Number of defects found per unit time or per release cycle.
 
-### Why both matter
+- Mean Time Between Failures (MTBF)  
+   Total operational time / number of failures — higher is better.
 
-- Functional requirements deliver user value (what to build).
-- NFRs ensure the delivered value is usable, reliable, secure, and maintainable (how well it works).  
-  Balancing both is essential for perceived software quality.
+- Mean Time To Repair (MTTR)  
+   Total downtime / number of repairs — lower is better.
 
-### Quick checklist to write NFRs
+- Availability  
+   Availability = MTBF / (MTBF + MTTR)
 
-- Be specific and measurable (e.g., numbers, thresholds).
-- Attach test criteria and monitoring method.
-- State environment/conditions and acceptable tolerance.
-- Link to functional requirements they constrain.
+- Reliability  
+   Probability the system performs without failure for a specified period (measured via failure rates, MTBF).
 
-### Simple examples of Functional and Non‑Functional Requirements
+- Test Coverage  
+   % of code, requirements, or paths exercised by tests — higher coverage improves confidence.
 
-#### Functional requirements (what the system must do)
-- Users can create an account using an email and password.
-- Users can log in and log out.
-- The system allows users to add items to a shopping cart and checkout.
-- The system sends an order confirmation email after purchase.
-- Admins can add, edit, or remove product listings.
+- Escaped Defects (Customer-reported)  
+   Defects found in production per release — used to measure release quality.
 
-#### Non‑functional requirements (how the system performs)
-- The website responds to user actions within 2 seconds under normal load.
-- The system is available 99.9% of the time per month.
-- Passwords are stored using secure hashing (e.g., bcrypt).
-- The application supports at least 500 concurrent users.
-- Search results are returned within 1 second for typical queries.
-- All pages should render correctly on mobile and desktop screens.
-- Data backups are performed daily and retained for 30 days.
-- Sensitive data is transmitted only over HTTPS.
+- Requirement Coverage  
+   % of requirements verified by tests or acceptance criteria.
 
-These pair together: functional requirements define features; non‑functional requirements define quality, performance, security, and reliability.
+- Performance Metrics  
+   Response time, throughput, resource utilization under expected loads.
+
+- Maintainability Metrics  
+   Cyclomatic complexity, code churn, modularity — indicate ease of change.
+
+- Security Metrics  
+   Number/severity of vulnerabilities, time-to-patch, successful penetration test findings.
+
+### Guidance
+
+- Use a balanced set of metrics (process, product, and outcome).
+- Track trends over time and set thresholds/targets.
+- Interpret metrics in context; correlate metrics to identify root causes.
+- Combine automated collection (CI/CD, telemetry) with periodic reviews for action.
+
+---
+
+## Defect Rate
+
+### Definition
+
+Defect Rate is the number of defects identified in software per unit size (e.g., per 1000 lines of code) or per unit time.
+
+### Formula:
+
+Defect Rate = Number of Defects / Size of Software
+
+### Explanation
+
+- High Defect Rate = Low Quality
+- Low Defect Rate = High Quality
+
+Defect rate helps in:
+
+- Comparing development performance
+- Evaluating software stability
+- Predicting reliability
+
+---
+
+## Reliability
+
+### Definition
+
+Reliability is the probability that software will function without failure for a specified period under specified operating conditions.
+
+### Explanation
+
+Reliable software:
+
+- Works continuously
+- Does not crash
+- Produces correct output consistently
+
+Reliability depends on:
+
+- Fewer defects
+- Proper testing
+- Good system design
+
+As defect rate decreases, reliability increases.
