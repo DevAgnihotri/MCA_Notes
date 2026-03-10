@@ -1,4 +1,262 @@
-# UNIT 2 — Software Quality Metrics (Product Quality Metrics)
+# UNIT 2 
+
+# Software Metrics
+
+### Definition
+
+**Software metrics** are **measurements used to evaluate the quality, performance, and reliability of software.**
+
+They help developers **analyze, monitor, and improve software during development and maintenance.**
+
+In simple words, **software metrics measure different aspects of software using numbers or data.**
+
+---
+
+# Software Metrics in Terms of Reliability
+
+### Definition of Software Reliability
+
+**Software reliability** is the **ability of software to perform its required functions without failure for a specified period of time.**
+
+To measure reliability, several **metrics (measurements)** are used.
+
+# Types of Reliability Metrics
+
+1. Mean Time To Failure (MTTF)
+
+### Definition
+
+**MTTF is the average time a software system operates before a failure occurs.**
+
+### Points
+
+1. Measures **how long the software runs without failure**.
+2. Higher MTTF means **more reliable software**.
+3. Used mostly for **non-repairable systems**.
+4. Helps evaluate **system stability**.
+
+### Example
+
+If software runs **100 hours before failing**, the **MTTF = 100 hours**.
+
+2. Mean Time To Repair (MTTR)
+
+### Definition
+
+**MTTR is the average time required to fix a software failure and restore the system.**
+
+### Points
+
+1. Measures **how quickly the system can be repaired**.
+2. Lower MTTR means **faster recovery**.
+3. Important for **system maintenance**.
+4. Helps improve **service availability**.
+
+### Example
+
+If it takes **2 hours to fix a failure**, then **MTTR = 2 hours**.
+
+3. Mean Time Between Failures (MTBF)
+
+### Definition
+
+**MTBF is the average time between two consecutive failures of a software system.**
+
+### Formula
+
+MTBF = MTTF + MTTR
+
+### Points
+
+1. Measures **overall system reliability**.
+2. Indicates **how often failures occur**.
+3. Higher MTBF means **fewer failures**.
+4. Widely used in **reliable system analysis**.
+
+### Example
+
+If
+MTTF = 100 hours
+MTTR = 2 hours
+
+Then
+MTBF = 102 hours.
+
+4. Failure Rate (λ)
+
+### Definition
+
+**Failure rate is the number of software failures that occur in a given period of time.**
+
+### Points
+
+1. Measures **frequency of system failures**.
+2. Usually expressed as **failures per hour**.
+3. Lower failure rate means **better reliability**.
+4. Helps identify **software stability problems**.
+
+### Example
+
+If **5 failures occur in 100 hours**, failure rate = **0.05 failures per hour**.
+
+5. Availability
+
+### Definition
+
+**Availability is the probability that the system is operational and accessible when required.**
+
+### Formula
+
+Availability = MTTF / (MTTF + MTTR)
+
+### Points
+
+1. Measures **how often the system is available for use**.
+2. Higher availability means **better system reliability**.
+3. Depends on **failure and repair time**.
+4. Important for **critical systems like banking or servers**.
+
+✅ **Super easy memory trick**
+
+Remember:
+
+**FAMMA**
+
+* **F** → Failure Rate
+* **A** → Availability
+* **M** → MTTF
+* **M** → MTTR
+* **A** → MTBF
+
+---
+
+# Software Quality Indicators
+
+### Definition
+
+**Software quality indicators** are **factors or characteristics used to measure and evaluate the quality of software.**
+
+They help determine **how well the software performs, how reliable it is, and how easy it is to use and maintain.**
+
+
+# Various Software Quality Indicators
+
+## 1. Correctness
+
+### Definition
+
+**Correctness means the software performs its functions according to the specified requirements.**
+
+### Points
+
+1. Software produces **accurate and expected results**.
+2. It follows **user requirements and specifications**.
+3. Fewer errors mean **higher correctness**.
+4. Important for **system accuracy**.
+
+# 2. Reliability
+
+### Definition
+
+**Reliability is the ability of software to work without failure for a certain period of time.**
+
+### Points
+
+1. Software should **operate consistently**.
+2. Failures should be **rare or minimal**.
+3. Important for **critical systems like banking or medical software**.
+4. Measured using **MTTF, MTBF, etc.**
+
+# 3. Efficiency
+
+### Definition
+
+**Efficiency refers to how well the software uses system resources such as memory, CPU, and time.**
+
+### Points
+
+1. Software should **run quickly**.
+2. Uses **minimum resources**.
+3. Provides **fast response time**.
+4. Improves overall **system performance**.
+
+# 4. Integrity
+
+### Definition
+
+**Integrity refers to the ability of software to protect data from unauthorized access or modification.**
+
+### Points
+
+1. Ensures **data security and protection**.
+2. Prevents **unauthorized users from accessing the system**.
+3. Maintains **data accuracy and confidentiality**.
+4. Important for **secure applications**.
+
+# 5. Usability
+
+### Definition
+
+**Usability is the ease with which users can learn, operate, and interact with the software.**
+
+### Points
+
+1. Software should be **easy to understand and use**.
+2. Requires **less training for users**.
+3. Provides **user-friendly interface**.
+4. Improves **user satisfaction**.
+
+# 6. Maintainability
+
+### Definition
+
+**Maintainability is the ease with which software can be modified, fixed, or improved after development.**
+
+### Points
+
+1. Bugs can be **easily fixed**.
+2. New features can be **added easily**.
+3. Reduces **maintenance cost**.
+4. Improves **software lifespan**.
+
+7. Flexibility
+
+### Definition
+
+**Flexibility refers to the ability of software to adapt to changes in requirements or environment.**
+
+### Points
+
+1. Software can be **modified for new needs**.
+2. Supports **future updates**.
+3. Makes the system **adaptable**.
+4. Useful for **long-term software use**.
+
+| Indicator       | Meaning                                |
+| --------------- | -------------------------------------- |
+| Correctness     | Software meets requirements            |
+| Reliability     | Works without failure                  |
+| Efficiency      | Uses resources effectively             |
+| Integrity       | Protects data from unauthorized access |
+| Usability       | Easy to learn and use                  |
+| Maintainability | Easy to fix or modify                  |
+| Flexibility     | Easy to adapt to changes               |
+
+---
+
+✅ **Easy Memory Trick (same used in many textbooks)**
+
+**CRUEIMF**
+
+* **C** → Correctness
+* **R** → Reliability
+* **U** → Usability
+* **E** → Efficiency
+* **I** → Integrity
+* **M** → Maintainability
+* **F** → Flexibility
+
+# Software Quality Metrics (Product Quality Metrics)
 
 Software quality cannot be improved unless it is **measured objectively**. Product quality metrics help organizations measure how good a software product is by analyzing defects, customer experience, and system functionality.
 
