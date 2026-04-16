@@ -221,7 +221,6 @@ b) Example of distributed DB system
 
 ---
 
-
 # Formated Questions
 
 Got you 😌 — now this is the **real deal (exact questions, no paraphrasing, clean mapping, MD ready)**
@@ -259,22 +258,26 @@ Got you 😌 — now this is the **real deal (exact questions, no paraphrasing, 
 ## 🟩 UNIT II – Query Processing & Optimization
 
 ### Query Fundamentals
+
 - What do you understand by semi join? (2023, Sec A)
 - What do you meant by Semi Join and Projection? (2020, Sec A)
 - Compare join with semi join approach in distributed database system and analyze the scenarios of preference. (2022 Sem 5, Sec C)
 
 ### Query Processing
+
 - Explain query processing. Also explain the layers of query processing. (2023, Sec B)
 - Objectives of distributed query processing? Explain. (2020, Sec C)
 - Briefly explain the objectives of query processing. (2023, Sec C)
 
 ### Query Optimization
+
 - Discuss query optimization? Explain distributed cost model with an example. (2023, Sec C)
 - Define query optimization? (2020, Sec A)
 - Explain query optimization algorithms? (2020, Sec C)
 - Explain in brief the various query optimization techniques and write their advantages and disadvantages. (2022 Sem 5, Sec C)
 
 ### Query Structure & Execution
+
 - What is bushy join tree? (2022 Sem 5, Sec A)
 - What is total cost equation of query execution in distributed system? (2022 Sem 5, Sec A)
 - Discuss the Equivalence transformation of queries? (2020, Sec C)
@@ -286,29 +289,34 @@ Got you 😌 — now this is the **real deal (exact questions, no paraphrasing, 
 ## 🟨 UNIT III – Transaction Management & Concurrency
 
 ### Transaction Fundamentals
+
 - What do you meant by Transaction Processing? (2020, Sec A)
 - Define transaction and its properties? (2020, Sec A)
 - Discuss the Transaction. Explain ACID properties with an example. (2023, Sec B)
 - Explain the ACID properties of transaction. (2022 Sem 5, Sec B)
 
 ### Transaction State & Structure
+
 - Draw transaction state diagram. (2023, Sec A)
 - What is transaction log? What are its functions? (2022, Sec A)
 - Define the Concepts of recoverable, cascade less and strict schedules. (2022, Sec A)
 - Define the Concepts of recoverable, cascade less and strict schedules. (2022 Sem 5, Sec A)
 
 ### Serializability & Schedules
+
 - Explain view serializability. (2022, Sec A)
 - What are serial and serializable schedule? Why are serial and serializable schedule considered correct? (2022 Sem 5, Sec C)
 - Define schedule and serializable schedule. Check whether the schedule is conflict serializable or not. (2022 Sem 5, Sec C)
 - Determine the given schedule is conflict serializable or not. (2022 Sem 5, Sec B)
 
 ### Locking & Lock Types
+
 - Differentiate between shared lock & exclusive lock. (2023, Sec A)
 - Differentiate between 2PL and strict 2PL. (2022, Sec A)
 - Explain the architecture of locking scheduler. (2022 Sem 5, Sec B)
 
 ### Concurrency Control Algorithms
+
 - Define Moss Concurrency protocol? (2022, Sec A)
 - Discuss the serializability? Explain time stamp based concurrency control algorithm. (2023, Sec C)
 - Explain briefly about timestamp-based concurrency algorithms. (2022, Sec C)
@@ -318,59 +326,84 @@ Got you 😌 — now this is the **real deal (exact questions, no paraphrasing, 
 - Discuss the various concurrency techniques in details? (2020, Sec B)
 
 ### Deadlock Management
+
 - Explain deadlock handling. Discuss various deadlock avoidance algorithms. (2023, Sec C)
 - Compare Distributed Deadlock prevention to Distributed Deadlock Avoidance. Explain one scheme of Distributed deadlock Detection and Recovery. (2022, Sec B)
 - What is deadlock detection? Also explain the protocols for deadlock detection in distributed database system. (2022 Sem 5, Sec B)
 
 ### Transaction Manager & Atomicity
+
 - What are the functions of Transaction Manager? (2023, Sec A)
 - Discuss the issues to achieve atomicity in distributed transaction management system. (2022, Sec C)
 - Discuss the issues to achieve atomicity in distributed transaction management system. (2022 Sem 5, Sec C)
 - Discuss the Management of Distributed transaction and concurrency control? (2020, Sec C)
 
 ### Checkpoints & Voting
+
 - Describe the followings (i) Consistent Checkpoints (ii) Voting protocols. (2022, Sec C)
 - Generate an algorithm for synchronous check pointing in a Distributed database system. (2022, Sec C)
 
 ### Concurrency Control General
+
 - Define concurrency control in distributed database? (2020, Sec A)
 
 ## 🟥 UNIT IV – Reliability & Parallel DB
 
-- Discuss various reasons for failures in distributed systems. (2023, Sec B)
-- Explain the working of two phase commit protocol of distributed transactions. (2023, Sec C)
-- Explain general architecture of a parallel database system and shared memory architecture. (2023, Sec C)
+### Failures & Recovery Basics
 
+- Discuss various reasons for failures in distributed systems. (2023, Sec B)
 - Differentiate between Backward and Forward recovery. (2022, Sec A)
 - Why is recovery in a distributed DBMS more complicated than in a centralized system? (2022, Sec B)
 - What problem can occur in a distributed system due to the failure of link and partitioning of the network? What are the ways by which recovery can take place? (2022, Sec B)
+
+### Commit Protocols & Atomicity Support
+
+- Explain the working of two phase commit protocol of distributed transactions. (2023, Sec C)
 - Justify that three-phase commit (3PC) protocol is a non-blocking protocol. (2022, Sec C)
 
-- Define the term Checkpoint? (2022 Sem 5, Sec A)
-- What do you mean by Shadow Paging? Explain the various distributed locking schemes? (2022 Sem 5, Sec C)
-- Analyze the condition of orphan message generation and discuss the ways to avoid this condition. (2022 Sem 5, Sec C)
+### Checkpointing & State Preservation
 
+- Define the term Checkpoint? (2022 Sem 5, Sec A)
 - Mention about Recovery in Message Passing System. Explain concept of inconsistent states? (2020, Sec B)
+- What do you mean by Shadow Paging? Explain the various distributed locking schemes? (2022 Sem 5, Sec C)
+
+### Orphan Process/Message Problems
+
+- Analyze the condition of orphan message generation and discuss the ways to avoid this condition. (2022 Sem 5, Sec C)
 - Explain the concepts in Orphan in distributed database. (2020, Sec C)
+
+### Parallel DB & Administration
+
+- Explain general architecture of a parallel database system and shared memory architecture. (2023, Sec C)
 - Explain Distributed Database Administration? (2020, Sec B)
 
 ---
 
 ## 🟪 UNIT V – Object DBMS & OODBMS
 
+### Object-Oriented Concepts & Data Model
+
 - Briefly explain fundamental object concepts and models. Also explain abstract data types. (2023, Sec B)
 - Describe following terms with reference to object oriented data model: (i) Inheritance (ii) Object identity. (2023, Sec C)
-- Write a short note on OODBMS. Also compare between OODBMS and ORDBMS. (2023, Sec C)
-
 - How does the concept of an object in object-oriented model differ from the concept of an entity in the ER diagram? (2022, Sec A)
 - Explain briefly in what way designing an object-oriented database is different from relational database. (2022, Sec A)
+
+### Object Identity, OID & Persistence
+
 - What is an object identifier? Explain with an example. What are its advantages and disadvantages? (2022, Sec B)
 - What is the difference between persistent and transient objects? How is persistence handled in OO database systems? (2022, Sec C)
+
+### OODBMS vs ORDBMS
+
+- Write a short note on OODBMS. Also compare between OODBMS and ORDBMS. (2023, Sec C)
 - Compare ORDBMS and OODBMS with respect to Data sharing, data modelling and data accessing. (2022, Sec C)
+
+### Query, Functions & Examples
 
 - Define SUM, AVG, and COUNT function with proper syntax? (2020, Sec A)
 - What do you meant by grouping function? (2020, Sec A)
-- What do you meant by Semi Join and Projection? (2020, Sec A)
 - Explain grouping and aggregate function with example? (2020, Sec C)
 - Discuss parametric queries with example? (2020, Sec C)
+- What do you meant by Semi Join and Projection? (2020, Sec A)
 - Explain the example of Distributed Database System? (2020, Sec C)
+```

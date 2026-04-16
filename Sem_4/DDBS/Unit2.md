@@ -611,3 +611,4 @@ A single query can be written in multiple equivalent ways. These different forms
 * Selection pushdown
 * Projection pushdown
 * Join reordering
+
