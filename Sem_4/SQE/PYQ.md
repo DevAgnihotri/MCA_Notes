@@ -39,9 +39,9 @@
 
 14. Is Quality Engineering different from Quality Assurance? Clarify. *(Section A – Q1f)*
 15. List any four Software Quality Assurance techniques. *(Section A – Q1g)*
-16. Explain the term Zero Defect Software. *(Section A – Q1h)*
 17. Explain the relationship among Quality Assurance, Quality Planning and Quality Control. *(Section B – Q2d)*
 18. Demonstrate the components of SQA architecture in detail. *(Section C – Q6a)*
+16. Explain the term Zero Defect Software. *(Section A – Q1h)*
 19. Explain Six Sigma concept in detail with suitable example. *(Section C – Q6b)*
 
 ---
