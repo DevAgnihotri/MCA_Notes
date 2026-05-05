@@ -273,29 +273,6 @@ SQA activities development lifecycle ke har phase mein perform hote hain. Yeh en
 
 ---
 
-# 🔹 1. SQA (Software Quality Assurance)
-
----
-
-### 📌 Definition:
-
-> **SQA is a set of activities that ensure software processes and products meet defined quality standards.**
-
----
-
-### 📖 Explanation (5–6 lines):
-
-SQA ka main aim hota hai software ko **error-free, reliable aur efficient** banana. Yeh sirf testing nahi hota — yeh pura development process monitor karta hai. Isme planning, monitoring, auditing aur improvement sab include hota hai. SQA ensure karta hai ki software **customer requirements meet kare**. Yeh preventive approach follow karta hai (bugs hone se pehle rokna).
-
-💡 Hinglish:
-“Bug aane ke baad fix nahi… pehle hi rok do 😎”
-
----
-
-👉 Mnemonic: **“PREVENT”**
-
----
-
 # 🔹 2. MAJOR SQA ISSUES
 
 ---
@@ -309,12 +286,6 @@ SQA ka main aim hota hai software ko **error-free, reliable aur efficient** bana
 ### 📖 Explanation (6–7 lines):
 
 Software development complex hota ja raha hai, isliye quality maintain karna tough ho gaya hai. Time pressure, changing requirements aur team coordination issues common hain. Poor documentation aur lack of standards bhi quality ko affect karte hain. Distributed teams mein communication gap bhi problem create karta hai. SQA ka role hota hai in issues ko identify aur resolve karna.
-
----
-
-👉 Mnemonic: **“CTDCC”**
-
----
 
 ## 🔸 Key Issues:
 
@@ -330,13 +301,9 @@ Software development complex hota ja raha hai, isliye quality maintain karna tou
 
 (**Question Covered: Explain Zero Defect Software – Section A Q1h**)
 
----
-
 ### 📌 Definition:
 
 > **Zero Defect Software is a concept where the goal is to produce software with no defects.**
-
----
 
 ### 📖 Explanation (6–7 lines):
 
@@ -344,12 +311,6 @@ Zero defect ka matlab hai ki development process itna strong ho ki bugs aaye hi 
 
 💡 Hinglish:
 “Galti karne ka option hi nahi 😤”
-
----
-
-👉 Mnemonic: **“PERFECT”**
-
----
 
 ## 🔸 Advantages:
 
@@ -360,34 +321,6 @@ Zero defect ka matlab hai ki development process itna strong ho ki bugs aaye hi 
 
 * Costly
 * Time-consuming
-
----
-
-# 🔹 4. SQA TECHNIQUES
-
----
-
-### 📌 Definition:
-
-> **SQA techniques are methods used to ensure software quality.**
-
----
-
-### 📖 Explanation (6 lines):
-
-Different techniques use ki jati hain software quality maintain karne ke liye. Yeh techniques development ke different phases mein apply hoti hain. Goal hota hai defects detect aur prevent karna. Common techniques include reviews, testing aur audits.
-
----
-
-👉 Mnemonic: **“RTA”**
-
----
-
-## 🔸 Techniques:
-
-* **Review** (code, design)
-* **Testing**
-* **Audit**
 
 ---
 
@@ -465,59 +398,229 @@ Standards ensure karte hain ki development consistent aur reliable ho. Processes
 👉 Mnemonic: **“RULES”**
 
 ---
-
-# 🔹 8. SQA ARCHITECTURE ⭐ (VERY IMPORTANT – SECTION C)
-
-(**Question Covered: Demonstrate components of SQA architecture – Section C Q6a**)
+Alright, let’s break down **SQE Architecture (Software Quality Engineering Architecture)** in a **simple, structured, and visual way** so you can actually *understand + revise + write in exams*.
 
 ---
 
-### 📌 Definition:
+# 🧠 What is SQE Architecture?
 
-> **SQA architecture defines the structure and components used to ensure software quality.**
+**Software Quality Engineering (SQE)** architecture is the **framework that ensures software is built, tested, and maintained with high quality at every stage**.
 
----
-
-### 📖 Explanation (7–8 lines – HEAVY DETAIL):
-
-SQA architecture ek structured framework hota hai jo define karta hai kaise quality ensure hogi across software lifecycle. Isme policies, procedures aur tools included hote hain. Yeh ensure karta hai ki har phase mein quality maintain ho. Architecture ka goal hota hai systematic monitoring aur improvement. Yeh organization-wide quality control system banata hai.
+👉 In simple words:
+It’s a **system that makes sure your software doesn’t break, fail, or behave weirdly**.
 
 ---
 
-👉 Mnemonic: **“PPTMA”**
+# 🏗️ High-Level View (Big Picture)
+
+Here’s a simple flow:
+
+```
+Requirements → Design → Development → Testing → Deployment → Maintenance
+        ↑__________________________________________________________↓
+                     Continuous Quality Monitoring
+```
+
+👉 SQE is not just testing at the end —
+it is **quality everywhere, all the time**.
 
 ---
 
-## 🔸 Components of SQA Architecture
+# 📊 Core Components of SQE Architecture
+
+Let’s break it into **5 main layers**
 
 ---
 
-### 🔹 1. Policies
+## 1️⃣ Requirement Quality Layer
 
-* Quality rules define karte hain
+The Requirement Quality Layer focuses on ensuring that the requirements collected from users or clients are clear, complete, and testable, so that the development team builds the correct product from the beginning.
 
-### 🔹 2. Procedures
+📌 Focus: *Are we building the right thing?*
 
-* Steps to follow
+### Key Activities:
 
-### 🔹 3. Tools
+* Requirement validation
+* Requirement reviews
+* Risk analysis
 
-* Testing tools, automation
+### Example:
 
-### 🔹 4. Metrics
+If a client says:
 
-* Measure quality
+> “Make a fast app”
 
-### 🔹 5. Audits
+SQE ensures:
+✔ What does *fast* mean? (2 sec load? 1 sec?)
+✔ Is it measurable?
 
-* Check compliance
+---
+
+## 2️⃣ Design Quality Layer
+
+📌 Focus: *Is the system well-designed?*
+
+The Design Quality Layer focuses on ensuring that the system architecture and design are capable of meeting all requirements without future failures.
+
+### Key Activities:
+
+* Architecture review
+* Design validation
+* UML diagrams checking
+
+### Example:
+
+* Is the system scalable?
+* Can it handle 1 lakh users?
 
 ---
 
-💡 Hinglish:
-“System bana diya jahan quality automatically control ho 😎”
+## 3️⃣ Development Quality Layer
+
+📌 Focus: *Is code written properly?*
+
+The Development Quality Layer focuses on ensuring that the actual code written by developers follows proper standards, and is easy to maintain in the future.
+
+### Key Activities:
+
+* Code reviews
+* Static code analysis
+* Coding standards
+
+### Tools:
+
+* SonarQube
+* ESLint
 
 ---
+
+## 4️⃣ Testing Quality Layer (Most Important)
+
+📌 Focus: *Does the software actually work?*
+
+The Testing Quality Layer focuses on verifying and validating that the software behaves as expected under different conditions and meets all specified requirements.
+
+### Types of Testing:
+
+| Testing Type        | Purpose                        |
+| ------------------- | ------------------------------ |
+| Unit Testing        | Test small parts of code       |
+| Integration Testing | Check modules working together |
+| System Testing      | Full system testing            |
+| Acceptance Testing  | Client validation              |
+
+---
+
+## 5️⃣ Maintenance & Monitoring Layer
+
+📌 Focus: *Is software still working after release?*
+
+The Maintenance and Monitoring Layer focuses on continuously observing the software after deployment and fixing issues that arise in real-world usage.
+
+### Key Activities:
+
+* Bug tracking
+* Performance monitoring
+* Updates & patches
+
+---
+
+# 📈 SQE Architecture Diagram (Clean View)
+
+```
++--------------------------------------------------+
+|              Requirement Quality                 |
++--------------------------------------------------+
+|               Design Quality                     |
++--------------------------------------------------+
+|             Development Quality                  |
++--------------------------------------------------+
+|               Testing Quality                    |
++--------------------------------------------------+
+|         Deployment & Maintenance Quality         |
++--------------------------------------------------+
+|      Continuous Monitoring & Feedback Loop       |
++--------------------------------------------------+
+```
+
+---
+
+# 🔄 Continuous Feedback Loop (VERY IMPORTANT)
+
+```
+Testing → Feedback → Fix → Retest → Improve
+```
+
+👉 This loop runs **again and again**
+This is why modern systems use:
+
+* Agile
+* DevOps
+* CI/CD pipelines
+
+---
+
+# ⚙️ SQE in DevOps (Modern Architecture)
+
+```
+Code → Build → Test → Deploy → Monitor
+        ↑__________________________↓
+             Continuous Quality
+```
+
+### Tools used:
+
+* Jenkins (CI/CD)
+* Docker (containerization)
+* Selenium (testing)
+
+---
+
+# 📊 Quality Attributes (What SQE Ensures)
+
+| Attribute       | Meaning               |
+| --------------- | --------------------- |
+| Reliability     | Works without failure |
+| Performance     | Fast and efficient    |
+| Security        | Safe from attacks     |
+| Usability       | Easy to use           |
+| Maintainability | Easy to update        |
+
+---
+
+# ⚠️ Without SQE (Reality Check 😬)
+
+* Bugs in production
+* App crashes
+* Poor user experience
+* Security issues
+
+Example:
+Apps crashing during payments = **No proper SQE**
+
+---
+
+# ✅ With SQE
+
+* Stable apps
+* Better user trust
+* Fewer bugs
+* Faster development cycle
+
+---
+
+# 🧩 Simple Analogy
+
+Think of SQE like **quality checking in a factory**:
+
+| Factory Step        | SQE Equivalent |
+| ------------------- | -------------- |
+| Raw material check  | Requirements   |
+| Design blueprint    | Architecture   |
+| Manufacturing       | Coding         |
+| Inspection          | Testing        |
+| After-sales service | Maintenance    |
+
 
 # 🔹 9. SIX SIGMA ⭐ (VERY IMPORTANT – SECTION C)
 
